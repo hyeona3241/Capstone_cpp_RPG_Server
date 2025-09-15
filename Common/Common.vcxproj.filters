@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{42e6527a-09df-42f5-8612-3c26e6bfaf04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\소스 파일">
+      <UniqueIdentifier>{9d2cc09b-9c2d-4962-be68-1a7c22aa2428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\헤더 파일">
+      <UniqueIdentifier>{bd8ad0fa-6446-4825-88d3-aa29d3bf3351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet">
+      <UniqueIdentifier>{7f30a7e5-6da9-4a7a-afc0-a57d1088ccb0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\Const.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Const.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
