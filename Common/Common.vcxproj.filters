@@ -15,13 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Core\Const.cpp">
-      <Filter>Core\소스 파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="Core\Const.h">
       <Filter>Core\헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Core\ErrorCode.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\ErrorCode.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
