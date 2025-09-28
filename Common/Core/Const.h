@@ -4,6 +4,8 @@
 #include <chrono>
 #include <cstddef>
 #include <string_view>
+#include <functional>
+#include <string>
 
 
 // 1) 빌드 상수 / 버전 관리
@@ -87,6 +89,10 @@ namespace Types {
 		// 연산자 오버로딩
 		friend inline bool operator==(Uid a, Uid b) { return a.v == b.v; }
 		friend inline bool operator!=(Uid a, Uid b) { return !(a == b); }
+		// 값이 유효한지 바로 확인
+		inline bool IsValid() const noexcept { return v != 0; }
+		// UID 타입으로 감싼 팩토리 (Uid::From(x)로 사용)
+		static inline Uid From(uint64_t x) noexcept { return Uid{ x }; }
 	};
 
 
@@ -95,13 +101,18 @@ namespace Types {
 
 		friend inline bool operator==(SessionId a, SessionId b) { return a.v == b.v; }
 		friend inline bool operator!=(SessionId a, SessionId b) { return !(a == b); }
+		inline bool IsValid() const noexcept { return v != 0; }
+		static inline SessionId From(uint64_t x) noexcept { return SessionId{ x }; }
 	
 	};
+
 	struct RoomId { 
 		uint64_t v{ 0 }; 
 
 		friend inline bool operator==(RoomId a, RoomId b) { return a.v == b.v; }
 		friend inline bool operator!=(RoomId a, RoomId b) { return !(a == b); }
+		inline bool IsValid() const noexcept { return v != 0; }
+		static inline RoomId From(uint64_t x) noexcept { return RoomId{ x }; }
 	};
 }
 // 해시 컨테이너
@@ -113,32 +124,46 @@ namespace std {
 			return std::hash<uint64_t>{}(id.v);
 		}
 	};
-}
 
-
-// 6) 에러/결과 공통 타입
-namespace Types {
-	// 클라 / 서버 등 공통 언어로 소통
-	// 나중에 차차 추가하거나 수정하기
-	enum class ErrorCode : uint16_t {
-		Ok = 0,
-
-		InvalidParam,     // 잘못된 인자/포맷
-		NotFound,         // 리소스/사용자/세션 없음
-		Conflict,         // 상태 충돌(중복 닉네임 등)
-		Unauthorized,     // 인증 안됨/자격 없음
-		Forbidden,        // 권한 부족(인증됐지만 금지됨)
-		Timeout,          // 시간 초과(네트워크/DB/외부)
-		Throttled,        // 레이트리밋/스팸 제한
-		Overflow,         // 용량 초과(버퍼/큐/사이즈 상한)
-		Unavailable,      // 일시적 불가(서버 과부하/정검)
-		Internal          // 서버 내부 오류(예상치 못한 에러)
+	template<> 
+	struct hash<Types::SessionId> {
+		size_t operator()(const Types::SessionId& x) const noexcept {
+			return std::hash<uint64_t>{}(x.v);
+		}
 	};
 
-	// 성공 실패를 타입으로 강제
-	template<class T>
-	using Result = std::expected<T, ErrorCode>;
+	template<> 
+	struct hash<Types::RoomId> {
+		size_t operator()(const Types::RoomId& x) const noexcept {
+			return std::hash<uint64_t>{}(x.v);
+		}
+	};
 }
+
+// 클래스 분리
+//// 6) 에러/결과 공통 타입
+//namespace Types {
+//	// 클라 / 서버 등 공통 언어로 소통
+//	// 나중에 차차 추가하거나 수정하기
+//	enum class ErrorCode : uint16_t {
+//		Ok = 0,
+//
+//		InvalidParam,     // 잘못된 인자/포맷
+//		NotFound,         // 리소스/사용자/세션 없음
+//		Conflict,         // 상태 충돌(중복 닉네임 등)
+//		Unauthorized,     // 인증 안됨/자격 없음
+//		Forbidden,        // 권한 부족(인증됐지만 금지됨)
+//		Timeout,          // 시간 초과(네트워크/DB/외부)
+//		Throttled,        // 레이트리밋/스팸 제한
+//		Overflow,         // 용량 초과(버퍼/큐/사이즈 상한)
+//		Unavailable,      // 일시적 불가(서버 과부하/정검)
+//		Internal          // 서버 내부 오류(예상치 못한 에러)
+//	};
+//
+//	// 성공 실패를 타입으로 강제
+//	template<class T>
+//	using Result = std::expected<T, ErrorCode>;
+//}
 
 // 7~8의 값들 바꾸면서 최적화 하기! (디버그의 성능 프로파일러)
 // 7) 스케줄/타이머휠 파라미터

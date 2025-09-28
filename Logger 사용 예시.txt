@@ -1,0 +1,23 @@
+#include "Logger.h"
+using namespace tinylog;
+
+int main() {
+    Config cfg;
+    cfg.app_name = "Main";   // 서버별로 다르게
+    cfg.dir = "logs";
+    cfg.rotate_bytes = 10 * 1024 * 1024;
+    cfg.keep_files = 3;
+
+    Init(cfg);
+
+    LOG_INFO("server start");
+    // ... IOCP 초기화/스레드풀 시작 ...
+    // ... 이벤트 루프/accept/recv/send ...
+
+    // 예: 에러 상황
+    // LOG_ERROR("accept failed: WSAGetLastError=10054");
+
+    LOG_INFO("server stop");
+    Shutdown();
+    return 0;
+}

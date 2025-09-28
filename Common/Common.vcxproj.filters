@@ -21,9 +21,21 @@
     <ClInclude Include="Core\ErrorCode.h">
       <Filter>Core\헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Core\Logger.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UidGenerator.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\ErrorCode.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Logger.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UidGenerator.cpp">
       <Filter>Core\소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

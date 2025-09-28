@@ -21,9 +21,13 @@
   <ItemGroup>
     <ClInclude Include="Core\Const.h" />
     <ClInclude Include="Core\ErrorCode.h" />
+    <ClInclude Include="Core\Logger.h" />
+    <ClInclude Include="Core\UidGenerator.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\ErrorCode.cpp" />
+    <ClCompile Include="Core\Logger.cpp" />
+    <ClCompile Include="Core\UidGenerator.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
