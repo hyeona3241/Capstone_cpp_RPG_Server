@@ -22,3 +22,20 @@
 
 Core
 (Const -> ErroerCode -> Logger -> UidGenerator -> TimerWheel -> RateLimiter)
+
+
+inline constexpr → 헤더에 정의해도 TU 간 단일 엔티티로 공유 가능한 컴파일타임 상수 별칭
+
+TU (Translation Unit) → 전처리 끝난 소스 한 덩어리, 컴파일러가 .o/.obj로 만드는 최소 단위
+
+std::string_view → 메모리 복사 없이 문자열을 가리키는 비소유 읽기 전용 뷰 타입
+
+using (타입 별칭) → 긴 타입에 짧은 이름을 붙여주는 type alias 선언
+
+강타입(Strong typing) → 암시적 변환을 막고 의미가 다른 값들을 별도 타입으로 강제하는 안전 설계 기법
+
+고정 폭 정수(uint64_t 등) → 비트 폭이 정확히 보장된 정수 타입, int보다 이식성·범위 제어에 적합
+
+해시 컨테이너 (unordered_map 등) → 해시 테이블 기반의 평균 O(1) 탐색/삽입/삭제 성능을 가진 연관 컨테이너
+
+unordered_map vs map → 순서 불필요·빠른 조회는 unordered_map, 정렬·범위 탐색은 map
