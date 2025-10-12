@@ -1,0 +1,82 @@
+구현 로드맵 (딱 필요한 최소기능만)
+
+[0) NetCore (공통 IOCP 라이브러리)]
+
+클래스: IocpServer, IocpWorker, Session, PacketHeader, BinaryReader/Writer, BufferPool
+
+스레드: Accept 1, Worker = min(코어*2, 16) 정도
+
+콜백: OnConnect/OnRecv/OnSend/OnDisconnect 추상화
+
+
+
+
+[1) MainServer (게이트웨이/라우터)]
+
+목표: 클라 접속 → UID 부여 → 월드 선택 → 월드로 라우팅 준비
+
+핵심 클래스
+
+MainServerApp(부팅/Config), MainAcceptor(IOCP), MainPacketHandler
+
+WorldRegistry(등록된 월드 목록/로드), UserDirectory(UID→세션)
+
+최소 패킷 (Client↔Main)
+
+C2M_HELLO, M2C_WELCOME{uid,faketoken},
+
+C2M_ENTER_WORLD_REQ{region}, M2C_ENTER_WORLD_ACK{worldAddr,handshakeKey}
+
+최소 패킷 (World↔Main)
+
+W2M_REGISTER_WORLD{worldId,capacity}, W2M_STATUS,
+
+M2W_ATTACH_USER{uid,handshakeKey}, M2W_DETACH_USER{uid}
+
+초기 로그인은 가짜 토큰 발급(Main이 UID 생성해서 내려줌)
+
+
+
+[2) WorldServer (룸/세션/브로드캐스트)]
+
+목표: 입장/퇴장, 위치 업데이트 브로드캐스트
+
+핵심 클래스
+
+WorldServerApp, WorldAcceptor(IOCP), WorldPacketHandler
+
+RoomManager, Room, WorldUser{uid,session,position}
+
+최소 패킷 (Client↔World)
+
+C2W_JOIN{uid,handshakeKey}, W2C_JOIN_OK{roomId,spawnPos}
+
+C2W_MOVE{pos,dir}, W2C_MOVE_BROADCAST{uid,pos,dir}
+
+W2C_PING, C2W_PONG (타임아웃은 나중에 TimerWheel 연동)
+
+Main과의 보안 연결은 handshakeKey 1회성 검사로 충분(초기엔 간단히)
+
+
+
+[3) LoginServer (실제 인증/토큰 발급)]
+
+목표: 이후에 Main의 가짜 토큰 로직을 대체
+
+최소 플로우: C2L_LOGIN_REQ{id,pw} → L2C_LOGIN_ACK{token}
+
+Main↔Login: M2L_VERIFY_TOKEN{token} → L2M_VERIFY_ACK{uid}
+
+붙일 때: Main의 “가짜 토큰 발급” 부분을 “Login 검증”으로 갈아끼우기
+
+
+
+[4) ChatServer (채널/브로드캐스트)]
+
+목표: 월드와 별개로 채팅 채널 운용
+
+Main↔Chat: M2C_JOIN_CHANNEL{uid,channel}, M2C_LEAVE_CHANNEL
+
+Client↔Main(포워딩)↔Chat: CHAT_SAY{uid,msg} → CHAT_BROADCAST
+
+초기에는 월드 서버가 채팅을 임시 대행해도 됨 (나중에 분리)
