@@ -80,3 +80,51 @@ Main↔Chat: M2C_JOIN_CHANNEL{uid,channel}, M2C_LEAVE_CHANNEL
 Client↔Main(포워딩)↔Chat: CHAT_SAY{uid,msg} → CHAT_BROADCAST
 
 초기에는 월드 서버가 채팅을 임시 대행해도 됨 (나중에 분리)
+
+
+
+
+
+
+
+
+Net/
+  Core/                 // OS/IOCP, 소켓 저수준
+    IocpServer.h/.cpp
+    IocpWorker.h/.cpp            (나중에 분리 예정이면 필터만 잡아두기)
+    SocketUtils.h/.cpp
+  Session/              // 연결 단위의 자료구조
+    Session.h/.cpp
+    SessionManager.h/.cpp
+    SendQueue.h/.cpp
+    RecvRing.h/.cpp
+  Protocol/             // 패킷 포맷/파서
+    Packet.h
+    PacketFramer.h/.cpp
+    BinaryReader.h/.cpp
+    BinaryWriter.h/.cpp
+  App/                  // 상위와의 경계
+    INetListener.h
+    PacketDispatcher.h/.cpp
+  Config/
+    NetConfig.h
+    NetStats.h/.cpp
+  Util/
+    BufferPool.h/.cpp
+    Backoff.h
+
+
+
+추천 제작 순서 (실패 비용 ↓, 테스트 ↑)
+
+Protocol & Buffers (순수 로직, 소켓 無)
+Session (오버랩 수명/정책의 핵심)
+SessionManager
+IocpServer (마지막에 조립)
+
+
+	├─ PacketIds.h         // enum 대역 정의 (Main/World/Login/Chat)
+     ├─ Packet.h            // PacketHeader, 상수
+     ├─ BinaryReader.h/.cpp // 범위/엔디언 안전 읽기
+     ├─ BinaryWriter.h/.cpp // 버퍼 빌더
+     └─ PacketFramer.h/.cpp // Length-Prefixed 파서 (IO 무지, 버퍼만 다룸)

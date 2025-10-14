@@ -13,6 +13,15 @@
     <Filter Include="Packet">
       <UniqueIdentifier>{7f30a7e5-6da9-4a7a-afc0-a57d1088ccb0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{a9bbdc29-e143-4367-abc9-abf63eafdc66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\소스 파일">
+      <UniqueIdentifier>{1a1aed2b-3381-4399-9abd-3c6c85089636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\헤더 파일">
+      <UniqueIdentifier>{7afe5d20-e24a-4329-ab1c-3d92d85ccd8f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\Const.h">
@@ -26,6 +35,12 @@
     </ClInclude>
     <ClInclude Include="Core\UidGenerator.h">
       <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol\PacketIds.h">
+      <Filter>Protocol\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Protocol\PacketDef.h">
+      <Filter>Protocol\헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
