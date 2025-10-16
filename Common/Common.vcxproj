@@ -23,6 +23,7 @@
     <ClInclude Include="Core\ErrorCode.h" />
     <ClInclude Include="Core\Logger.h" />
     <ClInclude Include="Core\UidGenerator.h" />
+    <ClInclude Include="Protocol\BinaryReader.h" />
     <ClInclude Include="Protocol\PacketDef.h" />
     <ClInclude Include="Protocol\PacketIds.h" />
   </ItemGroup>
@@ -30,6 +31,7 @@
     <ClCompile Include="Core\ErrorCode.cpp" />
     <ClCompile Include="Core\Logger.cpp" />
     <ClCompile Include="Core\UidGenerator.cpp" />
+    <ClCompile Include="Protocol\BinaryReader.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

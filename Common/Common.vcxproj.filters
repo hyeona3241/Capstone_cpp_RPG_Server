@@ -42,6 +42,9 @@
     <ClInclude Include="Protocol\PacketDef.h">
       <Filter>Protocol\헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Protocol\BinaryReader.h">
+      <Filter>Protocol\헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\ErrorCode.cpp">
@@ -52,6 +55,9 @@
     </ClCompile>
     <ClCompile Include="Core\UidGenerator.cpp">
       <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Protocol\BinaryReader.cpp">
+      <Filter>Protocol\소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

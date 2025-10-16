@@ -3,40 +3,12 @@
   "WorkspaceRootPath": "D:\\Github\\Capstone_cpp_RPG_Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\PacketDef.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|solutionrelative:Common\\Protocol\\PacketDef.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\BinaryReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|solutionrelative:Common\\Protocol\\BinaryReader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\PacketIds.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|solutionrelative:Common\\Protocol\\PacketIds.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\Const.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|solutionrelative:Common\\Core\\Const.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\UidGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|solutionrelative:Common\\Core\\UidGenerator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\Logger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|solutionrelative:Common\\Core\\Logger.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\ErrorCode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|solutionrelative:Common\\Core\\ErrorCode.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\Logger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|solutionrelative:Common\\Core\\Logger.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\ErrorCode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|solutionrelative:Common\\Core\\ErrorCode.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\UidGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|solutionrelative:Common\\Core\\UidGenerator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\BinaryReader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{175A3181-0FCF-4656-9E12-BD808900E105}|Common\\Common.vcxproj|solutionrelative:Common\\Protocol\\BinaryReader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,124 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UidGenerator.cpp",
-              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\UidGenerator.cpp",
-              "RelativeDocumentMoniker": "Common\\Core\\UidGenerator.cpp",
-              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\UidGenerator.cpp",
-              "RelativeToolTip": "Common\\Core\\UidGenerator.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-28T19:28:11.228Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PacketDef.h",
-              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\PacketDef.h",
-              "RelativeDocumentMoniker": "Common\\Protocol\\PacketDef.h",
-              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\PacketDef.h",
-              "RelativeToolTip": "Common\\Protocol\\PacketDef.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-14T09:03:54.952Z",
+              "Title": "BinaryReader.cpp",
+              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\BinaryReader.cpp",
+              "RelativeDocumentMoniker": "Common\\Protocol\\BinaryReader.cpp",
+              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\BinaryReader.cpp",
+              "RelativeToolTip": "Common\\Protocol\\BinaryReader.cpp",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-16T03:57:46.541Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PacketIds.h",
-              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\PacketIds.h",
-              "RelativeDocumentMoniker": "Common\\Protocol\\PacketIds.h",
-              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\PacketIds.h",
-              "RelativeToolTip": "Common\\Protocol\\PacketIds.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Title": "BinaryReader.h",
+              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\BinaryReader.h",
+              "RelativeDocumentMoniker": "Common\\Protocol\\BinaryReader.h",
+              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Protocol\\BinaryReader.h",
+              "RelativeToolTip": "Common\\Protocol\\BinaryReader.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-14T08:46:40.22Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UidGenerator.h",
-              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\UidGenerator.h",
-              "RelativeDocumentMoniker": "Common\\Core\\UidGenerator.h",
-              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\UidGenerator.h",
-              "RelativeToolTip": "Common\\Core\\UidGenerator.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-28T18:37:40.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Logger.cpp",
-              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\Logger.cpp",
-              "RelativeDocumentMoniker": "Common\\Core\\Logger.cpp",
-              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\Logger.cpp",
-              "RelativeToolTip": "Common\\Core\\Logger.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-28T17:11:43.765Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Logger.h",
-              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\Logger.h",
-              "RelativeDocumentMoniker": "Common\\Core\\Logger.h",
-              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\Logger.h",
-              "RelativeToolTip": "Common\\Core\\Logger.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-28T16:20:20.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ErrorCode.cpp",
-              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\ErrorCode.cpp",
-              "RelativeDocumentMoniker": "Common\\Core\\ErrorCode.cpp",
-              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\ErrorCode.cpp",
-              "RelativeToolTip": "Common\\Core\\ErrorCode.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-28T15:29:31.417Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ErrorCode.h",
-              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\ErrorCode.h",
-              "RelativeDocumentMoniker": "Common\\Core\\ErrorCode.h",
-              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\ErrorCode.h",
-              "RelativeToolTip": "Common\\Core\\ErrorCode.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-28T15:00:13.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Const.h",
-              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\Const.h",
-              "RelativeDocumentMoniker": "Common\\Core\\Const.h",
-              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Common\\Core\\Const.h",
-              "RelativeToolTip": "Common\\Core\\Const.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-15T09:02:40.837Z",
+              "WhenOpened": "2025-10-16T03:52:47.772Z",
               "EditorCaption": ""
             }
           ]

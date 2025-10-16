@@ -121,7 +121,7 @@ Protocol & Buffers (순수 로직, 소켓 無)
 Session (오버랩 수명/정책의 핵심)
 SessionManager
 IocpServer (마지막에 조립)
-
+ClientInfo
 
 	├─ PacketIds.h         // enum 대역 정의 (Main/World/Login/Chat)
      ├─ Packet.h            // PacketHeader, 상수

@@ -15,7 +15,7 @@ namespace Proto {
     // 패킷 길이 4바이트로 (상속 금지 final)
     struct PacketHeader final {
         uint16_t size;
-        uint16_t id;
+        uint16_t id;    //type
     };
 
     // 헤더는 반드시 4바이트로 직렬하도록 여기서 막아줌
