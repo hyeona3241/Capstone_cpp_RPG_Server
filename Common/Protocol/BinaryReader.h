@@ -41,7 +41,7 @@ namespace Proto {
 		PacketHeader ReadHeader();
 
 		// 모두 리틀엔디언으로 해석
-		// 정수
+		// 정수 (C++)
 		uint8_t  ReadUInt8();
 		int8_t   ReadInt8();
 

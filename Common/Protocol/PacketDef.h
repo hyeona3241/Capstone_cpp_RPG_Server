@@ -25,7 +25,7 @@ namespace Proto {
 
     inline constexpr std::size_t kHeaderSize = sizeof(PacketHeader);
     // 한 번의 패킷이 가질 수 있는 최대 크기 상한 (64KB) 후에 크기 수정 될수도
-    inline constexpr std::size_t kMaxPacket = 64 * 1024;    // 메모리 고갈 방지
+    inline constexpr std::size_t kMaxPacket = 64 * 1024;    // 메모리 고갈 방지 (요거 Const에서도 정의 해놈)
     inline constexpr std::size_t kMaxPayload = kMaxPacket - kHeaderSize;
 
 
