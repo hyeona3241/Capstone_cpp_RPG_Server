@@ -65,6 +65,18 @@
     <ClInclude Include="Session\SessionManager.h">
       <Filter>Session\헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Core\IocpCommon.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IocpWorker.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IocpServer.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="App\INetListener.h">
+      <Filter>App</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Util\BufferPool.cpp">
@@ -83,6 +95,21 @@
       <Filter>Session\소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Session\SessionManager.cpp">
+      <Filter>Session\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IocpCommon.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IocpWorker.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IocpServer.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="App\INetListener.cpp">
+      <Filter>App</Filter>
+    </ClCompile>
+    <ClCompile Include="Session\Session.cpp">
       <Filter>Session\소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

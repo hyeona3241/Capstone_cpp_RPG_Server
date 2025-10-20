@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="App\INetListener.h" />
     <ClInclude Include="Config\NetConfig.h" />
+    <ClInclude Include="Core\IocpCommon.h" />
+    <ClInclude Include="Core\IocpServer.h" />
+    <ClInclude Include="Core\IocpWorker.h" />
     <ClInclude Include="Core\SocketUtils.h" />
     <ClInclude Include="Session\RecvRing.h" />
     <ClInclude Include="Session\Session.h" />
@@ -30,8 +34,13 @@
     <ClInclude Include="Util\RingBuffer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="App\INetListener.cpp" />
+    <ClCompile Include="Core\IocpCommon.cpp" />
+    <ClCompile Include="Core\IocpServer.cpp" />
+    <ClCompile Include="Core\IocpWorker.cpp" />
     <ClCompile Include="Core\SocketUtils.cpp" />
     <ClCompile Include="Session\RecvRing.cpp" />
+    <ClCompile Include="Session\Session.cpp" />
     <ClCompile Include="Session\SessionManager.cpp" />
     <ClCompile Include="Session\SessionPool.cpp" />
     <ClCompile Include="Util\BufferPool.cpp" />
