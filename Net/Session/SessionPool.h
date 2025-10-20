@@ -3,6 +3,7 @@
 #include <queue>
 #include <mutex>
 #include <atomic>
+#include <unordered_set>
 #include "Session.h"
 
 class SessionPool
@@ -17,8 +18,13 @@ private:
     // 세션 ID 발급기(1부터 증가)
     std::atomic<uint64_t> idGen_{ 1 }; 
 
+    // 세션 생성에 필요한 버퍼풀
+    Util::BufferPool& bufPool_;
+    // free 세션 빨리 찾기
+    std::unordered_set<Session*> freeSet_;
+
 public:
-    explicit SessionPool(size_t maxSession);
+    explicit SessionPool(size_t maxSession, Util::BufferPool& pool);
     ~SessionPool();
 
     // 사용 가능한 Session 반환 (없으면 nullptr)

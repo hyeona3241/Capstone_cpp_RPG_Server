@@ -3,15 +3,18 @@
 // 세션 수정함. 거기에 맞춰서 얘들도 수정해줘야함
 
 
-SessionPool::SessionPool(size_t maxSession) {
+SessionPool::SessionPool(size_t maxSession, Util::BufferPool& pool) 
+    :bufPool_(pool) 
+{
     // maxSession 만큼 Session만들기
     sessions_.reserve(maxSession);
 
-   /* for (size_t i = 0; i < maxSession; ++i) {
-        auto* s = new Session();
+    for (size_t i = 0; i < maxSession; ++i) {
+        auto* s = new Session(bufPool_);
         sessions_.push_back(s);
         freeList_.push(s);
-    }*/
+        freeSet_.insert(s);
+    }
 }
 
 SessionPool::~SessionPool() {
@@ -28,11 +31,8 @@ Session* SessionPool::Allocate() {
     Session* s = freeList_.front();
     freeList_.pop();
 
-    /*s->ResetForReuse();
-    s->id = idGen_++;
-    s->inUse = true;
-
-    s->sock_ = INVALID_SOCKET;*/
+    s->set_id(idGen_++);
+    freeSet_.erase(s);
 
     return s;
 }
@@ -42,8 +42,8 @@ void SessionPool::Release(Session* s) {
 
     // 사용 종료 표시 후 freeList로 되돌림
     std::lock_guard<std::mutex> lock(mtx_);
-   /* s->inUse = false;*/
     freeList_.push(s);
+    freeSet_.insert(s);
 }
 
 std::vector<Session*> SessionPool::GetActiveSessions() {
@@ -53,7 +53,8 @@ std::vector<Session*> SessionPool::GetActiveSessions() {
     out.reserve(sessions_.size());
 
     for (auto* s : sessions_) {
-        /*if (s->inUse) out.push_back(s);*/
+        if (freeSet_.find(s) == freeSet_.end())
+            out.push_back(s);
     }
 
     return out;

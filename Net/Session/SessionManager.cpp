@@ -11,12 +11,13 @@ Session* SessionManager::CreateSession(SOCKET sock)
 {
     Session* s = pool_.Allocate(); 
     if (!s) return nullptr;  
-    /*s->sock_ = sock;*/
+    
+    s->set_socket(sock);
 
     {
         std::lock_guard<std::mutex> lock(mtx_); 
-        /*sessions_[s->id] = s;
-        bySock_[sock_] = s->id;*/
+        sessions_[s->id()] = s;
+        bySock_[s->socket()] = s->id();
         ++created_;
     }
 
@@ -37,7 +38,7 @@ void SessionManager::DestroySession(uint64_t id)
 
         s = it->second; 
         sessions_.erase(it); 
-        /*bySock_.erase(s->sock_);*/
+        bySock_.erase(s->socket());
         ++destroyed_;
     }
 
