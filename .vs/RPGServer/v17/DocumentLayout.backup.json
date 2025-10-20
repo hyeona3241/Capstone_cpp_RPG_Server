@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\Github\\Capstone_cpp_RPG_Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpWorker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|solutionrelative:Net\\Core\\IocpWorker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Session\\Session.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|solutionrelative:Net\\Session\\Session.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpServer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|solutionrelative:Net\\Core\\IocpServer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|solutionrelative:Net\\Core\\IocpServer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Session\\Session.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|solutionrelative:Net\\Session\\Session.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Config\\NetConfig.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|solutionrelative:Net\\Config\\NetConfig.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpWorker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|solutionrelative:Net\\Core\\IocpWorker.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpWorker.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -49,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\SocketUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|solutionrelative:Net\\Core\\SocketUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Config\\NetConfig.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9D797C8A-DE20-46AD-9F67-E931C79A39F1}|Net\\Net.vcxproj|solutionrelative:Net\\Config\\NetConfig.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,32 +79,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Session.cpp",
+              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Session\\Session.cpp",
+              "RelativeDocumentMoniker": "Net\\Session\\Session.cpp",
+              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Session\\Session.cpp",
+              "RelativeToolTip": "Net\\Session\\Session.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-20T02:38:22.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IocpServer.cpp",
+              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpServer.cpp",
+              "RelativeDocumentMoniker": "Net\\Core\\IocpServer.cpp",
+              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpServer.cpp",
+              "RelativeToolTip": "Net\\Core\\IocpServer.cpp",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-20T02:10:13.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IocpServer.h",
+              "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpServer.h",
+              "RelativeDocumentMoniker": "Net\\Core\\IocpServer.h",
+              "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpServer.h",
+              "RelativeToolTip": "Net\\Core\\IocpServer.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-20T01:49:58.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "IocpWorker.cpp",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpWorker.cpp",
               "RelativeDocumentMoniker": "Net\\Core\\IocpWorker.cpp",
               "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpWorker.cpp",
               "RelativeToolTip": "Net\\Core\\IocpWorker.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-20T01:37:39.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "IocpWorker.h",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpWorker.h",
               "RelativeDocumentMoniker": "Net\\Core\\IocpWorker.h",
               "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpWorker.h",
               "RelativeToolTip": "Net\\Core\\IocpWorker.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-20T01:19:25.05Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "IocpCommon.cpp",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpCommon.cpp",
               "RelativeDocumentMoniker": "Net\\Core\\IocpCommon.cpp",
@@ -105,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "IocpCommon.h",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\IocpCommon.h",
               "RelativeDocumentMoniker": "Net\\Core\\IocpCommon.h",
@@ -118,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "SessionManager.cpp",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Session\\SessionManager.cpp",
               "RelativeDocumentMoniker": "Net\\Session\\SessionManager.cpp",
@@ -130,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "SessionManager.h",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Session\\SessionManager.h",
               "RelativeDocumentMoniker": "Net\\Session\\SessionManager.h",
@@ -142,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "RecvRing.h",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Session\\RecvRing.h",
               "RelativeDocumentMoniker": "Net\\Session\\RecvRing.h",
@@ -154,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "SessionPool.cpp",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Session\\SessionPool.cpp",
               "RelativeDocumentMoniker": "Net\\Session\\SessionPool.cpp",
@@ -166,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "SessionPool.h",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Session\\SessionPool.h",
               "RelativeDocumentMoniker": "Net\\Session\\SessionPool.h",
@@ -178,20 +229,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Session.h",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Session\\Session.h",
               "RelativeDocumentMoniker": "Net\\Session\\Session.h",
               "ToolTip": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Session\\Session.h",
               "RelativeToolTip": "Net\\Session\\Session.h",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAD4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-10-19T19:07:25.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "SocketUtils.cpp",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\SocketUtils.cpp",
               "RelativeDocumentMoniker": "Net\\Core\\SocketUtils.cpp",
@@ -203,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "SocketUtils.h",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Core\\SocketUtils.h",
               "RelativeDocumentMoniker": "Net\\Core\\SocketUtils.h",
@@ -216,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "NetConfig.h",
               "DocumentMoniker": "D:\\Github\\Capstone_cpp_RPG_Server\\Net\\Config\\NetConfig.h",
               "RelativeDocumentMoniker": "Net\\Config\\NetConfig.h",
@@ -224,7 +275,8 @@
               "RelativeToolTip": "Net\\Config\\NetConfig.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-19T18:14:35.333Z"
+              "WhenOpened": "2025-10-19T18:14:35.333Z",
+              "EditorCaption": ""
             }
           ]
         }
