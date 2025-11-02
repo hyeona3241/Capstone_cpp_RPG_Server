@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="App\DefaultNetListener.h" />
     <ClInclude Include="App\INetListener.h" />
     <ClInclude Include="Config\NetConfig.h" />
     <ClInclude Include="Core\IocpCommon.h" />
@@ -34,6 +35,7 @@
     <ClInclude Include="Util\RingBuffer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="App\DefaultNetListener.cpp" />
     <ClCompile Include="App\INetListener.cpp" />
     <ClCompile Include="Core\IocpCommon.cpp" />
     <ClCompile Include="Core\IocpServer.cpp" />
