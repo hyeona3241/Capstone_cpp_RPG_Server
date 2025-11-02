@@ -88,57 +88,27 @@ Client↔Main(포워딩)↔Chat: CHAT_SAY{uid,msg} → CHAT_BROADCAST
 
 
 
-Net/
-  Core/                 // OS/IOCP, 소켓 저수준
-    IocpServer.h/.cpp
-    IocpWorker.h/.cpp            (나중에 분리 예정이면 필터만 잡아두기)
-    * SocketUtils.h/.cpp
-  Session/              // 연결 단위의 자료구조
-    ^ Session.h/.cpp
-    SessionManager.h/.cpp
-    * SessionPool.h/.cpp
-    * RecvRing.h/.cpp
-  Protocol/             // 패킷 포맷/파서
-    * PacketDef.h
-    * PacketFramer.h/.cpp
-    * BinaryReader.h/.cpp
-    * BinaryWriter.h/.cpp
-  App/                  // 상위와의 경계
-    INetListener.h
-    PacketDispatcher.h/.cpp
-  Config/
-    * NetConfig.h
-    NetStats.h/.cpp
-  Util/
-    * BufferPool.h/.cpp
-    * BufferHandle.h
-    * RingBuffer.h/.cpp
-
-
-
-추천 제작 순서 (실패 비용 ↓, 테스트 ↑)
-
-Protocol & Buffers (순수 로직, 소켓 無)
-
-Config → Core(소켓) → SessionPool/RecvRing → Session → IocpServer → Session 수정 → SessionManager → App
-
-Session (오버랩 수명/정책의 핵심)
-SessionManager
-IocpServer (마지막에 조립)
-ClientInfo
-
-
-SocketUtils
-IocpCommon
-IocpWorker
-IocpServer
-
-
-Session
-SessionPool
-SessionManager
-RecvRing
-
-BufferPool
-BufferHandle
-RingBuffer
+/_Server_Code
+ ├─ Common/
+ │   ├─ Const.h / Logger.h / ErrorCode.h ...
+ │   └─ Math/ (Transform, Vector3 등)
+ │
+ ├─ Net/
+ │   ├─ IOCPServer.h / Session.h / PacketFramer.h ...
+ │   └─ Protocol/ (공통 패킷 구조)
+ │
+ ├─ World/            ← 🌍 월드 관련 핵심 폴더
+ │   ├─ World.h / World.cpp             ← 전체 월드 상태/로직 관리
+ │   ├─ WorldConfig.h / WorldConfig.cpp ← 월드 규칙/기본 설정 정의
+ │   ├─ Entity.h / Entity.cpp           ← 엔티티(캐릭터, 오브젝트) 구조체
+ │   ├─ Player.h / Player.cpp           ← UID ↔ 엔티티 매핑, 플레이어 로직
+ │   └─ SpawnSystem.h / SpawnSystem.cpp ← 스폰 규칙, 초기 배치 로직
+ │
+ ├─ MainServer/
+ │   ├─ MainServer.h / MainServer.cpp
+ │   └─ PacketHandler_World.cpp         ← World 관련 패킷 처리
+ │
+ ├─ Tests/ (유닛테스트용)
+ │   └─ TestWorld.cpp (World 단위 테스트)
+ │
+ └─ main.cpp
