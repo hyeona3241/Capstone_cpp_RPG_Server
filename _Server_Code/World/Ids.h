@@ -13,3 +13,15 @@ struct EntityIdGen {
     EntityId next{ 1 };
     EntityId issue() { return next++; }
 };
+
+
+// World
+// 내부 유틸
+static inline float sqr(float v) { return v * v; }
+
+// 두 위치 수평거리 제곱
+static float Dist2(const Transform& a, const Transform& b) {
+    // 일단 수평 거리만 (필요시 y 포함)
+    return sqr(a.x - b.x) + sqr(a.z - b.z);
+}
+

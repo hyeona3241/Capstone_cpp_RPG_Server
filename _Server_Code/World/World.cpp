@@ -1,19 +1,11 @@
 #include "World.h"
 #include "SpawnSystem.h"
+#include "PlayerSystem.h"
 #include <algorithm> 
 #include <cmath>
 
-// 내부 유틸
-static inline float sqr(float v) { return v * v; }
-
-// 두 위치 수평거리 제곱
-static float Dist2(const Transform& a, const Transform& b) {
-    // 일단 수평 거리만 (필요시 y 포함)
-    return sqr(a.x - b.x) + sqr(a.z - b.z);
-}
-
-
 // 나중에 패킷 구현 후 수정하기
+// PlayerSystem이랑 SpawnSystem으로 기능 분리하긴 했는데 좀 더 코드 정리 필요
 
 World::World(const WorldConfig& cfg, IBroadcaster& net)
     : cfg_(cfg), net_(net) {
@@ -23,6 +15,7 @@ World::World(const WorldConfig& cfg, IBroadcaster& net)
 // 초기화
 void World::Init() {
     spawn_ = std::make_unique<SpawnSystem>(*this);
+    playersys_ = std::make_unique<PlayerSystem>(*this, *spawn_);
     spawn_->Init();
 }
 
@@ -63,49 +56,26 @@ void World::Despawn(EntityId id) {
 
 // 플레이어가 월드에 들어옴
 void World::OnPlayerEnter(UID uid) {
-    // 월드 참여 표시(아직 엔티티 스폰 전)
-    players_[uid] = Player{ uid, 0, 0, true };
+    if (playersys_) playersys_->OnEnter(uid);
 }
 
 // 플레이어가 월드에서 나감
 void World::OnPlayerLeave(UID uid) {
-    auto pit = players_.find(uid);
-    if (pit == players_.end()) return;
-
-    if (pit->second.controlled != 0) {
-        Despawn(pit->second.controlled);
-    }
-    players_.erase(pit);
+    if (playersys_) playersys_->OnLeave(uid);
 
     // 다른 클라들에게 떠나는 거 알리기
 }
 
 // 월드와 연결 (좀 더 생각하고 수정해봐야 할듯)
-void World::OnWorldConnect(UID uid, uint32_t /*protoVer*/) {
-    auto& p = players_[uid]; // 없으면 기본 생성
-    p.uid = uid;
-    p.loggedIn = true;
-
-    EntityId selfId = spawn_ ? spawn_->SpawnPlayer(uid) : Spawn(EntityType::Player, uid, Transform{ cfg_.spawnPoint.x, cfg_.spawnPoint.y, cfg_.spawnPoint.z, 0,0,0 });
-    p.Attach(selfId);
+void World::OnWorldConnect(UID uid, uint32_t ver) {
+    if (playersys_) playersys_->OnWorldConnect(uid, ver);
 
     // 다른 클라들에게 새로운 유저 스폰 브로드 캐스트
-    // 월드 접속 서버와 통신
 }
 
 // 월드 엔티티에 적용
 void World::OnClientTransform(UID uid, const Transform& tfClient, uint32_t tickClient) {
-    (void)tickClient; // 지금은 사용 안할듯
-
-    auto pit = players_.find(uid);
-    if (pit == players_.end() || pit->second.controlled == 0) return;
-
-    Entity& me = entities_.at(pit->second.controlled);
-
-    // 클라이언트 좌표를 그대로 적용 + 경계 클램프 (나중에 수정 가능성 있음)
-    me.tf = tfClient;
-    me.tf.x = std::clamp(me.tf.x, cfg_.boundsMin.x, cfg_.boundsMax.x);
-    me.tf.z = std::clamp(me.tf.z, cfg_.boundsMin.z, cfg_.boundsMax.z);
+    if (playersys_) playersys_->OnClientTransform(uid, tfClient, tickClient);
 
     // 범위 내 대상들에게 위치 브로드 캐스트
 }
