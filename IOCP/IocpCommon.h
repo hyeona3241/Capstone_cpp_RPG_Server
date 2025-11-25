@@ -9,4 +9,26 @@ enum class IoType : uint8_t {
     Quit
 };
 
+class Session;
+class Buffer;
+
 //오버랩드ex에서 버퍼 만들고 그 클래스를 인자로 가지고 있게 만들기 위해서 버퍼 먼저 만들기
+struct OverlappedEx : public OVERLAPPED
+{
+    IoType   type{ IoType::Recv };
+    Session* session{ nullptr }; 
+    Buffer*  buffer{ nullptr }; // BufferPool에서 빌린 거
+    WSABUF   wsaBuf{}; // Winsock에 넘길 버퍼 어댑터
+
+    OverlappedEx(IoType t, Session* o) : type(t), session(o)
+    { 
+        ResetOverlapped();
+    }
+
+    // OVERLAPPED 영역만 초기화 (우리 필드는 건드리지 않음)
+    void ResetOverlapped()
+    {
+        OVERLAPPED* base = static_cast<OVERLAPPED*>(this);
+        std::memset(base, 0, sizeof(OVERLAPPED));
+    }
+};
