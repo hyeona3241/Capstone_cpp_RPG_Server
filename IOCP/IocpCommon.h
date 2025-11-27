@@ -20,15 +20,7 @@ struct OverlappedEx : public OVERLAPPED
     Buffer*  buffer{ nullptr }; // BufferPool에서 빌린 거
     WSABUF   wsaBuf{}; // Winsock에 넘길 버퍼 어댑터
 
-    OverlappedEx(IoType t, Session* o) : type(t), session(o)
-    { 
-        ResetOverlapped();
-    }
-
-    // OVERLAPPED 영역만 초기화 (우리 필드는 건드리지 않음)
-    void ResetOverlapped()
-    {
-        OVERLAPPED* base = static_cast<OVERLAPPED*>(this);
-        std::memset(base, 0, sizeof(OVERLAPPED));
-    }
+    OverlappedEx();
+    void Setup(IoType t, Session* s, Buffer* b);
+    void ResetOverlapped();
 };
