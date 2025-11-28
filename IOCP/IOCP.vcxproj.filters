@@ -49,8 +49,5 @@
     <ClCompile Include="IocpServerBase.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="SessionPool.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

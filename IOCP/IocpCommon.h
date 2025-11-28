@@ -23,4 +23,5 @@ struct OverlappedEx : public OVERLAPPED
     OverlappedEx();
     void Setup(IoType t, Session* s, Buffer* b);
     void ResetOverlapped();
+    void ResetAll();
 };
