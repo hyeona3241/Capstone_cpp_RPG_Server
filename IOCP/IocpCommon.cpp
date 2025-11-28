@@ -1,6 +1,6 @@
 #include "IocpCommon.h"
 #include "Buffer.h"  
-//#include "Session.h"
+#include "Session.h"
 
 OverlappedEx::OverlappedEx()
 {
@@ -54,4 +54,15 @@ void OverlappedEx::Setup(IoType t, Session* s, Buffer* b)
         wsaBuf.len = 0;
         break;
     }
+}
+
+void OverlappedEx::ResetAll()
+{
+    ResetOverlapped();
+
+    type = IoType::Recv;
+    session = nullptr;
+    buffer = nullptr;
+    wsaBuf.buf = nullptr;
+    wsaBuf.len = 0;
 }

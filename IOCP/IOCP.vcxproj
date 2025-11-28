@@ -126,11 +126,17 @@
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="BufferPool.h" />
     <ClInclude Include="IocpCommon.h" />
+    <ClInclude Include="IocpServerBase.h" />
     <ClInclude Include="Pch.h" />
+    <ClInclude Include="Session.h" />
+    <ClInclude Include="SessionPool.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferPool.cpp" />
     <ClCompile Include="IocpCommon.cpp" />
+    <ClCompile Include="IocpServerBase.cpp" />
+    <ClCompile Include="Session.cpp" />
+    <ClCompile Include="SessionPool.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
