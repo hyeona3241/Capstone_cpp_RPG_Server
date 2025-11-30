@@ -1,4 +1,6 @@
 #pragma once
+#include "BufferPool.h"
+#include "Session.h"
 
 class Packet;
 

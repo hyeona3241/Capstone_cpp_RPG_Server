@@ -4,6 +4,7 @@
 #include <queue>
 #include <mutex>
 #include "IocpCommon.h"
+#include "RecvRing.h"
 
 enum class SessionRole : uint8_t
 {
@@ -78,8 +79,7 @@ private:
     SessionState state_{ SessionState::Disconnected };
 
     OverlappedEx recvOvl_;
-    // 수신 버퍼 (나중에 링버퍼로 교체)
-    std::vector<char> recvBuffer_;
+    RecvRing recvRing_;
 
     OverlappedEx sendOvl_;
     std::mutex   sendMutex_;

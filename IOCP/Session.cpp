@@ -3,7 +3,13 @@
 #include "BufferPool.h"
 #include "Buffer.h"
 
+namespace
+{
+    constexpr std::size_t kRecvRingCapacity = 64 * 1024;
+}
+
 Session::Session()
+    : recvRing_(kRecvRingCapacity)
 {
     recvOvl_.Setup(IoType::Recv, this, nullptr);
     sendOvl_.Setup(IoType::Send, this, nullptr);
@@ -25,7 +31,7 @@ void Session::Init(SOCKET s, IocpServerBase* owner, SessionRole role, uint64_t i
     state_ = (role == SessionRole::Client) ? SessionState::Handshake
         : SessionState::NoneClient;
 
-    recvBuffer_.clear();
+    recvRing_.clear();
 }
 
 void Session::Disconnect()
@@ -56,7 +62,7 @@ void Session::ResetForReuse()
 
     id_ = 0;
 
-    recvBuffer_.clear();
+    recvRing_.clear();
 
     {
         std::lock_guard<std::mutex> lock(sendMutex_);
@@ -102,9 +108,16 @@ void Session::OnRecvCompleted(Buffer* buf, DWORD bytes)
         return;
     }
 
-    // buf -> recvBuffer 로 붙임
     buf->AdvanceWrite(bytes);
-    recvBuffer_.insert(recvBuffer_.end(), buf->Data(), buf->Data() + buf->Size());
+
+    const void* src = static_cast<const void*>(buf->Data());
+    if (!recvRing_.push(src, bytes))
+    {
+        // 링버퍼 공간 부족 등 에러 ( 세션 종료)
+        owner_->GetBufferPool()->Release(buf);
+        Disconnect();
+        return;
+    }
 
     // 버퍼 반납
     owner_->GetBufferPool()->Release(buf);
