@@ -12,6 +12,9 @@
     <Filter Include="Util">
       <UniqueIdentifier>{3b2740aa-84f4-44cd-99cf-a56b3ac76dc6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Server">
+      <UniqueIdentifier>{1771909e-15ed-4eb5-be54-1d797e9e7d91}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Buffer.h">

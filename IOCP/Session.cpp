@@ -46,7 +46,7 @@ void Session::Disconnect()
 
     // 상위 서버에게 알리기
     if (owner_)
-        owner_->OnDisconnect(this);
+        owner_->NotifySessionDisconnect(this);
 }
 
 void Session::ResetForReuse()
