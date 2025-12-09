@@ -191,7 +191,7 @@ void IocpServerBase::PostAccept()
         listenSock_,
         acceptSock_,
         acceptOvl_.wsaBuf.buf,
-        0, // 실제 데이터는 바로 Recv에서 받을 거라 0으로 두고
+        0, // 새 연결이 들어올 때 데이터까지 함께 받으려고 하는 경우 값을 주면 됨
         sizeof(SOCKADDR_IN) + 16,
         sizeof(SOCKADDR_IN) + 16,
         &bytesReceived,
