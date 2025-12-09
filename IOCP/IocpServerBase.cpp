@@ -203,7 +203,7 @@ void IocpServerBase::PostAccept()
         int err = ::WSAGetLastError();
         if (err != ERROR_IO_PENDING)
         {
-            // AcceptEx 실패 → 버퍼/소켓 정리
+            // AcceptEx 실패 시 버퍼/소켓 정리
             bufferPool_.Release(acceptBuffer_);
             acceptBuffer_ = nullptr;
 
@@ -218,7 +218,6 @@ void IocpServerBase::OnAcceptCompleted(OverlappedEx* ovl, DWORD /*bytes*/)
     // 새 세션 소켓
     SOCKET clientSock = acceptSock_;
 
-    // 다음 Accept 예약 (끊기지 않도록)
     PostAccept();
 
     // 세션 풀에서 하나 꺼내기
@@ -245,7 +244,6 @@ void IocpServerBase::OnAcceptCompleted(OverlappedEx* ovl, DWORD /*bytes*/)
         ovl->buffer = nullptr;
     }
 
-    // 첫 Recv 예약
     session->PostRecv();
 
     // 파생 서버에 알림
@@ -257,7 +255,7 @@ void IocpServerBase::WorkerLoop()
 {
     while (running_)
     {
-        DWORD     bytes = 0;
+        DWORD bytes = 0;
         ULONG_PTR key = 0;
         LPOVERLAPPED overlapped = nullptr;
 
@@ -275,6 +273,7 @@ void IocpServerBase::WorkerLoop()
         if (!ok && overlapped == nullptr)
         {
             // IOCP 자체 에러 or 깨어남 (Stop에서 보낸 패킷 등)
+            // 여기서 에러 처리 해야할 듯요
             continue;
         }
 
@@ -317,13 +316,6 @@ void IocpServerBase::HandleRecvCompleted(OverlappedEx* ovl, DWORD bytes)
     }
 
     session->OnRecvCompleted(buf, bytes);
-
-    if (bytes == 0)
-    {
-        // Session::OnRecvCompleted 내부에서 Disconnect()를 호출했다고 가정
-        // 여기서 세션 풀 반납까지 처리해도 됨
-        ReleaseSession(session);
-    }
 }
 
 void IocpServerBase::HandleSendCompleted(OverlappedEx* ovl, DWORD bytes)
@@ -339,8 +331,6 @@ void IocpServerBase::HandleSendCompleted(OverlappedEx* ovl, DWORD bytes)
     }
 
     session->OnSendCompleted(buf, bytes);
-    // OnSendCompleted 내부에서 버퍼를 반납할 수도 있고,
-    // 여기서 Release(buf) 할 수도 있음. 설계에 따라 조정.
 }
 
 
@@ -349,9 +339,16 @@ void IocpServerBase::ReleaseSession(Session* session)
     if (!session)
         return;
 
-    // 파생 서버에게 끊김 알림
-    OnClientDisconnected(session);
-
-    // 세션은 여기서 풀에 반환
     sessionPool_.Release(session);
+}
+
+void IocpServerBase::NotifySessionDisconnect(Session* s)
+{
+    if (!s)
+        return;
+
+    // 파생 서버에게 끊김 알림
+    OnClientDisconnected(s);
+
+    sessionPool_.Release(s);
 }

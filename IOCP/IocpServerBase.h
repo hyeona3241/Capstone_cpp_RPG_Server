@@ -50,10 +50,11 @@ protected:
 
 
 public:
-    void NotifySessionDisconnect(Session* s)
+    void NotifySessionDisconnect(Session* s);
+
+    void DispatchRawPacket(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
     {
-        OnClientDisconnected(s);
-        ReleaseSession(s);
+        OnRawPacket(session, header, payload, length);
     }
 
 private:

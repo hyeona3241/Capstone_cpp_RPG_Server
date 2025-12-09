@@ -119,10 +119,44 @@ void Session::OnRecvCompleted(Buffer* buf, DWORD bytes)
         return;
     }
 
+    ProcessPacketsFromRing();
+
     // ¹öÆÛ ¹Ý³³
     owner_->GetBufferPool()->Release(buf);
 
     PostRecv();
+}
+
+void Session::ProcessPacketsFromRing()
+{
+    std::vector<std::byte> rawPacket;
+
+    while (recvRing_.try_pop_packet(rawPacket))
+    {
+        if (rawPacket.size() < sizeof(PacketHeader))
+        {
+            Disconnect();
+            return;
+        }
+
+        const auto* header = reinterpret_cast<const PacketHeader*>(rawPacket.data());
+        const std::size_t totalLen = header->size;
+        const std::size_t headerSize = sizeof(PacketHeader);
+
+        if (totalLen < headerSize || totalLen != rawPacket.size())
+        {
+            Disconnect();
+            return;
+        }
+
+        const std::byte* payload = rawPacket.data() + headerSize;
+        const std::size_t payloadSz = totalLen - headerSize;
+
+        if (owner_)
+        {
+            owner_->DispatchRawPacket(this, *header, payload, payloadSz);
+        }
+    }
 }
 
 void Session::Send(const void* data, size_t len)

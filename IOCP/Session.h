@@ -51,6 +51,8 @@ public:
 
     void OnRecvCompleted(Buffer* buf, DWORD bytes);
 
+    void ProcessPacketsFromRing();
+
     void Send(const void* data, size_t len);
     void OnSendCompleted(Buffer* buf, DWORD bytes);
 
