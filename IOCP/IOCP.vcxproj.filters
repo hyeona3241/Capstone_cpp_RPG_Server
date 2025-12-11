@@ -15,6 +15,12 @@
     <Filter Include="Server">
       <UniqueIdentifier>{1771909e-15ed-4eb5-be54-1d797e9e7d91}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Server\Main">
+      <UniqueIdentifier>{3a6cf282-3f2f-44b2-9e59-7c710a6cd67c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{de6c3491-7a96-4227-925d-e12d99b6167c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Buffer.h">
@@ -44,6 +50,12 @@
     <ClInclude Include="RecvRing.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="MainServer.h">
+      <Filter>Server\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MSPacketHandler.h">
+      <Filter>Server\Main</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferPool.cpp">
@@ -60,6 +72,15 @@
     </ClCompile>
     <ClCompile Include="RecvRing.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainServer.cpp">
+      <Filter>Server\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MSPacketHandler.cpp">
+      <Filter>Server\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

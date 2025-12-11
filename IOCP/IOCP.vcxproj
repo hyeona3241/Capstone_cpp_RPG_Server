@@ -70,6 +70,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)Common;</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -103,6 +106,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Common\Core;$(SolutionDir)Common\include\;$(SolutionDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,6 +132,8 @@
     <ClInclude Include="BufferPool.h" />
     <ClInclude Include="IocpCommon.h" />
     <ClInclude Include="IocpServerBase.h" />
+    <ClInclude Include="MainServer.h" />
+    <ClInclude Include="MSPacketHandler.h" />
     <ClInclude Include="Pch.h" />
     <ClInclude Include="RecvRing.h" />
     <ClInclude Include="RingBuffer.h" />
@@ -138,6 +144,9 @@
     <ClCompile Include="BufferPool.cpp" />
     <ClCompile Include="IocpCommon.cpp" />
     <ClCompile Include="IocpServerBase.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainServer.cpp" />
+    <ClCompile Include="MSPacketHandler.cpp" />
     <ClCompile Include="RecvRing.cpp" />
     <ClCompile Include="Session.cpp" />
   </ItemGroup>
