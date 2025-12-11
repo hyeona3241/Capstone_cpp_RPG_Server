@@ -72,6 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)Common;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);C:\Program Files\MySQL\MySQL Server 8.4\lib</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -111,7 +112,13 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);libmysql.lib</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>if exist "$(SolutionDir)ThirdParty\mysql\libmysql.dll" copy /Y "$(SolutionDir)ThirdParty\mysql\libmysql.dll" "$(TargetDir)"
+if exist "$(SolutionDir)ThirdParty\mysql\libssl-3-x64.dll" copy /Y "$(SolutionDir)ThirdParty\mysql\libssl-3-x64.dll" "$(TargetDir)"
+if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -130,6 +137,8 @@
   <ItemGroup>
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="BufferPool.h" />
+    <ClInclude Include="DBConnection.h" />
+    <ClInclude Include="DBManager.h" />
     <ClInclude Include="IocpCommon.h" />
     <ClInclude Include="IocpServerBase.h" />
     <ClInclude Include="MainServer.h" />
@@ -142,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferPool.cpp" />
+    <ClCompile Include="DBConnection.cpp" />
+    <ClCompile Include="DBManager.cpp" />
+    <ClCompile Include="dbTest.cpp" />
     <ClCompile Include="IocpCommon.cpp" />
     <ClCompile Include="IocpServerBase.cpp" />
     <ClCompile Include="main.cpp" />

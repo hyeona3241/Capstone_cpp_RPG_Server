@@ -136,3 +136,11 @@ crashlytics-build.properties
 
 # Misc
 *.pch 
+
+# ThirdParty 전체는 무시
+ThirdParty/*
+
+# 단, mysql 폴더는 포함
+!ThirdParty/mysql/
+!ThirdParty/mysql/**  
+# mysql 내부 파일까지 허용

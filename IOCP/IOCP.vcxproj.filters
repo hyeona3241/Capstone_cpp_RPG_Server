@@ -21,6 +21,9 @@
     <Filter Include="Test">
       <UniqueIdentifier>{de6c3491-7a96-4227-925d-e12d99b6167c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Server\DB">
+      <UniqueIdentifier>{d24e3d50-ee73-4be0-8379-6e7c134569ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Buffer.h">
@@ -56,6 +59,12 @@
     <ClInclude Include="MSPacketHandler.h">
       <Filter>Server\Main</Filter>
     </ClInclude>
+    <ClInclude Include="DBConnection.h">
+      <Filter>Server\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DBManager.h">
+      <Filter>Server\DB</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferPool.cpp">
@@ -80,6 +89,15 @@
       <Filter>Server\Main</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="DBConnection.cpp">
+      <Filter>Server\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DBManager.cpp">
+      <Filter>Server\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="dbTest.cpp">
       <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>
