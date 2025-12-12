@@ -158,3 +158,9 @@ void MainServer::StatsLoop()
             static_cast<unsigned long long>(sendTick));
     }
 }
+
+bool MainServer::ConnectToDbServer(const char* ip, uint16_t port)
+{
+    dbSession_ = ConnectTo(ip, port, SessionRole::DbServer); // 또는 DbServer 역할을 따로 두면 더 좋음
+    return dbSession_ != nullptr;
+}

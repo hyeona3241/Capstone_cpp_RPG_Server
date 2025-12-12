@@ -97,6 +97,54 @@ void IocpServerBase::Stop()
 }
 
 
+Session* IocpServerBase::ConnectTo(const char* ip, uint16_t port, SessionRole role)
+{
+    if (!running_ || !iocpHandle_)
+        return nullptr;
+
+    SOCKET s = ::WSASocket(AF_INET, SOCK_STREAM, IPPROTO_TCP, nullptr, 0, WSA_FLAG_OVERLAPPED);
+    if (s == INVALID_SOCKET)
+        return nullptr;
+
+    SOCKADDR_IN addr{};
+    addr.sin_family = AF_INET;
+    addr.sin_port = htons(port);
+
+    if (::inet_pton(AF_INET, ip, &addr.sin_addr) != 1)
+    {
+        ::closesocket(s);
+        return nullptr;
+    }
+
+    if (::connect(s, reinterpret_cast<SOCKADDR*>(&addr), sizeof(addr)) == SOCKET_ERROR)
+    {
+        ::closesocket(s);
+        return nullptr;
+    }
+
+    Session* session = sessionPool_.Acquire(s, this, role);
+    if (!session)
+    {
+        ::closesocket(s);
+        return nullptr;
+    }
+
+    // 소켓을 IOCP에 연결
+    HANDLE h = ::CreateIoCompletionPort(reinterpret_cast<HANDLE>(s), iocpHandle_, 0, 0);
+    if (h != iocpHandle_)
+    {
+        session->Disconnect();
+        ReleaseSession(session);
+        return nullptr;
+    }
+
+    session->PostRecv();
+
+    OnClientConnected(session);
+
+    return session;
+}
+
 bool IocpServerBase::CreateListenSocket(uint16_t port)
 {
     listenSock_ = ::WSASocket(AF_INET, SOCK_STREAM, IPPROTO_TCP, nullptr, 0, WSA_FLAG_OVERLAPPED);

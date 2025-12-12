@@ -29,6 +29,9 @@ private:
     void StatsLoop();
 
 
+public:
+    bool ConnectToDbServer(const char* ip, uint16_t port);
+
 private:
     MSPacketHandler packetHandler_;
 
@@ -45,5 +48,7 @@ private:
     // 통계 출력용 쓰레드
     std::thread statsThread_;
     std::atomic<bool> statsRunning_{ false };
+
+    Session* dbSession_ = nullptr;
 };
 

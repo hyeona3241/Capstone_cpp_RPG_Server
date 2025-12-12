@@ -57,6 +57,8 @@ public:
         OnRawPacket(session, header, payload, length);
     }
 
+    Session* ConnectTo(const char* ip, uint16_t port, SessionRole role);
+
 private:
 
     bool CreateListenSocket(uint16_t port);
