@@ -4,7 +4,10 @@
 int main()
 {
     DBConfig cfg;
-    cfg.host = "127.0.0.1";
+    /*cfg.host = "127.0.0.1";*/
+
+    // 노트북으로 실행할때
+    cfg.host = "100.77.71.68";
 
     DBManager dbManager;
     if (!dbManager.Initialize(cfg))

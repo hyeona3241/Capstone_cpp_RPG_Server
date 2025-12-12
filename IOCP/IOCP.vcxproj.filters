@@ -24,6 +24,9 @@
     <Filter Include="Server\DB">
       <UniqueIdentifier>{d24e3d50-ee73-4be0-8379-6e7c134569ec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Server\Login">
+      <UniqueIdentifier>{a60bf599-d5bd-4323-a67a-332e1896cd20}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Buffer.h">
@@ -65,6 +68,21 @@
     <ClInclude Include="DBManager.h">
       <Filter>Server\DB</Filter>
     </ClInclude>
+    <ClInclude Include="AccountRepository.h">
+      <Filter>Server\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="SHA256.h">
+      <Filter>Server\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="PasswordHasher.h">
+      <Filter>Server\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="AuthService.h">
+      <Filter>Server\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="DBServer.h">
+      <Filter>Server\DB</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferPool.cpp">
@@ -99,6 +117,21 @@
     </ClCompile>
     <ClCompile Include="dbTest.cpp">
       <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountRepository.cpp">
+      <Filter>Server\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="SHA256.cpp">
+      <Filter>Server\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="PasswordHasher.cpp">
+      <Filter>Server\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="AuthService.cpp">
+      <Filter>Server\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="DBServer.cpp">
+      <Filter>Server\DB</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

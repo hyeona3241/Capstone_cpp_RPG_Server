@@ -37,7 +37,6 @@ void MainServer::Stop()
     std::printf("[INFO][MAIN] MainServer stopped.\n");
 }
 
-
 void MainServer::OnClientConnected(Session* session)
 {
     if (!session)

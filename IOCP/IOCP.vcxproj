@@ -135,32 +135,42 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AccountRepository.h" />
+    <ClInclude Include="AuthService.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="BufferPool.h" />
     <ClInclude Include="DBConnection.h" />
     <ClInclude Include="DBManager.h" />
+    <ClInclude Include="DBServer.h" />
     <ClInclude Include="IocpCommon.h" />
     <ClInclude Include="IocpServerBase.h" />
     <ClInclude Include="MainServer.h" />
     <ClInclude Include="MSPacketHandler.h" />
+    <ClInclude Include="PasswordHasher.h" />
     <ClInclude Include="Pch.h" />
     <ClInclude Include="RecvRing.h" />
     <ClInclude Include="RingBuffer.h" />
     <ClInclude Include="Session.h" />
     <ClInclude Include="SessionPool.h" />
+    <ClInclude Include="SHA256.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AccountRepository.cpp" />
+    <ClCompile Include="AuthService.cpp" />
     <ClCompile Include="BufferPool.cpp" />
     <ClCompile Include="DBConnection.cpp" />
     <ClCompile Include="DBManager.cpp" />
+    <ClCompile Include="DBServer.cpp" />
     <ClCompile Include="dbTest.cpp" />
     <ClCompile Include="IocpCommon.cpp" />
     <ClCompile Include="IocpServerBase.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainServer.cpp" />
     <ClCompile Include="MSPacketHandler.cpp" />
+    <ClCompile Include="PasswordHasher.cpp" />
     <ClCompile Include="RecvRing.cpp" />
     <ClCompile Include="Session.cpp" />
+    <ClCompile Include="SHA256.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
