@@ -83,6 +83,21 @@
     <ClInclude Include="DBServer.h">
       <Filter>Server\DB</Filter>
     </ClInclude>
+    <ClInclude Include="DBPacketHandler.h">
+      <Filter>Server\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DBJob.h">
+      <Filter>Server\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginJob.h">
+      <Filter>Server\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DBJobQueue.h">
+      <Filter>Server\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DBWorker.h">
+      <Filter>Server\DB</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferPool.cpp">
@@ -131,6 +146,18 @@
       <Filter>Server\Login</Filter>
     </ClCompile>
     <ClCompile Include="DBServer.cpp">
+      <Filter>Server\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DBPacketHandler.cpp">
+      <Filter>Server\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginJob.cpp">
+      <Filter>Server\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DBJobQueue.cpp">
+      <Filter>Server\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DBWorker.cpp">
       <Filter>Server\DB</Filter>
     </ClCompile>
   </ItemGroup>

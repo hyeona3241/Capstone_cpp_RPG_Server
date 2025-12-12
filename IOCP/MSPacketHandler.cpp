@@ -56,7 +56,7 @@ void MSPacketHandler::HandleFromClient(Session* session,
     }
 }
 
-//  LoginServer → 메인 서버 내부 패킷
+//  LoginServer -> 메인 서버 내부 패킷
 void MSPacketHandler::HandleFromLoginServer(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
 {
     if (!session)

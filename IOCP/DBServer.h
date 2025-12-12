@@ -9,6 +9,18 @@
 class Session;
 struct PacketHeader;
 
+#include "DBJobQueue.h"
+#include "DBWorker.h"
+#include "DbJob.h"
+
+#include "AccountRepository.h"
+#include "AuthService.h"
+
+#include "DBPacketHandler.h"
+
+class Session;
+struct PacketHeader;
+
 class DBServer : public IocpServerBase
 {
 public:
@@ -20,6 +32,11 @@ public:
 
     // IOCP Stop + DB 종료
     void StopServer();
+
+    void EnqueueJob(std::unique_ptr<DBJob> job) { jobQueue_.Push(std::move(job)); }
+
+    // (나중에 ACK 전송 API를 여기 추가하면 LoginJob에서 사용 가능)
+    // void SendToMainServer(uint64_t replySessionId, const Packet& pkt);
 
 protected:
     void OnClientConnected(Session* session) override;
@@ -37,5 +54,14 @@ private:
     DBManager dbManager_;
 
     std::atomic<Session*> mainServerSession_{ nullptr };
+
+    AccountRepository accountRepo_{ dbManager_.GetConnection() };
+    AuthService authService_{ accountRepo_ };
+    DbServices services_{ authService_ };
+
+    DBJobQueue jobQueue_;
+    DBWorker dbWorker_{ jobQueue_, services_, *this };
+
+    DBPacketHandler packetHandler_{ this };
 };
 

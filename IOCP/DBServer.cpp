@@ -41,6 +41,8 @@ bool DBServer::StartServer(uint16_t listenPort, int workerThreads)
     if (!InitializeDb())
         return false;
 
+    dbWorker_.Start();
+
     // IOCP 서버 시작
     if (!Start(listenPort, workerThreads))
     {
@@ -56,6 +58,7 @@ bool DBServer::StartServer(uint16_t listenPort, int workerThreads)
 void DBServer::StopServer()
 {
     Stop();
+    dbWorker_.Stop();
     FinalizeDb();
 
     mainServerSession_.store(nullptr);
@@ -103,11 +106,5 @@ void DBServer::OnRawPacket(Session* session, const PacketHeader& header, const s
         return;
     }
 
-    std::cout << "[DBServer] Received packet bytes=" << length << "\n";
-
-    // TODO:
-    // 1) PacketId 확인
-    // 2) 요청 파싱
-    // 3) DBJob 생성해서 큐에 Push
-    // 4) DBWorker가 처리 후 ACK를 session으로 Send
+    packetHandler_.HandleFromMainServer(session, header, payload, length);
 }
