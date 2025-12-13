@@ -8,6 +8,7 @@
 // TCP 바이트 스트림에서 패킷을 완성 단위로 분리
 // 링버퍼에서 패킷 분리
 
+// RecvRing에서 만든 비슷한 구조여서 나중에 통합처리 하면 될듯(지금 사용 안하고 있음)
 namespace Proto {
     class PacketFramer final {
     public:

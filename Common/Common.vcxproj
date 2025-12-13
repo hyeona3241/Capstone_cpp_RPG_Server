@@ -19,23 +19,28 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinaryReader.h" />
+    <ClInclude Include="BinaryWriter.h" />
     <ClInclude Include="Core\Const.h" />
     <ClInclude Include="Core\ErrorCode.h" />
     <ClInclude Include="Core\Logger.h" />
     <ClInclude Include="Core\UidGenerator.h" />
-    <ClInclude Include="Protocol\BinaryReader.h" />
-    <ClInclude Include="Protocol\BinaryWriter.h" />
-    <ClInclude Include="Protocol\PacketDef.h" />
-    <ClInclude Include="Protocol\PacketFramer.h" />
-    <ClInclude Include="Protocol\PacketIds.h" />
+    <ClInclude Include="DBAuthPackets.h" />
+    <ClInclude Include="DBPingPackets.h" />
+    <ClInclude Include="IPacket.h" />
+    <ClInclude Include="LSLoginPackets.h" />
+    <ClInclude Include="LSPingPackets.h" />
+    <ClInclude Include="PacketDef.h" />
+    <ClInclude Include="PacketFramer.h" />
+    <ClInclude Include="PacketIds.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BinaryReader.cpp" />
+    <ClCompile Include="BinaryWriter.cpp" />
     <ClCompile Include="Core\ErrorCode.cpp" />
     <ClCompile Include="Core\Logger.cpp" />
     <ClCompile Include="Core\UidGenerator.cpp" />
-    <ClCompile Include="Protocol\BinaryReader.cpp" />
-    <ClCompile Include="Protocol\BinaryWriter.cpp" />
-    <ClCompile Include="Protocol\PacketFramer.cpp" />
+    <ClCompile Include="PacketFramer.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -122,7 +127,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)\Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\Core;%(AdditionalIncludeDirectories);$(ProjectDir)\Protocol;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

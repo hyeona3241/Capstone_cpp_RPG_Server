@@ -6,9 +6,6 @@
 #include "IocpServerBase.h"
 #include "DBManager.h"
 
-class Session;
-struct PacketHeader;
-
 #include "DBJobQueue.h"
 #include "DBWorker.h"
 #include "DbJob.h"
@@ -21,7 +18,7 @@ struct PacketHeader;
 class Session;
 struct PacketHeader;
 
-class DBServer : public IocpServerBase
+class DBServer final : public IocpServerBase
 {
 public:
     DBServer(const IocpConfig& iocpCfg, const DBConfig& dbCfg);

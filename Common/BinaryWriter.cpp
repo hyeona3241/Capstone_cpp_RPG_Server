@@ -77,13 +77,13 @@ namespace Proto {
         }
     }
 
-    void BinaryWriter::WriteStringLp32(std::string_view s) {
+   /* void BinaryWriter::WriteStringLp32(std::string_view s) {
         WriteU32(static_cast<uint32_t>(s.size()));
         if (!s.empty()) {
             const size_t old = buf_.size();
             buf_.resize(old + s.size());
             std::memcpy(buf_.data() + old, s.data(), s.size());
         }
-    }
+    }*/
 
 }

@@ -5,7 +5,7 @@
 
 #include "Session.h" 
 #include "IocpCommon.h"
-#include "Common/Protocol/PacketDef.h"
+#include "PacketDef.h"
 
 DBServer::DBServer(const IocpConfig& iocpCfg, const DBConfig& dbCfg)
     : IocpServerBase(iocpCfg), dbCfg_(dbCfg)

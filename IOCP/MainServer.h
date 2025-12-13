@@ -3,7 +3,7 @@
 #include "IocpServerBase.h"
 #include "MSPacketHandler.h"
 
-class MainServer : public IocpServerBase
+class MainServer final : public IocpServerBase
 {
 public:
     explicit MainServer(const IocpConfig& cfg);
@@ -31,13 +31,29 @@ private:
 
 public:
     bool ConnectToDbServer(const char* ip, uint16_t port);
+    bool ConnectToLoginServer(const char* ip, uint16_t port);
+
+    Session* GetDbSession() { return dbSession_; }
+    Session* GetLoginSession() { return loginSession_; }
+
+    void SendDbPing();
+    void SendLoginPing();
 
 private:
     MSPacketHandler packetHandler_;
 
+    // OnClientConnected와 OnClientDisconnected에서만 통계 변수 +,-하기
     std::atomic<uint32_t> currentClientCount_{ 0 };
     std::atomic<uint64_t> totalAccepted_{ 0 };
     std::atomic<uint64_t> totalDisconnected_{ 0 };
+
+    std::atomic<uint32_t> currentInternalServerCount_{ 0 };
+    std::atomic<uint64_t> totalInternalServerConnected_{ 0 };
+    std::atomic<uint64_t> totalInternalServerDisconnected_{ 0 };
+
+    // 서버 추가되면 여기서도 추가
+    std::atomic<uint32_t> currentDbServerConnected_{ 0 };
+    std::atomic<uint32_t> currentLoginServerConnected_{ 0 };
 
     std::atomic<uint64_t> packetsRecvTotal_{ 0 };
     std::atomic<uint64_t> packetsSentTotal_{ 0 };   // 나중에 Send 경로에서 증가시킬 예정
@@ -49,6 +65,11 @@ private:
     std::thread statsThread_;
     std::atomic<bool> statsRunning_{ false };
 
+private:
+    std::atomic<uint32_t> dbPingSeq_{ 0 };
     Session* dbSession_ = nullptr;
+
+    std::atomic<uint32_t> loginPingSeq_{ 0 };
+    Session* loginSession_ = nullptr;
 };
 

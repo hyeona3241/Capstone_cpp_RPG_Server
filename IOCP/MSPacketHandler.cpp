@@ -2,7 +2,12 @@
 #include "MSPacketHandler.h"
 #include "MainServer.h"
 #include "Session.h"
-#include "Common/Protocol/PacketDef.h"
+
+#include "PacketDef.h"
+#include "PacketIds.h"
+#include "DbPingPackets.h"
+#include "LSPingPackets.h"
+
 
 MSPacketHandler::MSPacketHandler(MainServer* owner)
     : owner_(owner)
@@ -169,14 +174,68 @@ void MSPacketHandler::HandleClientWorld(Session* session, const PacketHeader& he
 
 void MSPacketHandler::HandleLoginServerInternal(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
 {
-    // LoginServer -> MainServer 로그인 결과 / 토큰 검증 결과 등 처리
-    std::printf("[DEBUG][LoginSrv] HandleLoginServerInternal: pktId=%u, len=%zu\n", static_cast<unsigned>(header.id), length);
+    switch (header.id)
+    {
+    case PacketType::to_id(PacketType::Login::LS_PING_ACK):
+    {
+        if (session != owner_->GetLoginSession())
+        {
+            std::printf("[WARN][LoginSrv] LS_PING_ACK from non-login session\n");
+            return;
+        }
 
-    // 예: 로그인 성공 -> 해당 클라 세션 상태를 Lobby로 변경, ACK 전송 등
+        LSPingAck ack;
+        if (!ack.ParsePayload(payload, length))
+        {
+            std::printf("[WARN][LoginSrv] LS_PING_ACK parse failed (len=%zu)\n", length);
+            return;
+        }
+
+        std::printf("[INFO][LoginSrv] LS_PING_ACK seq=%u, serverTick=%llu (from sessionId=%llu)\n",
+            ack.seq,
+            static_cast<unsigned long long>(ack.serverTick),
+            static_cast<unsigned long long>(session->GetId()));
+
+        return;
+    }
+
+    default:
+        std::printf("[DEBUG][LoginSrv] HandleLoginServerInternal: pktId=%u, len=%zu\n",
+            static_cast<unsigned>(header.id), length);
+        return;
+    }
 }
 
 void MSPacketHandler::HandleDbServerInternal(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
 {
-    // TODO: DbServer -> MainServer 쿼리 결과 처리 (캐릭터 리스트, 인벤토리 등)
-    std::printf("[DEBUG][DbSrv] HandleDbServerInternal: pktId=%u, len=%zu\n", static_cast<unsigned>(header.id), length);
+    switch (header.id)
+    {
+    case PacketType::to_id(PacketType::DB::DB_PING_ACK):
+    {
+        if (session != owner_->GetDbSession())
+        {
+            std::printf("[WARN][DbSrv] DB_PING_ACK from non-db session\n");
+            return;
+        }
+
+        DBPingAck ack;
+        if (!ack.ParsePayload(payload, length))
+        {
+            std::printf("[WARN][DbSrv] DB_PING_ACK parse failed (len=%zu)\n", length);
+            return;
+        }
+
+        std::printf("[INFO][DbSrv] DB_PING_ACK seq=%u, serverTick=%llu (from sessionId=%llu)\n",
+            ack.seq,
+            static_cast<unsigned long long>(ack.serverTick),
+            static_cast<unsigned long long>(session->GetId()));
+
+        return;
+    }
+
+    default:
+        std::printf("[DEBUG][DbSrv] HandleDbServerInternal: pktId=%u, len=%zu\n",
+            static_cast<unsigned>(header.id), length);
+        return;
+    }
 }

@@ -22,6 +22,12 @@
     <Filter Include="Protocol\헤더 파일">
       <UniqueIdentifier>{7afe5d20-e24a-4329-ab1c-3d92d85ccd8f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Packet\DB">
+      <UniqueIdentifier>{ead0f67d-0e2b-4e3c-954a-a1f8fddfdd51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\Login">
+      <UniqueIdentifier>{3b5ec8c9-992e-471c-8f5e-d9a5fada49e8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\Const.h">
@@ -36,20 +42,35 @@
     <ClInclude Include="Core\UidGenerator.h">
       <Filter>Core\헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Protocol\PacketIds.h">
+    <ClInclude Include="IPacket.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBPingPackets.h">
+      <Filter>Packet\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryReader.h">
       <Filter>Protocol\헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Protocol\PacketDef.h">
+    <ClInclude Include="BinaryWriter.h">
       <Filter>Protocol\헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Protocol\BinaryReader.h">
+    <ClInclude Include="PacketDef.h">
       <Filter>Protocol\헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Protocol\BinaryWriter.h">
+    <ClInclude Include="PacketFramer.h">
       <Filter>Protocol\헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Protocol\PacketFramer.h">
+    <ClInclude Include="PacketIds.h">
       <Filter>Protocol\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LSPingPackets.h">
+      <Filter>Packet\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="DBAuthPackets.h">
+      <Filter>Packet\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="LSLoginPackets.h">
+      <Filter>Packet\Login</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -62,13 +83,13 @@
     <ClCompile Include="Core\UidGenerator.cpp">
       <Filter>Core\소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Protocol\BinaryReader.cpp">
+    <ClCompile Include="BinaryReader.cpp">
       <Filter>Protocol\소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Protocol\BinaryWriter.cpp">
+    <ClCompile Include="BinaryWriter.cpp">
       <Filter>Protocol\소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Protocol\PacketFramer.cpp">
+    <ClCompile Include="PacketFramer.cpp">
       <Filter>Protocol\소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

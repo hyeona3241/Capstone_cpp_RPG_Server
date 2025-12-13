@@ -3,6 +3,10 @@
 #include <cstddef>
 #include <cstdint>
 
+#include "PacketIds.h"
+#include "DbPingPackets.h"
+#include <chrono>
+
 class DBServer;
 class Session;
 struct PacketHeader;

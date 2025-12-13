@@ -2,8 +2,14 @@
 #include "DBPacketHandler.h"
 #include "DBServer.h"
 #include "Session.h"
-#include "Common/Protocol/PacketDef.h"
+#include "PacketDef.h"
 #include "LoginJob.h"
+
+static uint64_t GetTickMs()
+{
+    using namespace std::chrono;
+    return static_cast<uint64_t>(duration_cast<milliseconds>(steady_clock::now().time_since_epoch()).count());
+}
 
 DBPacketHandler::DBPacketHandler(DBServer* owner)
     : owner_(owner)
@@ -47,8 +53,7 @@ void DBPacketHandler::HandleSystem(Session* session, const PacketHeader& header,
 {
     switch (header.id)
     {
-        // 예: DB_PING_REQ = 3000
-    case 3000:
+    case PacketType::to_id(PacketType::DB::DB_PING_REQ):
         HandlePingReq(session, header, payload, length);
         break;
 
@@ -80,10 +85,25 @@ void DBPacketHandler::HandleAuth(Session* session, const PacketHeader& header, c
 
 void DBPacketHandler::HandlePingReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
 {
-    std::printf("[DEBUG][DB] PING_REQ received\n");
+    DBPingReq req;
+    if (!req.ParsePayload(payload, length))
+    {
+        std::printf("[WARN][DB] PING_REQ parse failed (len=%zu)\n", length);
+        return;
+    }
 
-    // TODO: PING_ACK 전송 (예: 3001)
-    // owner_->SendPingAck(*session);
+    std::printf("[DEBUG][DB] PING_REQ received seq=%u\n", req.seq);
+
+    DBPingAck ack;
+    ack.seq = req.seq;
+    ack.serverTick = GetTickMs();
+
+    auto bytes = ack.Build();
+
+    session->Send(bytes.data(), bytes.size());
+
+    std::printf("[DEBUG][DB] PING_ACK sent seq=%u tick=%llu\n",
+        ack.seq, static_cast<unsigned long long>(ack.serverTick));
 }
 
 void DBPacketHandler::HandleRegisterReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)

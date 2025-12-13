@@ -72,8 +72,8 @@ namespace Proto {
         // 짧은 문자열(65535B) 전송
         void WriteStringLp16(std::string_view s);
 
-        // 긴 텍스트(4GB) 전송
-        void WriteStringLp32(std::string_view s);
+        // 긴 텍스트(4GB) 전송 (지금 대응되는 BinaryReader 함수가 없음. 나중에 만들고 사용 가능)
+       /* void WriteStringLp32(std::string_view s);*/
 
     private:
         // 리틀엔디언으로 POD 값을 기록

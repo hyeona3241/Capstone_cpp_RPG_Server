@@ -3,6 +3,11 @@
 #include "Session.h"
 #include <chrono>
 
+#include "PacketIds.h"
+#include "DbPingPackets.h"
+#include "LSPingPackets.h"
+
+
 MainServer::MainServer(const IocpConfig& cfg)
     : IocpServerBase(cfg), packetHandler_(this)
 {
@@ -42,14 +47,34 @@ void MainServer::OnClientConnected(Session* session)
     if (!session)
         return;
 
-    // 기본적으로 외부 클라이언트라고 가정하고 Handshake 상태로 시작
-    session->SetState(SessionState::Handshake);
+    const SessionRole role = session->GetRole();
 
-    // 통계 업데이트
-    currentClientCount_.fetch_add(1, std::memory_order_relaxed);
-    totalAccepted_.fetch_add(1, std::memory_order_relaxed);
+    if (role == SessionRole::Client)
+    {
+        session->SetState(SessionState::Handshake);
+        currentClientCount_.fetch_add(1, std::memory_order_relaxed);
+        totalAccepted_.fetch_add(1, std::memory_order_relaxed);
 
-    std::printf("[INFO][CONNECTION] Client connected: sessionId=%llu, state=Handshake\n", static_cast<unsigned long long>(session->GetId()));
+        std::printf("[INFO][CONNECTION] Client connected: sessionId=%llu\n",
+            static_cast<unsigned long long>(session->GetId()));
+    }
+    else
+    {
+        session->SetState(SessionState::NoneClient);
+
+        currentInternalServerCount_.fetch_add(1, std::memory_order_relaxed);
+        totalInternalServerConnected_.fetch_add(1, std::memory_order_relaxed);
+
+        if (role == SessionRole::DbServer)
+            currentDbServerConnected_.fetch_add(1, std::memory_order_relaxed);
+        else if (role == SessionRole::LoginServer)
+            currentLoginServerConnected_.fetch_add(1, std::memory_order_relaxed);
+
+        std::printf("[INFO][CONNECTION] Internal server connected: sessionId=%llu, role=%d\n",
+            static_cast<unsigned long long>(session->GetId()),
+            static_cast<int>(role));
+
+    }
 }
 
 void MainServer::OnClientDisconnected(Session* session)
@@ -67,6 +92,22 @@ void MainServer::OnClientDisconnected(Session* session)
         currentClientCount_.fetch_sub(1, std::memory_order_relaxed);
         totalDisconnected_.fetch_add(1, std::memory_order_relaxed);
     }
+    else
+    {
+        currentInternalServerCount_.fetch_sub(1, std::memory_order_relaxed);
+        totalInternalServerDisconnected_.fetch_add(1, std::memory_order_relaxed);
+
+        if (role == SessionRole::DbServer)
+            currentDbServerConnected_.fetch_sub(1, std::memory_order_relaxed);
+        else if (role == SessionRole::LoginServer)
+            currentLoginServerConnected_.fetch_sub(1, std::memory_order_relaxed);
+    }
+
+    if (role == SessionRole::DbServer && dbSession_ == session)
+        dbSession_ = nullptr;
+
+    if (role == SessionRole::LoginServer && loginSession_ == session)
+        loginSession_ = nullptr;
 
     std::printf("[INFO][CONNECTION] Client disconnected: sessionId=%llu, role=%d, state=%d\n",
         static_cast<unsigned long long>(session->GetId()),
@@ -149,11 +190,19 @@ void MainServer::StatsLoop()
         std::this_thread::sleep_for(1s);
 
         const auto clients = currentClientCount_.load(std::memory_order_relaxed);
+        const auto internal = currentInternalServerCount_.load(std::memory_order_relaxed);
+
+        const auto dbCnt = currentDbServerConnected_.load(std::memory_order_relaxed);
+        const auto loginCnt = currentLoginServerConnected_.load(std::memory_order_relaxed);
+
         const auto recvTick = packetsRecvTick_.exchange(0, std::memory_order_relaxed);
         const auto sendTick = packetsSentTick_.exchange(0, std::memory_order_relaxed);
 
-        std::printf("[STATS][MAIN] clients=%u, recv/s=%llu, send/s=%llu\n",
+        std::printf("[STATS][MAIN] clients=%u, internal=%u (db=%u, login=%u), recv/s=%llu, send/s=%llu\n",
             static_cast<unsigned>(clients),
+            static_cast<unsigned>(internal),
+            static_cast<unsigned>(dbCnt),
+            static_cast<unsigned>(loginCnt),
             static_cast<unsigned long long>(recvTick),
             static_cast<unsigned long long>(sendTick));
     }
@@ -161,6 +210,73 @@ void MainServer::StatsLoop()
 
 bool MainServer::ConnectToDbServer(const char* ip, uint16_t port)
 {
-    dbSession_ = ConnectTo(ip, port, SessionRole::DbServer); // 또는 DbServer 역할을 따로 두면 더 좋음
-    return dbSession_ != nullptr;
+    dbSession_ = ConnectTo(ip, port, SessionRole::DbServer);
+
+    const bool ok = (dbSession_ != nullptr);
+
+    if (ok)
+    {
+        // 연결 직후 1회 PING / 나중에 하트비트 체크하면 될 듯
+        SendDbPing();
+    }
+
+    return ok;
+}
+
+bool MainServer::ConnectToLoginServer(const char* ip, uint16_t port)
+{
+    loginSession_ = ConnectTo(ip, port, SessionRole::LoginServer);
+
+    const bool ok = (loginSession_ != nullptr);
+
+    if (ok)
+    {
+        SendLoginPing();
+    }
+
+    return ok;
+}
+
+void MainServer::SendDbPing()
+{
+    if (!dbSession_)
+    {
+        std::printf("[WARN][MAIN] SendDbPing called but dbSession_ is null\n");
+        return;
+    }
+
+    DBPingReq req;
+    req.seq = dbPingSeq_.fetch_add(1, std::memory_order_relaxed) + 1;
+
+    auto bytes = req.Build();
+
+    dbSession_->Send(bytes.data(), bytes.size());
+
+    packetsSentTotal_.fetch_add(1, std::memory_order_relaxed);
+    packetsSentTick_.fetch_add(1, std::memory_order_relaxed);
+
+    std::printf("[DEBUG][MAIN] Sent DB_PING_REQ seq=%u (to dbSessionId=%llu)\n", 
+        req.seq, static_cast<unsigned long long>(dbSession_->GetId()));
+}
+
+void MainServer::SendLoginPing()
+{
+    if (!loginSession_)
+    {
+        std::printf("[WARN][MAIN] SendLoginPing called but loginSession_ is null\n");
+        return;
+    }
+
+    LSPingReq req;
+    req.seq = loginPingSeq_.fetch_add(1, std::memory_order_relaxed) + 1;
+
+    auto bytes = req.Build();
+
+    loginSession_->Send(bytes.data(), bytes.size());
+
+    packetsSentTotal_.fetch_add(1, std::memory_order_relaxed);
+    packetsSentTick_.fetch_add(1, std::memory_order_relaxed);
+
+    std::printf("[DEBUG][MAIN] Sent LS_PING_REQ seq=%u (to loginSessionId=%llu)\n",
+        req.seq, static_cast<unsigned long long>(loginSession_->GetId()));
 }

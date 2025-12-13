@@ -98,6 +98,12 @@
     <ClInclude Include="DBWorker.h">
       <Filter>Server\DB</Filter>
     </ClInclude>
+    <ClInclude Include="LoginServer.h">
+      <Filter>Server\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="LSPacketHandler.h">
+      <Filter>Server\Login</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferPool.cpp">
@@ -159,6 +165,21 @@
     </ClCompile>
     <ClCompile Include="DBWorker.cpp">
       <Filter>Server\DB</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginServer.cpp">
+      <Filter>Server\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="LSPacketHandler.cpp">
+      <Filter>Server\Login</Filter>
+    </ClCompile>
+    <ClCompile Include="DBServerMain.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginServerMain.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="MainServerMain.cpp">
+      <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

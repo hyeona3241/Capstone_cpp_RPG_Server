@@ -112,7 +112,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);libmysql.lib</AdditionalDependencies>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);libmysql.lib;Common.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)x64\Debug\</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>if exist "$(SolutionDir)ThirdParty\mysql\libmysql.dll" copy /Y "$(SolutionDir)ThirdParty\mysql\libmysql.dll" "$(TargetDir)"
@@ -149,6 +150,8 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClInclude Include="IocpCommon.h" />
     <ClInclude Include="IocpServerBase.h" />
     <ClInclude Include="LoginJob.h" />
+    <ClInclude Include="LoginServer.h" />
+    <ClInclude Include="LSPacketHandler.h" />
     <ClInclude Include="MainServer.h" />
     <ClInclude Include="MSPacketHandler.h" />
     <ClInclude Include="PasswordHasher.h" />
@@ -168,18 +171,28 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClCompile Include="DBManager.cpp" />
     <ClCompile Include="DBPacketHandler.cpp" />
     <ClCompile Include="DBServer.cpp" />
+    <ClCompile Include="DBServerMain.cpp" />
     <ClCompile Include="dbTest.cpp" />
     <ClCompile Include="DBWorker.cpp" />
     <ClCompile Include="IocpCommon.cpp" />
     <ClCompile Include="IocpServerBase.cpp" />
     <ClCompile Include="LoginJob.cpp" />
+    <ClCompile Include="LoginServer.cpp" />
+    <ClCompile Include="LoginServerMain.cpp" />
+    <ClCompile Include="LSPacketHandler.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainServer.cpp" />
+    <ClCompile Include="MainServerMain.cpp" />
     <ClCompile Include="MSPacketHandler.cpp" />
     <ClCompile Include="PasswordHasher.cpp" />
     <ClCompile Include="RecvRing.cpp" />
     <ClCompile Include="Session.cpp" />
     <ClCompile Include="SHA256.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{175a3181-0fcf-4656-9e12-bd808900e105}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
