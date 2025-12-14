@@ -2,6 +2,7 @@
 #include "Pch.h"
 #include "IocpServerBase.h"
 #include "MSPacketHandler.h"
+#include <unordered_map>
 
 class MainServer final : public IocpServerBase
 {
@@ -39,6 +40,10 @@ public:
     void SendDbPing();
     void SendLoginPing();
 
+    uint32_t NextLoginSeq();
+
+    Session* FindClientSession(uint64_t sessionId);
+
 private:
     MSPacketHandler packetHandler_;
 
@@ -71,5 +76,10 @@ private:
 
     std::atomic<uint32_t> loginPingSeq_{ 0 };
     Session* loginSession_ = nullptr;
+
+    std::atomic<uint32_t> loginSeq_{ 0 };
+
+    std::unordered_map<uint64_t, Session*> clientSessions_;
+    std::mutex clientSessionsLock_;
 };
 

@@ -39,7 +39,7 @@ public:
     CreateResult CreateAccount(const std::string& loginId, const std::string& pwHash, const std::string& pwSalt, uint64_t& outAccountId);
 
     // 로그인 시: login_id로 계정 정보 조회
-    bool FindByLoginId(const std::string& loginId, AccountRecord& outAccount);
+    bool FindByLoginId(const std::string& loginId, uint64_t& outAccountId, std::string& outPwHash, std::string& outPwSalt, uint8_t& outStatus);
 
     // 로그인 성공 후: 마지막 로그인 시간 갱신
     bool UpdateLastLogin(uint64_t accountId);
@@ -49,6 +49,9 @@ public:
 
     // 상태 변경(정상/정지/삭제 등)
     bool UpdateStatus(uint64_t accountId, uint8_t newStatus);
+
+    void SetConnection(DBConnection* conn) { conn_ = conn; }
+
 
 private:
     DBConnection* conn_; // 생명주기는 DBManager가 관리

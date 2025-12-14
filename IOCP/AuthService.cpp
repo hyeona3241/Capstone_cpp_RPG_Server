@@ -27,24 +27,40 @@ AuthService::RegisterResult AuthService::Register(const std::string& loginId, co
     }
 }
 
-AuthService::LoginResult AuthService::Login(const std::string& loginId, const std::string& plainPassword, AccountRecord& outAccount)
+AuthService::LoginLookupResult AuthService::Login(const std::string& loginId)
 {
-    // ID로 계정 조회
-    if (!repo_.FindByLoginId(loginId, outAccount))
-        return LoginResult::NoSuchId;
+    LoginLookupResult r; // 기본값: 실패(네가 AuthService.h에서 기본 result 지정한 값)
 
-    // 상태 체크(정지/삭제 등)
-    if (outAccount.status != 0)
-        return LoginResult::Banned;
+    uint64_t accountId = 0;
+    std::string hash;
+    std::string salt;
+    uint8_t status = 0;
 
-    // 비밀번호 검증: stored salt로 재해싱해서 stored hash와 비교
-    if (!PasswordHasher::VerifyPassword(plainPassword, outAccount.pw_salt, outAccount.pw_hash))
-        return LoginResult::WrongPassword;
+    // DB 조회(인증용 최소 데이터)
+    if (!repo_.FindByLoginId(loginId, accountId, hash, salt, status))
+    {
+        r.result = LoginResult::NoSuchId;
+        return r;
+    }
 
-    // 로그인 성공 처리: last_login_at 갱신
-    // (실패해도 로그인 자체를 실패로 볼지 정책 선택 가능. 여기선 DB 에러면 실패 처리)
-    if (!repo_.UpdateLastLogin(outAccount.account_id))
-        return LoginResult::DbError;
+    // 상태 체크 (0: 정상, 1: 정지, 2: 삭제)
+    if (status != 0)
+    {
+        r.result = LoginResult::Banned;
 
-    return LoginResult::Success;
+        if (status == 2) r.result = LoginResult::NoSuchId;
+        return r;
+    }
+
+    r.result = LoginResult::Success;
+    r.accountId = accountId;
+    r.pwHash = std::move(hash);
+    r.pwSalt = std::move(salt);
+    r.status = status;
+    return r;
+}
+
+bool AuthService::UpdateLastLogin(uint64_t accountId)
+{
+    return repo_.UpdateLastLogin(accountId);
 }

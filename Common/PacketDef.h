@@ -5,7 +5,7 @@
 #include <span>
 #include <vector>
 
-#include "Const.h"
+#include "Core/Const.h"
 
 // =============================
 // 패킷 헤더 및 상수 정의

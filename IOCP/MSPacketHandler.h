@@ -2,10 +2,13 @@
 
 #include <cstddef> 
 #include <cstdint>
+#include "ELoginResult.h"
 
 class MainServer;
 class Session;
 struct PacketHeader;
+
+class LoginReq;
 
 class MSPacketHandler
 {
@@ -36,8 +39,20 @@ private:
 
     void HandleDbServerInternal(Session* session, const PacketHeader& header, const std::byte* payload,  std::size_t length);
 
+
+private:
     // 범위 체크 헬퍼
-    static bool InRange(std::uint32_t id,  std::uint32_t begin, std::uint32_t endExclusive);
+    static bool InRange(std::uint32_t id, std::uint32_t begin, std::uint32_t endExclusive);
+
+    void ForwardLoginReqToLoginServer(Session* clientSession, const LoginReq& clientReq);
+
+    void FailLoginBySeq(uint32_t seq, ELoginResult result);
+
+    void OnLsDbFindAccountReq(Session* session, const std::byte* payload, std::size_t length);
+
+    void OnDbFindAccountAck(Session* session, const std::byte* payload, std::size_t length);
+
+    void OnLsLoginAck(Session* session, const std::byte* payload, std::size_t length);
 
 private:
     MainServer* owner_{ nullptr };

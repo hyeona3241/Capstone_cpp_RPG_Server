@@ -24,16 +24,30 @@ public:
     {
         Success,
         NoSuchId,
-        WrongPassword,
         Banned,     // status != 0
         DbError
+    };
+
+    struct LoginLookupResult
+    {
+        LoginResult result = LoginResult::DbError;
+        uint64_t accountId = 0;
+        std::string pwHash;
+        std::string pwSalt;
+        uint8_t status = 0;
     };
 
     // 회원가입: plainPassword를 받아서 salt/hash 만들고 DB에 저장
     RegisterResult Register(const std::string& loginId, const std::string& plainPassword, uint64_t& outAccountId);
 
-    // 로그인: loginId로 계정 조회 -> salt로 재해싱 비교 -> 성공 시 last_login_at 갱신
-    LoginResult Login(const std::string& loginId, const std::string& plainPassword, AccountRecord& outAccount);
+    // 로그인: loginId로 계정 조회만 수행 (비번 검증은 LoginServer가 수행)
+    LoginLookupResult Login(const std::string& loginId);
+
+    // 마지막 로그인 시간 업데이트
+    bool UpdateLastLogin(uint64_t accountId);
+
+    void SetConnection(DBConnection* conn) { repo_.SetConnection(conn); }
+
 
 private:
     AccountRepository& repo_;

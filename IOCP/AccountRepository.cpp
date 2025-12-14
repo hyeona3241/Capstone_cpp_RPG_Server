@@ -4,6 +4,7 @@
 #include "ThirdParty\mysql\include\mysql.h"
 #include <iostream>
 #include <sstream>
+#include <Logger.h>
 
 AccountRepository::AccountRepository(DBConnection* conn)
     : conn_(conn)
@@ -75,41 +76,50 @@ AccountRepository::CreateAccount(const std::string& loginId, const std::string& 
     return CreateResult::Success;
 }
 
-bool AccountRepository::FindByLoginId(const std::string& loginId, AccountRecord& outAccount)
+bool AccountRepository::FindByLoginId(const std::string& loginId, uint64_t& outAccountId, std::string& outPwHash, std::string& outPwSalt, uint8_t& outStatus)
 {
+    outAccountId = 0;
+    outPwHash.clear();
+    outPwSalt.clear();
+    outStatus = 0;
+
     if (!conn_)
         return false;
 
     std::ostringstream oss;
-    oss << "SELECT account_id, login_id, pw_hash, pw_salt, status, "
-        "DATE_FORMAT(created_at, '%Y-%m-%d %H:%i:%s'), "
-        "DATE_FORMAT(updated_at, '%Y-%m-%d %H:%i:%s'), "
-        "IFNULL(DATE_FORMAT(last_login_at, '%Y-%m-%d %H:%i:%s'), '') "
-        "FROM account "
-        "WHERE login_id='"
+    oss << "SELECT account_id, pw_hash, pw_salt, status "
+        << "FROM account "
+        << "WHERE login_id='"
         << Escape(loginId) << "' "
-        "LIMIT 1;";
+        << "LIMIT 1;";
 
     MYSQL_RES* res = nullptr;
+
+    std::string q = oss.str();
+    std::printf("[DB][SQL] %s\n", q.c_str());
+    LOG_INFO(std::string("[DB][SQL] ") + q);
+
     if (!conn_->ExecuteQuery(oss.str(), &res))
+    {
+        MYSQL* h = conn_->GetHandle();
+        std::printf("[DB][SQL][FAIL] %s\n", h ? mysql_error(h) : "(no mysql handle)");
+        LOG_ERROR(std::string("[DB][SQL][FAIL] ") + (h ? mysql_error(h) : "(no mysql handle)"));
         return false;
+    }
 
     MYSQL_ROW row = mysql_fetch_row(res);
     if (!row)
     {
+        std::printf("[DB][SQL] no row for login_id='%s'\n", loginId.c_str());
+        LOG_INFO(std::string("[DB][SQL] no row for login_id='") + loginId + "'");
         mysql_free_result(res);
         return false;
     }
 
-    // ÄÃ·³ ¼ø¼­¿¡ ¸ÂÃç¼­ ÆÄ½Ì
-    outAccount.account_id = row[0] ? std::strtoull(row[0], nullptr, 10) : 0;
-    outAccount.login_id = row[1] ? row[1] : "";
-    outAccount.pw_hash = row[2] ? row[2] : "";
-    outAccount.pw_salt = row[3] ? row[3] : "";
-    outAccount.status = row[4] ? static_cast<uint8_t>(std::atoi(row[4])) : 0;
-    outAccount.created_at = row[5] ? row[5] : "";
-    outAccount.updated_at = row[6] ? row[6] : "";
-    outAccount.lastLogin_at = row[7] ? row[7] : "";
+    outAccountId = row[0] ? std::strtoull(row[0], nullptr, 10) : 0;
+    outPwHash = row[1] ? row[1] : "";
+    outPwSalt = row[2] ? row[2] : "";
+    outStatus = row[3] ? static_cast<uint8_t>(std::atoi(row[3])) : 0;
 
     mysql_free_result(res);
     return true;

@@ -1,5 +1,6 @@
 #include "DBConnection.h"
 #include <iostream>
+#include <Logger.h>
 
 DBConnection::DBConnection()
 {
@@ -7,6 +8,7 @@ DBConnection::DBConnection()
     if (conn_ == nullptr)
     {
         std::cerr << "[DbConnection] mysql_init() failed\n";
+        LOG_ERROR("[DbConnection] mysql_init() failed");
     }
 }
 
@@ -25,6 +27,7 @@ bool DBConnection::Connect(const std::string& host, unsigned int port, const std
     if (mysql_options(conn_, MYSQL_SET_CHARSET_NAME, charset.c_str()))
     {
         std::cerr << "[DbConnection] Failed to set charset: " << mysql_error(conn_) << "\n";
+        LOG_ERROR(std::string("[DbConnection] Failed to set charset: ") + mysql_error(conn_));
         return false;
     }
 
@@ -40,10 +43,13 @@ bool DBConnection::Connect(const std::string& host, unsigned int port, const std
         0))
     {
         std::cerr << "[DbConnection] mysql_real_connect failed: " << mysql_error(conn_) << "\n";
+        LOG_ERROR(std::string("[DbConnection] mysql_real_connect failed: ") + mysql_error(conn_));
         return false;
     }
 
-    std::cout << "[DbConnection] Connected to MySQL: " << host << ":" << port << "\n";
+    std::cout << "[DbConnection] Connected to MySQL: " << host << ":" << port << "\n"; 
+    LOG_INFO(std::string("[DbConnection] Connected to MySQL: ") + host + ":" + std::to_string(port)
+    );
 
     return true;
 }
@@ -64,6 +70,7 @@ bool DBConnection::ExecuteQuery(const std::string& query, MYSQL_RES** outResult)
     if (mysql_query(conn_, query.c_str()))
     {
         std::cerr << "[DbConnection] Query failed: " << mysql_error(conn_) << "\n";
+        LOG_ERROR(std::string("[DbConnection] Query failed: ") + mysql_error(conn_));
         return false;
     }
 
@@ -71,6 +78,7 @@ bool DBConnection::ExecuteQuery(const std::string& query, MYSQL_RES** outResult)
     if (*outResult == nullptr)
     {
         std::cerr << "[DbConnection] Failed to fetch result: " << mysql_error(conn_) << "\n";
+        LOG_ERROR(std::string("[DbConnection] Failed to fetch result: ") + mysql_error(conn_));
         return false;
     }
 
@@ -84,6 +92,7 @@ bool DBConnection::ExecuteUpdate(const std::string& query, long long& affectedRo
     if (mysql_query(conn_, query.c_str()))
     {
         std::cerr << "[DbConnection] Update failed: " << mysql_error(conn_) << "\n";
+        LOG_ERROR( std::string("[DbConnection] Update failed: ") + mysql_error(conn_));
         return false;
     }
 

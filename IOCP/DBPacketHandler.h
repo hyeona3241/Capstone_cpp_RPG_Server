@@ -29,9 +29,9 @@ private:
     // 실제 핸들러(스텁)
     void HandlePingReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
 
-    void HandleRegisterReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
-
     void HandleLoginReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
+
+    void HandleUpdateLastLoginReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
 
     static bool InRange(std::uint32_t id, std::uint32_t begin, std::uint32_t endExclusive);
 

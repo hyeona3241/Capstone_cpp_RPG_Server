@@ -3,6 +3,7 @@
 #include <iostream>
 #include "Session.h"
 #include "PacketDef.h"
+#include <Logger.h>
 
 LoginServer::LoginServer(const IocpConfig& cfg)
     : IocpServerBase(cfg)
@@ -19,10 +20,12 @@ bool LoginServer::StartServer(uint16_t listenPort, int workerThreads)
     if (!Start(listenPort, workerThreads))
     {
         std::cout << "[LoginServer] IOCP Start failed\n";
+        LOG_ERROR("[LoginServer] IOCP Start failed");
         return false;
     }
 
     std::cout << "[LoginServer] Listening on port " << listenPort << "\n";
+    LOG_INFO(std::string("[LoginServer] Listening on port ") + std::to_string(listenPort));
     return true;
 }
 
@@ -39,11 +42,13 @@ void LoginServer::OnClientConnected(Session* session)
     if (!mainServerSession_.compare_exchange_strong(expected, session))
     {
         std::cout << "[LoginServer] Reject extra connection (only MainServer allowed)\n";
+        LOG_WARN("[LoginServer] Reject extra connection (only MainServer allowed)");
         session->Disconnect();
         return;
     }
 
     std::cout << "[LoginServer] MainServer connected\n";
+    LOG_INFO("[LoginServer] MainServer connected");
 }
 
 void LoginServer::OnClientDisconnected(Session* session)
@@ -53,10 +58,12 @@ void LoginServer::OnClientDisconnected(Session* session)
     {
         mainServerSession_.store(nullptr);
         std::cout << "[LoginServer] MainServer disconnected\n";
+        LOG_WARN("[LoginServer] MainServer disconnected");
     }
     else
     {
         std::cout << "[LoginServer] A client disconnected (not main?)\n";
+        LOG_WARN("[LoginServer] A client disconnected (not main?)");
     }
 }
 
@@ -65,6 +72,7 @@ void LoginServer::OnRawPacket(Session* session, const PacketHeader& header, cons
     if (mainServerSession_.load() != session)
     {
         std::cout << "[LoginServer] Packet from non-main session ignored\n";
+        LOG_WARN("[LoginServer] Packet from non-main session ignored");
         session->Disconnect();
         return;
     }
@@ -72,3 +80,36 @@ void LoginServer::OnRawPacket(Session* session, const PacketHeader& header, cons
     // 패킷 분기/인증 로직은 핸들러로 위임
     packetHandler_.HandleFromMainServer(session, header, payload, length);
 }
+
+void LoginServer::AddPendingLogin(PendingLogin p)
+{
+    std::scoped_lock lk(pendingMu_);
+    pendingLogins_[p.seq] = std::move(p);
+}
+
+bool LoginServer::TryGetPendingLogin(uint32_t seq, PendingLogin& out)
+{
+    std::scoped_lock lk(pendingMu_);
+    auto it = pendingLogins_.find(seq);
+    if (it == pendingLogins_.end()) return false;
+    out = it->second;
+    return true;
+}
+
+void LoginServer::RemovePendingLogin(uint32_t seq)
+{
+    std::scoped_lock lk(pendingMu_);
+    pendingLogins_.erase(seq);
+
+}
+
+bool LoginServer::SendToMain(const std::vector<std::byte>& bytes)
+{
+    Session* ms = mainServerSession_.load();
+    if (!ms) return false;
+
+    ms->Send(bytes.data(), bytes.size());
+    return true;
+}
+
+

@@ -21,12 +21,15 @@
   <ItemGroup>
     <ClInclude Include="BinaryReader.h" />
     <ClInclude Include="BinaryWriter.h" />
+    <ClInclude Include="CLoginPackets.h" />
     <ClInclude Include="Core\Const.h" />
     <ClInclude Include="Core\ErrorCode.h" />
     <ClInclude Include="Core\Logger.h" />
     <ClInclude Include="Core\UidGenerator.h" />
+    <ClInclude Include="CPingPackets.h" />
     <ClInclude Include="DBAuthPackets.h" />
     <ClInclude Include="DBPingPackets.h" />
+    <ClInclude Include="ELoginResult.h" />
     <ClInclude Include="IPacket.h" />
     <ClInclude Include="LSLoginPackets.h" />
     <ClInclude Include="LSPingPackets.h" />

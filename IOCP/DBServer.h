@@ -35,6 +35,8 @@ public:
     // (나중에 ACK 전송 API를 여기 추가하면 LoginJob에서 사용 가능)
     // void SendToMainServer(uint64_t replySessionId, const Packet& pkt);
 
+    AuthService& GetAuthService() { return authService_; }
+
 protected:
     void OnClientConnected(Session* session) override;
     void OnClientDisconnected(Session* session) override;

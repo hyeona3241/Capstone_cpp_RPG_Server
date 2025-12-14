@@ -27,6 +27,9 @@
     <Filter Include="Server\Login">
       <UniqueIdentifier>{a60bf599-d5bd-4323-a67a-332e1896cd20}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Server\DB\UnUse">
+      <UniqueIdentifier>{4513dc37-fea7-4a67-b014-ae06cf62a63c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Buffer.h">
@@ -86,15 +89,6 @@
     <ClInclude Include="DBPacketHandler.h">
       <Filter>Server\DB</Filter>
     </ClInclude>
-    <ClInclude Include="DBJob.h">
-      <Filter>Server\DB</Filter>
-    </ClInclude>
-    <ClInclude Include="LoginJob.h">
-      <Filter>Server\DB</Filter>
-    </ClInclude>
-    <ClInclude Include="DBJobQueue.h">
-      <Filter>Server\DB</Filter>
-    </ClInclude>
     <ClInclude Include="DBWorker.h">
       <Filter>Server\DB</Filter>
     </ClInclude>
@@ -103,6 +97,12 @@
     </ClInclude>
     <ClInclude Include="LSPacketHandler.h">
       <Filter>Server\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="DBJob.h">
+      <Filter>Server\DB\UnUse</Filter>
+    </ClInclude>
+    <ClInclude Include="DBJobQueue.h">
+      <Filter>Server\DB\UnUse</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -157,12 +157,6 @@
     <ClCompile Include="DBPacketHandler.cpp">
       <Filter>Server\DB</Filter>
     </ClCompile>
-    <ClCompile Include="LoginJob.cpp">
-      <Filter>Server\DB</Filter>
-    </ClCompile>
-    <ClCompile Include="DBJobQueue.cpp">
-      <Filter>Server\DB</Filter>
-    </ClCompile>
     <ClCompile Include="DBWorker.cpp">
       <Filter>Server\DB</Filter>
     </ClCompile>
@@ -179,6 +173,12 @@
       <Filter>Test</Filter>
     </ClCompile>
     <ClCompile Include="MainServerMain.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="DBJobQueue.cpp">
+      <Filter>Server\DB\UnUse</Filter>
+    </ClCompile>
+    <ClCompile Include="CreatPasswardHash.cpp">
       <Filter>Test</Filter>
     </ClCompile>
   </ItemGroup>

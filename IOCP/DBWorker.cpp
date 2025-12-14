@@ -5,6 +5,7 @@
 #include "DBServer.h"
 
 #include <iostream>
+#include <Logger.h>
 
 DBWorker::DBWorker(DBJobQueue& queue, DbServices& services, DBServer& server)
     : queue_(queue), services_(services), server_(server)
@@ -24,6 +25,7 @@ void DBWorker::Start()
 
     thread_ = std::thread(&DBWorker::RunLoop, this);
     std::cout << "[DBWorker] Started\n";
+    LOG_INFO("[DBWorker] Started");
 }
 
 void DBWorker::Stop()
@@ -39,6 +41,7 @@ void DBWorker::Stop()
         thread_.join();
 
     std::cout << "[DBWorker] Stopped\n";
+    LOG_INFO("[DBWorker] Stopped");
 }
 
 void DBWorker::RunLoop()
@@ -59,10 +62,12 @@ void DBWorker::RunLoop()
         catch (const std::exception& e)
         {
             std::cout << "[DBWorker] Job exception: " << e.what() << "\n";
+            LOG_INFO(std::string("[DBWorker] Job exception: ") + e.what());
         }
         catch (...)
         {
             std::cout << "[DBWorker] Job unknown exception\n";
+            LOG_INFO("[DBWorker] Job unknown exception");
         }
     }
 }

@@ -6,6 +6,7 @@
 #include "PacketIds.h"
 #include "DbPingPackets.h"
 #include "LSPingPackets.h"
+#include <Logger.h>
 
 
 MainServer::MainServer(const IocpConfig& cfg)
@@ -27,6 +28,12 @@ bool MainServer::Start(uint16_t port, int workerThreads)
     StartStatsThread();
 
     std::printf("[INFO][MAIN] MainServer started on port %u, workers=%d\n", static_cast<unsigned>(port), workerThreads);
+    LOG_INFO(
+        std::string("[MAIN] MainServer started on port ") +
+        std::to_string(static_cast<unsigned>(port)) +
+        ", workers=" +
+        std::to_string(workerThreads)
+    );
 
     return true;
 }
@@ -40,6 +47,7 @@ void MainServer::Stop()
     IocpServerBase::Stop();
 
     std::printf("[INFO][MAIN] MainServer stopped.\n");
+    LOG_INFO("[MAIN] MainServer stopped.");
 }
 
 void MainServer::OnClientConnected(Session* session)
@@ -52,11 +60,19 @@ void MainServer::OnClientConnected(Session* session)
     if (role == SessionRole::Client)
     {
         session->SetState(SessionState::Handshake);
+        {
+            std::lock_guard<std::mutex> lock(clientSessionsLock_);
+            clientSessions_[session->GetId()] = session;
+        }
         currentClientCount_.fetch_add(1, std::memory_order_relaxed);
         totalAccepted_.fetch_add(1, std::memory_order_relaxed);
 
         std::printf("[INFO][CONNECTION] Client connected: sessionId=%llu\n",
             static_cast<unsigned long long>(session->GetId()));
+        LOG_INFO(
+            std::string("[CONNECTION] Client connected: sessionId=") +
+            std::to_string(static_cast<unsigned long long>(session->GetId()))
+        );
     }
     else
     {
@@ -73,6 +89,12 @@ void MainServer::OnClientConnected(Session* session)
         std::printf("[INFO][CONNECTION] Internal server connected: sessionId=%llu, role=%d\n",
             static_cast<unsigned long long>(session->GetId()),
             static_cast<int>(role));
+        LOG_INFO(
+            std::string("[CONNECTION] Internal server connected: sessionId=") +
+            std::to_string(static_cast<unsigned long long>(session->GetId())) +
+            ", role=" +
+            std::to_string(static_cast<int>(role))
+        );
 
     }
 }
@@ -82,13 +104,16 @@ void MainServer::OnClientDisconnected(Session* session)
     if (!session)
         return;
 
-    // 간단하게 Role/State 정도만 찍어주자.
     const SessionRole  role = session->GetRole();
     const SessionState state = session->GetState();
 
-    // 통계 업데이트 (외부 클라 기준)
+    // 통계 업데이트
     if (role == SessionRole::Client)
     {
+        {
+            std::lock_guard<std::mutex> lock(clientSessionsLock_);
+            clientSessions_.erase(session->GetId());
+        }
         currentClientCount_.fetch_sub(1, std::memory_order_relaxed);
         totalDisconnected_.fetch_add(1, std::memory_order_relaxed);
     }
@@ -113,6 +138,14 @@ void MainServer::OnClientDisconnected(Session* session)
         static_cast<unsigned long long>(session->GetId()),
         static_cast<int>(role),
         static_cast<int>(state));
+    LOG_INFO(
+        std::string("[CONNECTION] Client disconnected: sessionId=") +
+        std::to_string(static_cast<unsigned long long>(session->GetId())) +
+        ", role=" +
+        std::to_string(static_cast<int>(role)) +
+        ", state=" +
+        std::to_string(static_cast<int>(state))
+    );
 }
 
 
@@ -135,6 +168,18 @@ void MainServer::OnRawPacket(Session* session, const PacketHeader& header, const
         static_cast<int>(state),
         static_cast<unsigned>(header.id),
         length);
+    LOG_INFO(
+        std::string("[PACKET] Recv: sessionId=") +
+        std::to_string(static_cast<unsigned long long>(session->GetId())) +
+        ", role=" +
+        std::to_string(static_cast<int>(role)) +
+        ", state=" +
+        std::to_string(static_cast<int>(state)) +
+        ", id=" +
+        std::to_string(static_cast<unsigned>(header.id)) +
+        ", len=" +
+        std::to_string(length)
+    );
 
     switch (role)
     {
@@ -153,6 +198,12 @@ void MainServer::OnRawPacket(Session* session, const PacketHeader& header, const
         std::printf("[WARN][PACKET] Unknown session role: sessionId=%llu, role=%d\n",
             static_cast<unsigned long long>(session->GetId()),
             static_cast<int>(role));
+        LOG_WARN(
+            std::string("[PACKET] Unknown session role: sessionId=") +
+            std::to_string(static_cast<unsigned long long>(session->GetId())) +
+            ", role=" +
+            std::to_string(static_cast<int>(role))
+        );
         break;
     }
     }
@@ -242,6 +293,7 @@ void MainServer::SendDbPing()
     if (!dbSession_)
     {
         std::printf("[WARN][MAIN] SendDbPing called but dbSession_ is null\n");
+        LOG_WARN("[MAIN] SendDbPing called but dbSession_ is null");
         return;
     }
 
@@ -257,6 +309,13 @@ void MainServer::SendDbPing()
 
     std::printf("[DEBUG][MAIN] Sent DB_PING_REQ seq=%u (to dbSessionId=%llu)\n", 
         req.seq, static_cast<unsigned long long>(dbSession_->GetId()));
+    LOG_INFO(
+        std::string("[MAIN] Sent DB_PING_REQ seq=") +
+        std::to_string(req.seq) +
+        " (to dbSessionId=" +
+        std::to_string(static_cast<unsigned long long>(dbSession_->GetId())) +
+        ")"
+    );
 }
 
 void MainServer::SendLoginPing()
@@ -264,6 +323,7 @@ void MainServer::SendLoginPing()
     if (!loginSession_)
     {
         std::printf("[WARN][MAIN] SendLoginPing called but loginSession_ is null\n");
+        LOG_WARN("[MAIN] SendLoginPing called but loginSession_ is null");
         return;
     }
 
@@ -279,4 +339,25 @@ void MainServer::SendLoginPing()
 
     std::printf("[DEBUG][MAIN] Sent LS_PING_REQ seq=%u (to loginSessionId=%llu)\n",
         req.seq, static_cast<unsigned long long>(loginSession_->GetId()));
+    LOG_INFO(
+        std::string("[MAIN] Sent LS_PING_REQ seq=") +
+        std::to_string(req.seq) +
+        " (to loginSessionId=" +
+        std::to_string(static_cast<unsigned long long>(loginSession_->GetId())) +
+        ")"
+    );
+
+}
+
+uint32_t MainServer::NextLoginSeq()
+{
+    // fetch_add는 이전 값을 반환하니까 +1 해서 1부터 쓰도록
+    return loginSeq_.fetch_add(1, std::memory_order_relaxed) + 1;
+}
+
+Session* MainServer::FindClientSession(uint64_t sessionId)
+{
+    std::lock_guard<std::mutex> lock(clientSessionsLock_);
+    auto it = clientSessions_.find(sessionId);
+    return (it != clientSessions_.end()) ? it->second : nullptr;
 }

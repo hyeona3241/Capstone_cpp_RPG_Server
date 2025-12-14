@@ -28,6 +28,9 @@
     <Filter Include="Packet\Login">
       <UniqueIdentifier>{3b5ec8c9-992e-471c-8f5e-d9a5fada49e8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Packet\Client">
+      <UniqueIdentifier>{ec939743-bde1-4dc4-ad7a-a76023246fba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\Const.h">
@@ -71,6 +74,15 @@
     </ClInclude>
     <ClInclude Include="LSLoginPackets.h">
       <Filter>Packet\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="CLoginPackets.h">
+      <Filter>Packet\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="ELoginResult.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="CPingPackets.h">
+      <Filter>Packet\Client</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

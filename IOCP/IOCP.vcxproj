@@ -149,7 +149,6 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClInclude Include="DBWorker.h" />
     <ClInclude Include="IocpCommon.h" />
     <ClInclude Include="IocpServerBase.h" />
-    <ClInclude Include="LoginJob.h" />
     <ClInclude Include="LoginServer.h" />
     <ClInclude Include="LSPacketHandler.h" />
     <ClInclude Include="MainServer.h" />
@@ -166,6 +165,7 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClCompile Include="AccountRepository.cpp" />
     <ClCompile Include="AuthService.cpp" />
     <ClCompile Include="BufferPool.cpp" />
+    <ClCompile Include="CreatPasswardHash.cpp" />
     <ClCompile Include="DBConnection.cpp" />
     <ClCompile Include="DBJobQueue.cpp" />
     <ClCompile Include="DBManager.cpp" />
@@ -176,7 +176,6 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClCompile Include="DBWorker.cpp" />
     <ClCompile Include="IocpCommon.cpp" />
     <ClCompile Include="IocpServerBase.cpp" />
-    <ClCompile Include="LoginJob.cpp" />
     <ClCompile Include="LoginServer.cpp" />
     <ClCompile Include="LoginServerMain.cpp" />
     <ClCompile Include="LSPacketHandler.cpp" />

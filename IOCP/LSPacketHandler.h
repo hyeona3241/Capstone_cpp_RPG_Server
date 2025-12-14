@@ -7,9 +7,13 @@
 #include "LSPingPackets.h"
 #include <chrono>
 
+#include "ELoginResult.h"
+
 class LoginServer;
 class Session;
 struct PacketHeader;
+struct PendingLogin;
+class LSDbFindAccountAck;
 
 class LSPacketHandler
 {
@@ -33,10 +37,7 @@ private:
         std::size_t length);
 
     // 2200 ~ 2299 : DB 결과(Main을 통해 전달됨)
-    void HandleDbResult(Session* session,
-        const PacketHeader& header,
-        const std::byte* payload,
-        std::size_t length);
+    void HandleDbResult(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
 
     void HandlePingReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
 
@@ -44,7 +45,9 @@ private:
 
     void HandleRegisterReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
 
-    void HandleDbLoginResult(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
+    void HandleDbFindAccountAck(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
+
+    ELoginResult VerifyLoginPassword(const PendingLogin& pending, const LSDbFindAccountAck& dbAck) const;
 
     static bool InRange(std::uint32_t id, std::uint32_t begin, std::uint32_t endExclusive);
 

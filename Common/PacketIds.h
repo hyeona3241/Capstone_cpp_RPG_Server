@@ -11,7 +11,16 @@ namespace PacketType {
 	enum class Client : uint16_t {
 		// 1000번대 Client <-> MainServer
 		// 1000 ~ 1099 : 핸드셰이크 / 버전체크 / 기본 설정
+		C_PING_REQ = 1000,
+		C_PING_ACK = 1001,
+
+		S_PING_REQ = 1002,
+		S_PING_ACK = 1003,
+
 		// 1100 ~ 1199 : 로그인 / 계정 관련
+		LOGIN_REQ = 1100,
+		LOGIN_ACK = 1101,
+		
 		// 1200 ~ 1299 : 로비 / 캐릭터 선택
 		// 1300 ~ 1399 : 월드 / 인게임 관련
 	};
@@ -39,6 +48,9 @@ namespace PacketType {
 		// 3100 ~ 3199 : 로그인 관련
 		DB_FIND_ACCOUNT_REQ = 3100,
 		DB_FIND_ACCOUNT_ACK = 3101,
+
+		DB_UPDATE_LASTLOGIN_REQ = 3102,
+		/*DB_UPDATE_LASTLOGIN_ACK = 3103,*/
 
 		// 그 이후 로직 추가하기
 

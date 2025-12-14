@@ -3,7 +3,10 @@
 #include "DBServer.h"
 #include "Session.h"
 #include "PacketDef.h"
-#include "LoginJob.h"
+
+#include "DBAuthPackets.h"
+#include "AuthService.h"
+#include <Logger.h>
 
 static uint64_t GetTickMs()
 {
@@ -46,6 +49,8 @@ void DBPacketHandler::HandleFromMainServer(Session* session,
     else
     {
         std::printf("[WARN][DBPacketHandler] Unknown packet id=%u (sessionId=%llu)\n", id, static_cast<unsigned long long>(session->GetId()));
+        LOG_WARN("[DBPacketHandler] Unknown packet id=" + std::to_string(id) 
+            + "(sessionId = " + std::to_string(static_cast<unsigned long long>(session->GetId())) + ")");
     }
 }
 
@@ -59,6 +64,7 @@ void DBPacketHandler::HandleSystem(Session* session, const PacketHeader& header,
 
     default:
         std::printf("[WARN][DBSystem] Unknown system pktId=%u\n", static_cast<unsigned>(header.id));
+        LOG_WARN("[DBSystem] Unknown system pktId=" + std::to_string(static_cast<unsigned>(header.id)));
         break;
     }
 }
@@ -67,18 +73,17 @@ void DBPacketHandler::HandleAuth(Session* session, const PacketHeader& header, c
 {
     switch (header.id)
     {
-        // 예: DB_REGISTER_REQ = 3100
-    case 3100:
-        HandleRegisterReq(session, header, payload, length);
+    case PacketType::to_id(PacketType::DB::DB_FIND_ACCOUNT_REQ):
+        HandleLoginReq(session, header, payload, length);
         break;
 
-        // 예: DB_LOGIN_REQ = 3101
-    case 3101:
-        HandleLoginReq(session, header, payload, length);
+    case PacketType::to_id(PacketType::DB::DB_UPDATE_LASTLOGIN_REQ):
+        HandleUpdateLastLoginReq(session, header, payload, length);
         break;
 
     default:
         std::printf("[WARN][DBAuth] Unknown auth pktId=%u\n", static_cast<unsigned>(header.id));
+        LOG_WARN("[DBAuth] Unknown auth pktId=" + std::to_string(static_cast<unsigned>(header.id)));
         break;
     }
 }
@@ -89,10 +94,12 @@ void DBPacketHandler::HandlePingReq(Session* session, const PacketHeader& header
     if (!req.ParsePayload(payload, length))
     {
         std::printf("[WARN][DB] PING_REQ parse failed (len=%zu)\n", length);
+        LOG_WARN("[DB] PING_REQ parse failed (len=" + std::to_string(length) + ")");
         return;
     }
 
     std::printf("[DEBUG][DB] PING_REQ received seq=%u\n", req.seq);
+    LOG_INFO("[DB] PING_REQ received seq=" + std::to_string(req.seq));
 
     DBPingAck ack;
     ack.seq = req.seq;
@@ -104,37 +111,68 @@ void DBPacketHandler::HandlePingReq(Session* session, const PacketHeader& header
 
     std::printf("[DEBUG][DB] PING_ACK sent seq=%u tick=%llu\n",
         ack.seq, static_cast<unsigned long long>(ack.serverTick));
-}
-
-void DBPacketHandler::HandleRegisterReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
-{
-    std::printf("[DEBUG][DB] REGISTER_REQ len=%zu\n", length);
-
-    // TODO: payload parse -> loginId, plainPassword
-    // TODO(중요): 여기서 DB 쿼리를 바로 하지 말고 "DBJob"로 넘길 예정
-
-    // AuthService 매핑(명시):
-    // AuthService::Register(loginId, plainPassword, outAccountId)
-    // 결과 -> DB_REGISTER_ACK(3200)로 응답
-
-    (void)session;
-    (void)payload;
+    LOG_INFO("[DB] PING_ACK sent seq=" + std::to_string(ack.seq) + " tick=" 
+        + std::to_string(static_cast<unsigned long long>(ack.serverTick)));
 }
 
 void DBPacketHandler::HandleLoginReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
 {
-    std::printf("[DEBUG][DB] LOGIN_REQ len=%zu\n", length);
+    DBFindAccountReq req;
+    if (!req.ParsePayload(payload, length))
+    {
+        std::printf("[WARN][DB] DB_FIND_ACCOUNT_REQ parse failed (len=%zu)\n", length);
+        LOG_WARN("[DB] DB_FIND_ACCOUNT_REQ parse failed (len=" + std::to_string(length) + ")");
+        return;
+    }
+    std::printf("[DB] FindAccount loginId='%s' (len=%zu)\n", req.loginId.c_str(), req.loginId.size());
+    LOG_INFO("[DB] FindAccount loginId='" + req.loginId + "' (len=" + std::to_string(req.loginId.size()) +")");
 
-    // TODO: payload 파싱해서 loginId, plainPassword 추출
-    // std::string loginId = ...
-    // std::string plainPw = ...
+    auto lookup = owner_->GetAuthService().Login(req.loginId);
 
-    // replySessionId는 보통 “요청을 보낸 MainServer 세션”의 id
-    const uint64_t replySessionId = session->GetId();
+    DBFindAccountAck ack;
+    ack.seq = req.seq;
 
-    // TODO: 실제 값 파싱 후 사용
-    std::string loginId = "TODO";
-    std::string plainPw = "TODO";
+    if (lookup.result == AuthService::LoginResult::Success)
+    {
+        ack.exists = 1;
+        ack.accountId = lookup.accountId;
+        ack.passwordHash = std::move(lookup.pwHash);
+        ack.passwordSalt = std::move(lookup.pwSalt);
+        ack.status = lookup.status;
+    }
+    else
+    {
+        ack.exists = 0;
+    }
 
-    owner_->EnqueueJob(std::make_unique<LoginJob>(replySessionId, std::move(loginId), std::move(plainPw)));
+    auto bytes = ack.Build();
+    session->Send(bytes.data(), bytes.size());
+
+    std::printf("[DEBUG][DB] DB_FIND_ACCOUNT_ACK sent seq=%u exists=%u\n", ack.seq, ack.exists);
+    LOG_INFO("[DB] DB_FIND_ACCOUNT_ACK sent seq=" + std::to_string(ack.seq) + " exists=" + std::to_string(ack.exists));
+}
+
+void DBPacketHandler::HandleUpdateLastLoginReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
+{
+    DBUpdateLastLoginReq req;
+    if (!req.ParsePayload(payload, length))
+    {
+        std::printf("[WARN][DB] DB_UPDATE_LASTLOGIN_REQ parse failed (len=%zu)\n", length);
+        LOG_WARN("[DB] DB_UPDATE_LASTLOGIN_REQ parse failed (len=" + std::to_string(length) + ")");
+        return;
+    }
+
+    const bool ok = owner_->GetAuthService().UpdateLastLogin(req.accountId);
+
+    if (!ok)
+    {
+        std::printf("[WARN][DB] UpdateLastLogin failed. accountId=%llu\n",
+            static_cast<unsigned long long>(req.accountId));
+        LOG_WARN("[DB] UpdateLastLogin failed. accountId=" + std::to_string(static_cast<unsigned long long>(req.accountId)));
+        return;
+    }
+
+    std::printf("[DEBUG][DB] UpdateLastLogin success. accountId=%llu\n",
+        static_cast<unsigned long long>(req.accountId));
+    LOG_INFO("[DB] UpdateLastLogin success. accountId=" + std::to_string(static_cast<unsigned long long>(req.accountId)));
 }

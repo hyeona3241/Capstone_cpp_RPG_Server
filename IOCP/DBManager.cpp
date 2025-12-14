@@ -1,5 +1,6 @@
 #include "DBManager.h"
 #include <iostream>
+#include <Logger.h>
 
 DBManager::~DBManager()
 {
@@ -12,6 +13,7 @@ bool DBManager::Initialize(const DBConfig& config)
     if (connection_)
     {
         std::cout << "[DBManager] Reinitializing DB connection...\n";
+        LOG_INFO("[DBManager] Reinitializing DB connection...");
         connection_->Disconnect();
         connection_.reset();
     }
@@ -33,11 +35,15 @@ bool DBManager::Initialize(const DBConfig& config)
         std::cerr << "[DBManager] Failed to connect DB. ("
             << config_.host << ":" << config_.port
             << ", schema=" << config_.schema << ")\n";
+
+        LOG_ERROR(std::string("[DBManager] Failed to connect DB. (") + config_.host +
+            ":" + std::to_string(config_.port) + ", schema=" + config_.schema + ")");
         connection_.reset(); // 실패 시 nullptr로 되돌림
         return false;
     }
 
     std::cout << "[DBManager] DB initialized successfully.\n";
+    LOG_INFO("[DBManager] DB initialized successfully.");
     return true;
 }
 
@@ -48,5 +54,6 @@ void DBManager::Finalize()
         connection_->Disconnect();
         connection_.reset();
         std::cout << "[DBManager] DB connection finalized.\n";
+        LOG_INFO("[DBManager] DB connection finalized.");
     }
 }

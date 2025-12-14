@@ -4,22 +4,35 @@
 //#include <csignal>
 //#include <thread>
 //#include <chrono>
+//#include <Logger.h>
 //
 //static bool g_running = true;
 //
 //static void SignalHandler(int sig)
 //{
 //    std::printf("\n[DB] Signal received (%d). Shutting down...\n", sig);
+//    LOG_INFO("[DB] Signal received (%d). Shutting down...");
 //    g_running = false;
 //}
 //
 //int main()
 //{
+//    Logger::Config logCfg;
+//    logCfg.app_name = "DBServer";
+//    logCfg.dir = "logs/main";
+//    logCfg.rotate_bytes = 10 * 1024 * 1024;
+//    logCfg.keep_files = 5;
+//
+//    Logger::Init(logCfg);
+//
+//    LOG_INFO("[System] DBServer process started");
+//
 //    // WinSock
 //    WSADATA wsa;
 //    if (WSAStartup(MAKEWORD(2, 2), &wsa) != 0)
 //    {
 //        std::printf("[DB][ERROR] WSAStartup failed.\n");
+//        LOG_ERROR("[DB] WSAStartup failed.");
 //        return 1;
 //    }
 //
@@ -48,20 +61,33 @@
 //    if (!dbServer.StartServer(dbPort, 2))
 //    {
 //        std::printf("[DB][ERROR] Failed to start DBServer.\n");
+//        LOG_ERROR("[DB] Failed to start DBServer.");
 //        WSACleanup();
+//
+//        LOG_INFO("DBServer shutting down");
+//        Logger::Shutdown();
 //        return 1;
 //    }
 //
 //    std::printf("[DB][INFO] DBServer started. Listening on port %u.\n", dbPort);
+//    LOG_INFO("[DB] DBServer started. Listening on port " + std::to_string(dbPort) + ".");
+//
 //    std::printf("[DB][INFO] Press Ctrl+C to stop.\n");
+//    LOG_INFO("[DB] Press Ctrl+C to stop.");
 //
 //    while (g_running)
 //        std::this_thread::sleep_for(std::chrono::milliseconds(100));
 //
 //    std::printf("[DB][INFO] Stopping...\n");
+//    LOG_INFO("[DB] Stopping...");
 //    dbServer.StopServer();
 //
 //    WSACleanup();
 //    std::printf("[DB][INFO] Stopped cleanly.\n");
+//    LOG_INFO("[DB] Stopped cleanly.");
+//
+//
+//    LOG_INFO("DBServer shutting down");
+//    Logger::Shutdown();
 //    return 0;
 //}
