@@ -47,6 +47,8 @@ private:
 
     void HandleDbFindAccountAck(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
 
+    void HandleLogoutNoti(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
+
     ELoginResult VerifyLoginPassword(const PendingLogin& pending, const LSDbFindAccountAck& dbAck) const;
 
     static bool InRange(std::uint32_t id, std::uint32_t begin, std::uint32_t endExclusive);

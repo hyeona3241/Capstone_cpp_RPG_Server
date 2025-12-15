@@ -8,6 +8,7 @@
 #include "LSLoginPackets.h"
 #include "PasswordHasher.h"
 #include <Logger.h>
+#include "LSLogoutPackets.h"
 
 static uint64_t GetTickMs()
 {
@@ -100,6 +101,11 @@ void LSPacketHandler::HandleAuth(Session* session, const PacketHeader& header, c
 
     case PacketType::to_id(PacketType::Login::LS_DB_FIND_ACCOUNT_ACK):
         HandleDbFindAccountAck(session, header, payload, length);
+        break;
+
+    case PacketType::to_id(PacketType::Login::LS_LOGOUT_NOTIFY):
+
+        HandleLogoutNoti(session, header, payload, length);
         break;
 
     default:
@@ -196,7 +202,6 @@ void LSPacketHandler::HandleDbFindAccountAck(Session* session, const PacketHeade
     bool success = false;
     uint64_t accountId = 0;
 
-    // Main/DB가 이미 실패 resultCode를 준 경우: 그대로 실패 처리
     if (result != ELoginResult::OK)
     {
         success = false;
@@ -224,8 +229,20 @@ void LSPacketHandler::HandleDbFindAccountAck(Session* session, const PacketHeade
 
                 if (result == ELoginResult::OK)
                 {
-                    success = true;
-                    accountId = dbAck.accountId;
+                    const uint64_t aid = dbAck.accountId;
+                    const uint64_t csid = pending.clientSessionId;
+
+                    if (!owner_->TryMarkLoggedIn(aid, csid))
+                    {
+                        success = false;
+                        accountId = 0;
+                        result = ELoginResult::ALREADY_LOGGED_IN;
+                    }
+                    else
+                    {
+                        success = true;
+                        accountId = aid;
+                    }
                 }
                 else
                 {
@@ -271,6 +288,24 @@ void LSPacketHandler::HandleDbFindAccountAck(Session* session, const PacketHeade
         std::to_string(static_cast<unsigned>(out.resultCode))
     );
 
+}
+
+void LSPacketHandler::HandleLogoutNoti(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
+{
+    LSLogoutNotify notify;
+    if (!notify.ParsePayload(payload, length))
+    {
+        std::printf("[WARN][LS] LS_LOGOUT_NOTIFY parse failed. len=%zu\n", length);
+        LOG_WARN(std::string("[LS] LS_LOGOUT_NOTIFY parse failed. len=") + std::to_string(length));
+        return;
+    }
+
+    owner_->UnmarkLoggedInByAccount(notify.accountId);
+
+    std::printf("[LOGIN] LOGOUT_NOTIFY accountId=%llu removed from online list\n",
+        static_cast<unsigned long long>(notify.accountId));
+    LOG_INFO(std::string("[LOGIN] LOGOUT_NOTIFY accountId=") + std::to_string(notify.accountId) + std::string("removed from online list"));
+    
 }
 
 ELoginResult LSPacketHandler::VerifyLoginPassword(const PendingLogin& pending, const LSDbFindAccountAck& dbAck) const

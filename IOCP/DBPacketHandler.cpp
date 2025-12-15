@@ -8,6 +8,8 @@
 #include "AuthService.h"
 #include <Logger.h>
 
+#include "DBRegisterPackets.h"
+
 static uint64_t GetTickMs()
 {
     using namespace std::chrono;
@@ -36,8 +38,6 @@ void DBPacketHandler::HandleFromMainServer(Session* session,
 
     // 3000 ~ 3099 : 시스템/헬스체크
     // 3100 ~ 3199 : Auth(회원가입/로그인)
-    // 3200 ~ 3299 : (옵션) DBServer -> MainServer 응답(ACK)은 DBServer가 "보내는" 것이므로
-    //               여기선 보통 받을 일이 없음(프로토콜 실수 검증용으로만 체크 가능)
     if (InRange(id, 3000, 3100))
     {
         HandleSystem(session, header, payload, length);
@@ -79,6 +79,10 @@ void DBPacketHandler::HandleAuth(Session* session, const PacketHeader& header, c
 
     case PacketType::to_id(PacketType::DB::DB_UPDATE_LASTLOGIN_REQ):
         HandleUpdateLastLoginReq(session, header, payload, length);
+        break;
+
+    case PacketType::to_id(PacketType::DB::DB_REGISTER_REQ):
+        HandleRegisterReq(session, header, payload, length);
         break;
 
     default:
@@ -175,4 +179,39 @@ void DBPacketHandler::HandleUpdateLastLoginReq(Session* session, const PacketHea
     std::printf("[DEBUG][DB] UpdateLastLogin success. accountId=%llu\n",
         static_cast<unsigned long long>(req.accountId));
     LOG_INFO("[DB] UpdateLastLogin success. accountId=" + std::to_string(static_cast<unsigned long long>(req.accountId)));
+}
+
+void DBPacketHandler::HandleRegisterReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
+{
+    DbRegisterReq req;
+    if (!req.ParsePayload(payload, length))
+    {
+        std::printf("[WARN][DB] DB_REGISTER_REQ parse failed (len=%zu)\n", length);
+        LOG_WARN("[DB] DB_REGISTER_REQ parse failed (len=" + std::to_string(length) + ")");
+        return;
+    }
+
+    uint64_t newAccountId = 0;
+    auto rr = owner_->GetAuthService().Register(req.loginId, req.plainPw, newAccountId);
+
+    DbRegisterAck ack;
+    switch (rr)
+    {
+    case AuthService::RegisterResult::Success:
+        ack = DbRegisterAck::MakeOk(req.seq, req.clientSessionId, newAccountId);
+        break;
+    case AuthService::RegisterResult::DuplicateLoginId:
+        ack = DbRegisterAck::MakeFail(req.seq, req.clientSessionId, ERegisterResult::DUPLICATE_LOGIN_ID);
+        break;
+    default:
+        ack = DbRegisterAck::MakeFail(req.seq, req.clientSessionId, ERegisterResult::INTERNAL_ERROR);
+        break;
+    }
+
+    auto bytes = ack.Build();
+    session->Send(bytes.data(), bytes.size());
+
+    std::printf("[DEBUG][DB] DB_REGISTER_ACK sent seq=%u success=%u result=%u\n",
+        ack.seq, ack.success, ack.resultCode);
+    LOG_INFO("[DB] DB_REGISTER_ACK sent seq=" + std::to_string(ack.seq));
 }

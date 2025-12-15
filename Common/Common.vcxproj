@@ -22,6 +22,7 @@
     <ClInclude Include="BinaryReader.h" />
     <ClInclude Include="BinaryWriter.h" />
     <ClInclude Include="CLoginPackets.h" />
+    <ClInclude Include="CLogoutPackets.h" />
     <ClInclude Include="Core\Const.h" />
     <ClInclude Include="Core\ErrorCode.h" />
     <ClInclude Include="Core\Logger.h" />
@@ -34,6 +35,7 @@
     <ClInclude Include="ERegisterResult.h" />
     <ClInclude Include="IPacket.h" />
     <ClInclude Include="LSLoginPackets.h" />
+    <ClInclude Include="LSLogoutPackets.h" />
     <ClInclude Include="LSPingPackets.h" />
     <ClInclude Include="PacketDef.h" />
     <ClInclude Include="PacketFramer.h" />

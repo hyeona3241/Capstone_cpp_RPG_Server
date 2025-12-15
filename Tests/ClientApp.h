@@ -4,6 +4,7 @@
 #include <cstdint>
 #include <mutex>
 #include <thread>
+#include <string>
 
 #include "TcpClient.h"
 #include "PacketDispatcher.h"
@@ -11,13 +12,18 @@
 class ClientApp
 {
 public:
-    enum class State : uint32_t
+    enum class State
     {
-        Connected = 0,
-        SentPing,
+        Connected,
         WaitingPingAck,
+        SelectAuthMenu,
         NeedLoginInput,
+        NeedRegisterInput,
         SentLogin,
+        SentRegister,
+
+        AuthedMenu,
+
         Done,
     };
 
@@ -33,9 +39,11 @@ private:
 
     void InputLoop();
 
-    // handlers
     void OnPingAck(const std::byte* payload, size_t len);
     void OnLoginAck(const std::byte* payload, size_t len);
+    void OnRegisterAck(const std::byte* payload, size_t len);
+
+    void SendLogoutReqIfNeeded();
 
 private:
     TcpClient client_;
@@ -49,5 +57,8 @@ private:
     std::condition_variable inputCv_;
 
     uint64_t lastAccountId_ = 0;
+
+    std::string myLoginId_;
+    std::string pendingLoginId_;
 };
 

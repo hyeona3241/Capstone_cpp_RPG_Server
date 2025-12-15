@@ -112,4 +112,39 @@ bool LoginServer::SendToMain(const std::vector<std::byte>& bytes)
     return true;
 }
 
+bool LoginServer::TryMarkLoggedIn(uint64_t accountId, uint64_t clientSessionId)
+{
+    std::scoped_lock lk(onlineMu_);
+
+    // 이미 같은 accountId가 로그인 중이면 실패
+    if (onlineByAccount_.find(accountId) != onlineByAccount_.end())
+        return false;
+
+    onlineByAccount_[accountId] = clientSessionId;
+    onlineByClient_[clientSessionId] = accountId;
+    return true;
+}
+
+void LoginServer::UnmarkLoggedInByAccount(uint64_t accountId)
+{
+    std::scoped_lock lk(onlineMu_);
+    auto it = onlineByAccount_.find(accountId);
+    if (it == onlineByAccount_.end()) return;
+
+    const uint64_t clientSessionId = it->second;
+    onlineByAccount_.erase(it);
+    onlineByClient_.erase(clientSessionId);
+}
+
+void LoginServer::UnmarkLoggedInByClientSession(uint64_t clientSessionId)
+{
+    std::scoped_lock lk(onlineMu_);
+    auto it = onlineByClient_.find(clientSessionId);
+    if (it == onlineByClient_.end()) return;
+
+    const uint64_t accountId = it->second;
+    onlineByClient_.erase(it);
+    onlineByAccount_.erase(accountId);
+}
+
 

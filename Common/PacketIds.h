@@ -23,6 +23,8 @@ namespace PacketType {
 
 		REGISTER_REQ = 1102,
 		REGISTER_ACK = 1103,
+
+		LOGOUT_REQ = 1104,
 		
 		// 1200 ~ 1299 : 로비 / 캐릭터 선택
 		// 1300 ~ 1399 : 월드 / 인게임 관련
@@ -40,6 +42,7 @@ namespace PacketType {
 		LS_LOGIN_REQ = 2102,
 		LS_LOGIN_ACK = 2103,
 
+		LS_LOGOUT_NOTIFY = 2104,
 	};
 
 	enum class DB : uint16_t {

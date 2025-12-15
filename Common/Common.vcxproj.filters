@@ -93,6 +93,12 @@
     <ClInclude Include="DBRegisterPackets.h">
       <Filter>Packet\DB</Filter>
     </ClInclude>
+    <ClInclude Include="CLogoutPackets.h">
+      <Filter>Packet\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="LSLogoutPackets.h">
+      <Filter>Packet\Login</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\ErrorCode.cpp">

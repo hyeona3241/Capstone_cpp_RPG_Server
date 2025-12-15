@@ -14,10 +14,16 @@
 #include "DBAuthPackets.h"
 #include <Logger.h>
 
+#include "MSClientInternalHandler.h"
+#include "MSDbServerInternalHandler.h"
+
 MSPacketHandler::MSPacketHandler(MainServer* owner)
     : owner_(owner)
 {
+    clientHandler_ = std::make_unique<MSClientInternalHandler>(owner_);
+    dbHandler_ = std::make_unique<MSDbServerInternalHandler>(owner_);
 }
+MSPacketHandler::~MSPacketHandler() = default;
 
 // 정적 범위 체크
 bool MSPacketHandler::InRange(std::uint32_t id, std::uint32_t begin, std::uint32_t endExclusive)
@@ -26,50 +32,29 @@ bool MSPacketHandler::InRange(std::uint32_t id, std::uint32_t begin, std::uint32
 }
 
 //  클라이언트 -> 메인 서버 패킷
-void MSPacketHandler::HandleFromClient(Session* session,
-    const PacketHeader& header,
-    const std::byte* payload,
-    std::size_t length)
+void MSPacketHandler::HandleFromClient(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
 {
     if (!session)
         return;
 
     const auto id = static_cast<std::uint32_t>(header.id);
 
-    // 1000 ~ 1099 : 핸드셰이크 / 버전체크 / 기본 설정
-    // 1100 ~ 1199 : 로그인 / 계정 관련
-    // 1200 ~ 1299 : 로비 / 캐릭터 선택
-    // 1300 ~ 1399 : 월드 / 인게임 관련
-    //
-    if (InRange(id, 1000, 1100))
+    if (InRange(id, 1000, 2000))
     {
-        HandleClientHandshake(session, header, payload, length);
-    }
-    else if (InRange(id, 1100, 1200))
-    {
-        HandleClientLogin(session, header, payload, length);
-    }
-    else if (InRange(id, 1200, 1300))
-    {
-        HandleClientLobby(session, header, payload, length);
-    }
-    else if (InRange(id, 1300, 1400))
-    {
-        HandleClientWorld(session, header, payload, length);
-    }
-    else
-    {
-        std::printf("[WARN][MSPacketHandler] Unknown client packet id=%u (sessionId=%llu)\n", id, static_cast<unsigned long long>(session->GetId()));
-        LOG_WARN(
-            std::string("[MSPacketHandler] Unknown client packet id=") +
-            std::to_string(id) +
-            " (sessionId=" +
-            std::to_string(static_cast<unsigned long long>(session->GetId())) +
-            ")"
-        );
-        // 필요하면 여기서 프로토콜 에러로 세션을 끊을 수도 있음
-        // 나중에 공격인지 아닌지 판단하고 로직 정하면 될듯
-        // session->Disconnect();
+        if (!clientHandler_->Handle(session, header, payload, length))
+        {
+            std::printf("[WARN][MSPacketHandler] Unknown client packet id=%u (sessionId=%llu)\n", id, static_cast<unsigned long long>(session->GetId()));
+            LOG_WARN(
+                std::string("[MSPacketHandler] Unknown client packet id=") +
+                std::to_string(id) +
+                " (sessionId=" +
+                std::to_string(static_cast<unsigned long long>(session->GetId())) +
+                ")"
+            );
+            // 필요하면 여기서 프로토콜 에러로 세션을 끊을 수도 있음
+            // 나중에 공격인지 아닌지 판단하고 로직 정하면 될듯
+            // session->Disconnect();
+        }
     }
 }
 
@@ -108,219 +93,75 @@ void MSPacketHandler::HandleFromDbServer(Session* session, const PacketHeader& h
     // 예시: 3000 ~ 3999 범위를 DbServer <-> MainServer 용도로 사용
     if (InRange(id, 3000, 4000))
     {
-        HandleDbServerInternal(session, header, payload, length);
-    }
-    else
-    {
-        std::printf("[WARN][MSPacketHandler] Unknown db-server packet id=%u\n", id);
-        LOG_WARN(
-            std::string("[MSPacketHandler] Unknown db-server packet id=") +
-            std::to_string(id)
-        );
-    }
-}
-
-
-//  클라이언트 핸들러들 (세부 로직은 나중에 구현)
-void MSPacketHandler::HandleClientHandshake(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
-{
-    // 상태 검사 예시 (SessionState enum은 네 프로젝트 정의에 맞게 수정)
-    if (session->GetState() != SessionState::Handshake)
-    {
-        std::printf("[WARN][Handshake] Invalid state for handshake packet. "
-            "sessionId=%llu, state=%d, pktId=%u\n",
-            static_cast<unsigned long long>(session->GetId()),
-            static_cast<int>(session->GetState()),
-            static_cast<unsigned>(header.id));
-        LOG_WARN(
-            std::string("[Handshake] Invalid state for handshake packet. sessionId=") +
-            std::to_string(static_cast<unsigned long long>(session->GetId())) +
-            ", state=" +
-            std::to_string(static_cast<int>(session->GetState())) +
-            ", pktId=" +
-            std::to_string(static_cast<unsigned>(header.id))
-        );
-        return;
-    }
-
-    switch (header.id)
-    {
-    case PacketType::to_id(PacketType::Client::C_PING_REQ):
-    {
-        CPingReq req;
-        if (!req.ParsePayload(payload, length))
+        if (!dbHandler_->Handle(session, header, payload, length))
         {
-            std::printf("[WARN][Handshake] C_PING_REQ parse failed (len=%zu, sessionId=%llu)\n",
-                length, static_cast<unsigned long long>(session->GetId()));
-            LOG_WARN(
-                std::string("[Handshake] C_PING_REQ parse failed (len=") +
-                std::to_string(length) +
-                ", sessionId=" +
-                std::to_string(static_cast<unsigned long long>(session->GetId())) +
-                ")"
-            );
-            return;
+            std::printf("[WARN][MSPacketHandler] Unknown db-server packet id=%u\n",
+                static_cast<unsigned>(header.id));
+            LOG_WARN(std::string("[MSPacketHandler] Unknown db-server packet id=") +
+                std::to_string(static_cast<unsigned>(header.id)));
         }
-
-        CPingAck ack;
-        ack.seq = req.seq;
-        // tick 값은 너 구현에 맞게. 우선 0으로 보내도 됨.
-        // (나중에 타이머/서버 tick 붙이면 여기서 채우면 됨)
-        ack.serverTick = 0;
-
-        auto bytes = ack.Build();
-        session->Send(bytes.data(), bytes.size());
-
-        std::printf("[INFO][Handshake] C_PING_ACK sent. seq=%u (sessionId=%llu)\n",
-            ack.seq, static_cast<unsigned long long>(session->GetId()));
-        LOG_INFO(
-            std::string("[Handshake] C_PING_ACK sent. seq=") +
-            std::to_string(ack.seq) +
-            " (sessionId=" +
-            std::to_string(static_cast<unsigned long long>(session->GetId())) +
-            ")"
-        );
-        return;
     }
-
-    default:
-        std::printf("[DEBUG][Handshake] HandleClientHandshake: pktId=%u, len=%zu\n",
-            static_cast<unsigned>(header.id), length);
-        LOG_INFO(
-            std::string("[Handshake] HandleClientHandshake: pktId=") +
-            std::to_string(static_cast<unsigned>(header.id)) +
-            ", len=" +
-            std::to_string(length)
-        );
-        return;
-    }
-
 }
 
-void MSPacketHandler::HandleClientLogin(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
-{
-    // 예: 로그인 패킷은 보통 Handshake 이후 상태에서만 허용
-    if (session->GetState() != SessionState::Login && session->GetState() != SessionState::Handshake)
-    {
-        std::printf("[WARN][Login] Invalid state for login packet. "
-            "sessionId=%llu, state=%d, pktId=%u\n",
-            static_cast<unsigned long long>(session->GetId()),
-            static_cast<int>(session->GetState()),
-            static_cast<unsigned>(header.id));
-        LOG_WARN(
-            std::string("[Login] Invalid state for login packet. sessionId=") +
-            std::to_string(static_cast<unsigned long long>(session->GetId())) +
-            ", state=" +
-            std::to_string(static_cast<int>(session->GetState())) +
-            ", pktId=" +
-            std::to_string(static_cast<unsigned>(header.id))
-        );
 
-        return;
-    }
-
-    switch (header.id)
-    {
-    case PacketType::to_id(PacketType::Client::LOGIN_REQ):
-    {
-        // 중복 방지
-        if (session->GetState() == SessionState::Login)
-        {
-            LoginAck ack = LoginAck::MakeFail(ELoginResult::INTERNAL_ERROR);
-            auto bytes = ack.Build();
-            session->Send(bytes.data(), bytes.size());
-
-            std::printf("[WARN][LOGIN] Duplicate LOGIN_REQ blocked. sessionId=%llu\n",
-                (unsigned long long)session->GetId());
-            LOG_WARN(
-                std::string("[LOGIN] Duplicate LOGIN_REQ blocked. sessionId=") +
-                std::to_string(static_cast<unsigned long long>(session->GetId()))
-            );
-            return;
-        }
-
-
-        LoginReq clientReq;
-        if (!clientReq.ParsePayload(payload, length))
-        {
-            std::printf("[WARN][LOGIN] LOGIN_REQ parse failed. sessionId=%llu\n",
-                static_cast<unsigned long long>(session->GetId()));
-            LOG_WARN(
-                std::string("[LOGIN] LOGIN_REQ parse failed. sessionId=") +
-                std::to_string(static_cast<unsigned long long>(session->GetId()))
-            );
-            return;
-        }
-
-        session->SetState(SessionState::Login);
-
-        ForwardLoginReqToLoginServer(session, clientReq);
-        return;
-    }
-    }
-    
-}
-
-void MSPacketHandler::HandleClientLobby(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
-{
-    if (session->GetState() != SessionState::Lobby)
-    {
-        std::printf("[WARN][Lobby] Packet in non-lobby state. "
-            "sessionId=%llu, state=%d, pktId=%u\n",
-            static_cast<unsigned long long>(session->GetId()),
-            static_cast<int>(session->GetState()),
-            static_cast<unsigned>(header.id));
-        LOG_WARN(
-            std::string("[Lobby] Packet in non-lobby state. sessionId=") +
-            std::to_string(static_cast<unsigned long long>(session->GetId())) +
-            ", state=" +
-            std::to_string(static_cast<int>(session->GetState())) +
-            ", pktId=" +
-            std::to_string(static_cast<unsigned>(header.id))
-        );
-        return;
-    }
-
-    // TODO: 로비 메뉴(캐릭터 목록, 생성/삭제, 매칭 준비 등) 처리
-    std::printf("[DEBUG][Lobby] HandleClientLobby: pktId=%u, len=%zu\n", static_cast<unsigned>(header.id), length);
-    LOG_INFO(
-        std::string("[Lobby] HandleClientLobby: pktId=") +
-        std::to_string(static_cast<unsigned>(header.id)) +
-        ", len=" +
-        std::to_string(length)
-    );
-}
-
-void MSPacketHandler::HandleClientWorld(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
-{
-    if (session->GetState() != SessionState::World)
-    {
-        std::printf("[WARN][World] Packet in non-world state. "
-            "sessionId=%llu, state=%d, pktId=%u\n",
-            static_cast<unsigned long long>(session->GetId()),
-            static_cast<int>(session->GetState()),
-            static_cast<unsigned>(header.id));
-        LOG_WARN(
-            std::string("[World] Packet in non-world state. sessionId=") +
-            std::to_string(static_cast<unsigned long long>(session->GetId())) +
-            ", state=" +
-            std::to_string(static_cast<int>(session->GetState())) +
-            ", pktId=" +
-            std::to_string(static_cast<unsigned>(header.id))
-        );
-        return;
-    }
-
-    // TODO: 인게임 이동/공격/스킬/채팅 등 처리 or WorldServer로 포워딩
-    std::printf("[DEBUG][World] HandleClientWorld: pktId=%u, len=%zu\n", static_cast<unsigned>(header.id), length);
-    LOG_INFO(
-        std::string("[World] HandleClientWorld: pktId=") +
-        std::to_string(static_cast<unsigned>(header.id)) +
-        ", len=" +
-        std::to_string(length)
-    );
-
-}
+//void MSPacketHandler::HandleClientLobby(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
+//{
+//    if (session->GetState() != SessionState::Lobby)
+//    {
+//        std::printf("[WARN][Lobby] Packet in non-lobby state. "
+//            "sessionId=%llu, state=%d, pktId=%u\n",
+//            static_cast<unsigned long long>(session->GetId()),
+//            static_cast<int>(session->GetState()),
+//            static_cast<unsigned>(header.id));
+//        LOG_WARN(
+//            std::string("[Lobby] Packet in non-lobby state. sessionId=") +
+//            std::to_string(static_cast<unsigned long long>(session->GetId())) +
+//            ", state=" +
+//            std::to_string(static_cast<int>(session->GetState())) +
+//            ", pktId=" +
+//            std::to_string(static_cast<unsigned>(header.id))
+//        );
+//        return;
+//    }
+//
+//    std::printf("[DEBUG][Lobby] HandleClientLobby: pktId=%u, len=%zu\n", static_cast<unsigned>(header.id), length);
+//    LOG_INFO(
+//        std::string("[Lobby] HandleClientLobby: pktId=") +
+//        std::to_string(static_cast<unsigned>(header.id)) +
+//        ", len=" +
+//        std::to_string(length)
+//    );
+//}
+//
+//void MSPacketHandler::HandleClientWorld(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
+//{
+//    if (session->GetState() != SessionState::World)
+//    {
+//        std::printf("[WARN][World] Packet in non-world state. "
+//            "sessionId=%llu, state=%d, pktId=%u\n",
+//            static_cast<unsigned long long>(session->GetId()),
+//            static_cast<int>(session->GetState()),
+//            static_cast<unsigned>(header.id));
+//        LOG_WARN(
+//            std::string("[World] Packet in non-world state. sessionId=") +
+//            std::to_string(static_cast<unsigned long long>(session->GetId())) +
+//            ", state=" +
+//            std::to_string(static_cast<int>(session->GetState())) +
+//            ", pktId=" +
+//            std::to_string(static_cast<unsigned>(header.id))
+//        );
+//        return;
+//    }
+//
+//    std::printf("[DEBUG][World] HandleClientWorld: pktId=%u, len=%zu\n", static_cast<unsigned>(header.id), length);
+//    LOG_INFO(
+//        std::string("[World] HandleClientWorld: pktId=") +
+//        std::to_string(static_cast<unsigned>(header.id)) +
+//        ", len=" +
+//        std::to_string(length)
+//    );
+//
+//}
 
 
 
@@ -450,40 +291,6 @@ void MSPacketHandler::HandleDbServerInternal(Session* session, const PacketHeade
         );
         return;
     }
-}
-
-void MSPacketHandler::ForwardLoginReqToLoginServer(Session* clientSession, const LoginReq& clientReq)
-{
-    Session* ls = owner_->GetLoginSession();
-    if (!ls)
-    {
-        std::printf("[WARN][LOGIN] LoginServer not connected.\n");
-        LOG_WARN("[LOGIN] LoginServer not connected.");
-        clientSession->SetState(SessionState::Handshake);
-
-        LoginAck ack = LoginAck::MakeFail(ELoginResult::INTERNAL_ERROR);
-        auto bytes = ack.Build();
-        clientSession->Send(bytes.data(), bytes.size());
-        return;
-    }
-
-    LSLoginReq lsReq;
-    lsReq.seq = owner_->NextLoginSeq();
-    lsReq.clientSessionId = clientSession->GetId();
-    lsReq.loginId = clientReq.loginId;
-    lsReq.plainPw = clientReq.plainPw;
-
-    auto bytes = lsReq.Build();
-    ls->Send(bytes.data(), bytes.size());
-
-    std::printf("[INFO][LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=%u, clientSessionId=%llu\n",
-        lsReq.seq, static_cast<unsigned long long>(lsReq.clientSessionId));
-    LOG_INFO(
-        std::string("[LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=") +
-        std::to_string(lsReq.seq) +
-        ", clientSessionId=" +
-        std::to_string(static_cast<unsigned long long>(lsReq.clientSessionId))
-    );
 }
 
 void MSPacketHandler::FailLoginBySeq(uint32_t seq, ELoginResult result)

@@ -147,11 +147,14 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClInclude Include="DBPacketHandler.h" />
     <ClInclude Include="DBServer.h" />
     <ClInclude Include="DBWorker.h" />
+    <ClInclude Include="IMSDomainHandler.h" />
     <ClInclude Include="IocpCommon.h" />
     <ClInclude Include="IocpServerBase.h" />
     <ClInclude Include="LoginServer.h" />
     <ClInclude Include="LSPacketHandler.h" />
     <ClInclude Include="MainServer.h" />
+    <ClInclude Include="MSClientInternalHandler.h" />
+    <ClInclude Include="MSDbServerInternalHandler.h" />
     <ClInclude Include="MSPacketHandler.h" />
     <ClInclude Include="PasswordHasher.h" />
     <ClInclude Include="Pch.h" />
@@ -182,6 +185,8 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainServer.cpp" />
     <ClCompile Include="MainServerMain.cpp" />
+    <ClCompile Include="MSClientInternalHandler.cpp" />
+    <ClCompile Include="MSDbServerInternalHandler.cpp" />
     <ClCompile Include="MSPacketHandler.cpp" />
     <ClCompile Include="PasswordHasher.cpp" />
     <ClCompile Include="RecvRing.cpp" />

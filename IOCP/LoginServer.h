@@ -42,11 +42,20 @@ public:
 
     bool SendToMain(const std::vector<std::byte>& bytes);
 
+public : 
+    bool TryMarkLoggedIn(uint64_t accountId, uint64_t clientSessionId);
+    void UnmarkLoggedInByAccount(uint64_t accountId);
+    void UnmarkLoggedInByClientSession(uint64_t clientSessionId);
+
 private:
     std::atomic<Session*> mainServerSession_{ nullptr };
     LSPacketHandler packetHandler_{ this };
 
     std::mutex pendingMu_;
     std::unordered_map<uint32_t, PendingLogin> pendingLogins_;
+
+    std::mutex onlineMu_;
+    std::unordered_map<uint64_t, uint64_t> onlineByAccount_;   // accountId -> clientSessionId
+    std::unordered_map<uint64_t, uint64_t> onlineByClient_;    // clientSessionId -> accountId
 };
 

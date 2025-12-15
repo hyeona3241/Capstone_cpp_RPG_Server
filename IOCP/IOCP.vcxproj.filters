@@ -104,6 +104,15 @@
     <ClInclude Include="DBJobQueue.h">
       <Filter>Server\DB\UnUse</Filter>
     </ClInclude>
+    <ClInclude Include="IMSDomainHandler.h">
+      <Filter>Server\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MSClientInternalHandler.h">
+      <Filter>Server\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MSDbServerInternalHandler.h">
+      <Filter>Server\Main</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferPool.cpp">
@@ -180,6 +189,12 @@
     </ClCompile>
     <ClCompile Include="CreatPasswardHash.cpp">
       <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="MSClientInternalHandler.cpp">
+      <Filter>Server\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MSDbServerInternalHandler.cpp">
+      <Filter>Server\Main</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

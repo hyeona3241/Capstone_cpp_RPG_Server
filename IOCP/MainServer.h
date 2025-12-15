@@ -41,6 +41,7 @@ public:
     void SendLoginPing();
 
     uint32_t NextLoginSeq();
+    uint32_t NextRegisterSeq();
 
     Session* FindClientSession(uint64_t sessionId);
 
@@ -78,6 +79,7 @@ private:
     Session* loginSession_ = nullptr;
 
     std::atomic<uint32_t> loginSeq_{ 0 };
+    std::atomic<uint32_t> registerSeq_{ 0 }; 
 
     std::unordered_map<uint64_t, Session*> clientSessions_;
     std::mutex clientSessionsLock_;

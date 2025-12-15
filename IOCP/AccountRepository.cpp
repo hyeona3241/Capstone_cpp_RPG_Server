@@ -2,6 +2,7 @@
 #include "DBConnection.h"
 
 #include "ThirdParty\mysql\include\mysql.h"
+#include "ThirdParty\mysql\include\mysqld_error.h"
 #include <iostream>
 #include <sstream>
 #include <Logger.h>
@@ -61,7 +62,18 @@ AccountRepository::CreateAccount(const std::string& loginId, const std::string& 
 
     long long affected = 0;
     if (!conn_->ExecuteUpdate(oss.str(), affected))
+    {
+        MYSQL* h = conn_->GetHandle();
+
+        if (h)
+        {
+            unsigned int err = mysql_errno(h);
+            if (err == ER_DUP_ENTRY)
+                return CreateResult::DuplicateLoginId;
+        }
+
         return CreateResult::DbError;
+    }
 
     if (affected <= 0)
         return CreateResult::DbError;

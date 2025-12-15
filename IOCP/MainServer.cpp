@@ -355,6 +355,11 @@ uint32_t MainServer::NextLoginSeq()
     return loginSeq_.fetch_add(1, std::memory_order_relaxed) + 1;
 }
 
+uint32_t MainServer::NextRegisterSeq()
+{
+    return registerSeq_.fetch_add(1, std::memory_order_relaxed) + 1;
+}
+
 Session* MainServer::FindClientSession(uint64_t sessionId)
 {
     std::lock_guard<std::mutex> lock(clientSessionsLock_);

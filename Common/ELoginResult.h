@@ -10,4 +10,5 @@ enum class ELoginResult : uint32_t
     BANNED = 3,
     DB_ERROR = 4,
     INTERNAL_ERROR = 5,
+    ALREADY_LOGGED_IN = 6,
 };
