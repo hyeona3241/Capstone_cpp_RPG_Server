@@ -49,6 +49,7 @@ int main()
     // DB 설정(기존 main.cpp에서 그대로) :contentReference[oaicite:3]{index=3}
     DBConfig dbCfg;
     dbCfg.host = "100.77.71.68";
+    /*dbCfg.host = "127.0.0.1";*/
     dbCfg.port = 3306;
     dbCfg.user = "gameuser";
     dbCfg.password = "game";
