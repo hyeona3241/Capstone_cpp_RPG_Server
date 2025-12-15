@@ -84,6 +84,15 @@
     <ClInclude Include="CPingPackets.h">
       <Filter>Packet\Client</Filter>
     </ClInclude>
+    <ClInclude Include="CRegisterPackets.h">
+      <Filter>Packet\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="ERegisterResult.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBRegisterPackets.h">
+      <Filter>Packet\DB</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Core\ErrorCode.cpp">

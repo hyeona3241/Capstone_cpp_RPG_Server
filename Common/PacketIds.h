@@ -20,6 +20,9 @@ namespace PacketType {
 		// 1100 ~ 1199 : 로그인 / 계정 관련
 		LOGIN_REQ = 1100,
 		LOGIN_ACK = 1101,
+
+		REGISTER_REQ = 1102,
+		REGISTER_ACK = 1103,
 		
 		// 1200 ~ 1299 : 로비 / 캐릭터 선택
 		// 1300 ~ 1399 : 월드 / 인게임 관련
@@ -51,6 +54,9 @@ namespace PacketType {
 
 		DB_UPDATE_LASTLOGIN_REQ = 3102,
 		/*DB_UPDATE_LASTLOGIN_ACK = 3103,*/
+
+		DB_REGISTER_REQ = 3104,
+		DB_REGISTER_ACK = 3105,
 
 		// 그 이후 로직 추가하기
 

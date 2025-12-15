@@ -24,6 +24,7 @@
     <ProjectGuid>{b00fcfbe-dd96-4c87-ac89-26c63043057e}</ProjectGuid>
     <RootNamespace>Tests</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Client</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -134,8 +135,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ClientApp.cpp" />
     <ClCompile Include="ClientLoginTest.cpp" />
-    <ClCompile Include="ClientMain.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PacketDispatcher.cpp" />
+    <ClCompile Include="TcpClient.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.vcxproj">
@@ -144,6 +148,11 @@
     <ProjectReference Include="..\Net\Net.vcxproj">
       <Project>{9d797c8a-de20-46ad-9f67-e931c79a39f1}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ClientApp.h" />
+    <ClInclude Include="PacketDispatcher.h" />
+    <ClInclude Include="TcpClient.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

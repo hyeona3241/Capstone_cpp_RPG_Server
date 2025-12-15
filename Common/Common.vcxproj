@@ -27,15 +27,18 @@
     <ClInclude Include="Core\Logger.h" />
     <ClInclude Include="Core\UidGenerator.h" />
     <ClInclude Include="CPingPackets.h" />
+    <ClInclude Include="CRegisterPackets.h" />
     <ClInclude Include="DBAuthPackets.h" />
     <ClInclude Include="DBPingPackets.h" />
     <ClInclude Include="ELoginResult.h" />
+    <ClInclude Include="ERegisterResult.h" />
     <ClInclude Include="IPacket.h" />
     <ClInclude Include="LSLoginPackets.h" />
     <ClInclude Include="LSPingPackets.h" />
     <ClInclude Include="PacketDef.h" />
     <ClInclude Include="PacketFramer.h" />
     <ClInclude Include="PacketIds.h" />
+    <ClInclude Include="DBRegisterPackets.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BinaryReader.cpp" />
