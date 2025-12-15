@@ -60,7 +60,7 @@ int main()
     sockaddr_in addr{};
     addr.sin_family = AF_INET;
     addr.sin_port = htons(3500);            // MainServer Æ÷Æ®
-    addr.sin_addr.s_addr = inet_addr("192.168.35.3");
+    addr.sin_addr.s_addr = inet_addr("127.0.0.1");
 
     if (connect(sock, reinterpret_cast<sockaddr*>(&addr), sizeof(addr)) == SOCKET_ERROR)
     {
