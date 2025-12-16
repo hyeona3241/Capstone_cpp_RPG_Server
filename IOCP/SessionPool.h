@@ -3,16 +3,23 @@
 #include <stack>
 #include <mutex>
 #include <atomic>
+#include <memory>
+#include <functional>
 #include "Session.h"
+
+class IocpServerBase;
 
 class SessionPool
 {
 public:
-    explicit SessionPool(std::size_t maxSessions)
-        : sessions_(maxSessions)
+    using Factory = std::function<std::unique_ptr<Session>()>;
+
+    SessionPool(std::size_t maxSessions, Factory factory)
+        : sessions_(maxSessions), factory_(std::move(factory))
     {
         for (std::size_t i = 0; i < maxSessions; ++i)
         {
+            sessions_[i] = factory_();
             freeIndices_.push(i);
         }
     }
@@ -23,39 +30,46 @@ public:
         std::lock_guard<std::mutex> lock(mutex_);
 
         if (freeIndices_.empty())
-        {
             return nullptr;
-        }
 
         std::size_t index = freeIndices_.top();
         freeIndices_.pop();
 
-        Session& session = sessions_[index];
+        Session* session = sessions_[index].get();
 
-        // 고유 ID 발급
         uint64_t id = nextId_.fetch_add(1, std::memory_order_relaxed);
+        session->Init(s, owner, role, id);
 
-        session.Init(s, owner, role, id);
-
-        return &session;
+        return session;
     }
 
     // 세션 반환
     void Release(Session* session)
     {
-        if (!session)
-            return;
+        if (!session) return;
 
         session->Disconnect();
         session->ResetForReuse();
 
         std::lock_guard<std::mutex> lock(mutex_);
 
-        std::size_t index = static_cast<std::size_t>(session - sessions_.data());
-        if (index >= sessions_.size())
-            return;
+        // 포인터가 어느 인덱스인지 찾아서 반환 (O(N)이라도 maxSessions 크지 않으면 OK)
+        for (std::size_t i = 0; i < sessions_.size(); ++i)
+        {
+            if (sessions_[i].get() == session)
+            {
+                freeIndices_.push(i);
+                break;
+            }
+        }
+    }
 
-        freeIndices_.push(index);
+    std::size_t Capacity() const { return sessions_.size(); }
+
+    std::size_t FreeCount() const
+    {
+        std::lock_guard<std::mutex> lock(mutex_);
+        return freeIndices_.size();
     }
 
     Session* GetById(uint64_t id)
@@ -65,10 +79,14 @@ public:
 
         std::lock_guard<std::mutex> lock(mutex_);
 
-        for (auto& s : sessions_)
+        for (auto& uptr : sessions_)
         {
-            if (s.GetId() == id)
-                return &s;
+            Session* s = uptr.get();
+            if (!s)
+                continue;
+
+            if (s->GetId() == id)
+                return s;
         }
         return nullptr;
     }
@@ -85,9 +103,10 @@ public:
     }
 
 private:
-    std::vector<Session> sessions_;
+    std::vector<std::unique_ptr<Session>> sessions_;
     std::stack<std::size_t> freeIndices_;
     mutable std::mutex mutex_;
     std::atomic<uint64_t> nextId_{ 1 };
+    Factory factory_;
 };
 

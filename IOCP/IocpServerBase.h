@@ -45,6 +45,12 @@ protected:
     // RecvRing이 완성한 패킷이 여기로 들어옴
     virtual void OnRawPacket(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length) = 0;
 
+    virtual Session* CreateSessionForAccept(SOCKET clientSock, SessionRole role)
+    {
+        // 기본은 기존대로 SessionPool에서 Session 생성
+        return sessionPool_.Acquire(clientSock, this, role);
+    }
+
     // 세션 정리용 헬퍼
     void ReleaseSession(Session* session);
 

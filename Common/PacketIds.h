@@ -65,6 +65,24 @@ namespace PacketType {
 
 	};
 
+	enum class Chat : uint16_t {
+		// 4000번대 MainServer <-> ChatServer <-> Client
+		// 4000 ~ 4099 : 내부 검증
+
+		CS_MS_PING_REQ = 4000,
+		CS_MS_PING_ACK = 4001,
+
+		CS_C_PING_REQ = 4002,
+		CS_C_PING_REQ = 4003,
+
+		// 4100 ~ 4199 : 인증/세션 바인딩
+
+		// 4200 ~ 4299 : 채널(목록/입장/퇴장/닫기)
+
+		// 4300 ~ 4399 : 채팅 메시지(채널 메시지/귓속말 등)
+
+	};
+
 	// enum을 uint16_t로 변환
 	template<class E>
 	constexpr uint16_t to_id(E e) noexcept {

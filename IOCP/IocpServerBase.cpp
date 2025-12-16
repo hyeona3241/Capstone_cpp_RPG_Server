@@ -269,7 +269,8 @@ void IocpServerBase::OnAcceptCompleted(OverlappedEx* ovl, DWORD /*bytes*/)
     PostAccept();
 
     // 세션 풀에서 하나 꺼내기
-    Session* session = sessionPool_.Acquire(clientSock, this, SessionRole::Client);
+    Session* session = CreateSessionForAccept(clientSock, SessionRole::Client);
+
     if (!session)
     {
         ::closesocket(clientSock);

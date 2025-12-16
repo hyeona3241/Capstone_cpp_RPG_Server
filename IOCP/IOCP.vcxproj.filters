@@ -30,6 +30,9 @@
     <Filter Include="Server\DB\UnUse">
       <UniqueIdentifier>{4513dc37-fea7-4a67-b014-ae06cf62a63c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Server\Chat">
+      <UniqueIdentifier>{6585b0e5-f875-43be-bb21-f9c9978e7905}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Buffer.h">
@@ -113,6 +116,24 @@
     <ClInclude Include="MSDbServerInternalHandler.h">
       <Filter>Server\Main</Filter>
     </ClInclude>
+    <ClInclude Include="ChatSession.h">
+      <Filter>Server\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatSessionManager.h">
+      <Filter>Server\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatChannel.h">
+      <Filter>Server\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="ChannelManager.h">
+      <Filter>Server\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatPacketHandler.h">
+      <Filter>Server\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatServer.h">
+      <Filter>Server\Chat</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferPool.cpp">
@@ -195,6 +216,24 @@
     </ClCompile>
     <ClCompile Include="MSDbServerInternalHandler.cpp">
       <Filter>Server\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatSession.cpp">
+      <Filter>Server\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatSessionManager.cpp">
+      <Filter>Server\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatChannel.cpp">
+      <Filter>Server\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="ChannelManager.cpp">
+      <Filter>Server\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatPacketHandler.cpp">
+      <Filter>Server\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatServer.cpp">
+      <Filter>Server\Chat</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

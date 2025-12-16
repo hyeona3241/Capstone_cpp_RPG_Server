@@ -140,6 +140,12 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClInclude Include="AuthService.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="BufferPool.h" />
+    <ClInclude Include="ChannelManager.h" />
+    <ClInclude Include="ChatChannel.h" />
+    <ClInclude Include="ChatPacketHandler.h" />
+    <ClInclude Include="ChatServer.h" />
+    <ClInclude Include="ChatSession.h" />
+    <ClInclude Include="ChatSessionManager.h" />
     <ClInclude Include="DBConnection.h" />
     <ClInclude Include="DBJob.h" />
     <ClInclude Include="DBJobQueue.h" />
@@ -168,6 +174,12 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClCompile Include="AccountRepository.cpp" />
     <ClCompile Include="AuthService.cpp" />
     <ClCompile Include="BufferPool.cpp" />
+    <ClCompile Include="ChannelManager.cpp" />
+    <ClCompile Include="ChatChannel.cpp" />
+    <ClCompile Include="ChatPacketHandler.cpp" />
+    <ClCompile Include="ChatServer.cpp" />
+    <ClCompile Include="ChatSession.cpp" />
+    <ClCompile Include="ChatSessionManager.cpp" />
     <ClCompile Include="CreatPasswardHash.cpp" />
     <ClCompile Include="DBConnection.cpp" />
     <ClCompile Include="DBJobQueue.cpp" />

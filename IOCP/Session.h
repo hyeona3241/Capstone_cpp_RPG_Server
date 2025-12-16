@@ -39,7 +39,7 @@ class Session
 
 public:
     Session();
-    ~Session();
+    virtual ~Session();
 
     void Init(SOCKET s, IocpServerBase* owner, SessionRole role, uint64_t id);
 
