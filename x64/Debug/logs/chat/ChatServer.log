@@ -1,0 +1,267 @@
+2025-12-16 23:13:20.917 | INFO | Logger init app=ChatServer
+2025-12-16 23:13:20.943 | INFO | [System] ChatServer process started
+2025-12-16 23:13:20.967 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-16 23:13:20.967 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-16 23:18:04.920 | INFO | Logger init app=ChatServer
+2025-12-16 23:18:04.957 | INFO | [System] ChatServer process started
+2025-12-16 23:18:04.969 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-16 23:18:04.969 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-16 23:18:11.097 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4000, len=4
+2025-12-16 23:18:11.097 | INFO | [CHAT] PING_REQ received seq=1
+2025-12-16 23:18:11.097 | INFO | [CHAT] PING_ACK sent seq=1 tick=55237523
+2025-12-17 00:01:23.224 | INFO | Logger init app=ChatServer
+2025-12-17 00:01:23.249 | INFO | [System] ChatServer process started
+2025-12-17 00:01:23.273 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-17 00:01:23.273 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-17 00:18:56.797 | INFO | Logger init app=ChatServer
+2025-12-17 00:18:56.838 | INFO | [System] ChatServer process started
+2025-12-17 00:18:56.845 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-17 00:18:56.845 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-17 00:19:05.977 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4000, len=4
+2025-12-17 00:19:05.978 | INFO | [CHAT] PING_REQ received seq=1
+2025-12-17 00:19:05.978 | INFO | [CHAT] PING_ACK sent seq=1 tick=58892579
+2025-12-17 00:19:16.451 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4100, len=62
+2025-12-17 00:19:16.452 | WARN | [Chat:Auth] Unknown pktId=4100
+2025-12-17 00:44:53.418 | INFO | Logger init app=ChatServer
+2025-12-17 00:44:53.455 | INFO | [System] ChatServer process started
+2025-12-17 00:44:53.466 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-17 00:44:53.467 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-17 00:45:02.696 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4000, len=4
+2025-12-17 00:45:02.696 | INFO | [CHAT] PING_REQ received seq=1
+2025-12-17 00:45:02.696 | INFO | [CHAT] PING_ACK sent seq=1 tick=60449327
+2025-12-17 00:45:10.637 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4100, len=62
+2025-12-17 00:45:10.637 | WARN | [CHAT][AUTH] AllowToken from non-main.
+2025-12-17 00:49:32.879 | INFO | Logger init app=ChatServer
+2025-12-17 00:49:32.920 | INFO | [System] ChatServer process started
+2025-12-17 00:49:32.928 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-17 00:49:32.928 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-17 00:49:40.245 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4000, len=4
+2025-12-17 00:49:40.245 | INFO | [CHAT] PING_REQ received seq=1
+2025-12-17 00:49:40.245 | INFO | [CHAT] PING_ACK sent seq=1 tick=60726880
+2025-12-17 00:49:47.154 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 00:49:47.155 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=0000000e24041118a7055671df8428be0000000000000000 aid=5 ttl=30
+2025-12-17 01:06:30.033 | INFO | Logger init app=ChatServer
+2025-12-17 01:06:30.075 | INFO | [System] ChatServer process started
+2025-12-17 01:06:30.082 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-17 01:06:30.082 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-17 01:06:37.523 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4000, len=4
+2025-12-17 01:06:37.523 | INFO | [CHAT] PING_REQ received seq=1
+2025-12-17 01:06:37.523 | INFO | [CHAT] PING_ACK sent seq=1 tick=61744170
+2025-12-17 01:06:39.248 | INFO | Logger init app=ChatServer
+2025-12-17 01:06:39.290 | INFO | [System] ChatServer process started
+2025-12-17 01:06:39.296 | ERROR | [CHAT] Failed to start ChatServer.
+2025-12-17 01:06:39.297 | INFO | ChatServer shutting down
+2025-12-17 01:06:39.297 | INFO | Logger shutdown begin
+2025-12-17 01:06:47.871 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 01:06:47.871 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=0000000e60db269b14c29523c84f5e8f0000000000000000 aid=5 ttl=30
+2025-12-17 01:06:47.872 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4101, len=52
+2025-12-17 01:06:47.872 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=2 len=52
+2025-12-17 01:06:47.872 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=2 loginId= tokenPrefix=000000
+2025-12-17 01:06:47.872 | WARN | [CHAT][AUTH] AUTH_REQ invalid loginId(empty). sessionId=2
+2025-12-17 01:27:30.206 | INFO | Logger init app=ChatServer
+2025-12-17 01:27:30.247 | INFO | [System] ChatServer process started
+2025-12-17 01:27:30.255 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-17 01:27:30.255 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-17 01:27:54.694 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4000, len=4
+2025-12-17 01:27:54.694 | INFO | [CHAT] PING_REQ received seq=1
+2025-12-17 01:27:54.694 | INFO | [CHAT] PING_ACK sent seq=1 tick=63021351
+2025-12-17 01:28:01.168 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 01:28:01.169 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=0000000eacc04759bd40b2564faf54480000000000000000 aid=5 ttl=30
+2025-12-17 01:28:01.170 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4101, len=57
+2025-12-17 01:28:01.170 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=2 len=57
+2025-12-17 01:28:01.170 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=2 loginId=test1 tokenPrefix=000000
+2025-12-17 01:28:01.170 | INFO | [CHAT][AUTH] Token consumed. sessionId=2 aid=5 tokenPrefix=000000
+2025-12-17 01:28:01.170 | INFO | [CHAT][AUTH] AUTH success. sessionId=2 aid=5 loginId=test1
+2025-12-17 01:28:01.170 | INFO | [CHAT][AUTH] AUTH_ACK sent. sessionId=2 success=1 resultCode=0
+2025-12-17 02:10:47.589 | INFO | Logger init app=ChatServer
+2025-12-17 02:10:47.615 | INFO | [System] ChatServer process started
+2025-12-17 02:10:47.638 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-17 02:10:47.638 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-17 02:10:56.852 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4000, len=4
+2025-12-17 02:10:56.852 | INFO | [CHAT] PING_REQ received seq=1
+2025-12-17 02:10:56.852 | INFO | [CHAT] PING_ACK sent seq=1 tick=65603520
+2025-12-17 02:11:08.228 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 02:11:08.229 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=0000000f46f3d96ae322a94b89cde4ba0000000000000000 aid=5 ttl=30
+2025-12-17 02:11:08.230 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4101, len=57
+2025-12-17 02:11:08.230 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=2 len=57
+2025-12-17 02:11:08.230 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=2 loginId=test1 tokenPrefix=000000
+2025-12-17 02:11:08.230 | INFO | [CHAT][AUTH] Token consumed. sessionId=2 aid=5 tokenPrefix=000000
+2025-12-17 02:11:08.230 | INFO | [CHAT][AUTH] AUTH success. sessionId=2 aid=5 loginId=test1
+2025-12-17 02:11:08.230 | INFO | [CHAT][AUTH] AUTH_ACK sent. sessionId=2 success=1 resultCode=0
+2025-12-17 02:11:11.441 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4200, len=0
+2025-12-17 02:11:11.441 | INFO | [CHAT][CHANNEL] LIST_ACK sent. sessionId=2 count=2
+2025-12-17 03:41:24.747 | INFO | Logger init app=ChatServer
+2025-12-17 03:41:24.757 | INFO | [System] ChatServer process started
+2025-12-17 03:41:24.796 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-17 03:41:24.796 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-17 03:41:30.272 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4000, len=4
+2025-12-17 03:41:30.272 | INFO | [CHAT] PING_REQ received seq=1
+2025-12-17 03:41:30.272 | INFO | [CHAT] PING_ACK sent seq=1 tick=71036947
+2025-12-17 03:41:38.053 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 03:41:38.054 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=000000108a9883a97ab72982443074ac0000000000000000 aid=5 ttl=30
+2025-12-17 03:41:38.055 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4101, len=57
+2025-12-17 03:41:38.055 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=2 len=57
+2025-12-17 03:41:38.055 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=2 loginId=test1 tokenPrefix=000000
+2025-12-17 03:41:38.055 | INFO | [CHAT][AUTH] Token consumed. sessionId=2 aid=5 tokenPrefix=000000
+2025-12-17 03:41:38.055 | INFO | [CHAT][AUTH] AUTH success. sessionId=2 aid=5 loginId=test1
+2025-12-17 03:41:38.055 | INFO | [CHAT][AUTH] AUTH_ACK sent. sessionId=2 success=1 resultCode=0
+2025-12-17 03:41:41.730 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4200, len=0
+2025-12-17 03:41:41.730 | INFO | [CHAT][CHANNEL] LIST_ACK sent. sessionId=2 count=2
+2025-12-17 03:41:58.904 | INFO | Logger init app=ChatServer
+2025-12-17 03:41:58.944 | INFO | [System] ChatServer process started
+2025-12-17 03:41:58.952 | ERROR | [CHAT] Failed to start ChatServer.
+2025-12-17 03:41:58.952 | INFO | ChatServer shutting down
+2025-12-17 03:41:58.952 | INFO | Logger shutdown begin
+2025-12-17 03:42:05.085 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 03:42:05.086 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=000000108c34ffcf29f79ffdb9a732bf0000000000000001 aid=8 ttl=30
+2025-12-17 03:42:05.086 | INFO | [CHAT][PACKET] Recv: sessionId=3, role=1, state=1, id=4101, len=57
+2025-12-17 03:42:05.086 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=3 len=57
+2025-12-17 03:42:05.086 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=3 loginId=test2 tokenPrefix=000000
+2025-12-17 03:42:05.086 | INFO | [CHAT][AUTH] Token consumed. sessionId=3 aid=8 tokenPrefix=000000
+2025-12-17 03:42:05.086 | INFO | [CHAT][AUTH] AUTH success. sessionId=3 aid=8 loginId=test2
+2025-12-17 03:42:05.087 | INFO | [CHAT][AUTH] AUTH_ACK sent. sessionId=3 success=1 resultCode=0
+2025-12-17 03:42:07.442 | INFO | [CHAT][PACKET] Recv: sessionId=3, role=1, state=1, id=4200, len=0
+2025-12-17 03:42:07.443 | INFO | [CHAT][CHANNEL] LIST_ACK sent. sessionId=3 count=2
+2025-12-17 03:56:47.603 | INFO | Logger init app=ChatServer
+2025-12-17 03:56:47.627 | INFO | [System] ChatServer process started
+2025-12-17 03:56:47.653 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-17 03:56:47.653 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-17 03:56:55.899 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4000, len=4
+2025-12-17 03:56:55.899 | INFO | [CHAT] PING_REQ received seq=1
+2025-12-17 03:56:55.900 | INFO | [CHAT] PING_ACK sent seq=1 tick=71962575
+2025-12-17 03:56:58.725 | INFO | Logger init app=ChatServer
+2025-12-17 03:56:58.747 | INFO | [System] ChatServer process started
+2025-12-17 03:56:58.773 | ERROR | [CHAT] Failed to start ChatServer.
+2025-12-17 03:56:58.773 | INFO | ChatServer shutting down
+2025-12-17 03:56:58.773 | INFO | Logger shutdown begin
+2025-12-17 03:57:10.666 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 03:57:10.666 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=00000010c22f0ee347f84025930879640000000000000000 aid=5 ttl=30
+2025-12-17 03:57:10.667 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4101, len=57
+2025-12-17 03:57:10.667 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=2 len=57
+2025-12-17 03:57:10.667 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=2 loginId=test1 tokenPrefix=000000
+2025-12-17 03:57:10.668 | INFO | [CHAT][AUTH] Token consumed. sessionId=2 aid=5 tokenPrefix=000000
+2025-12-17 03:57:10.668 | INFO | [CHAT][AUTH] AUTH success. sessionId=2 aid=5 loginId=test1
+2025-12-17 03:57:10.668 | INFO | [CHAT][AUTH] AUTH_ACK sent. sessionId=2 success=1 resultCode=0
+2025-12-17 03:57:12.102 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4200, len=0
+2025-12-17 03:57:12.102 | INFO | [CHAT][CHANNEL] LIST_ACK sent. sessionId=2 count=2
+2025-12-17 03:57:14.894 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4202, len=4
+2025-12-17 03:57:14.894 | INFO | [CHAT][CHANNEL] ENTER success. sessionId=2 cid=1
+2025-12-17 03:57:18.182 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4300, len=8
+2025-12-17 03:57:18.183 | INFO | [CHAT][MSG] Broadcast. cid=1 from=test1 len=2
+2025-12-17 03:57:35.969 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 03:57:35.970 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=00000010c3b12ac6ca38a03983c91c0c0000000000000001 aid=8 ttl=30
+2025-12-17 03:57:35.970 | INFO | [CHAT][PACKET] Recv: sessionId=3, role=1, state=1, id=4101, len=57
+2025-12-17 03:57:35.970 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=3 len=57
+2025-12-17 03:57:35.970 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=3 loginId=test2 tokenPrefix=000000
+2025-12-17 03:57:35.970 | INFO | [CHAT][AUTH] Token consumed. sessionId=3 aid=8 tokenPrefix=000000
+2025-12-17 03:57:35.970 | INFO | [CHAT][AUTH] AUTH success. sessionId=3 aid=8 loginId=test2
+2025-12-17 03:57:35.971 | INFO | [CHAT][AUTH] AUTH_ACK sent. sessionId=3 success=1 resultCode=0
+2025-12-17 03:57:38.743 | INFO | [CHAT][PACKET] Recv: sessionId=3, role=1, state=1, id=4202, len=4
+2025-12-17 03:57:38.743 | INFO | [CHAT][CHANNEL] ENTER success. sessionId=3 cid=1
+2025-12-17 03:57:42.191 | INFO | [CHAT][PACKET] Recv: sessionId=3, role=1, state=1, id=4300, len=8
+2025-12-17 03:57:42.192 | INFO | [CHAT][MSG] Broadcast. cid=1 from=test2 len=2
+2025-12-17 03:57:48.615 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4300, len=11
+2025-12-17 03:57:48.616 | INFO | [CHAT][MSG] Broadcast. cid=1 from=test1 len=5
+2025-12-17 03:58:07.291 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 03:58:07.291 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=00000010c58f18ee309bff52791cadbe0000000000000002 aid=9 ttl=30
+2025-12-17 03:58:07.292 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4101, len=57
+2025-12-17 03:58:07.292 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=4 len=57
+2025-12-17 03:58:07.292 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=4 loginId=test3 tokenPrefix=000000
+2025-12-17 03:58:07.292 | INFO | [CHAT][AUTH] Token consumed. sessionId=4 aid=9 tokenPrefix=000000
+2025-12-17 03:58:07.292 | INFO | [CHAT][AUTH] AUTH success. sessionId=4 aid=9 loginId=test3
+2025-12-17 03:58:07.292 | INFO | [CHAT][AUTH] AUTH_ACK sent. sessionId=4 success=1 resultCode=0
+2025-12-17 03:58:13.353 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4202, len=4
+2025-12-17 03:58:13.353 | INFO | [CHAT][CHANNEL] ENTER success. sessionId=4 cid=2
+2025-12-17 03:58:15.168 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4300, len=8
+2025-12-17 03:58:15.169 | INFO | [CHAT][MSG] Broadcast. cid=2 from=test3 len=2
+2025-12-17 03:58:16.457 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4300, len=10
+2025-12-17 03:58:16.457 | INFO | [CHAT][MSG] Broadcast. cid=2 from=test3 len=4
+2025-12-17 03:58:18.225 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4300, len=10
+2025-12-17 03:58:18.225 | INFO | [CHAT][MSG] Broadcast. cid=2 from=test3 len=4
+2025-12-17 04:32:34.206 | INFO | Logger init app=ChatServer
+2025-12-17 04:32:34.246 | INFO | [System] ChatServer process started
+2025-12-17 04:32:34.253 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-17 04:32:34.253 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-17 04:32:39.126 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4000, len=4
+2025-12-17 04:32:39.126 | INFO | [CHAT] PING_REQ received seq=1
+2025-12-17 04:32:39.126 | INFO | [CHAT] PING_ACK sent seq=1 tick=74105802
+2025-12-17 04:32:45.357 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 04:32:45.358 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=00000011416bdf83bdc01d5db3c359870000000000000000 aid=5 ttl=30
+2025-12-17 04:32:45.359 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4101, len=57
+2025-12-17 04:32:45.359 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=2 len=57
+2025-12-17 04:32:45.359 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=2 loginId=test1 tokenPrefix=000000
+2025-12-17 04:32:45.359 | INFO | [CHAT][AUTH] Token consumed. sessionId=2 aid=5 tokenPrefix=000000
+2025-12-17 04:32:45.359 | INFO | [CHAT][AUTH] AUTH success. sessionId=2 aid=5 loginId=test1
+2025-12-17 04:32:45.359 | INFO | [CHAT][AUTH] AUTH_ACK sent. sessionId=2 success=1 resultCode=0
+2025-12-17 04:32:47.506 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4202, len=4
+2025-12-17 04:32:47.506 | INFO | [CHAT][CHANNEL] ENTER success. sessionId=2 cid=1
+2025-12-17 04:32:57.661 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 04:32:57.661 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=0000001142279fcc191074e25d5ca8180000000000000001 aid=8 ttl=30
+2025-12-17 04:32:57.662 | INFO | [CHAT][PACKET] Recv: sessionId=3, role=1, state=1, id=4101, len=57
+2025-12-17 04:32:57.662 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=3 len=57
+2025-12-17 04:32:57.662 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=3 loginId=test2 tokenPrefix=000000
+2025-12-17 04:32:57.662 | INFO | [CHAT][AUTH] Token consumed. sessionId=3 aid=8 tokenPrefix=000000
+2025-12-17 04:32:57.662 | INFO | [CHAT][AUTH] AUTH success. sessionId=3 aid=8 loginId=test2
+2025-12-17 04:32:57.662 | INFO | [CHAT][AUTH] AUTH_ACK sent. sessionId=3 success=1 resultCode=0
+2025-12-17 04:33:02.507 | INFO | [CHAT][PACKET] Recv: sessionId=3, role=1, state=1, id=4202, len=4
+2025-12-17 04:33:02.507 | INFO | [CHAT][CHANNEL] ENTER success. sessionId=3 cid=1
+2025-12-17 04:33:06.115 | INFO | [CHAT][PACKET] Recv: sessionId=3, role=1, state=1, id=4300, len=8
+2025-12-17 04:33:06.115 | INFO | [CHAT][MSG] Broadcast. cid=1 from=test2 len=2
+2025-12-17 04:33:11.227 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4300, len=11
+2025-12-17 04:33:11.228 | INFO | [CHAT][MSG] Broadcast. cid=1 from=test1 len=5
+2025-12-17 04:33:21.004 | INFO | [CHAT][PACKET] Recv: sessionId=3, role=1, state=1, id=4204, len=0
+2025-12-17 04:33:21.004 | INFO | [CHAT][CHANNEL] LEAVE_REQ recv. sessionId=3
+2025-12-17 04:33:21.004 | INFO | [CHAT][CHANNEL] LEAVE success. sessionId=3 cid=1
+2025-12-17 04:33:27.180 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4300, len=8
+2025-12-17 04:33:27.180 | INFO | [CHAT][MSG] Broadcast. cid=1 from=test1 len=2
+2025-12-17 04:33:34.134 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 04:33:34.136 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=0000001144542a5d66bd976fa682fd3b0000000000000002 aid=9 ttl=30
+2025-12-17 04:33:34.136 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4101, len=57
+2025-12-17 04:33:34.136 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=4 len=57
+2025-12-17 04:33:34.136 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=4 loginId=test3 tokenPrefix=000000
+2025-12-17 04:33:34.136 | INFO | [CHAT][AUTH] Token consumed. sessionId=4 aid=9 tokenPrefix=000000
+2025-12-17 04:33:34.136 | INFO | [CHAT][AUTH] AUTH success. sessionId=4 aid=9 loginId=test3
+2025-12-17 04:33:34.136 | INFO | [CHAT][AUTH] AUTH_ACK sent. sessionId=4 success=1 resultCode=0
+2025-12-17 04:33:38.908 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4202, len=4
+2025-12-17 04:33:38.908 | INFO | [CHAT][CHANNEL] ENTER success. sessionId=4 cid=1
+2025-12-17 04:33:40.308 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4300, len=10
+2025-12-17 04:33:40.309 | INFO | [CHAT][MSG] Broadcast. cid=1 from=test3 len=4
+2025-12-17 04:33:42.172 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4300, len=10
+2025-12-17 04:33:42.172 | INFO | [CHAT][MSG] Broadcast. cid=1 from=test3 len=4
+2025-12-17 04:33:44.637 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4300, len=15
+2025-12-17 04:33:44.637 | INFO | [CHAT][MSG] Broadcast. cid=1 from=test3 len=9
+2025-12-17 04:33:48.789 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4204, len=0
+2025-12-17 04:33:48.790 | INFO | [CHAT][CHANNEL] LEAVE_REQ recv. sessionId=2
+2025-12-17 04:33:48.790 | INFO | [CHAT][CHANNEL] LEAVE success. sessionId=2 cid=1
+2025-12-17 04:33:52.308 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4202, len=4
+2025-12-17 04:33:52.309 | INFO | [CHAT][CHANNEL] ENTER success. sessionId=2 cid=2
+2025-12-17 04:33:54.196 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4300, len=9
+2025-12-17 04:33:54.197 | INFO | [CHAT][MSG] Broadcast. cid=2 from=test1 len=3
+2025-12-17 04:33:56.517 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4204, len=0
+2025-12-17 04:33:56.517 | INFO | [CHAT][CHANNEL] LEAVE_REQ recv. sessionId=4
+2025-12-17 04:33:56.518 | INFO | [CHAT][CHANNEL] LEAVE success. sessionId=4 cid=1
+2025-12-17 04:33:59.781 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4202, len=4
+2025-12-17 04:33:59.781 | INFO | [CHAT][CHANNEL] ENTER success. sessionId=4 cid=2
+2025-12-17 04:34:00.741 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4300, len=8
+2025-12-17 04:34:00.742 | INFO | [CHAT][MSG] Broadcast. cid=2 from=test3 len=2
+2025-12-17 04:34:03.286 | INFO | [CHAT][PACKET] Recv: sessionId=4, role=1, state=1, id=4204, len=0
+2025-12-17 04:34:03.286 | INFO | [CHAT][CHANNEL] LEAVE_REQ recv. sessionId=4
+2025-12-17 04:34:03.286 | INFO | [CHAT][CHANNEL] LEAVE success. sessionId=4 cid=2
+2025-12-17 04:34:09.302 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4204, len=0
+2025-12-17 04:34:09.302 | INFO | [CHAT][CHANNEL] LEAVE_REQ recv. sessionId=2
+2025-12-17 04:34:09.302 | INFO | [CHAT][CHANNEL] LEAVE success. sessionId=2 cid=2
+2025-12-17 04:37:46.934 | INFO | Logger init app=ChatServer
+2025-12-17 04:37:46.971 | INFO | [System] ChatServer process started
+2025-12-17 04:37:46.982 | INFO | [CHAT] ChatServer started on port 3800, workers=4
+2025-12-17 04:37:46.982 | INFO | [CHAT] ChatServer started. Listening on port 3800
+2025-12-17 04:37:51.171 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=1, state=1, id=4000, len=4
+2025-12-17 04:37:51.171 | INFO | [CHAT] PING_REQ received seq=1
+2025-12-17 04:37:51.171 | INFO | [CHAT] PING_ACK sent seq=1 tick=74417847
+2025-12-17 04:37:57.474 | INFO | [CHAT][PACKET] Recv: sessionId=1, role=2, state=1, id=4100, len=62
+2025-12-17 04:37:57.474 | INFO | [CHAT][AUTH] ALLOW_TOKEN_REQ token=00000011540664e3d6beedc7c68744cd0000000000000000 aid=5 ttl=30
+2025-12-17 04:37:57.476 | INFO | [CHAT][PACKET] Recv: sessionId=2, role=1, state=1, id=4101, len=57
+2025-12-17 04:37:57.476 | INFO | [CHAT][AUTH] AUTH_REQ recv. sessionId=2 len=57
+2025-12-17 04:37:57.476 | INFO | [CHAT][AUTH] AUTH_REQ parsed. sessionId=2 loginId=test1 tokenPrefix=000000
+2025-12-17 04:37:57.476 | INFO | [CHAT][AUTH] Token consumed. sessionId=2 aid=5 tokenPrefix=000000
+2025-12-17 04:37:57.476 | INFO | [CHAT][AUTH] AUTH success. sessionId=2 aid=5 loginId=test1
+2025-12-17 04:37:57.476 | INFO | [CHAT][AUTH] AUTH_ACK sent. sessionId=2 success=1 resultCode=0

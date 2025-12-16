@@ -113,7 +113,7 @@ crashlytics-build.properties
 **/[Dd]ebug/
 **/[Rr]elease/
 **/[Rr]eleases/
-**/x64/
+#**/x64/
 **/x86/
 **/[Ii]ntermediate/
 **/[Ii]pch/
@@ -144,3 +144,7 @@ ThirdParty/*
 !ThirdParty/mysql/
 !ThirdParty/mysql/**  
 # mysql 내부 파일까지 허용
+
+# === allow x64 build outputs ===
+!/x64/
+!/x64/**

@@ -1,0 +1,1605 @@
+2025-12-15 10:12:35.148 | INFO | Logger init app=MainServer
+2025-12-15 10:12:35.189 | INFO | [System] MainServer process started
+2025-12-15 10:12:35.197 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 10:12:35.197 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 10:12:35.198 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 10:12:35.198 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 10:12:35.198 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 10:12:35.198 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 10:12:35.198 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=3471239 (from sessionId=1)
+2025-12-15 10:12:37.245 | ERROR | [MAIN] Failed to connect to LoginServer (3700)
+2025-12-15 10:12:38.220 | INFO | [MAIN] MainServer stopped.
+2025-12-15 10:12:38.220 | INFO | MainServer shutting down
+2025-12-15 10:12:38.220 | INFO | Logger shutdown begin
+2025-12-15 10:12:41.092 | INFO | Logger init app=MainServer
+2025-12-15 10:12:41.132 | INFO | [System] MainServer process started
+2025-12-15 10:12:41.140 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 10:12:41.140 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 10:12:41.140 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 10:12:41.140 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 10:12:41.140 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 10:12:41.140 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 10:12:41.141 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=3477182 (from sessionId=1)
+2025-12-15 10:12:43.171 | ERROR | [MAIN] Failed to connect to LoginServer (3700)
+2025-12-15 10:12:44.165 | INFO | [MAIN] MainServer stopped.
+2025-12-15 10:12:44.165 | INFO | MainServer shutting down
+2025-12-15 10:12:44.165 | INFO | Logger shutdown begin
+2025-12-15 10:12:59.449 | INFO | Logger init app=MainServer
+2025-12-15 10:12:59.489 | INFO | [System] MainServer process started
+2025-12-15 10:12:59.497 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 10:12:59.497 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 10:12:59.498 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 10:12:59.498 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 10:12:59.498 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 10:12:59.498 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 10:12:59.498 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=3495539 (from sessionId=1)
+2025-12-15 10:12:59.498 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 10:12:59.498 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 10:12:59.498 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 10:12:59.498 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 10:12:59.498 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=3495540 (from sessionId=2)
+2025-12-15 10:19:02.102 | INFO | Logger init app=MainServer
+2025-12-15 10:19:02.142 | INFO | [System] MainServer process started
+2025-12-15 10:19:02.150 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 10:19:02.150 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 10:19:02.150 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 10:19:02.150 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 10:19:02.150 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 10:19:02.151 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 10:19:02.151 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=3858192 (from sessionId=1)
+2025-12-15 10:19:04.185 | ERROR | [MAIN] Failed to connect to LoginServer (3700)
+2025-12-15 10:19:05.176 | INFO | [MAIN] MainServer stopped.
+2025-12-15 10:19:05.176 | INFO | MainServer shutting down
+2025-12-15 10:19:05.176 | INFO | Logger shutdown begin
+2025-12-15 10:23:46.331 | INFO | Logger init app=MainServer
+2025-12-15 10:23:46.373 | INFO | [System] MainServer process started
+2025-12-15 10:23:46.381 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 10:23:46.381 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 10:23:46.382 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 10:23:46.382 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 10:23:46.382 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 10:23:46.382 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 10:23:46.382 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 10:23:46.382 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=4142423 (from sessionId=1)
+2025-12-15 10:23:46.382 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 10:23:46.382 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 10:23:46.382 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 10:23:46.383 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=4142424 (from sessionId=2)
+2025-12-15 10:23:50.179 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-15 10:23:50.179 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-15 10:23:50.179 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-15 10:23:54.924 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-15 10:23:54.924 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-15 10:23:54.924 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-15 10:23:54.924 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-15 10:23:54.947 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-15 10:23:54.947 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-15 10:23:54.947 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-15 10:23:54.948 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-15 10:24:00.722 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-15 10:41:07.918 | INFO | Logger init app=MainServer
+2025-12-15 10:41:07.957 | INFO | [System] MainServer process started
+2025-12-15 10:41:07.965 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 10:41:07.965 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 10:41:07.965 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 10:41:07.965 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 10:41:07.966 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 10:41:07.966 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 10:41:07.966 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 10:41:07.966 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=5184007 (from sessionId=1)
+2025-12-15 10:41:07.966 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 10:41:07.966 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 10:41:07.966 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 10:41:07.966 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=5184007 (from sessionId=2)
+2025-12-15 10:42:46.032 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=3, state=0
+2025-12-15 10:42:48.515 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=2, state=0
+2025-12-15 10:47:11.600 | INFO | Logger init app=MainServer
+2025-12-15 10:47:11.639 | INFO | [System] MainServer process started
+2025-12-15 10:47:11.647 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 10:47:11.647 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 10:47:11.647 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 10:47:11.648 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 10:47:11.648 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 10:47:11.648 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 10:47:11.648 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=5547689 (from sessionId=1)
+2025-12-15 10:47:11.648 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 10:47:11.648 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 10:47:11.648 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 10:47:11.648 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 10:47:11.648 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=5547690 (from sessionId=2)
+2025-12-15 10:48:07.549 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=3, state=0
+2025-12-15 10:48:09.318 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=2, state=0
+2025-12-15 10:51:23.466 | INFO | Logger init app=MainServer
+2025-12-15 10:51:23.506 | INFO | [System] MainServer process started
+2025-12-15 10:51:23.514 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 10:51:23.514 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 10:51:23.515 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 10:51:23.515 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 10:51:23.515 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 10:51:23.515 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 10:51:23.515 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 10:51:23.515 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=5799556 (from sessionId=1)
+2025-12-15 10:51:23.515 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 10:51:23.515 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 10:51:23.516 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 10:51:23.516 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=5799557 (from sessionId=2)
+2025-12-15 10:59:02.448 | INFO | Logger init app=MainServer
+2025-12-15 10:59:02.489 | INFO | [System] MainServer process started
+2025-12-15 10:59:02.497 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 10:59:02.497 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 10:59:02.498 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 10:59:02.498 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 10:59:02.498 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 10:59:02.498 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 10:59:02.498 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 10:59:02.498 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 10:59:02.498 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 10:59:02.498 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 10:59:02.498 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=6258539 (from sessionId=1)
+2025-12-15 10:59:02.498 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=6258540 (from sessionId=2)
+2025-12-15 10:59:16.544 | INFO | Logger init app=MainServer
+2025-12-15 10:59:16.584 | INFO | [System] MainServer process started
+2025-12-15 10:59:16.591 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 10:59:16.592 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 10:59:16.592 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 10:59:16.592 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 10:59:16.592 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 10:59:16.592 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 10:59:16.593 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 10:59:16.593 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 10:59:16.593 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 10:59:16.593 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 10:59:16.593 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=6272634 (from sessionId=1)
+2025-12-15 10:59:16.593 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=6272634 (from sessionId=2)
+2025-12-15 11:01:46.677 | INFO | Logger init app=MainServer
+2025-12-15 11:01:46.717 | INFO | [System] MainServer process started
+2025-12-15 11:01:46.725 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 11:01:46.725 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 11:01:46.725 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 11:01:46.725 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 11:01:46.725 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 11:01:46.726 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 11:01:46.726 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=6422767 (from sessionId=1)
+2025-12-15 11:01:46.726 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 11:01:46.726 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 11:01:46.726 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 11:01:46.726 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 11:01:46.726 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=6422767 (from sessionId=2)
+2025-12-15 11:04:48.393 | INFO | Logger init app=MainServer
+2025-12-15 11:04:48.434 | INFO | [System] MainServer process started
+2025-12-15 11:04:48.441 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 11:04:48.441 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 11:04:48.442 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 11:04:48.442 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 11:04:48.442 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 11:04:48.442 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 11:04:48.442 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 11:04:48.442 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=6604484 (from sessionId=1)
+2025-12-15 11:04:48.442 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 11:04:48.442 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 11:04:48.442 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 11:04:48.443 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=6604484 (from sessionId=2)
+2025-12-15 11:07:04.089 | INFO | Logger init app=MainServer
+2025-12-15 11:07:04.129 | INFO | [System] MainServer process started
+2025-12-15 11:07:04.137 | INFO | [MAIN] MainServer started on port 25565, workers=4
+2025-12-15 11:07:04.137 | INFO | [MAIN] MainServer started. Listening on port 25565
+2025-12-15 11:07:04.137 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 11:07:04.138 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 11:07:04.138 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 11:07:04.138 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 11:07:04.138 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 11:07:04.138 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=6740179 (from sessionId=1)
+2025-12-15 11:07:04.138 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 11:07:04.138 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 11:07:04.138 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 11:07:04.138 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=6740179 (from sessionId=2)
+2025-12-15 11:11:36.383 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=3, state=0
+2025-12-15 11:11:37.872 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=2, state=0
+2025-12-15 11:17:08.687 | INFO | Logger init app=MainServer
+2025-12-15 11:17:08.728 | INFO | [System] MainServer process started
+2025-12-15 11:17:08.736 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 11:17:08.737 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 11:17:08.737 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 11:17:08.737 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 11:17:08.737 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 11:17:08.737 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 11:17:08.737 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 11:17:08.738 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 11:17:08.738 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=7344779 (from sessionId=1)
+2025-12-15 11:17:08.738 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 11:17:08.738 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 11:17:08.738 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=7344779 (from sessionId=2)
+2025-12-15 11:18:08.034 | INFO | Logger init app=MainServer
+2025-12-15 11:18:08.075 | INFO | [System] MainServer process started
+2025-12-15 11:18:08.083 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 11:18:08.083 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 11:18:08.083 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 11:18:08.084 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 11:18:08.084 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 11:18:08.084 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 11:18:08.084 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 11:18:08.084 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=7404125 (from sessionId=1)
+2025-12-15 11:18:08.084 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 11:18:08.084 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 11:21:19.381 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=3, state=0
+2025-12-15 11:21:22.850 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=2, state=0
+2025-12-15 11:21:37.129 | INFO | Logger init app=MainServer
+2025-12-15 11:21:37.170 | INFO | [System] MainServer process started
+2025-12-15 11:21:37.178 | INFO | [MAIN] MainServer started on port 25565, workers=4
+2025-12-15 11:21:37.178 | INFO | [MAIN] MainServer started. Listening on port 25565
+2025-12-15 11:21:37.179 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 11:21:37.179 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 11:21:37.179 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 11:21:37.179 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 11:21:37.179 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 11:21:37.179 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=7613220 (from sessionId=1)
+2025-12-15 11:21:37.179 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 11:21:37.179 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 11:21:37.179 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 11:21:37.179 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=7613221 (from sessionId=2)
+2025-12-15 11:31:01.922 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=3, state=0
+2025-12-15 11:31:03.707 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=2, state=0
+2025-12-15 12:09:58.471 | INFO | Logger init app=MainServer
+2025-12-15 12:09:58.512 | INFO | [System] MainServer process started
+2025-12-15 12:09:58.521 | INFO | [MAIN] MainServer started on port 25565, workers=4
+2025-12-15 12:09:58.521 | INFO | [MAIN] MainServer started. Listening on port 25565
+2025-12-15 12:09:58.521 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 12:09:58.521 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 12:09:58.521 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 12:09:58.522 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 12:09:58.522 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 12:09:58.522 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 12:09:58.522 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=10514563 (from sessionId=1)
+2025-12-15 12:09:58.522 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 12:09:58.522 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 12:09:58.522 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=10514563 (from sessionId=2)
+2025-12-15 12:10:56.383 | INFO | Logger init app=MainServer
+2025-12-15 12:10:56.423 | INFO | [System] MainServer process started
+2025-12-15 12:10:56.430 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-15 12:10:56.430 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-15 12:10:56.431 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-15 12:10:56.431 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-15 12:10:56.431 | INFO | [MAIN] Connected to DBServer.
+2025-12-15 12:10:56.431 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-15 12:10:56.431 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-15 12:10:56.431 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=10572473 (from sessionId=1)
+2025-12-15 12:10:56.432 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-15 12:10:56.432 | INFO | [MAIN] Connected to LoginServer.
+2025-12-15 12:10:56.432 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-15 12:10:56.432 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=10572473 (from sessionId=2)
+2025-12-15 12:11:01.115 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 01:46:44.528 | INFO | Logger init app=MainServer
+2025-12-16 01:46:44.566 | INFO | [System] MainServer process started
+2025-12-16 01:46:44.575 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 01:46:44.575 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 01:46:44.576 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 01:46:44.576 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 01:46:44.576 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 01:46:44.576 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 01:46:44.576 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 01:46:44.576 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=22288724 (from sessionId=1)
+2025-12-16 01:46:44.576 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 01:46:44.576 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 01:46:44.577 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 01:46:44.577 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=22288724 (from sessionId=2)
+2025-12-16 01:47:13.435 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 01:47:13.435 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 01:47:13.435 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 01:47:20.753 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 01:47:20.754 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 01:47:20.754 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 01:47:20.754 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 01:47:20.776 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 01:47:20.776 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 01:47:20.776 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 01:47:20.776 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 01:47:20.779 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 01:47:38.267 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 01:47:38.268 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 01:47:38.268 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 01:47:42.827 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 01:47:42.827 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=4
+2025-12-16 01:47:42.828 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 01:47:42.828 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test1
+2025-12-16 01:47:42.829 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 01:47:42.829 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-16 01:47:42.829 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 01:47:42.829 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=2
+2025-12-16 01:47:42.843 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-16 01:47:50.122 | INFO | [CONNECTION] Client connected: sessionId=5
+2025-12-16 01:47:50.123 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1000, len=4
+2025-12-16 01:47:50.123 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=5)
+2025-12-16 01:47:52.698 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1100, len=8
+2025-12-16 01:47:52.699 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=4, clientSessionId=5
+2025-12-16 01:47:52.699 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=7
+2025-12-16 01:47:52.699 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=4, loginId=t
+2025-12-16 01:47:52.700 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=8
+2025-12-16 01:47:52.701 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=4 exists=0
+2025-12-16 01:47:52.701 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 01:47:52.701 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=5 result=1
+2025-12-16 01:47:52.717 | INFO | [CONNECTION] Client disconnected: sessionId=5, role=1, state=0
+2025-12-16 01:47:58.543 | INFO | [CONNECTION] Client connected: sessionId=6
+2025-12-16 01:47:58.544 | INFO | [PACKET] Recv: sessionId=6, role=1, state=1, id=1000, len=4
+2025-12-16 01:47:58.544 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=6)
+2025-12-16 01:48:05.400 | INFO | [CONNECTION] Client connected: sessionId=7
+2025-12-16 01:48:05.400 | INFO | [PACKET] Recv: sessionId=7, role=1, state=1, id=1000, len=4
+2025-12-16 01:48:05.401 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=7)
+2025-12-16 01:48:08.483 | INFO | [PACKET] Recv: sessionId=7, role=1, state=1, id=1100, len=12
+2025-12-16 01:48:08.484 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=5, clientSessionId=7
+2025-12-16 01:48:08.484 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 01:48:08.484 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=5, loginId=test1
+2025-12-16 01:48:08.485 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 01:48:08.485 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=5 exists=1
+2025-12-16 01:48:08.486 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 01:48:08.486 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=7 accountId=5
+2025-12-16 01:48:08.502 | INFO | [CONNECTION] Client disconnected: sessionId=7, role=1, state=0
+2025-12-16 02:11:49.847 | INFO | Logger init app=MainServer
+2025-12-16 02:11:49.886 | INFO | [System] MainServer process started
+2025-12-16 02:11:49.893 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 02:11:49.894 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 02:11:49.894 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 02:11:49.894 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 02:11:49.894 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 02:11:49.894 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 02:11:49.895 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=23794042 (from sessionId=1)
+2025-12-16 02:11:49.895 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 02:11:49.895 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 02:11:49.895 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 02:11:49.895 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 02:11:49.895 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=23794042 (from sessionId=2)
+2025-12-16 02:12:01.108 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 02:12:01.109 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 02:12:01.109 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 02:12:09.547 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 02:12:34.131 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 02:12:34.132 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 02:12:34.132 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 02:12:41.812 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1102, len=12
+2025-12-16 02:13:02.728 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-16 02:13:03.979 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=2, state=0
+2025-12-16 03:58:24.760 | INFO | Logger init app=MainServer
+2025-12-16 03:58:24.798 | INFO | [System] MainServer process started
+2025-12-16 03:58:24.806 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 03:58:24.806 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 03:58:24.807 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 03:58:24.807 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 03:58:24.807 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 03:58:24.807 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 03:58:24.807 | INFO | [DbSrv] DB_PING_ACK seq=1, serverTick=30188955 (from sessionId=1)
+2025-12-16 03:58:24.807 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 03:58:24.807 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 03:58:24.808 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 03:58:24.808 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 03:58:24.808 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=30188955 (from sessionId=2)
+2025-12-16 03:58:28.221 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 03:58:28.222 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 03:58:28.222 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 03:58:36.035 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 03:58:36.035 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 03:58:36.035 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 03:58:36.035 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 03:58:36.036 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 03:58:36.036 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 03:58:36.036 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 03:58:36.037 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 03:58:36.048 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 05:09:19.410 | INFO | Logger init app=MainServer
+2025-12-16 05:09:19.447 | INFO | [System] MainServer process started
+2025-12-16 05:09:19.454 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 05:09:19.454 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 05:09:19.455 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 05:09:19.455 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 05:09:19.455 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 05:09:19.455 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 05:09:19.455 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 05:09:19.455 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 05:09:19.455 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 05:09:19.456 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 05:09:19.456 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 05:09:19.456 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=34443632 (from sessionId=2)
+2025-12-16 05:09:46.322 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 05:09:46.323 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 05:09:46.324 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 05:09:54.963 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1102, len=12
+2025-12-16 05:09:54.964 | INFO | [REGISTER] Forward REGISTER_REQ -> DB_REGISTER_REQ. seq=1 clientSessionId=3 loginId=test2
+2025-12-16 05:10:07.194 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=3, state=0
+2025-12-16 05:10:07.832 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=2, state=0
+2025-12-16 05:21:03.297 | INFO | Logger init app=MainServer
+2025-12-16 05:21:03.338 | INFO | [System] MainServer process started
+2025-12-16 05:21:03.346 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 05:21:03.346 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 05:21:03.346 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 05:21:03.347 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 05:21:03.347 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 05:21:03.347 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 05:21:03.347 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 05:21:03.347 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 05:21:03.347 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 05:21:03.347 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 05:21:03.347 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 05:21:03.347 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=35147560 (from sessionId=2)
+2025-12-16 05:21:05.680 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 05:21:05.681 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 05:21:05.681 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 05:21:15.138 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1102, len=12
+2025-12-16 05:21:15.139 | INFO | [REGISTER] Forward REGISTER_REQ -> DB_REGISTER_REQ. seq=1 clientSessionId=3 loginId=test2
+2025-12-16 05:21:15.154 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3105, len=28
+2025-12-16 05:21:15.155 | INFO | [MS] REGISTER success.
+2025-12-16 05:21:22.122 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 05:21:22.123 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 05:21:22.123 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 05:21:22.123 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test2
+2025-12-16 05:21:22.124 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=100
+2025-12-16 05:21:22.124 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 05:21:22.124 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 05:21:22.124 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=3 result=2
+2025-12-16 05:21:39.191 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 05:21:41.145 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 05:21:41.146 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 05:21:41.146 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 05:21:46.771 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 05:21:46.771 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=2, clientSessionId=4
+2025-12-16 05:21:46.771 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 05:21:46.772 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=2, loginId=test2
+2025-12-16 05:21:46.773 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=100
+2025-12-16 05:21:46.773 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=2 exists=1
+2025-12-16 05:21:46.773 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 05:21:46.773 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=2
+2025-12-16 05:21:53.499 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 05:21:53.499 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=4
+2025-12-16 05:21:53.499 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 05:21:53.499 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test2
+2025-12-16 05:21:53.500 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=100
+2025-12-16 05:21:53.500 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-16 05:21:53.500 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 05:21:53.500 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=2
+2025-12-16 05:22:02.290 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 05:22:02.291 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=4, clientSessionId=4
+2025-12-16 05:22:02.291 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 05:22:02.291 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=4, loginId=test1
+2025-12-16 05:22:02.292 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 05:22:02.292 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=4 exists=1
+2025-12-16 05:22:02.292 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 05:22:02.292 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-16 05:22:02.301 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-16 05:28:47.347 | INFO | Logger init app=MainServer
+2025-12-16 05:28:47.387 | INFO | [System] MainServer process started
+2025-12-16 05:28:47.394 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 05:28:47.395 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 05:28:47.395 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 05:28:47.395 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 05:28:47.395 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 05:28:47.396 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 05:28:47.396 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 05:28:47.396 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 05:28:47.396 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 05:28:47.396 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 05:28:47.396 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 05:28:47.396 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=35611627 (from sessionId=2)
+2025-12-16 05:28:50.143 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 05:28:50.144 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 05:28:50.144 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 05:28:55.882 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1102, len=12
+2025-12-16 05:28:55.882 | INFO | [REGISTER] Forward REGISTER_REQ -> DB_REGISTER_REQ. seq=1 clientSessionId=3 loginId=test2
+2025-12-16 05:28:55.897 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3105, len=28
+2025-12-16 05:28:55.898 | INFO | [MS] REGISTER success.
+2025-12-16 05:29:02.442 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=9
+2025-12-16 05:29:02.443 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 05:29:02.443 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=10
+2025-12-16 05:29:02.443 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test
+2025-12-16 05:29:02.444 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=8
+2025-12-16 05:29:02.444 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=0
+2025-12-16 05:29:02.444 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 05:29:02.445 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=3 result=1
+2025-12-16 05:29:08.235 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 05:29:08.235 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=2, clientSessionId=3
+2025-12-16 05:29:08.235 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 05:29:08.235 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=2, loginId=test2
+2025-12-16 05:29:08.236 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 05:29:08.237 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=2 exists=1
+2025-12-16 05:29:08.237 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 05:29:08.237 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=7
+2025-12-16 05:29:08.252 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 05:29:13.092 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 05:29:13.092 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 05:29:13.093 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 05:29:36.411 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1102, len=12
+2025-12-16 05:29:36.411 | INFO | [REGISTER] Forward REGISTER_REQ -> DB_REGISTER_REQ. seq=2 clientSessionId=4 loginId=test2
+2025-12-16 05:29:36.426 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3105, len=28
+2025-12-16 05:29:36.426 | INFO | [MS] REGISTER success.
+2025-12-16 05:29:42.778 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 05:29:42.779 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=4, clientSessionId=4
+2025-12-16 05:29:42.779 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 05:29:42.779 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=4, loginId=test2
+2025-12-16 05:29:42.780 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 05:29:42.780 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=4 exists=1
+2025-12-16 05:29:42.780 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 05:29:42.780 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=8
+2025-12-16 05:29:42.783 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-16 05:34:46.438 | INFO | Logger init app=MainServer
+2025-12-16 05:34:46.478 | INFO | [System] MainServer process started
+2025-12-16 05:34:46.486 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 05:34:46.486 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 05:34:46.487 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 05:34:46.487 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 05:34:46.487 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 05:34:46.487 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 05:34:46.487 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 05:34:46.487 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 05:34:46.487 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 05:34:46.487 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 05:34:46.488 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 05:34:46.488 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=35970733 (from sessionId=2)
+2025-12-16 05:34:48.402 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 05:34:48.402 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 05:34:48.402 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 05:34:49.358 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 05:34:49.358 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 05:34:49.359 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 05:34:50.019 | INFO | [CONNECTION] Client connected: sessionId=5
+2025-12-16 05:34:50.019 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1000, len=4
+2025-12-16 05:34:50.019 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=5)
+2025-12-16 05:34:52.048 | INFO | [CONNECTION] Client connected: sessionId=6
+2025-12-16 05:34:52.048 | INFO | [PACKET] Recv: sessionId=6, role=1, state=1, id=1000, len=4
+2025-12-16 05:34:52.049 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=6)
+2025-12-16 05:34:52.632 | INFO | [CONNECTION] Client connected: sessionId=7
+2025-12-16 05:34:52.633 | INFO | [PACKET] Recv: sessionId=7, role=1, state=1, id=1000, len=4
+2025-12-16 05:34:52.634 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=7)
+2025-12-16 05:34:53.373 | INFO | [CONNECTION] Client connected: sessionId=8
+2025-12-16 05:34:53.373 | INFO | [PACKET] Recv: sessionId=8, role=1, state=1, id=1000, len=4
+2025-12-16 05:34:53.374 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=8)
+2025-12-16 05:51:07.807 | INFO | Logger init app=MainServer
+2025-12-16 05:51:07.847 | INFO | [System] MainServer process started
+2025-12-16 05:51:07.855 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 05:51:07.855 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 05:51:07.855 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 05:51:07.855 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 05:51:07.855 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 05:51:07.856 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 05:51:07.856 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 05:51:07.856 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 05:51:07.856 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 05:51:07.856 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 05:51:07.856 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 05:51:07.856 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=36952129 (from sessionId=2)
+2025-12-16 05:51:09.599 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 05:51:09.599 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 05:51:09.600 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 05:51:14.468 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 05:51:14.468 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 05:51:14.468 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 05:51:14.468 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 05:51:14.469 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 05:51:14.469 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 05:51:14.470 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 05:51:14.470 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 05:51:25.661 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 05:51:25.662 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 05:51:25.662 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 05:51:30.269 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 05:51:30.269 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=4
+2025-12-16 05:51:30.270 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 05:51:30.270 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test1
+2025-12-16 05:51:30.271 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 05:51:30.271 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-16 05:51:30.271 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 05:51:30.271 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-16 05:51:40.307 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-16 05:51:41.709 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 05:52:42.814 | INFO | Logger init app=MainServer
+2025-12-16 05:52:42.853 | INFO | [System] MainServer process started
+2025-12-16 05:52:42.861 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 05:52:42.862 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 05:52:42.862 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 05:52:42.862 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 05:52:42.862 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 05:52:42.862 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 05:52:42.862 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 05:52:42.862 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 05:52:42.863 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 05:52:42.863 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 05:52:42.863 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 05:52:42.863 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=37047138 (from sessionId=2)
+2025-12-16 05:52:44.424 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 05:52:44.425 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 05:52:44.425 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 05:52:47.902 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 05:52:47.902 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 05:52:47.902 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 05:52:47.902 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 05:52:47.903 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 05:52:47.903 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 05:52:47.903 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 05:52:47.903 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 05:52:55.679 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 06:25:43.218 | INFO | Logger init app=MainServer
+2025-12-16 06:25:43.256 | INFO | [System] MainServer process started
+2025-12-16 06:25:43.264 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 06:25:43.265 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 06:25:43.265 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 06:25:43.265 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 06:25:43.265 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 06:25:43.265 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 06:25:43.265 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 06:25:43.266 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 06:25:43.266 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 06:25:43.266 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 06:25:43.266 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 06:25:43.266 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=39027575 (from sessionId=2)
+2025-12-16 06:25:45.075 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 06:25:45.076 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 06:25:45.076 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 06:25:49.145 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 06:25:49.145 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 06:25:49.145 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:25:49.145 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 06:25:49.146 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:25:49.146 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 06:25:49.146 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:25:49.146 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 06:25:52.728 | INFO | [PACKET] Recv: sessionId=3, role=1, state=4, id=1104, len=8
+2025-12-16 06:25:52.729 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1104
+2025-12-16 06:25:57.633 | INFO | [PACKET] Recv: sessionId=3, role=1, state=4, id=1100, len=12
+2025-12-16 06:25:57.633 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1100
+2025-12-16 06:26:10.050 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 06:26:12.808 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 06:26:12.809 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 06:26:12.809 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 06:26:15.753 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:26:15.754 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=4
+2025-12-16 06:26:15.754 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:26:15.754 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test1
+2025-12-16 06:26:15.755 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:26:15.755 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-16 06:26:15.755 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:26:15.755 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:26:26.945 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:26:26.946 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=4, clientSessionId=4
+2025-12-16 06:26:26.946 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:26:26.946 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=4, loginId=test1
+2025-12-16 06:26:26.947 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:26:26.947 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=4 exists=1
+2025-12-16 06:26:26.947 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:26:26.947 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:26:29.644 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-16 06:26:30.809 | INFO | [CONNECTION] Client connected: sessionId=5
+2025-12-16 06:26:30.810 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1000, len=4
+2025-12-16 06:26:30.810 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=5)
+2025-12-16 06:26:38.074 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1100, len=12
+2025-12-16 06:26:38.074 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=5, clientSessionId=5
+2025-12-16 06:26:38.074 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:26:38.074 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=5, loginId=test2
+2025-12-16 06:26:38.075 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:26:38.075 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=5 exists=1
+2025-12-16 06:26:38.076 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:26:38.076 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=5 accountId=8
+2025-12-16 06:26:42.114 | INFO | [CONNECTION] Client connected: sessionId=6
+2025-12-16 06:26:42.115 | INFO | [PACKET] Recv: sessionId=6, role=1, state=1, id=1000, len=4
+2025-12-16 06:26:42.115 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=6)
+2025-12-16 06:26:47.066 | INFO | [PACKET] Recv: sessionId=6, role=1, state=1, id=1100, len=12
+2025-12-16 06:26:47.066 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=7, clientSessionId=6
+2025-12-16 06:26:47.066 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:26:47.067 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=7, loginId=test2
+2025-12-16 06:26:47.067 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:26:47.068 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=7 exists=1
+2025-12-16 06:26:47.068 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:26:47.068 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=6 result=6
+2025-12-16 06:26:57.130 | INFO | [PACKET] Recv: sessionId=6, role=1, state=1, id=1100, len=12
+2025-12-16 06:26:57.131 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=8, clientSessionId=6
+2025-12-16 06:26:57.131 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:26:57.131 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=8, loginId=test1
+2025-12-16 06:26:57.132 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:26:57.132 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=8 exists=1
+2025-12-16 06:26:57.132 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:26:57.132 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=6 result=6
+2025-12-16 06:28:52.235 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=3, state=0
+2025-12-16 06:28:53.972 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=2, state=0
+2025-12-16 06:31:00.367 | INFO | Logger init app=MainServer
+2025-12-16 06:31:00.406 | INFO | [System] MainServer process started
+2025-12-16 06:31:00.413 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 06:31:00.414 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 06:31:00.414 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 06:31:00.414 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 06:31:00.414 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 06:31:00.415 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 06:31:00.415 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 06:31:00.415 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 06:31:00.415 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 06:31:00.415 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 06:31:00.415 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 06:31:00.415 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=39344728 (from sessionId=2)
+2025-12-16 06:31:01.973 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 06:31:01.974 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 06:31:01.974 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 06:31:08.233 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 06:31:08.233 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 06:31:08.233 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:31:08.234 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 06:31:08.234 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:31:08.234 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 06:31:08.235 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:31:08.235 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 06:31:10.442 | INFO | [PACKET] Recv: sessionId=3, role=1, state=4, id=1104, len=8
+2025-12-16 06:31:10.442 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1104
+2025-12-16 06:31:14.114 | INFO | [PACKET] Recv: sessionId=3, role=1, state=4, id=1100, len=12
+2025-12-16 06:31:14.114 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1100
+2025-12-16 06:31:19.527 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 06:31:19.528 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 06:31:19.528 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 06:31:23.170 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:31:23.170 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=4
+2025-12-16 06:31:23.170 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:31:23.171 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test1
+2025-12-16 06:31:23.172 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:31:23.172 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-16 06:31:23.172 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:31:23.172 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:31:29.010 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:31:29.010 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=4, clientSessionId=4
+2025-12-16 06:31:29.010 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:31:29.011 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=4, loginId=test2
+2025-12-16 06:31:29.011 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:31:29.011 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=4 exists=1
+2025-12-16 06:31:29.012 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:31:29.012 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=8
+2025-12-16 06:31:31.920 | INFO | [CONNECTION] Client connected: sessionId=5
+2025-12-16 06:31:31.921 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1000, len=4
+2025-12-16 06:31:31.921 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=5)
+2025-12-16 06:31:35.523 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1100, len=12
+2025-12-16 06:31:35.523 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=6, clientSessionId=5
+2025-12-16 06:31:35.523 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:31:35.523 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=6, loginId=test2
+2025-12-16 06:31:35.524 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:31:35.524 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=6 exists=1
+2025-12-16 06:31:35.524 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:31:35.525 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=5 result=6
+2025-12-16 06:31:43.457 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-16 06:31:49.378 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1100, len=12
+2025-12-16 06:31:49.379 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=7, clientSessionId=5
+2025-12-16 06:31:49.379 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:31:49.379 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=7, loginId=test2
+2025-12-16 06:31:49.380 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:31:49.380 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=7 exists=1
+2025-12-16 06:31:49.380 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:31:49.380 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=5 result=6
+2025-12-16 06:31:56.347 | INFO | [CONNECTION] Client disconnected: sessionId=5, role=1, state=0
+2025-12-16 06:31:56.989 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 06:32:07.084 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=2, state=0
+2025-12-16 06:32:08.151 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=3, state=0
+2025-12-16 06:33:54.555 | INFO | Logger init app=MainServer
+2025-12-16 06:33:54.595 | INFO | [System] MainServer process started
+2025-12-16 06:33:54.603 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 06:33:54.603 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 06:33:54.604 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 06:33:54.604 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 06:33:54.604 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 06:33:54.604 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 06:33:54.604 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 06:33:54.604 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 06:33:54.604 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 06:33:54.604 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 06:33:54.604 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 06:33:54.604 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=39518919 (from sessionId=2)
+2025-12-16 06:33:56.186 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 06:33:56.187 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 06:33:56.187 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 06:33:59.942 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 06:33:59.942 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 06:33:59.942 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:33:59.942 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 06:33:59.943 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:33:59.943 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 06:33:59.943 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:33:59.944 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 06:34:02.761 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 06:34:03.651 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 06:34:03.652 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 06:34:03.652 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 06:34:08.991 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:34:08.991 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=4
+2025-12-16 06:34:08.991 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:34:08.991 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test1
+2025-12-16 06:34:08.992 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:34:08.992 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-16 06:34:08.993 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:34:08.993 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:34:11.025 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-16 06:40:41.659 | INFO | Logger init app=MainServer
+2025-12-16 06:40:41.698 | INFO | [System] MainServer process started
+2025-12-16 06:40:41.706 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 06:40:41.706 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 06:40:41.706 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 06:40:41.707 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 06:40:41.707 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 06:40:41.707 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 06:40:41.707 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 06:40:41.707 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 06:40:41.707 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 06:40:41.707 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 06:40:41.707 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 06:40:41.707 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=39926026 (from sessionId=2)
+2025-12-16 06:40:46.033 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 06:40:46.034 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 06:40:46.034 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 06:40:50.954 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 06:40:50.954 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 06:40:50.954 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:40:50.954 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 06:40:50.955 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:40:50.955 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 06:40:50.956 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:40:50.956 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 06:40:59.358 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 06:40:59.358 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 06:40:59.359 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 06:41:06.346 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:41:06.347 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=4
+2025-12-16 06:41:06.347 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:41:06.347 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test1
+2025-12-16 06:41:06.348 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:41:06.348 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-16 06:41:06.348 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:41:06.348 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:41:15.003 | INFO | [PACKET] Recv: sessionId=3, role=1, state=4, id=1104, len=8
+2025-12-16 06:41:15.004 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1104
+2025-12-16 06:41:25.099 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:41:25.099 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=4, clientSessionId=4
+2025-12-16 06:41:25.099 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:41:25.100 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=4, loginId=test1
+2025-12-16 06:41:25.100 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:41:25.100 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=4 exists=1
+2025-12-16 06:41:25.101 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:41:25.101 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:41:27.285 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-16 06:41:39.627 | INFO | [PACKET] Recv: sessionId=3, role=1, state=4, id=1100, len=12
+2025-12-16 06:41:39.627 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1100
+2025-12-16 06:41:42.222 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 06:43:51.013 | INFO | Logger init app=MainServer
+2025-12-16 06:43:51.053 | INFO | [System] MainServer process started
+2025-12-16 06:43:51.061 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 06:43:51.061 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 06:43:51.061 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 06:43:51.061 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 06:43:51.062 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 06:43:51.062 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 06:43:51.062 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 06:43:51.062 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 06:43:51.062 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 06:43:51.062 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 06:43:51.062 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 06:43:51.062 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=40115383 (from sessionId=2)
+2025-12-16 06:43:58.249 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 06:43:58.250 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 06:43:58.250 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 06:44:07.224 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 06:44:07.224 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 06:44:07.225 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:44:07.225 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 06:44:07.226 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:44:07.226 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 06:44:07.226 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:44:07.226 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 06:44:11.656 | INFO | [PACKET] Recv: sessionId=3, role=1, state=4, id=1104, len=8
+2025-12-16 06:44:11.656 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1104
+2025-12-16 06:46:26.640 | INFO | Logger init app=MainServer
+2025-12-16 06:46:26.680 | INFO | [System] MainServer process started
+2025-12-16 06:46:26.688 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 06:46:26.688 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 06:46:26.688 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 06:46:26.689 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 06:46:26.689 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 06:46:26.689 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 06:46:26.689 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 06:46:26.689 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 06:46:26.689 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 06:46:26.689 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 06:46:26.689 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 06:46:26.689 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=40271011 (from sessionId=2)
+2025-12-16 06:46:34.964 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 06:46:34.965 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 06:46:34.965 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 06:46:43.573 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 06:46:43.573 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 06:46:43.573 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:46:43.573 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 06:46:43.574 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:46:43.574 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 06:46:43.575 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:46:43.575 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 06:46:46.181 | INFO | [PACKET] Recv: sessionId=3, role=1, state=4, id=1104, len=8
+2025-12-16 06:46:46.181 | INFO | [LOGOUT] Forward LOGOUT_REQ -> LS_LOGOUT_NOTIFY. accountId=5 sessionId=3
+2025-12-16 06:47:00.822 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 06:47:00.822 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=3
+2025-12-16 06:47:00.822 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:47:00.822 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test1
+2025-12-16 06:47:00.823 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:47:00.823 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-16 06:47:00.824 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:47:00.824 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=3 result=6
+2025-12-16 06:47:03.164 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 06:50:00.979 | INFO | Logger init app=MainServer
+2025-12-16 06:50:01.017 | INFO | [System] MainServer process started
+2025-12-16 06:50:01.025 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 06:50:01.025 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 06:50:01.025 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 06:50:01.025 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 06:50:01.025 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 06:50:01.026 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 06:50:01.026 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 06:50:01.026 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 06:50:01.026 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 06:50:01.026 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 06:50:01.026 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 06:50:01.026 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=40485350 (from sessionId=2)
+2025-12-16 06:50:03.305 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 06:50:03.305 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 06:50:03.305 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 06:50:07.515 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 06:50:07.516 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 06:50:07.516 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:50:07.516 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 06:50:07.517 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:50:07.517 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 06:50:07.517 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:50:07.517 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 06:50:10.218 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 06:50:10.219 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 06:50:10.219 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 06:50:13.563 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:50:13.563 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=4
+2025-12-16 06:50:13.563 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:50:13.564 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test1
+2025-12-16 06:50:13.564 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:50:13.565 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-16 06:50:13.565 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:50:13.565 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:50:19.403 | INFO | [PACKET] Recv: sessionId=3, role=1, state=4, id=1104, len=8
+2025-12-16 06:50:19.404 | INFO | [LOGOUT] Forward LOGOUT_REQ -> LS_LOGOUT_NOTIFY. accountId=5 sessionId=3
+2025-12-16 06:50:23.667 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:50:23.668 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=4, clientSessionId=4
+2025-12-16 06:50:23.668 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:50:23.668 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=4, loginId=test1
+2025-12-16 06:50:23.669 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:50:23.669 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=4 exists=1
+2025-12-16 06:50:23.669 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:50:23.669 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:50:39.995 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=2, state=0
+2025-12-16 06:51:27.420 | INFO | Logger init app=MainServer
+2025-12-16 06:51:27.460 | INFO | [System] MainServer process started
+2025-12-16 06:51:27.468 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 06:51:27.468 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 06:51:27.468 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 06:51:27.468 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 06:51:27.469 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 06:51:27.469 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 06:51:27.469 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 06:51:27.469 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 06:51:27.469 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 06:51:27.469 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 06:51:27.469 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 06:51:27.469 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=40571793 (from sessionId=2)
+2025-12-16 06:51:29.006 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 06:51:29.007 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 06:51:29.007 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 06:51:31.966 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 06:51:31.966 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 06:51:31.966 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:51:31.966 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 06:51:31.967 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:51:31.967 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 06:51:31.967 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:51:31.967 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 06:51:33.581 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 06:51:33.582 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 06:51:33.582 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 06:51:37.694 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:51:37.695 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=4
+2025-12-16 06:51:37.695 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:51:37.695 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test1
+2025-12-16 06:51:37.696 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:51:37.696 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-16 06:51:37.696 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:51:37.696 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:51:42.790 | INFO | [PACKET] Recv: sessionId=3, role=1, state=4, id=1104, len=8
+2025-12-16 06:51:42.790 | INFO | [LOGOUT] Forward LOGOUT_REQ -> LS_LOGOUT_NOTIFY. accountId=5 sessionId=3
+2025-12-16 06:51:51.006 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:51:51.007 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=4, clientSessionId=4
+2025-12-16 06:51:51.007 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:51:51.007 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=4, loginId=test1
+2025-12-16 06:51:51.008 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:51:51.008 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=4 exists=1
+2025-12-16 06:51:51.008 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:51:51.008 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:52:14.262 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=2, state=0
+2025-12-16 06:52:15.008 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-16 06:52:15.607 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 06:52:47.190 | INFO | Logger init app=MainServer
+2025-12-16 06:52:47.230 | INFO | [System] MainServer process started
+2025-12-16 06:52:47.239 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 06:52:47.239 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 06:52:47.239 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=3
+2025-12-16 06:52:47.239 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 06:52:47.239 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 06:52:47.240 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3001, len=12
+2025-12-16 06:52:47.240 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=2
+2025-12-16 06:52:47.240 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 06:52:47.240 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 06:52:47.240 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 06:52:47.240 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2001, len=12
+2025-12-16 06:52:47.240 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=40651565 (from sessionId=2)
+2025-12-16 06:52:48.776 | INFO | [CONNECTION] Client connected: sessionId=3
+2025-12-16 06:52:48.777 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1000, len=4
+2025-12-16 06:52:48.777 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=3)
+2025-12-16 06:52:51.824 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 06:52:51.824 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=3
+2025-12-16 06:52:51.824 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:52:51.824 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-16 06:52:51.825 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:52:51.825 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-16 06:52:51.825 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:52:51.825 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=5
+2025-12-16 06:52:54.161 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-16 06:52:54.162 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-16 06:52:54.162 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-16 06:52:57.664 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:52:57.665 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=4
+2025-12-16 06:52:57.665 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:52:57.665 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test1
+2025-12-16 06:52:57.666 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:52:57.666 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-16 06:52:57.666 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:52:57.666 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:53:01.257 | INFO | [PACKET] Recv: sessionId=3, role=1, state=4, id=1104, len=8
+2025-12-16 06:53:01.257 | INFO | [LOGOUT] Forward LOGOUT_REQ -> LS_LOGOUT_NOTIFY. accountId=5 sessionId=3
+2025-12-16 06:53:06.505 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:53:06.506 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=4, clientSessionId=4
+2025-12-16 06:53:06.506 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:53:06.506 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=4, loginId=test1
+2025-12-16 06:53:06.507 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:53:06.507 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=4 exists=1
+2025-12-16 06:53:06.507 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:53:06.507 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-16 06:53:13.809 | INFO | [PACKET] Recv: sessionId=3, role=1, state=1, id=1100, len=12
+2025-12-16 06:53:13.809 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=6, clientSessionId=3
+2025-12-16 06:53:13.810 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:53:13.810 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=6, loginId=test2
+2025-12-16 06:53:13.811 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:53:13.811 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=6 exists=1
+2025-12-16 06:53:13.811 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:53:13.811 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=3 accountId=8
+2025-12-16 06:53:16.645 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=1, state=0
+2025-12-16 06:53:18.513 | INFO | [PACKET] Recv: sessionId=4, role=1, state=4, id=1104, len=8
+2025-12-16 06:53:18.513 | INFO | [LOGOUT] Forward LOGOUT_REQ -> LS_LOGOUT_NOTIFY. accountId=5 sessionId=4
+2025-12-16 06:53:22.897 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:53:22.898 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=8, clientSessionId=4
+2025-12-16 06:53:22.898 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:53:22.898 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=8, loginId=test2
+2025-12-16 06:53:22.899 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:53:22.899 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=8 exists=1
+2025-12-16 06:53:22.899 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:53:22.899 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=4 result=6
+2025-12-16 06:53:47.648 | INFO | [CONNECTION] Client connected: sessionId=5
+2025-12-16 06:53:47.650 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1000, len=4
+2025-12-16 06:53:47.650 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=5)
+2025-12-16 06:53:52.762 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-16 06:53:52.763 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=9, clientSessionId=4
+2025-12-16 06:53:52.763 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:53:52.763 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=9, loginId=test1
+2025-12-16 06:53:52.764 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:53:52.764 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=9 exists=1
+2025-12-16 06:53:52.764 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=28
+2025-12-16 06:53:52.765 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-16 06:53:55.412 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-16 06:54:00.690 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1100, len=12
+2025-12-16 06:54:00.691 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=11, clientSessionId=5
+2025-12-16 06:54:00.691 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2100, len=11
+2025-12-16 06:54:00.691 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=11, loginId=test1
+2025-12-16 06:54:00.692 | INFO | [PACKET] Recv: sessionId=1, role=3, state=2, id=3101, len=101
+2025-12-16 06:54:00.692 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=11 exists=1
+2025-12-16 06:54:00.692 | INFO | [PACKET] Recv: sessionId=2, role=2, state=2, id=2103, len=20
+2025-12-16 06:54:00.693 | INFO | [MS] LOGIN failed. Sent LOGIN_ACK fail. clientSessionId=5 result=6
+2025-12-16 06:54:06.648 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=3, state=0
+2025-12-16 06:54:07.945 | INFO | [CONNECTION] Client disconnected: sessionId=5, role=1, state=0
+2025-12-16 23:13:28.746 | INFO | Logger init app=MainServer
+2025-12-16 23:13:28.775 | INFO | [System] MainServer process started
+2025-12-16 23:13:28.794 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 23:13:28.794 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 23:13:28.795 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-16 23:13:28.795 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 23:13:28.795 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 23:13:28.795 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-16 23:13:28.795 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-16 23:13:28.796 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 23:13:28.796 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 23:13:28.796 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 23:13:28.796 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-16 23:13:28.796 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=54955200 (from sessionId=2)
+2025-12-16 23:18:11.046 | INFO | Logger init app=MainServer
+2025-12-16 23:18:11.074 | INFO | [System] MainServer process started
+2025-12-16 23:18:11.094 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-16 23:18:11.095 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-16 23:18:11.095 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-16 23:18:11.095 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-16 23:18:11.095 | INFO | [MAIN] Connected to DBServer.
+2025-12-16 23:18:11.095 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-16 23:18:11.095 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-16 23:18:11.096 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-16 23:18:11.096 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-16 23:18:11.096 | INFO | [MAIN] Connected to LoginServer.
+2025-12-16 23:18:11.096 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-16 23:18:11.096 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=55237522 (from sessionId=2)
+2025-12-16 23:18:11.096 | INFO | [CONNECTION] Internal server connected: sessionId=3, role=5
+2025-12-16 23:18:11.096 | INFO | [MAIN] Sent CS_MS_PING_REQ seq=1 (to chatSessionId=3)
+2025-12-16 23:18:11.096 | INFO | [MAIN] Connected to ChatServer.
+2025-12-16 23:18:11.097 | INFO | [PACKET] Recv: sessionId=3, role=5, state=2, id=4001, len=12
+2025-12-16 23:18:11.097 | INFO | [ChatSrv] CS_MS_PING_ACK recv. seq=%u serverTick=%llu
+2025-12-16 23:18:38.197 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=4, state=0
+2025-12-16 23:18:38.692 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=5, state=0
+2025-12-17 00:19:05.927 | INFO | Logger init app=MainServer
+2025-12-17 00:19:05.968 | INFO | [System] MainServer process started
+2025-12-17 00:19:05.975 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-17 00:19:05.975 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-17 00:19:05.976 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-17 00:19:05.976 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-17 00:19:05.976 | INFO | [MAIN] Connected to DBServer.
+2025-12-17 00:19:05.976 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-17 00:19:05.976 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-17 00:19:05.977 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-17 00:19:05.977 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-17 00:19:05.977 | INFO | [MAIN] Connected to LoginServer.
+2025-12-17 00:19:05.977 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-17 00:19:05.977 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=58892578 (from sessionId=2)
+2025-12-17 00:19:05.977 | INFO | [CONNECTION] Internal server connected: sessionId=3, role=5
+2025-12-17 00:19:05.977 | INFO | [MAIN] Sent CS_MS_PING_REQ seq=1 (to chatSessionId=3)
+2025-12-17 00:19:05.977 | INFO | [MAIN] Connected to ChatServer.
+2025-12-17 00:19:05.978 | INFO | [PACKET] Recv: sessionId=3, role=5, state=2, id=4001, len=12
+2025-12-17 00:19:05.978 | INFO | [ChatSrv] CS_MS_PING_ACK recv. seq=%u serverTick=%llu
+2025-12-17 00:19:08.412 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-17 00:19:08.413 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-17 00:19:08.413 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-17 00:19:16.448 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-17 00:19:16.448 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=4
+2025-12-17 00:19:16.448 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 00:19:16.448 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-17 00:19:16.449 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 00:19:16.449 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-17 00:19:16.450 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 00:19:16.450 | INFO | [CHAT] PostLogin start. clientSessionId=4 accountId=5
+2025-12-17 00:19:16.451 | INFO | [CHAT] Generated chat token. token=0000000db6e53d8bee73ac29bf2aaf460000000000000000 accountId=5
+2025-12-17 00:19:16.451 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=5 ttl=30
+2025-12-17 00:19:16.452 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=4 ip=127.0.0.1 port=3800
+2025-12-17 00:19:16.452 | INFO | [CHAT] PostLogin finished. clientSessionId=4 accountId=5
+2025-12-17 00:19:16.452 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-17 00:19:48.283 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=5, state=0
+2025-12-17 00:19:52.367 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=3, state=0
+2025-12-17 00:20:04.704 | INFO | [MAIN] Signal received (2). Shutting down...
+2025-12-17 00:20:04.746 | INFO | [MAIN] Stopping...
+2025-12-17 00:20:04.933 | INFO | [MAIN] MainServer stopped.
+2025-12-17 00:20:04.934 | INFO | [MAIN] Stopped cleanly.
+2025-12-17 00:20:04.934 | INFO | MainServer shutting down
+2025-12-17 00:20:04.934 | INFO | Logger shutdown begin
+2025-12-17 00:45:02.646 | INFO | Logger init app=MainServer
+2025-12-17 00:45:02.686 | INFO | [System] MainServer process started
+2025-12-17 00:45:02.694 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-17 00:45:02.694 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-17 00:45:02.694 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-17 00:45:02.695 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-17 00:45:02.695 | INFO | [MAIN] Connected to DBServer.
+2025-12-17 00:45:02.695 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-17 00:45:02.695 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-17 00:45:02.695 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-17 00:45:02.695 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-17 00:45:02.695 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-17 00:45:02.695 | INFO | [MAIN] Connected to LoginServer.
+2025-12-17 00:45:02.696 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=60449326 (from sessionId=2)
+2025-12-17 00:45:02.696 | INFO | [CONNECTION] Internal server connected: sessionId=3, role=5
+2025-12-17 00:45:02.696 | INFO | [MAIN] Sent CS_MS_PING_REQ seq=1 (to chatSessionId=3)
+2025-12-17 00:45:02.696 | INFO | [MAIN] Connected to ChatServer.
+2025-12-17 00:45:02.696 | INFO | [PACKET] Recv: sessionId=3, role=5, state=2, id=4001, len=12
+2025-12-17 00:45:02.696 | INFO | [ChatSrv] CS_MS_PING_ACK recv. seq=%u serverTick=%llu
+2025-12-17 00:45:05.587 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-17 00:45:05.588 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-17 00:45:05.588 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-17 00:45:10.632 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-17 00:45:10.633 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=4
+2025-12-17 00:45:10.633 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 00:45:10.634 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-17 00:45:10.635 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 00:45:10.635 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-17 00:45:10.635 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 00:45:10.635 | INFO | [CHAT] PostLogin start. clientSessionId=4 accountId=5
+2025-12-17 00:45:10.636 | INFO | [CHAT] Generated chat token. token=0000000e1388ae6ee1ffa75992bdab790000000000000000 accountId=5
+2025-12-17 00:45:10.637 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=5 ttl=30
+2025-12-17 00:45:10.637 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=4 ip=127.0.0.1 port=3800
+2025-12-17 00:45:10.637 | INFO | [CHAT] PostLogin finished. clientSessionId=4 accountId=5
+2025-12-17 00:45:10.637 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-17 00:49:40.193 | INFO | Logger init app=MainServer
+2025-12-17 00:49:40.219 | INFO | [System] MainServer process started
+2025-12-17 00:49:40.243 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-17 00:49:40.243 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-17 00:49:40.243 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-17 00:49:40.243 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-17 00:49:40.243 | INFO | [MAIN] Connected to DBServer.
+2025-12-17 00:49:40.244 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-17 00:49:40.244 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-17 00:49:40.244 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-17 00:49:40.244 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-17 00:49:40.244 | INFO | [MAIN] Connected to LoginServer.
+2025-12-17 00:49:40.244 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-17 00:49:40.244 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=60726879 (from sessionId=2)
+2025-12-17 00:49:40.244 | INFO | [CONNECTION] Internal server connected: sessionId=3, role=5
+2025-12-17 00:49:40.245 | INFO | [MAIN] Sent CS_MS_PING_REQ seq=1 (to chatSessionId=3)
+2025-12-17 00:49:40.245 | INFO | [MAIN] Connected to ChatServer.
+2025-12-17 00:49:40.245 | INFO | [PACKET] Recv: sessionId=3, role=5, state=2, id=4001, len=12
+2025-12-17 00:49:40.245 | INFO | [ChatSrv] CS_MS_PING_ACK recv. seq=%u serverTick=%llu
+2025-12-17 00:49:43.683 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-17 00:49:43.684 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-17 00:49:43.684 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-17 00:49:47.151 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-17 00:49:47.151 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=4
+2025-12-17 00:49:47.151 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 00:49:47.152 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-17 00:49:47.153 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 00:49:47.153 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-17 00:49:47.153 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 00:49:47.153 | INFO | [CHAT] PostLogin start. clientSessionId=4 accountId=5
+2025-12-17 00:49:47.154 | INFO | [CHAT] Generated chat token. token=0000000e24041118a7055671df8428be0000000000000000 accountId=5
+2025-12-17 00:49:47.154 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=5 ttl=30
+2025-12-17 00:49:47.154 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=4 ip=127.0.0.1 port=3800
+2025-12-17 00:49:47.155 | INFO | [CHAT] PostLogin finished. clientSessionId=4 accountId=5
+2025-12-17 00:49:47.155 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-17 00:49:53.253 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-17 00:49:53.950 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=5, state=0
+2025-12-17 01:06:37.472 | INFO | Logger init app=MainServer
+2025-12-17 01:06:37.506 | INFO | [System] MainServer process started
+2025-12-17 01:06:37.521 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-17 01:06:37.521 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-17 01:06:37.521 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-17 01:06:37.521 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-17 01:06:37.522 | INFO | [MAIN] Connected to DBServer.
+2025-12-17 01:06:37.522 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-17 01:06:37.522 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-17 01:06:37.522 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-17 01:06:37.522 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-17 01:06:37.522 | INFO | [MAIN] Connected to LoginServer.
+2025-12-17 01:06:37.522 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-17 01:06:37.522 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=61744169 (from sessionId=2)
+2025-12-17 01:06:37.523 | INFO | [CONNECTION] Internal server connected: sessionId=3, role=5
+2025-12-17 01:06:37.523 | INFO | [MAIN] Sent CS_MS_PING_REQ seq=1 (to chatSessionId=3)
+2025-12-17 01:06:37.523 | INFO | [MAIN] Connected to ChatServer.
+2025-12-17 01:06:37.523 | INFO | [PACKET] Recv: sessionId=3, role=5, state=2, id=4001, len=12
+2025-12-17 01:06:37.523 | INFO | [ChatSrv] CS_MS_PING_ACK recv. seq=%u serverTick=%llu
+2025-12-17 01:06:41.553 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-17 01:06:41.554 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-17 01:06:41.554 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-17 01:06:47.868 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-17 01:06:47.868 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=4
+2025-12-17 01:06:47.868 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 01:06:47.869 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-17 01:06:47.869 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 01:06:47.870 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-17 01:06:47.870 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 01:06:47.870 | INFO | [CHAT] PostLogin start. clientSessionId=4 accountId=5
+2025-12-17 01:06:47.871 | INFO | [CHAT] Generated chat token. token=0000000e60db269b14c29523c84f5e8f0000000000000000 accountId=5
+2025-12-17 01:06:47.871 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=5 ttl=30
+2025-12-17 01:06:47.871 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=4 ip=127.0.0.1 port=3800
+2025-12-17 01:06:47.872 | INFO | [CHAT] PostLogin finished. clientSessionId=4 accountId=5
+2025-12-17 01:06:47.872 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-17 01:07:17.150 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-17 01:07:36.868 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=5, state=0
+2025-12-17 01:07:38.951 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=4, state=0
+2025-12-17 01:07:40.986 | INFO | [CONNECTION] Client disconnected: sessionId=2, role=3, state=0
+2025-12-17 01:27:54.643 | INFO | Logger init app=MainServer
+2025-12-17 01:27:54.685 | INFO | [System] MainServer process started
+2025-12-17 01:27:54.692 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-17 01:27:54.692 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-17 01:27:54.693 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-17 01:27:54.693 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-17 01:27:54.693 | INFO | [MAIN] Connected to DBServer.
+2025-12-17 01:27:54.693 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-17 01:27:54.693 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-17 01:27:54.693 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-17 01:27:54.694 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-17 01:27:54.694 | INFO | [MAIN] Connected to LoginServer.
+2025-12-17 01:27:54.694 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-17 01:27:54.694 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=63021350 (from sessionId=2)
+2025-12-17 01:27:54.694 | INFO | [CONNECTION] Internal server connected: sessionId=3, role=5
+2025-12-17 01:27:54.694 | INFO | [MAIN] Sent CS_MS_PING_REQ seq=1 (to chatSessionId=3)
+2025-12-17 01:27:54.694 | INFO | [MAIN] Connected to ChatServer.
+2025-12-17 01:27:54.694 | INFO | [PACKET] Recv: sessionId=3, role=5, state=2, id=4001, len=12
+2025-12-17 01:27:54.694 | INFO | [ChatSrv] CS_MS_PING_ACK recv. seq=%u serverTick=%llu
+2025-12-17 01:27:57.229 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-17 01:27:57.230 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-17 01:27:57.230 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-17 01:28:01.165 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-17 01:28:01.165 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=4
+2025-12-17 01:28:01.165 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 01:28:01.166 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-17 01:28:01.167 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 01:28:01.167 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-17 01:28:01.167 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 01:28:01.167 | INFO | [CHAT] PostLogin start. clientSessionId=4 accountId=5
+2025-12-17 01:28:01.168 | INFO | [CHAT] Generated chat token. token=0000000eacc04759bd40b2564faf54480000000000000000 accountId=5
+2025-12-17 01:28:01.168 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=5 ttl=30
+2025-12-17 01:28:01.168 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=4 ip=127.0.0.1 port=3800
+2025-12-17 01:28:01.169 | INFO | [CHAT] PostLogin finished. clientSessionId=4 accountId=5
+2025-12-17 01:28:01.169 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-17 01:28:37.832 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-17 02:10:56.802 | INFO | Logger init app=MainServer
+2025-12-17 02:10:56.826 | INFO | [System] MainServer process started
+2025-12-17 02:10:56.850 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-17 02:10:56.850 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-17 02:10:56.850 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-17 02:10:56.850 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-17 02:10:56.850 | INFO | [MAIN] Connected to DBServer.
+2025-12-17 02:10:56.851 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-17 02:10:56.851 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-17 02:10:56.851 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-17 02:10:56.851 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-17 02:10:56.851 | INFO | [MAIN] Connected to LoginServer.
+2025-12-17 02:10:56.851 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-17 02:10:56.851 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=65603519 (from sessionId=2)
+2025-12-17 02:10:56.851 | INFO | [CONNECTION] Internal server connected: sessionId=3, role=5
+2025-12-17 02:10:56.851 | INFO | [MAIN] Sent CS_MS_PING_REQ seq=1 (to chatSessionId=3)
+2025-12-17 02:10:56.851 | INFO | [MAIN] Connected to ChatServer.
+2025-12-17 02:10:56.852 | INFO | [PACKET] Recv: sessionId=3, role=5, state=2, id=4001, len=12
+2025-12-17 02:10:56.852 | INFO | [ChatSrv] CS_MS_PING_ACK recv. seq=%u serverTick=%llu
+2025-12-17 02:11:00.082 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-17 02:11:00.083 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-17 02:11:00.083 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-17 02:11:08.225 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-17 02:11:08.225 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=4
+2025-12-17 02:11:08.225 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 02:11:08.225 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-17 02:11:08.226 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 02:11:08.226 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-17 02:11:08.227 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 02:11:08.227 | INFO | [CHAT] PostLogin start. clientSessionId=4 accountId=5
+2025-12-17 02:11:08.228 | INFO | [CHAT] Generated chat token. token=0000000f46f3d96ae322a94b89cde4ba0000000000000000 accountId=5
+2025-12-17 02:11:08.228 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=5 ttl=30
+2025-12-17 02:11:08.229 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=4 ip=127.0.0.1 port=3800
+2025-12-17 02:11:08.229 | INFO | [CHAT] PostLogin finished. clientSessionId=4 accountId=5
+2025-12-17 02:11:08.229 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-17 02:11:30.488 | INFO | [CONNECTION] Client disconnected: sessionId=3, role=5, state=0
+2025-12-17 02:11:31.890 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-17 02:11:33.901 | INFO | [CONNECTION] Client disconnected: sessionId=1, role=4, state=0
+2025-12-17 03:41:30.219 | INFO | Logger init app=MainServer
+2025-12-17 03:41:30.246 | INFO | [System] MainServer process started
+2025-12-17 03:41:30.270 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-17 03:41:30.270 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-17 03:41:30.271 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-17 03:41:30.271 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-17 03:41:30.271 | INFO | [MAIN] Connected to DBServer.
+2025-12-17 03:41:30.271 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-17 03:41:30.271 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-17 03:41:30.271 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-17 03:41:30.271 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-17 03:41:30.271 | INFO | [MAIN] Connected to LoginServer.
+2025-12-17 03:41:30.271 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-17 03:41:30.271 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=71036946 (from sessionId=2)
+2025-12-17 03:41:30.272 | INFO | [CONNECTION] Internal server connected: sessionId=3, role=5
+2025-12-17 03:41:30.272 | INFO | [MAIN] Sent CS_MS_PING_REQ seq=1 (to chatSessionId=3)
+2025-12-17 03:41:30.272 | INFO | [MAIN] Connected to ChatServer.
+2025-12-17 03:41:30.272 | INFO | [PACKET] Recv: sessionId=3, role=5, state=2, id=4001, len=12
+2025-12-17 03:41:30.272 | INFO | [ChatSrv] CS_MS_PING_ACK recv. seq=%u serverTick=%llu
+2025-12-17 03:41:32.279 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-17 03:41:32.280 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-17 03:41:32.280 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-17 03:41:38.050 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-17 03:41:38.050 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=4
+2025-12-17 03:41:38.050 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 03:41:38.051 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-17 03:41:38.052 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 03:41:38.052 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-17 03:41:38.052 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 03:41:38.052 | INFO | [CHAT] PostLogin start. clientSessionId=4 accountId=5
+2025-12-17 03:41:38.053 | INFO | [CHAT] Generated chat token. token=000000108a9883a97ab72982443074ac0000000000000000 accountId=5
+2025-12-17 03:41:38.053 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=5 ttl=30
+2025-12-17 03:41:38.054 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=4 ip=127.0.0.1 port=3800
+2025-12-17 03:41:38.054 | INFO | [CHAT] PostLogin finished. clientSessionId=4 accountId=5
+2025-12-17 03:41:38.054 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-17 03:42:00.425 | INFO | [CONNECTION] Client connected: sessionId=5
+2025-12-17 03:42:00.426 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1000, len=4
+2025-12-17 03:42:00.426 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=5)
+2025-12-17 03:42:05.083 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1100, len=12
+2025-12-17 03:42:05.083 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=5
+2025-12-17 03:42:05.083 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 03:42:05.083 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test2
+2025-12-17 03:42:05.084 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 03:42:05.084 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-17 03:42:05.085 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 03:42:05.085 | INFO | [CHAT] PostLogin start. clientSessionId=5 accountId=8
+2025-12-17 03:42:05.085 | INFO | [CHAT] Generated chat token. token=000000108c34ffcf29f79ffdb9a732bf0000000000000001 accountId=8
+2025-12-17 03:42:05.085 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=8 ttl=30
+2025-12-17 03:42:05.085 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=5 ip=127.0.0.1 port=3800
+2025-12-17 03:42:05.085 | INFO | [CHAT] PostLogin finished. clientSessionId=5 accountId=8
+2025-12-17 03:42:05.085 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=5 accountId=8
+2025-12-17 03:42:22.356 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-17 03:42:22.884 | INFO | [CONNECTION] Client disconnected: sessionId=5, role=1, state=0
+2025-12-17 03:56:55.848 | INFO | Logger init app=MainServer
+2025-12-17 03:56:55.889 | INFO | [System] MainServer process started
+2025-12-17 03:56:55.897 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-17 03:56:55.897 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-17 03:56:55.898 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-17 03:56:55.898 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-17 03:56:55.898 | INFO | [MAIN] Connected to DBServer.
+2025-12-17 03:56:55.898 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-17 03:56:55.898 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-17 03:56:55.898 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-17 03:56:55.898 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-17 03:56:55.898 | INFO | [MAIN] Connected to LoginServer.
+2025-12-17 03:56:55.899 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-17 03:56:55.899 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=71962574 (from sessionId=2)
+2025-12-17 03:56:55.899 | INFO | [CONNECTION] Internal server connected: sessionId=3, role=5
+2025-12-17 03:56:55.899 | INFO | [MAIN] Sent CS_MS_PING_REQ seq=1 (to chatSessionId=3)
+2025-12-17 03:56:55.899 | INFO | [MAIN] Connected to ChatServer.
+2025-12-17 03:56:55.900 | INFO | [PACKET] Recv: sessionId=3, role=5, state=2, id=4001, len=12
+2025-12-17 03:56:55.900 | INFO | [ChatSrv] CS_MS_PING_ACK recv. seq=%u serverTick=%llu
+2025-12-17 03:57:00.350 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-17 03:57:00.351 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-17 03:57:00.351 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-17 03:57:10.662 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-17 03:57:10.663 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=4
+2025-12-17 03:57:10.663 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 03:57:10.663 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-17 03:57:10.664 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 03:57:10.664 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-17 03:57:10.664 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 03:57:10.665 | INFO | [CHAT] PostLogin start. clientSessionId=4 accountId=5
+2025-12-17 03:57:10.666 | INFO | [CHAT] Generated chat token. token=00000010c22f0ee347f84025930879640000000000000000 accountId=5
+2025-12-17 03:57:10.666 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=5 ttl=30
+2025-12-17 03:57:10.666 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=4 ip=127.0.0.1 port=3800
+2025-12-17 03:57:10.666 | INFO | [CHAT] PostLogin finished. clientSessionId=4 accountId=5
+2025-12-17 03:57:10.666 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-17 03:57:28.081 | INFO | [CONNECTION] Client connected: sessionId=5
+2025-12-17 03:57:28.081 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1000, len=4
+2025-12-17 03:57:28.082 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=5)
+2025-12-17 03:57:35.967 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1100, len=12
+2025-12-17 03:57:35.967 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=5
+2025-12-17 03:57:35.967 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 03:57:35.967 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test2
+2025-12-17 03:57:35.968 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 03:57:35.968 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-17 03:57:35.969 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 03:57:35.969 | INFO | [CHAT] PostLogin start. clientSessionId=5 accountId=8
+2025-12-17 03:57:35.969 | INFO | [CHAT] Generated chat token. token=00000010c3b12ac6ca38a03983c91c0c0000000000000001 accountId=8
+2025-12-17 03:57:35.969 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=8 ttl=30
+2025-12-17 03:57:35.969 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=5 ip=127.0.0.1 port=3800
+2025-12-17 03:57:35.969 | INFO | [CHAT] PostLogin finished. clientSessionId=5 accountId=8
+2025-12-17 03:57:35.969 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=5 accountId=8
+2025-12-17 03:57:57.326 | INFO | [CONNECTION] Client connected: sessionId=6
+2025-12-17 03:57:57.327 | INFO | [PACKET] Recv: sessionId=6, role=1, state=1, id=1000, len=4
+2025-12-17 03:57:57.327 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=6)
+2025-12-17 03:58:02.920 | INFO | [PACKET] Recv: sessionId=6, role=1, state=1, id=1102, len=12
+2025-12-17 03:58:02.920 | INFO | [REGISTER] Forward REGISTER_REQ -> DB_REGISTER_REQ. seq=1 clientSessionId=6 loginId=test3
+2025-12-17 03:58:02.936 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3105, len=28
+2025-12-17 03:58:02.937 | INFO | [MS] REGISTER success.
+2025-12-17 03:58:07.288 | INFO | [PACKET] Recv: sessionId=6, role=1, state=1, id=1100, len=12
+2025-12-17 03:58:07.289 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=5, clientSessionId=6
+2025-12-17 03:58:07.289 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 03:58:07.289 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=5, loginId=test3
+2025-12-17 03:58:07.290 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 03:58:07.290 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=5 exists=1
+2025-12-17 03:58:07.290 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 03:58:07.290 | INFO | [CHAT] PostLogin start. clientSessionId=6 accountId=9
+2025-12-17 03:58:07.290 | INFO | [CHAT] Generated chat token. token=00000010c58f18ee309bff52791cadbe0000000000000002 accountId=9
+2025-12-17 03:58:07.291 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=9 ttl=30
+2025-12-17 03:58:07.291 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=6 ip=127.0.0.1 port=3800
+2025-12-17 03:58:07.291 | INFO | [CHAT] PostLogin finished. clientSessionId=6 accountId=9
+2025-12-17 03:58:07.291 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=6 accountId=9
+2025-12-17 03:58:21.751 | INFO | [CONNECTION] Client disconnected: sessionId=6, role=1, state=0
+2025-12-17 03:58:23.337 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-17 03:58:24.107 | INFO | [CONNECTION] Client disconnected: sessionId=5, role=1, state=0
+2025-12-17 04:32:39.076 | INFO | Logger init app=MainServer
+2025-12-17 04:32:39.116 | INFO | [System] MainServer process started
+2025-12-17 04:32:39.123 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-17 04:32:39.124 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-17 04:32:39.124 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-17 04:32:39.124 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-17 04:32:39.124 | INFO | [MAIN] Connected to DBServer.
+2025-12-17 04:32:39.125 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-17 04:32:39.125 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-17 04:32:39.125 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-17 04:32:39.125 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-17 04:32:39.125 | INFO | [MAIN] Connected to LoginServer.
+2025-12-17 04:32:39.125 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-17 04:32:39.125 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=74105801 (from sessionId=2)
+2025-12-17 04:32:39.125 | INFO | [CONNECTION] Internal server connected: sessionId=3, role=5
+2025-12-17 04:32:39.125 | INFO | [MAIN] Sent CS_MS_PING_REQ seq=1 (to chatSessionId=3)
+2025-12-17 04:32:39.125 | INFO | [MAIN] Connected to ChatServer.
+2025-12-17 04:32:39.126 | INFO | [PACKET] Recv: sessionId=3, role=5, state=2, id=4001, len=12
+2025-12-17 04:32:39.126 | INFO | [ChatSrv] CS_MS_PING_ACK recv. seq=%u serverTick=%llu
+2025-12-17 04:32:41.024 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-17 04:32:41.025 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-17 04:32:41.025 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-17 04:32:45.354 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-17 04:32:45.354 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=4
+2025-12-17 04:32:45.354 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 04:32:45.355 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-17 04:32:45.356 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 04:32:45.356 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-17 04:32:45.356 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 04:32:45.356 | INFO | [CHAT] PostLogin start. clientSessionId=4 accountId=5
+2025-12-17 04:32:45.357 | INFO | [CHAT] Generated chat token. token=00000011416bdf83bdc01d5db3c359870000000000000000 accountId=5
+2025-12-17 04:32:45.357 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=5 ttl=30
+2025-12-17 04:32:45.358 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=4 ip=127.0.0.1 port=3800
+2025-12-17 04:32:45.358 | INFO | [CHAT] PostLogin finished. clientSessionId=4 accountId=5
+2025-12-17 04:32:45.358 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-17 04:32:52.578 | INFO | [CONNECTION] Client connected: sessionId=5
+2025-12-17 04:32:52.579 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1000, len=4
+2025-12-17 04:32:52.579 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=5)
+2025-12-17 04:32:57.659 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1100, len=12
+2025-12-17 04:32:57.659 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=3, clientSessionId=5
+2025-12-17 04:32:57.659 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 04:32:57.659 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=3, loginId=test2
+2025-12-17 04:32:57.660 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 04:32:57.660 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=3 exists=1
+2025-12-17 04:32:57.660 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 04:32:57.661 | INFO | [CHAT] PostLogin start. clientSessionId=5 accountId=8
+2025-12-17 04:32:57.661 | INFO | [CHAT] Generated chat token. token=0000001142279fcc191074e25d5ca8180000000000000001 accountId=8
+2025-12-17 04:32:57.661 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=8 ttl=30
+2025-12-17 04:32:57.661 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=5 ip=127.0.0.1 port=3800
+2025-12-17 04:32:57.661 | INFO | [CHAT] PostLogin finished. clientSessionId=5 accountId=8
+2025-12-17 04:32:57.661 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=5 accountId=8
+2025-12-17 04:33:23.596 | INFO | [PACKET] Recv: sessionId=5, role=1, state=4, id=1104, len=8
+2025-12-17 04:33:23.596 | INFO | [LOGOUT] Forward LOGOUT_REQ -> LS_LOGOUT_NOTIFY. accountId=8 sessionId=5
+2025-12-17 04:33:34.132 | INFO | [PACKET] Recv: sessionId=5, role=1, state=1, id=1100, len=12
+2025-12-17 04:33:34.133 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=5, clientSessionId=5
+2025-12-17 04:33:34.133 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 04:33:34.133 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=5, loginId=test3
+2025-12-17 04:33:34.134 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 04:33:34.134 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=5 exists=1
+2025-12-17 04:33:34.134 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 04:33:34.134 | INFO | [CHAT] PostLogin start. clientSessionId=5 accountId=9
+2025-12-17 04:33:34.134 | INFO | [CHAT] Generated chat token. token=0000001144542a5d66bd976fa682fd3b0000000000000002 accountId=9
+2025-12-17 04:33:34.134 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=9 ttl=30
+2025-12-17 04:33:34.134 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=5 ip=127.0.0.1 port=3800
+2025-12-17 04:33:34.135 | INFO | [CHAT] PostLogin finished. clientSessionId=5 accountId=9
+2025-12-17 04:33:34.135 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=5 accountId=9
+2025-12-17 04:34:04.245 | INFO | [PACKET] Recv: sessionId=5, role=1, state=4, id=1104, len=8
+2025-12-17 04:34:04.246 | INFO | [LOGOUT] Forward LOGOUT_REQ -> LS_LOGOUT_NOTIFY. accountId=9 sessionId=5
+2025-12-17 04:34:06.400 | INFO | [CONNECTION] Client disconnected: sessionId=5, role=1, state=0
+2025-12-17 04:34:09.829 | INFO | [PACKET] Recv: sessionId=4, role=1, state=4, id=1104, len=8
+2025-12-17 04:34:09.830 | INFO | [LOGOUT] Forward LOGOUT_REQ -> LS_LOGOUT_NOTIFY. accountId=5 sessionId=4
+2025-12-17 04:34:10.247 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0
+2025-12-17 04:37:42.074 | INFO | Logger init app=MainServer
+2025-12-17 04:37:42.096 | INFO | [System] MainServer process started
+2025-12-17 04:37:42.122 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-17 04:37:42.122 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-17 04:37:44.167 | ERROR | [MAIN] Failed to connect to DBServer (3600)
+2025-12-17 04:37:51.121 | INFO | Logger init app=MainServer
+2025-12-17 04:37:51.162 | INFO | [System] MainServer process started
+2025-12-17 04:37:51.169 | INFO | [MAIN] MainServer started on port 3500, workers=4
+2025-12-17 04:37:51.169 | INFO | [MAIN] MainServer started. Listening on port 3500
+2025-12-17 04:37:51.169 | INFO | [CONNECTION] Internal server connected: sessionId=1, role=4
+2025-12-17 04:37:51.170 | INFO | [MAIN] Sent DB_PING_REQ seq=1 (to dbSessionId=1)
+2025-12-17 04:37:51.170 | INFO | [MAIN] Connected to DBServer.
+2025-12-17 04:37:51.170 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3001, len=12
+2025-12-17 04:37:51.170 | INFO | [CONNECTION] Internal server connected: sessionId=2, role=3
+2025-12-17 04:37:51.170 | INFO | [DbSrv] DB_PING_ACK seq=1
+2025-12-17 04:37:51.170 | INFO | [MAIN] Sent LS_PING_REQ seq=1 (to loginSessionId=2)
+2025-12-17 04:37:51.170 | INFO | [MAIN] Connected to LoginServer.
+2025-12-17 04:37:51.170 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2001, len=12
+2025-12-17 04:37:51.170 | INFO | [LoginSrv] LS_PING_ACK seq=1, serverTick=74417846 (from sessionId=2)
+2025-12-17 04:37:51.170 | INFO | [CONNECTION] Internal server connected: sessionId=3, role=5
+2025-12-17 04:37:51.171 | INFO | [MAIN] Sent CS_MS_PING_REQ seq=1 (to chatSessionId=3)
+2025-12-17 04:37:51.171 | INFO | [MAIN] Connected to ChatServer.
+2025-12-17 04:37:51.171 | INFO | [PACKET] Recv: sessionId=3, role=5, state=2, id=4001, len=12
+2025-12-17 04:37:51.171 | INFO | [ChatSrv] CS_MS_PING_ACK recv. seq=%u serverTick=%llu
+2025-12-17 04:37:52.644 | INFO | [CONNECTION] Client connected: sessionId=4
+2025-12-17 04:37:52.645 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1000, len=4
+2025-12-17 04:37:52.645 | INFO | [Handshake] C_PING_ACK sent. seq=1 (sessionId=4)
+2025-12-17 04:37:57.471 | INFO | [PACKET] Recv: sessionId=4, role=1, state=1, id=1100, len=12
+2025-12-17 04:37:57.471 | INFO | [LOGIN] Forwarded LOGIN_REQ -> LS_LOGIN_REQ. seq=1, clientSessionId=4
+2025-12-17 04:37:57.471 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2100, len=11
+2025-12-17 04:37:57.471 | INFO | [MS] Forward LS_DB_FIND_ACCOUNT_REQ -> DB_FIND_ACCOUNT_REQ. seq=1, loginId=test1
+2025-12-17 04:37:57.472 | INFO | [PACKET] Recv: sessionId=1, role=4, state=2, id=3101, len=101
+2025-12-17 04:37:57.472 | INFO | [MS] Forward DB_FIND_ACCOUNT_ACK -> LS_DB_FIND_ACCOUNT_ACK. seq=1 exists=1
+2025-12-17 04:37:57.473 | INFO | [PACKET] Recv: sessionId=2, role=3, state=2, id=2103, len=28
+2025-12-17 04:37:57.473 | INFO | [CHAT] PostLogin start. clientSessionId=4 accountId=5
+2025-12-17 04:37:57.474 | INFO | [CHAT] Generated chat token. token=00000011540664e3d6beedc7c68744cd0000000000000000 accountId=5
+2025-12-17 04:37:57.474 | INFO | [CHAT] Sent MS_CS_CHAT_ALLOW_TOKEN_REQ. chatSessionId=3 accountId=5 ttl=30
+2025-12-17 04:37:57.474 | INFO | [CHAT] Sent MS_CL_CHAT_CONNECT_INFO_ACK. clientSessionId=4 ip=127.0.0.1 port=3800
+2025-12-17 04:37:57.474 | INFO | [CHAT] PostLogin finished. clientSessionId=4 accountId=5
+2025-12-17 04:37:57.474 | INFO | [MS] LOGIN success. Sent LOGIN_ACK and DB_UPDATE_LASTLOGIN_REQ. clientSessionId=4 accountId=5
+2025-12-17 04:38:02.057 | INFO | [CONNECTION] Client disconnected: sessionId=4, role=1, state=0

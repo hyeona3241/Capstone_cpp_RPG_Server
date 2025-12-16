@@ -1,0 +1,445 @@
+2025-12-15 10:23:40.382 | INFO | Logger init app=LoginServer
+2025-12-15 10:23:40.422 | INFO | [System] LoginServer process started
+2025-12-15 10:23:40.430 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 10:23:40.430 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 10:23:46.382 | INFO | [LoginServer] MainServer connected
+2025-12-15 10:23:46.383 | INFO | [LS] PING_ACK seq=1
+2025-12-15 10:23:54.924 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-15 10:23:54.947 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-15 10:24:02.147 | WARN | [LoginServer] MainServer disconnected
+2025-12-15 10:41:04.337 | INFO | Logger init app=LoginServer
+2025-12-15 10:41:04.376 | INFO | [System] LoginServer process started
+2025-12-15 10:41:04.383 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 10:41:04.383 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 10:41:07.966 | INFO | [LoginServer] MainServer connected
+2025-12-15 10:41:07.966 | INFO | [LS] PING_ACK seq=1
+2025-12-15 10:47:09.798 | INFO | Logger init app=LoginServer
+2025-12-15 10:47:09.838 | INFO | [System] LoginServer process started
+2025-12-15 10:47:09.846 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 10:47:09.846 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 10:47:11.648 | INFO | [LoginServer] MainServer connected
+2025-12-15 10:47:11.648 | INFO | [LS] PING_ACK seq=1
+2025-12-15 10:51:21.743 | INFO | Logger init app=LoginServer
+2025-12-15 10:51:21.782 | INFO | [System] LoginServer process started
+2025-12-15 10:51:21.790 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 10:51:21.790 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 10:51:23.515 | INFO | [LoginServer] MainServer connected
+2025-12-15 10:51:23.516 | INFO | [LS] PING_ACK seq=1
+2025-12-15 10:53:10.754 | WARN | [LoginServer] MainServer disconnected
+2025-12-15 10:58:24.884 | INFO | Logger init app=LoginServer
+2025-12-15 10:58:24.925 | INFO | [System] LoginServer process started
+2025-12-15 10:58:24.933 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 10:58:24.933 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 10:59:02.498 | INFO | [LoginServer] MainServer connected
+2025-12-15 10:59:02.498 | INFO | [LS] PING_ACK seq=1
+2025-12-15 10:59:15.708 | WARN | [LoginServer] MainServer disconnected
+2025-12-15 10:59:16.593 | INFO | [LoginServer] MainServer connected
+2025-12-15 10:59:16.593 | INFO | [LS] PING_ACK seq=1
+2025-12-15 11:00:19.051 | WARN | [LoginServer] MainServer disconnected
+2025-12-15 11:01:45.427 | INFO | Logger init app=LoginServer
+2025-12-15 11:01:45.468 | INFO | [System] LoginServer process started
+2025-12-15 11:01:45.476 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 11:01:45.476 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 11:01:46.726 | INFO | [LoginServer] MainServer connected
+2025-12-15 11:01:46.726 | INFO | [LS] PING_ACK seq=1
+2025-12-15 11:04:35.585 | WARN | [LoginServer] MainServer disconnected
+2025-12-15 11:04:47.077 | INFO | Logger init app=LoginServer
+2025-12-15 11:04:47.118 | INFO | [System] LoginServer process started
+2025-12-15 11:04:47.126 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 11:04:47.126 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 11:04:48.442 | INFO | [LoginServer] MainServer connected
+2025-12-15 11:04:48.442 | INFO | [LS] PING_ACK seq=1
+2025-12-15 11:06:09.544 | WARN | [LoginServer] MainServer disconnected
+2025-12-15 11:07:01.421 | INFO | Logger init app=LoginServer
+2025-12-15 11:07:01.461 | INFO | [System] LoginServer process started
+2025-12-15 11:07:01.469 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 11:07:01.469 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 11:07:04.138 | INFO | [LoginServer] MainServer connected
+2025-12-15 11:07:04.138 | INFO | [LS] PING_ACK seq=1
+2025-12-15 11:17:03.791 | INFO | Logger init app=LoginServer
+2025-12-15 11:17:03.831 | INFO | [System] LoginServer process started
+2025-12-15 11:17:03.839 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 11:17:03.839 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 11:21:35.910 | INFO | Logger init app=LoginServer
+2025-12-15 11:21:35.949 | INFO | [System] LoginServer process started
+2025-12-15 11:21:35.957 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 11:21:35.957 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 11:21:37.179 | INFO | [LoginServer] MainServer connected
+2025-12-15 11:21:37.179 | INFO | [LS] PING_ACK seq=1
+2025-12-15 12:09:56.445 | INFO | Logger init app=LoginServer
+2025-12-15 12:09:56.486 | INFO | [System] LoginServer process started
+2025-12-15 12:09:56.495 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 12:09:56.495 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 12:09:58.522 | INFO | [LoginServer] MainServer connected
+2025-12-15 12:09:58.522 | INFO | [LS] PING_ACK seq=1
+2025-12-15 12:10:21.219 | WARN | [LoginServer] MainServer disconnected
+2025-12-15 12:10:53.714 | INFO | Logger init app=LoginServer
+2025-12-15 12:10:53.755 | INFO | [System] LoginServer process started
+2025-12-15 12:10:53.763 | INFO | [LoginServer] Listening on port 3700
+2025-12-15 12:10:53.763 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-15 12:10:56.432 | INFO | [LoginServer] MainServer connected
+2025-12-15 12:10:56.432 | INFO | [LS] PING_ACK seq=1
+2025-12-15 12:11:19.966 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 01:46:42.410 | INFO | Logger init app=LoginServer
+2025-12-16 01:46:42.432 | INFO | [System] LoginServer process started
+2025-12-16 01:46:42.458 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 01:46:42.458 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 01:46:44.576 | INFO | [LoginServer] MainServer connected
+2025-12-16 01:46:44.577 | INFO | [LS] PING_ACK seq=1
+2025-12-16 01:47:20.753 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 01:47:20.776 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 01:47:42.827 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test1
+2025-12-16 01:47:42.829 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=4 success=0 result=2
+2025-12-16 01:47:52.699 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=4 loginId=t
+2025-12-16 01:47:52.701 | INFO | [LS] Sent LS_LOGIN_ACK seq=4 clientSessionId=5 success=0 result=1
+2025-12-16 01:48:08.484 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=5 loginId=test1
+2025-12-16 01:48:08.486 | INFO | [LS] Sent LS_LOGIN_ACK seq=5 clientSessionId=7 success=1 result=0
+2025-12-16 01:48:14.478 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 02:11:48.052 | INFO | Logger init app=LoginServer
+2025-12-16 02:11:48.090 | INFO | [System] LoginServer process started
+2025-12-16 02:11:48.098 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 02:11:48.098 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 02:11:49.895 | INFO | [LoginServer] MainServer connected
+2025-12-16 02:11:49.895 | INFO | [LS] PING_ACK seq=1
+2025-12-16 03:51:57.157 | INFO | Logger init app=LoginServer
+2025-12-16 03:51:57.196 | INFO | [System] LoginServer process started
+2025-12-16 03:51:57.204 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 03:51:57.204 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 03:58:21.459 | INFO | Logger init app=LoginServer
+2025-12-16 03:58:21.499 | INFO | [System] LoginServer process started
+2025-12-16 03:58:21.507 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 03:58:21.507 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 03:58:24.808 | INFO | [LoginServer] MainServer connected
+2025-12-16 03:58:24.808 | INFO | [LS] PING_ACK seq=1
+2025-12-16 03:58:36.035 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 03:58:36.036 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 03:58:41.503 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 05:08:39.641 | INFO | Logger init app=LoginServer
+2025-12-16 05:08:39.680 | INFO | [System] LoginServer process started
+2025-12-16 05:08:39.688 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 05:08:39.688 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 05:09:17.701 | INFO | Logger init app=LoginServer
+2025-12-16 05:09:17.740 | INFO | [System] LoginServer process started
+2025-12-16 05:09:17.748 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 05:09:17.748 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 05:09:19.455 | INFO | [LoginServer] MainServer connected
+2025-12-16 05:09:19.456 | INFO | [LS] PING_ACK seq=1
+2025-12-16 05:21:00.356 | INFO | Logger init app=LoginServer
+2025-12-16 05:21:00.397 | INFO | [System] LoginServer process started
+2025-12-16 05:21:00.406 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 05:21:00.406 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 05:21:03.347 | INFO | [LoginServer] MainServer connected
+2025-12-16 05:21:03.347 | INFO | [LS] PING_ACK seq=1
+2025-12-16 05:21:22.123 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test2
+2025-12-16 05:21:22.124 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=0 result=2
+2025-12-16 05:21:46.771 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=2 loginId=test2
+2025-12-16 05:21:46.773 | INFO | [LS] Sent LS_LOGIN_ACK seq=2 clientSessionId=4 success=0 result=2
+2025-12-16 05:21:53.499 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test2
+2025-12-16 05:21:53.500 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=4 success=0 result=2
+2025-12-16 05:22:02.291 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=4 loginId=test1
+2025-12-16 05:22:02.292 | INFO | [LS] Sent LS_LOGIN_ACK seq=4 clientSessionId=4 success=1 result=0
+2025-12-16 05:24:16.256 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 05:28:45.449 | INFO | Logger init app=LoginServer
+2025-12-16 05:28:45.488 | INFO | [System] LoginServer process started
+2025-12-16 05:28:45.496 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 05:28:45.496 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 05:28:47.396 | INFO | [LoginServer] MainServer connected
+2025-12-16 05:28:47.396 | INFO | [LS] PING_ACK seq=1
+2025-12-16 05:29:02.443 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test
+2025-12-16 05:29:02.444 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=0 result=1
+2025-12-16 05:29:08.235 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=2 loginId=test2
+2025-12-16 05:29:08.237 | INFO | [LS] Sent LS_LOGIN_ACK seq=2 clientSessionId=3 success=1 result=0
+2025-12-16 05:29:42.779 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=4 loginId=test2
+2025-12-16 05:29:42.780 | INFO | [LS] Sent LS_LOGIN_ACK seq=4 clientSessionId=4 success=1 result=0
+2025-12-16 05:29:46.926 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 05:34:44.822 | INFO | Logger init app=LoginServer
+2025-12-16 05:34:44.861 | INFO | [System] LoginServer process started
+2025-12-16 05:34:44.869 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 05:34:44.869 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 05:34:46.487 | INFO | [LoginServer] MainServer connected
+2025-12-16 05:34:46.488 | INFO | [LS] PING_ACK seq=1
+2025-12-16 05:34:59.883 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 05:51:06.399 | INFO | Logger init app=LoginServer
+2025-12-16 05:51:06.439 | INFO | [System] LoginServer process started
+2025-12-16 05:51:06.447 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 05:51:06.447 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 05:51:07.856 | INFO | [LoginServer] MainServer connected
+2025-12-16 05:51:07.856 | INFO | [LS] PING_ACK seq=1
+2025-12-16 05:51:14.468 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 05:51:14.470 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 05:51:30.269 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test1
+2025-12-16 05:51:30.271 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=4 success=1 result=0
+2025-12-16 05:51:43.866 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 05:52:41.331 | INFO | Logger init app=LoginServer
+2025-12-16 05:52:41.371 | INFO | [System] LoginServer process started
+2025-12-16 05:52:41.380 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 05:52:41.380 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 05:52:42.862 | INFO | [LoginServer] MainServer connected
+2025-12-16 05:52:42.863 | INFO | [LS] PING_ACK seq=1
+2025-12-16 05:52:47.902 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 05:52:47.903 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 05:54:24.221 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 06:25:41.423 | INFO | Logger init app=LoginServer
+2025-12-16 06:25:41.463 | INFO | [System] LoginServer process started
+2025-12-16 06:25:41.471 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 06:25:41.471 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 06:25:43.266 | INFO | [LoginServer] MainServer connected
+2025-12-16 06:25:43.266 | INFO | [LS] PING_ACK seq=1
+2025-12-16 06:25:49.145 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 06:25:49.146 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 06:26:15.753 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test1
+2025-12-16 06:26:15.755 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=4 success=0 result=6
+2025-12-16 06:26:26.946 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=4 loginId=test1
+2025-12-16 06:26:26.947 | INFO | [LS] Sent LS_LOGIN_ACK seq=4 clientSessionId=4 success=0 result=6
+2025-12-16 06:26:38.074 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=5 loginId=test2
+2025-12-16 06:26:38.075 | INFO | [LS] Sent LS_LOGIN_ACK seq=5 clientSessionId=5 success=1 result=0
+2025-12-16 06:26:47.066 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=7 loginId=test2
+2025-12-16 06:26:47.068 | INFO | [LS] Sent LS_LOGIN_ACK seq=7 clientSessionId=6 success=0 result=6
+2025-12-16 06:26:57.130 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=8 loginId=test1
+2025-12-16 06:26:57.132 | INFO | [LS] Sent LS_LOGIN_ACK seq=8 clientSessionId=6 success=0 result=6
+2025-12-16 06:30:58.741 | INFO | Logger init app=LoginServer
+2025-12-16 06:30:58.780 | INFO | [System] LoginServer process started
+2025-12-16 06:30:58.788 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 06:30:58.788 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 06:31:00.415 | INFO | [LoginServer] MainServer connected
+2025-12-16 06:31:00.415 | INFO | [LS] PING_ACK seq=1
+2025-12-16 06:31:08.233 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 06:31:08.235 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 06:31:23.170 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test1
+2025-12-16 06:31:23.172 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=4 success=0 result=6
+2025-12-16 06:31:29.010 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=4 loginId=test2
+2025-12-16 06:31:29.012 | INFO | [LS] Sent LS_LOGIN_ACK seq=4 clientSessionId=4 success=1 result=0
+2025-12-16 06:31:35.523 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=6 loginId=test2
+2025-12-16 06:31:35.524 | INFO | [LS] Sent LS_LOGIN_ACK seq=6 clientSessionId=5 success=0 result=6
+2025-12-16 06:31:49.379 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=7 loginId=test2
+2025-12-16 06:31:49.380 | INFO | [LS] Sent LS_LOGIN_ACK seq=7 clientSessionId=5 success=0 result=6
+2025-12-16 06:33:53.086 | INFO | Logger init app=LoginServer
+2025-12-16 06:33:53.126 | INFO | [System] LoginServer process started
+2025-12-16 06:33:53.133 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 06:33:53.133 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 06:33:54.604 | INFO | [LoginServer] MainServer connected
+2025-12-16 06:33:54.604 | INFO | [LS] PING_ACK seq=1
+2025-12-16 06:33:59.942 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 06:33:59.943 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 06:34:08.991 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test1
+2025-12-16 06:34:08.993 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=4 success=0 result=6
+2025-12-16 06:34:12.435 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 06:40:39.577 | INFO | Logger init app=LoginServer
+2025-12-16 06:40:39.617 | INFO | [System] LoginServer process started
+2025-12-16 06:40:39.625 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 06:40:39.625 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 06:40:41.707 | INFO | [LoginServer] MainServer connected
+2025-12-16 06:40:41.707 | INFO | [LS] PING_ACK seq=1
+2025-12-16 06:40:50.954 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 06:40:50.956 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 06:41:06.346 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test1
+2025-12-16 06:41:06.348 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=4 success=0 result=6
+2025-12-16 06:41:25.099 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=4 loginId=test1
+2025-12-16 06:41:25.101 | INFO | [LS] Sent LS_LOGIN_ACK seq=4 clientSessionId=4 success=0 result=6
+2025-12-16 06:41:43.944 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 06:43:46.342 | INFO | Logger init app=LoginServer
+2025-12-16 06:43:46.383 | INFO | [System] LoginServer process started
+2025-12-16 06:43:46.391 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 06:43:46.391 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 06:43:51.062 | INFO | [LoginServer] MainServer connected
+2025-12-16 06:43:51.062 | INFO | [LS] PING_ACK seq=1
+2025-12-16 06:44:07.224 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 06:44:07.226 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 06:45:25.927 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 06:46:21.275 | INFO | Logger init app=LoginServer
+2025-12-16 06:46:21.315 | INFO | [System] LoginServer process started
+2025-12-16 06:46:21.323 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 06:46:21.323 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 06:46:26.689 | INFO | [LoginServer] MainServer connected
+2025-12-16 06:46:26.689 | INFO | [LS] PING_ACK seq=1
+2025-12-16 06:46:43.573 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 06:46:43.575 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 06:46:46.181 | WARN | [LS:System] Unknown pktId=2002
+2025-12-16 06:47:00.822 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test1
+2025-12-16 06:47:00.824 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=3 success=0 result=6
+2025-12-16 06:47:03.844 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 06:49:59.146 | INFO | Logger init app=LoginServer
+2025-12-16 06:49:59.186 | INFO | [System] LoginServer process started
+2025-12-16 06:49:59.193 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 06:49:59.193 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 06:50:01.026 | INFO | [LoginServer] MainServer connected
+2025-12-16 06:50:01.026 | INFO | [LS] PING_ACK seq=1
+2025-12-16 06:50:07.516 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 06:50:07.517 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 06:50:13.563 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test1
+2025-12-16 06:50:13.565 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=4 success=0 result=6
+2025-12-16 06:50:19.404 | WARN | [LS:System] Unknown pktId=2002
+2025-12-16 06:50:23.668 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=4 loginId=test1
+2025-12-16 06:50:23.669 | INFO | [LS] Sent LS_LOGIN_ACK seq=4 clientSessionId=4 success=0 result=6
+2025-12-16 06:51:25.895 | INFO | Logger init app=LoginServer
+2025-12-16 06:51:25.934 | INFO | [System] LoginServer process started
+2025-12-16 06:51:25.942 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 06:51:25.942 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 06:51:27.469 | INFO | [LoginServer] MainServer connected
+2025-12-16 06:51:27.469 | INFO | [LS] PING_ACK seq=1
+2025-12-16 06:51:31.966 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 06:51:31.967 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 06:51:37.694 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test1
+2025-12-16 06:51:37.696 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=4 success=0 result=6
+2025-12-16 06:51:42.790 | WARN | [LS:System] Unknown pktId=2002
+2025-12-16 06:51:51.006 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=4 loginId=test1
+2025-12-16 06:51:51.008 | INFO | [LS] Sent LS_LOGIN_ACK seq=4 clientSessionId=4 success=0 result=6
+2025-12-16 06:52:45.750 | INFO | Logger init app=LoginServer
+2025-12-16 06:52:45.789 | INFO | [System] LoginServer process started
+2025-12-16 06:52:45.796 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 06:52:45.796 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 06:52:47.240 | INFO | [LoginServer] MainServer connected
+2025-12-16 06:52:47.240 | INFO | [LS] PING_ACK seq=1
+2025-12-16 06:52:51.824 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-16 06:52:51.825 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=3 success=1 result=0
+2025-12-16 06:52:57.665 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test1
+2025-12-16 06:52:57.666 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=4 success=0 result=6
+2025-12-16 06:53:01.257 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=5removed from online list
+2025-12-16 06:53:06.505 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=4 loginId=test1
+2025-12-16 06:53:06.507 | INFO | [LS] Sent LS_LOGIN_ACK seq=4 clientSessionId=4 success=1 result=0
+2025-12-16 06:53:13.809 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=6 loginId=test2
+2025-12-16 06:53:13.811 | INFO | [LS] Sent LS_LOGIN_ACK seq=6 clientSessionId=3 success=1 result=0
+2025-12-16 06:53:18.513 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=5removed from online list
+2025-12-16 06:53:22.897 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=8 loginId=test2
+2025-12-16 06:53:22.899 | INFO | [LS] Sent LS_LOGIN_ACK seq=8 clientSessionId=4 success=0 result=6
+2025-12-16 06:53:52.763 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=9 loginId=test1
+2025-12-16 06:53:52.764 | INFO | [LS] Sent LS_LOGIN_ACK seq=9 clientSessionId=4 success=1 result=0
+2025-12-16 06:54:00.690 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=11 loginId=test1
+2025-12-16 06:54:00.692 | INFO | [LS] Sent LS_LOGIN_ACK seq=11 clientSessionId=5 success=0 result=6
+2025-12-16 06:54:08.512 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 23:12:47.482 | INFO | Logger init app=LoginServer
+2025-12-16 23:12:47.523 | INFO | [System] LoginServer process started
+2025-12-16 23:12:47.531 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 23:12:47.531 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 23:13:26.222 | INFO | Logger init app=LoginServer
+2025-12-16 23:13:26.262 | INFO | [System] LoginServer process started
+2025-12-16 23:13:26.270 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 23:13:26.270 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 23:13:28.796 | INFO | [LoginServer] MainServer connected
+2025-12-16 23:13:28.796 | INFO | [LS] PING_ACK seq=1
+2025-12-16 23:13:36.840 | WARN | [LoginServer] MainServer disconnected
+2025-12-16 23:18:09.488 | INFO | Logger init app=LoginServer
+2025-12-16 23:18:09.529 | INFO | [System] LoginServer process started
+2025-12-16 23:18:09.537 | INFO | [LoginServer] Listening on port 3700
+2025-12-16 23:18:09.537 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-16 23:18:11.096 | INFO | [LoginServer] MainServer connected
+2025-12-16 23:18:11.096 | INFO | [LS] PING_ACK seq=1
+2025-12-16 23:18:39.157 | WARN | [LoginServer] MainServer disconnected
+2025-12-17 00:19:04.737 | INFO | Logger init app=LoginServer
+2025-12-17 00:19:04.777 | INFO | [System] LoginServer process started
+2025-12-17 00:19:04.786 | INFO | [LoginServer] Listening on port 3700
+2025-12-17 00:19:04.786 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-17 00:19:05.977 | INFO | [LoginServer] MainServer connected
+2025-12-17 00:19:05.977 | INFO | [LS] PING_ACK seq=1
+2025-12-17 00:19:16.448 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-17 00:19:16.450 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=4 success=1 result=0
+2025-12-17 00:19:52.272 | INFO | [LS] Signal received (2). Shutting down...
+2025-12-17 00:19:52.367 | INFO | [LS] Stopping...
+2025-12-17 00:19:52.367 | INFO | [LS] Stopped cleanly.
+2025-12-17 00:19:52.367 | INFO | LoginServer shutting down
+2025-12-17 00:19:52.367 | INFO | Logger shutdown begin
+2025-12-17 00:45:00.466 | INFO | Logger init app=LoginServer
+2025-12-17 00:45:00.507 | INFO | [System] LoginServer process started
+2025-12-17 00:45:00.515 | INFO | [LoginServer] Listening on port 3700
+2025-12-17 00:45:00.515 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-17 00:45:02.695 | INFO | [LoginServer] MainServer connected
+2025-12-17 00:45:02.695 | INFO | [LS] PING_ACK seq=1
+2025-12-17 00:45:10.633 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-17 00:45:10.635 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=4 success=1 result=0
+2025-12-17 00:45:59.584 | WARN | [LoginServer] MainServer disconnected
+2025-12-17 00:49:38.757 | INFO | Logger init app=LoginServer
+2025-12-17 00:49:38.798 | INFO | [System] LoginServer process started
+2025-12-17 00:49:38.806 | INFO | [LoginServer] Listening on port 3700
+2025-12-17 00:49:38.806 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-17 00:49:40.244 | INFO | [LoginServer] MainServer connected
+2025-12-17 00:49:40.244 | INFO | [LS] PING_ACK seq=1
+2025-12-17 00:49:47.151 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-17 00:49:47.153 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=4 success=1 result=0
+2025-12-17 00:49:53.252 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=5removed from online list
+2025-12-17 00:49:55.598 | WARN | [LoginServer] MainServer disconnected
+2025-12-17 01:06:34.788 | INFO | Logger init app=LoginServer
+2025-12-17 01:06:34.828 | INFO | [System] LoginServer process started
+2025-12-17 01:06:34.835 | INFO | [LoginServer] Listening on port 3700
+2025-12-17 01:06:34.836 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-17 01:06:37.522 | INFO | [LoginServer] MainServer connected
+2025-12-17 01:06:37.522 | INFO | [LS] PING_ACK seq=1
+2025-12-17 01:06:47.868 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-17 01:06:47.870 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=4 success=1 result=0
+2025-12-17 01:07:17.149 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=5removed from online list
+2025-12-17 01:27:51.583 | INFO | Logger init app=LoginServer
+2025-12-17 01:27:51.626 | INFO | [System] LoginServer process started
+2025-12-17 01:27:51.634 | INFO | [LoginServer] Listening on port 3700
+2025-12-17 01:27:51.634 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-17 01:27:54.693 | INFO | [LoginServer] MainServer connected
+2025-12-17 01:27:54.694 | INFO | [LS] PING_ACK seq=1
+2025-12-17 01:28:01.165 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-17 01:28:01.167 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=4 success=1 result=0
+2025-12-17 01:28:37.831 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=5removed from online list
+2025-12-17 01:28:39.852 | WARN | [LoginServer] MainServer disconnected
+2025-12-17 02:10:53.709 | INFO | Logger init app=LoginServer
+2025-12-17 02:10:53.749 | INFO | [System] LoginServer process started
+2025-12-17 02:10:53.757 | INFO | [LoginServer] Listening on port 3700
+2025-12-17 02:10:53.757 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-17 02:10:56.851 | INFO | [LoginServer] MainServer connected
+2025-12-17 02:10:56.851 | INFO | [LS] PING_ACK seq=1
+2025-12-17 02:11:08.225 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-17 02:11:08.227 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=4 success=1 result=0
+2025-12-17 02:11:31.889 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=5removed from online list
+2025-12-17 02:11:35.701 | WARN | [LoginServer] MainServer disconnected
+2025-12-17 03:41:28.880 | INFO | Logger init app=LoginServer
+2025-12-17 03:41:28.920 | INFO | [System] LoginServer process started
+2025-12-17 03:41:28.928 | INFO | [LoginServer] Listening on port 3700
+2025-12-17 03:41:28.928 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-17 03:41:30.271 | INFO | [LoginServer] MainServer connected
+2025-12-17 03:41:30.271 | INFO | [LS] PING_ACK seq=1
+2025-12-17 03:41:38.050 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-17 03:41:38.052 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=4 success=1 result=0
+2025-12-17 03:42:05.083 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test2
+2025-12-17 03:42:05.085 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=5 success=1 result=0
+2025-12-17 03:42:22.356 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=5removed from online list
+2025-12-17 03:42:22.883 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=8removed from online list
+2025-12-17 03:42:35.797 | WARN | [LoginServer] MainServer disconnected
+2025-12-17 03:56:53.348 | INFO | Logger init app=LoginServer
+2025-12-17 03:56:53.388 | INFO | [System] LoginServer process started
+2025-12-17 03:56:53.396 | INFO | [LoginServer] Listening on port 3700
+2025-12-17 03:56:53.396 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-17 03:56:55.898 | INFO | [LoginServer] MainServer connected
+2025-12-17 03:56:55.899 | INFO | [LS] PING_ACK seq=1
+2025-12-17 03:57:10.663 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-17 03:57:10.664 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=4 success=1 result=0
+2025-12-17 03:57:35.967 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test2
+2025-12-17 03:57:35.969 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=5 success=1 result=0
+2025-12-17 03:58:07.289 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=5 loginId=test3
+2025-12-17 03:58:07.290 | INFO | [LS] Sent LS_LOGIN_ACK seq=5 clientSessionId=6 success=1 result=0
+2025-12-17 03:58:21.751 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=9removed from online list
+2025-12-17 03:58:23.336 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=5removed from online list
+2025-12-17 03:58:24.107 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=8removed from online list
+2025-12-17 03:58:26.085 | WARN | [LoginServer] MainServer disconnected
+2025-12-17 04:32:37.789 | INFO | Logger init app=LoginServer
+2025-12-17 04:32:37.828 | INFO | [System] LoginServer process started
+2025-12-17 04:32:37.836 | INFO | [LoginServer] Listening on port 3700
+2025-12-17 04:32:37.836 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-17 04:32:39.125 | INFO | [LoginServer] MainServer connected
+2025-12-17 04:32:39.125 | INFO | [LS] PING_ACK seq=1
+2025-12-17 04:32:45.354 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-17 04:32:45.356 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=4 success=1 result=0
+2025-12-17 04:32:57.659 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=3 loginId=test2
+2025-12-17 04:32:57.660 | INFO | [LS] Sent LS_LOGIN_ACK seq=3 clientSessionId=5 success=1 result=0
+2025-12-17 04:33:23.596 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=8removed from online list
+2025-12-17 04:33:34.132 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=5 loginId=test3
+2025-12-17 04:33:34.134 | INFO | [LS] Sent LS_LOGIN_ACK seq=5 clientSessionId=5 success=1 result=0
+2025-12-17 04:34:04.245 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=9removed from online list
+2025-12-17 04:34:06.399 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=9removed from online list
+2025-12-17 04:34:09.829 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=5removed from online list
+2025-12-17 04:34:10.247 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=5removed from online list
+2025-12-17 04:34:13.436 | WARN | [LoginServer] MainServer disconnected
+2025-12-17 04:37:49.927 | INFO | Logger init app=LoginServer
+2025-12-17 04:37:49.960 | INFO | [System] LoginServer process started
+2025-12-17 04:37:49.976 | INFO | [LoginServer] Listening on port 3700
+2025-12-17 04:37:49.976 | INFO | [LS] LoginServer started. Listening on port 3700
+2025-12-17 04:37:51.170 | INFO | [LoginServer] MainServer connected
+2025-12-17 04:37:51.170 | INFO | [LS] PING_ACK seq=1
+2025-12-17 04:37:57.471 | INFO | [LS] Forward LS_DB_FIND_ACCOUNT_REQ seq=1 loginId=test1
+2025-12-17 04:37:57.472 | INFO | [LS] Sent LS_LOGIN_ACK seq=1 clientSessionId=4 success=1 result=0
+2025-12-17 04:38:02.057 | INFO | [LOGIN] LOGOUT_NOTIFY accountId=5removed from online list
+2025-12-17 04:38:03.514 | WARN | [LoginServer] MainServer disconnected
