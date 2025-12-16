@@ -121,5 +121,20 @@ void ChatServer::OnRawPacket(Session* session, const PacketHeader& header, const
         ", len=" + std::to_string(length));
 
 
-    packetHandler_.HandleFromClient(session, header, payload, length);
+    switch (session->GetRole())
+    {
+    case SessionRole::Client:
+        packetHandler_.HandleFromClient(session, header, payload, length);
+        break;
+    case SessionRole::MainServer:
+        packetHandler_.HandleFromMainServer(session, header, payload, length);
+        break;
+    default:
+        std::printf(
+            "[WARN][CHAT][PACKET] Unknown role packet ignored. sessionId=%llu role=%d\n",
+            static_cast<unsigned long long>(session->GetId()),
+            static_cast<int>(role)
+        );
+        break;
+    }
 }

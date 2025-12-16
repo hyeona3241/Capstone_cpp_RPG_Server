@@ -53,7 +53,7 @@ void TcpClient::Close()
     bool expected = true;
     if (!running_.compare_exchange_strong(expected, false))
     {
-        // 이미 종료 상태
+        return;
     }
 
     // send thread 깨우기

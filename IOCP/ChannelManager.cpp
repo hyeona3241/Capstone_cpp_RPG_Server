@@ -4,6 +4,7 @@
 void ChannelManager::InitDefaultChannels()
 {
     CreateChannel(kLobbyChannelId, /*maxUsers*/ 200, /*needPassword*/ false);
+    CreateChannel(2, /*maxUsers*/ 200, /*needPassword*/ false);
 }
 
 bool ChannelManager::CreateChannel(uint32_t channelId, uint32_t maxUsers, bool needPassword, const std::string& password)
@@ -62,6 +63,13 @@ JoinChannelResult ChannelManager::Join(uint32_t channelId, ChatSession* session,
     if (!session)
         return JoinChannelResult::Invalid;
 
+    if (!session->IsAuthed())
+        return JoinChannelResult::NotAuthed;
+
+    if (session->IsInChannel())
+        return JoinChannelResult::AlreadyInChannel;
+
+
     ChatChannel* ch = nullptr;
     {
         std::lock_guard<std::mutex> lock(mtx_);
@@ -71,17 +79,28 @@ JoinChannelResult ChannelManager::Join(uint32_t channelId, ChatSession* session,
         ch = it->second.get();
     }
 
-    return ch->TryJoin(session, passwordOpt);
+    const JoinChannelResult jr = ch->TryJoin(session, passwordOpt);
+    if (jr != JoinChannelResult::Ok)
+        return jr;
+
+    session->TryEnterChannel(channelId);
+    return JoinChannelResult::Ok;
 }
 
-bool ChannelManager::Leave(ChatSession* session)
+JoinChannelResult  ChannelManager::Leave(ChatSession* session)
 {
     if (!session)
-        return false;
+        return JoinChannelResult::Invalid;
+
+    if (!session->IsAuthed())
+        return JoinChannelResult::NotAuthed;
+
+    if (!session->IsInChannel())
+        return JoinChannelResult::Invalid;
 
     const uint32_t cid = session->GetChannelId();
     if (cid == 0)
-        return false;
+        return JoinChannelResult::Invalid;
 
     ChatChannel* ch = nullptr;
     {
@@ -89,12 +108,14 @@ bool ChannelManager::Leave(ChatSession* session)
         auto it = channels_.find(cid);
         if (it == channels_.end())
         {
-            return session->TryLeaveChannel();
+            return session->TryLeaveChannel() ? JoinChannelResult::Ok : JoinChannelResult::Invalid;
         }
         ch = it->second.get();
     }
 
-    return ch->TryLeave(session);
+    const bool ok = ch->TryLeave(session);
+    return ok ? JoinChannelResult::Ok : JoinChannelResult::Invalid;
+
 }
 
 bool ChannelManager::LeaveIfInChannel(ChatSession* session)
@@ -105,7 +126,8 @@ bool ChannelManager::LeaveIfInChannel(ChatSession* session)
     if (!session->IsInChannel())
         return false;
 
-    return Leave(session);
+    const JoinChannelResult jr = Leave(session);
+    return jr == JoinChannelResult::Ok;
 }
 
 std::vector<ChannelInfo> ChannelManager::GetChannelListSnapshot() const

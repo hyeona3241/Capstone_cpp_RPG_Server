@@ -6,6 +6,19 @@ class ChatServer;
 class Session;
 struct PacketHeader;
 
+enum ChannelEnterResultCode : uint16_t
+{
+    CER_OK = 0,
+    CER_NOT_AUTHED = 1,
+    CER_ALREADY_IN = 2,
+    CER_CHANNEL_FULL = 3,
+    CER_PASSWORD_REQUIRED = 4,
+    CER_WRONG_PASSWORD = 5,
+    CER_INVALID_CHANNEL = 6,
+    CER_CHANNEL_CLOSED = 7,
+    CER_NOT_IN_CHANNEL = 8,
+};
+
 class ChatPacketHandler
 {
 public:
@@ -38,6 +51,8 @@ private:
     void HandleChannelEnterReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
     void HandleChannelLeaveReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
     void HandleChannelMsgReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
+    void HandleAllowTokenReq(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length);
+
 
     static bool InRange(std::uint32_t id, std::uint32_t begin, std::uint32_t endExclusive);
 

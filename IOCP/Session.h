@@ -10,8 +10,10 @@ enum class SessionRole : uint8_t
 {
     Unknown,
     Client,        // 실제 게임 클라이언트
+    MainServer,
     LoginServer,   // 내부 로그인 서버와의 연결
     DbServer,      // 내부 DB 서버와의 연결
+    ChatServer,    // 내부 채팅 서버와의 연결
 
     // 뒤에 계속해서 추가하기
 };
@@ -25,7 +27,7 @@ enum class SessionState : uint8_t
 
     Login,         // 로그인/인증 진행 중
     Lobby,         // 로그인 완료 (로비/대기)
-    World,         // 인게임 접속 중
+    Authed,
 
     // 뒤에 계속 추가하기
 };
@@ -59,6 +61,11 @@ public:
     void SetState(SessionState newState)
     {
         state_ = newState;
+    }
+
+    void SetRole(SessionRole newRole)
+    {
+        role_ = newRole;
     }
 
     SessionState GetState() const { return state_; }

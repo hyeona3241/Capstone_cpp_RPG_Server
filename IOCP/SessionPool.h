@@ -14,6 +14,11 @@ class SessionPool
 public:
     using Factory = std::function<std::unique_ptr<Session>()>;
 
+    SessionPool(std::size_t maxSessions)
+        : SessionPool(maxSessions, []() { return std::make_unique<Session>(); })
+    {
+    }
+
     SessionPool(std::size_t maxSessions, Factory factory)
         : sessions_(maxSessions), factory_(std::move(factory))
     {
@@ -89,17 +94,6 @@ public:
                 return s;
         }
         return nullptr;
-    }
-
-    std::size_t Capacity() const
-    {
-        return sessions_.size();
-    }
-
-    std::size_t FreeCount() const
-    {
-        std::lock_guard<std::mutex> lock(mutex_);
-        return freeIndices_.size();
     }
 
 private:

@@ -134,6 +134,9 @@
     <ClInclude Include="ChatServer.h">
       <Filter>Server\Chat</Filter>
     </ClInclude>
+    <ClInclude Include="MSChatServerInternalHandler.h">
+      <Filter>Server\Main</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferPool.cpp">
@@ -234,6 +237,9 @@
     </ClCompile>
     <ClCompile Include="ChatServer.cpp">
       <Filter>Server\Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="MSChatServerInternalHandler.cpp">
+      <Filter>Server\Main</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

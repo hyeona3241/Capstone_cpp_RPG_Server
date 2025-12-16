@@ -11,7 +11,6 @@ class ChatSession;
 struct PendingAuth
 {
     uint64_t accountId = 0;
-    std::string nickname;
     std::chrono::steady_clock::time_point expireAt;
 };
 
@@ -35,10 +34,10 @@ public:
     // 세션 끊길 때(NotifySessionDisconnect에서 호출) 정리용
     void OnSessionDisconnected(ChatSession* session);
 
-    void RegisterPendingAuth(const std::string& token, uint64_t accountId,  const std::string& nickname,  uint32_t ttlSeconds);
+    void RegisterPendingAuth(const std::string& token, uint64_t accountId,  uint32_t ttlSeconds);
 
     // 성공하면 pending에서 제거(1회용)
-    bool ConsumePendingAuth(const std::string& token,  uint64_t& outAccountId, std::string& outNickname);
+    bool ConsumePendingAuth(const std::string& token,  uint64_t& outAccountId);
 
     // 만료된 pending 정리 (타이머 스레드 없으면 패킷 처리 시 가끔 호출해도 됨)
     void CleanupExpiredPendingAuth();

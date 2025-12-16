@@ -39,7 +39,6 @@ int main()
     std::signal(SIGINT, SignalHandler);
     std::signal(SIGTERM, SignalHandler);
 
-    // IOCP 공통 설정(기존 main.cpp에서 그대로) :contentReference[oaicite:5]{index=5}
     IocpConfig iocpCfg;
     iocpCfg.maxSessions = 2000;
     iocpCfg.bufferCount = 4000;
@@ -63,6 +62,7 @@ int main()
     // Main이 모든 연결 담당(기존 main.cpp 로직을 여기로) :contentReference[oaicite:6]{index=6}
     const uint16_t dbPort = 3600;
     const uint16_t loginPort = 3700;
+    const uint16_t chatPort = 3800;
 
     // DB 연결
     if (!mainServer.ConnectToDbServer("127.0.0.1", dbPort))
@@ -93,6 +93,20 @@ int main()
     }
     std::printf("[MAIN][INFO] Connected to LoginServer.\n");
     LOG_INFO("[MAIN] Connected to LoginServer.");
+
+    if (!mainServer.ConnectToChatServer("127.0.0.1", chatPort))
+    {
+        std::printf("[MAIN][ERROR] Failed to connect to ChatServer (%u)\n", chatPort);
+        LOG_ERROR(std::string("[MAIN] Failed to connect to ChatServer (") + std::to_string(chatPort) + ")");
+        mainServer.Stop();
+        WSACleanup();
+
+        LOG_INFO("MainServer shutting down");
+        Logger::Shutdown();
+        return 1;
+    }
+    std::printf("[MAIN][INFO] Connected to ChatServer.\n");
+    LOG_INFO("[MAIN] Connected to ChatServer.");
 
     std::printf("[MAIN][INFO] Press Ctrl+C to stop.\n");
 

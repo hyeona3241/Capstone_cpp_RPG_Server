@@ -21,7 +21,6 @@ public:
             it->second(packetId, payload, payloadLen);
             return;
         }
-        // 등록 안 된 패킷은 무시(또는 로그)
     }
 
 private:

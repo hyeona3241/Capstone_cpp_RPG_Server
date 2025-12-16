@@ -16,12 +16,17 @@
 
 #include "MSClientInternalHandler.h"
 #include "MSDbServerInternalHandler.h"
+#include "MSChatServerInternalHandler.h"
+
+#include "CCSAuthPackets.h"
+#include "LoginServer.h"
 
 MSPacketHandler::MSPacketHandler(MainServer* owner)
     : owner_(owner)
 {
     clientHandler_ = std::make_unique<MSClientInternalHandler>(owner_);
     dbHandler_ = std::make_unique<MSDbServerInternalHandler>(owner_);
+    chatHandler_ = std::make_unique<MSChatServerInternalHandler>(owner_);
 }
 MSPacketHandler::~MSPacketHandler() = default;
 
@@ -98,6 +103,26 @@ void MSPacketHandler::HandleFromDbServer(Session* session, const PacketHeader& h
             std::printf("[WARN][MSPacketHandler] Unknown db-server packet id=%u\n",
                 static_cast<unsigned>(header.id));
             LOG_WARN(std::string("[MSPacketHandler] Unknown db-server packet id=") +
+                std::to_string(static_cast<unsigned>(header.id)));
+        }
+    }
+}
+
+void MSPacketHandler::HandleFromChatServer(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
+{
+    if (!session)
+        return;
+
+    const auto id = static_cast<std::uint32_t>(header.id);
+
+    // 예시: 4000 ~ 4999 범위를 ChatServer <-> MainServer 용도로 사용
+    if (InRange(id, 4000, 5000))
+    {
+        if (!chatHandler_->Handle(session, header, payload, length))
+        {
+            std::printf("[WARN][MSPacketHandler] Unknown chat-server packet id=%u\n",
+                static_cast<unsigned>(header.id));
+            LOG_WARN(std::string("[MSPacketHandler] Unknown chat-server packet id=") +
                 std::to_string(static_cast<unsigned>(header.id)));
         }
     }
@@ -486,6 +511,8 @@ void MSPacketHandler::OnLsLoginAck(Session* session, const std::byte* payload, s
     //Client에게 LOGIN_ACK 전송
     if (lsAck.success != 0)
     {
+        owner_->HandlePostLoginForChat(client, lsAck.accountId);
+
         // 성공
         auto ack = LoginAck::MakeSuccess(lsAck.accountId);
         auto bytes = ack.Build();

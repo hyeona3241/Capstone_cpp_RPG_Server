@@ -9,6 +9,7 @@
 #include "CLoginPackets.h"     // LoginReq/LoginAck
 #include "LSLoginPackets.h"    // LSLoginReq
 #include "CPingPackets.h"
+#include "CSPingPackets.h"
 
 #include "CRegisterPackets.h"
 #include "DBRegisterPackets.h"

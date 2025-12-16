@@ -120,16 +120,14 @@ void ChatSessionManager::OnSessionDisconnected(ChatSession* session)
     UnregisterSession(session);
 }
 
-void ChatSessionManager::RegisterPendingAuth(const std::string& token, uint64_t accountId, const std::string& nickname, uint32_t ttlSeconds)
+void ChatSessionManager::RegisterPendingAuth(const std::string& token, uint64_t accountId, uint32_t ttlSeconds)
 {
     if (token.empty()) return;
     if (accountId == 0) return;
-    if (nickname.empty()) return;
 
     const auto now = std::chrono::steady_clock::now();
     PendingAuth pa;
     pa.accountId = accountId;
-    pa.nickname = nickname;
     pa.expireAt = now + std::chrono::seconds(ttlSeconds);
 
     std::lock_guard<std::mutex> lock(mtx_);
@@ -138,10 +136,9 @@ void ChatSessionManager::RegisterPendingAuth(const std::string& token, uint64_t 
     pendingAuth_[token] = std::move(pa);
 }
 
-bool ChatSessionManager::ConsumePendingAuth(const std::string& token, uint64_t& outAccountId, std::string& outNickname)
+bool ChatSessionManager::ConsumePendingAuth(const std::string& token, uint64_t& outAccountId)
 {
     outAccountId = 0;
-    outNickname.clear();
 
     if (token.empty()) return false;
 
@@ -162,7 +159,6 @@ bool ChatSessionManager::ConsumePendingAuth(const std::string& token, uint64_t& 
     }
 
     outAccountId = it->second.accountId;
-    outNickname = it->second.nickname;
 
     // 1회용 토큰 소모
     pendingAuth_.erase(it);

@@ -31,6 +31,9 @@
     <Filter Include="Packet\Client">
       <UniqueIdentifier>{ec939743-bde1-4dc4-ad7a-a76023246fba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Packet\Chat">
+      <UniqueIdentifier>{13ee9303-bd9c-4aa1-9aa9-fc11b9c3e1c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\Const.h">
@@ -98,6 +101,18 @@
     </ClInclude>
     <ClInclude Include="LSLogoutPackets.h">
       <Filter>Packet\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="CSPingPackets.h">
+      <Filter>Packet\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="CCSAuthPackets.h">
+      <Filter>Packet\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="CChatChannelPackets.h">
+      <Filter>Packet\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="CChatMessagePackets.h">
+      <Filter>Packet\Chat</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

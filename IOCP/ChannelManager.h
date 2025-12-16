@@ -36,7 +36,7 @@ public:
     bool CloseChannel(uint32_t channelId, const void* closeNotify, size_t closeNotifyLen);
 
     JoinChannelResult Join(uint32_t channelId, ChatSession* session, const std::string& passwordOpt = "");
-    bool Leave(ChatSession* session);
+    JoinChannelResult Leave(ChatSession* session);
 
     bool LeaveIfInChannel(ChatSession* session);
 

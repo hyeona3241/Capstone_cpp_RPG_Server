@@ -11,6 +11,7 @@ struct PacketHeader;
 class LoginReq;
 class MSClientInternalHandler;
 class MSDbServerInternalHandler;
+class MSChatServerInternalHandler;
 
 class MSPacketHandler
 {
@@ -26,6 +27,9 @@ public:
 
     // DbServer -> 메인 서버로 온 내부 패킷
     void HandleFromDbServer(Session* session, const PacketHeader& header,  const std::byte* payload, std::size_t length);
+    
+    // ChatSErver -> 메인 서버로 온 내부 패킷
+    void HandleFromChatServer(Session* session, const PacketHeader& header,  const std::byte* payload, std::size_t length);
 
 private:
 
@@ -56,5 +60,6 @@ private:
 
     std::unique_ptr<MSClientInternalHandler> clientHandler_;
     std::unique_ptr<MSDbServerInternalHandler> dbHandler_;
+    std::unique_ptr<MSChatServerInternalHandler> chatHandler_;
 };
 

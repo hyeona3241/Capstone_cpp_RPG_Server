@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -18,47 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BinaryReader.h" />
-    <ClInclude Include="BinaryWriter.h" />
-    <ClInclude Include="CChatChannelPackets.h" />
-    <ClInclude Include="CChatMessagePackets.h" />
-    <ClInclude Include="CCSAuthPackets.h" />
-    <ClInclude Include="CLoginPackets.h" />
-    <ClInclude Include="CLogoutPackets.h" />
-    <ClInclude Include="Core\Const.h" />
-    <ClInclude Include="Core\ErrorCode.h" />
-    <ClInclude Include="Core\Logger.h" />
-    <ClInclude Include="Core\UidGenerator.h" />
-    <ClInclude Include="CPingPackets.h" />
-    <ClInclude Include="CRegisterPackets.h" />
-    <ClInclude Include="CSPingPackets.h" />
-    <ClInclude Include="DBAuthPackets.h" />
-    <ClInclude Include="DBPingPackets.h" />
-    <ClInclude Include="ELoginResult.h" />
-    <ClInclude Include="ERegisterResult.h" />
-    <ClInclude Include="IPacket.h" />
-    <ClInclude Include="LSLoginPackets.h" />
-    <ClInclude Include="LSLogoutPackets.h" />
-    <ClInclude Include="LSPingPackets.h" />
-    <ClInclude Include="PacketDef.h" />
-    <ClInclude Include="PacketFramer.h" />
-    <ClInclude Include="PacketIds.h" />
-    <ClInclude Include="DBRegisterPackets.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BinaryReader.cpp" />
-    <ClCompile Include="BinaryWriter.cpp" />
-    <ClCompile Include="Core\ErrorCode.cpp" />
-    <ClCompile Include="Core\Logger.cpp" />
-    <ClCompile Include="Core\UidGenerator.cpp" />
-    <ClCompile Include="PacketFramer.cpp" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{175a3181-0fcf-4656-9e12-bd808900e105}</ProjectGuid>
-    <RootNamespace>Common</RootNamespace>
+    <ProjectGuid>{d23da6e1-78e6-4984-a82c-32b32d765f77}</ProjectGuid>
+    <RootNamespace>ChatServer</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -76,7 +40,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -106,6 +70,10 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)Common;$(SolutionDir)IOCP;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);C:\Program Files\MySQL\MySQL Server 8.4\lib</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -129,6 +97,8 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -139,12 +109,18 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(ProjectDir)\Core;%(AdditionalIncludeDirectories);$(ProjectDir)\Protocol;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Common\Core;$(SolutionDir)Common\include\;$(SolutionDir)IOCP\include\;$(SolutionDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);libmysql.lib;</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>if exist "$(SolutionDir)ThirdParty\mysql\libmysql.dll" copy /Y "$(SolutionDir)ThirdParty\mysql\libmysql.dll" "$(TargetDir)"
+if exist "$(SolutionDir)ThirdParty\mysql\libssl-3-x64.dll" copy /Y "$(SolutionDir)ThirdParty\mysql\libssl-3-x64.dll" "$(TargetDir)"
+if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" "$(TargetDir)"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -157,9 +133,22 @@
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{175a3181-0fcf-4656-9e12-bd808900e105}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\IOCP\IOCP.vcxproj">
+      <Project>{a8435e2d-d331-4ad1-8404-2537dc65454d}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

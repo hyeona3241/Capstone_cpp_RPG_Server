@@ -26,8 +26,9 @@ namespace PacketType {
 
 		LOGOUT_REQ = 1104,
 		
-		// 1200 ~ 1299 : 로비 / 캐릭터 선택
-		// 1300 ~ 1399 : 월드 / 인게임 관련
+		// 1200 ~ 1299 : 채팅 관련
+		MS_CL_CHAT_CONNECT_INFO_ACK = 1200,
+
 	};
 
 	enum class Login : uint16_t {
@@ -73,13 +74,29 @@ namespace PacketType {
 		CS_MS_PING_ACK = 4001,
 
 		CS_C_PING_REQ = 4002,
-		CS_C_PING_REQ = 4003,
+		CS_C_PING_ACK = 4003,
 
 		// 4100 ~ 4199 : 인증/세션 바인딩
+		MS_CS_CHAT_ALLOW_TOKEN_REQ = 4100,
+
+		CL_CS_CHAT_AUTH_REQ = 4101,
+		CS_CL_CHAT_AUTH_ACK = 4102,
 
 		// 4200 ~ 4299 : 채널(목록/입장/퇴장/닫기)
 
+		CL_CS_CHANNEL_LIST_REQ = 4200,
+		CS_CL_CHANNEL_LIST_ACK = 4201,
+
+		CL_CS_CHANNEL_ENTER_REQ = 4202,
+		CS_CL_CHANNEL_ENTER_ACK = 4203,
+
+		CL_CS_CHANNEL_LEAVE_REQ = 4204,
+		CS_CL_CHANNEL_LEAVE_ACK = 4205,
+
+
 		// 4300 ~ 4399 : 채팅 메시지(채널 메시지/귓속말 등)
+		CL_CS_CHAT_SEND_REQ = 4300,
+		CS_CL_CHAT_BROADCAST_NFY = 4301,
 
 	};
 
