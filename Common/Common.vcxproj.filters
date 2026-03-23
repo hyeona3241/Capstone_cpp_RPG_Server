@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{42e6527a-09df-42f5-8612-3c26e6bfaf04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\소스 파일">
+      <UniqueIdentifier>{9d2cc09b-9c2d-4962-be68-1a7c22aa2428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\헤더 파일">
+      <UniqueIdentifier>{bd8ad0fa-6446-4825-88d3-aa29d3bf3351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet">
+      <UniqueIdentifier>{7f30a7e5-6da9-4a7a-afc0-a57d1088ccb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{a9bbdc29-e143-4367-abc9-abf63eafdc66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\소스 파일">
+      <UniqueIdentifier>{1a1aed2b-3381-4399-9abd-3c6c85089636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol\헤더 파일">
+      <UniqueIdentifier>{7afe5d20-e24a-4329-ab1c-3d92d85ccd8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\DB">
+      <UniqueIdentifier>{ead0f67d-0e2b-4e3c-954a-a1f8fddfdd51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\Login">
+      <UniqueIdentifier>{3b5ec8c9-992e-471c-8f5e-d9a5fada49e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\Client">
+      <UniqueIdentifier>{ec939743-bde1-4dc4-ad7a-a76023246fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Packet\Chat">
+      <UniqueIdentifier>{13ee9303-bd9c-4aa1-9aa9-fc11b9c3e1c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Const.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\ErrorCode.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Logger.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\UidGenerator.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IPacket.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBPingPackets.h">
+      <Filter>Packet\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryReader.h">
+      <Filter>Protocol\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BinaryWriter.h">
+      <Filter>Protocol\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketDef.h">
+      <Filter>Protocol\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketFramer.h">
+      <Filter>Protocol\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketIds.h">
+      <Filter>Protocol\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="LSPingPackets.h">
+      <Filter>Packet\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="DBAuthPackets.h">
+      <Filter>Packet\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="LSLoginPackets.h">
+      <Filter>Packet\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="CLoginPackets.h">
+      <Filter>Packet\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="ELoginResult.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="CPingPackets.h">
+      <Filter>Packet\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="CRegisterPackets.h">
+      <Filter>Packet\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="ERegisterResult.h">
+      <Filter>Packet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBRegisterPackets.h">
+      <Filter>Packet\DB</Filter>
+    </ClInclude>
+    <ClInclude Include="CLogoutPackets.h">
+      <Filter>Packet\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="LSLogoutPackets.h">
+      <Filter>Packet\Login</Filter>
+    </ClInclude>
+    <ClInclude Include="CSPingPackets.h">
+      <Filter>Packet\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="CCSAuthPackets.h">
+      <Filter>Packet\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="CChatChannelPackets.h">
+      <Filter>Packet\Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="CChatMessagePackets.h">
+      <Filter>Packet\Chat</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\ErrorCode.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Logger.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\UidGenerator.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryReader.cpp">
+      <Filter>Protocol\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryWriter.cpp">
+      <Filter>Protocol\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketFramer.cpp">
+      <Filter>Protocol\소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

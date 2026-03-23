@@ -1,0 +1,861 @@
+2025-12-15 10:18:59.525 | INFO | Logger init app=DBServer
+2025-12-15 10:18:59.565 | INFO | [System] DBServer process started
+2025-12-15 10:18:59.584 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-15 10:18:59.584 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 10:18:59.584 | INFO | [DBServer] DB Initialized
+2025-12-15 10:18:59.584 | INFO | [DBWorker] Started
+2025-12-15 10:18:59.585 | INFO | [DBServer] Listening on port 3600
+2025-12-15 10:18:59.585 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 10:18:59.585 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 10:19:02.150 | INFO | [DBServer] MainServer connected
+2025-12-15 10:19:02.151 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 10:19:02.160 | INFO | [DB] PING_ACK sent seq=1 tick=3858192
+2025-12-15 10:19:05.176 | INFO | [DBServer] MainServer disconnected
+2025-12-15 10:23:38.163 | INFO | Logger init app=DBServer
+2025-12-15 10:23:38.202 | INFO | [System] DBServer process started
+2025-12-15 10:23:38.221 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-15 10:23:38.222 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 10:23:38.222 | INFO | [DBServer] DB Initialized
+2025-12-15 10:23:38.222 | INFO | [DBWorker] Started
+2025-12-15 10:23:38.222 | INFO | [DBServer] Listening on port 3600
+2025-12-15 10:23:38.222 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 10:23:38.222 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 10:23:46.382 | INFO | [DBServer] MainServer connected
+2025-12-15 10:23:46.382 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 10:23:46.382 | INFO | [DB] PING_ACK sent seq=1 tick=4142423
+2025-12-15 10:23:54.924 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-15 10:23:54.924 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-15 10:23:54.947 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-15 10:23:54.953 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-15 10:24:02.147 | INFO | [DBServer] MainServer disconnected
+2025-12-15 10:41:01.471 | INFO | Logger init app=DBServer
+2025-12-15 10:41:01.512 | INFO | [System] DBServer process started
+2025-12-15 10:41:01.531 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-15 10:41:01.531 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 10:41:01.531 | INFO | [DBServer] DB Initialized
+2025-12-15 10:41:01.531 | INFO | [DBWorker] Started
+2025-12-15 10:41:01.531 | INFO | [DBServer] Listening on port 3600
+2025-12-15 10:41:01.531 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 10:41:01.531 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 10:41:07.965 | INFO | [DBServer] MainServer connected
+2025-12-15 10:41:07.966 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 10:41:07.966 | INFO | [DB] PING_ACK sent seq=1 tick=5184007
+2025-12-15 10:47:06.280 | INFO | Logger init app=DBServer
+2025-12-15 10:47:06.320 | INFO | [System] DBServer process started
+2025-12-15 10:47:06.337 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-15 10:47:06.337 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 10:47:06.337 | INFO | [DBServer] DB Initialized
+2025-12-15 10:47:06.338 | INFO | [DBWorker] Started
+2025-12-15 10:47:06.338 | INFO | [DBServer] Listening on port 3600
+2025-12-15 10:47:06.338 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 10:47:06.338 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 10:47:11.647 | INFO | [DBServer] MainServer connected
+2025-12-15 10:47:11.648 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 10:47:11.648 | INFO | [DB] PING_ACK sent seq=1 tick=5547689
+2025-12-15 10:51:19.527 | INFO | Logger init app=DBServer
+2025-12-15 10:51:19.566 | INFO | [System] DBServer process started
+2025-12-15 10:51:19.584 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-15 10:51:19.584 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 10:51:19.584 | INFO | [DBServer] DB Initialized
+2025-12-15 10:51:19.584 | INFO | [DBWorker] Started
+2025-12-15 10:51:19.585 | INFO | [DBServer] Listening on port 3600
+2025-12-15 10:51:19.585 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 10:51:19.585 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 10:51:23.515 | INFO | [DBServer] MainServer connected
+2025-12-15 10:51:23.515 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 10:51:23.515 | INFO | [DB] PING_ACK sent seq=1 tick=5799556
+2025-12-15 10:53:10.754 | INFO | [DBServer] MainServer disconnected
+2025-12-15 10:58:22.366 | INFO | Logger init app=DBServer
+2025-12-15 10:58:22.407 | INFO | [System] DBServer process started
+2025-12-15 10:58:22.425 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-15 10:58:22.425 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 10:58:22.425 | INFO | [DBServer] DB Initialized
+2025-12-15 10:58:22.425 | INFO | [DBWorker] Started
+2025-12-15 10:58:22.426 | INFO | [DBServer] Listening on port 3600
+2025-12-15 10:58:22.426 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 10:58:22.426 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 10:59:02.498 | INFO | [DBServer] MainServer connected
+2025-12-15 10:59:02.498 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 10:59:02.498 | INFO | [DB] PING_ACK sent seq=1 tick=6258539
+2025-12-15 10:59:15.708 | INFO | [DBServer] MainServer disconnected
+2025-12-15 10:59:16.592 | INFO | [DBServer] MainServer connected
+2025-12-15 10:59:16.592 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 10:59:16.593 | INFO | [DB] PING_ACK sent seq=1 tick=6272634
+2025-12-15 11:00:19.051 | INFO | [DBServer] MainServer disconnected
+2025-12-15 11:01:43.009 | INFO | Logger init app=DBServer
+2025-12-15 11:01:43.049 | INFO | [System] DBServer process started
+2025-12-15 11:01:43.067 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-15 11:01:43.067 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 11:01:43.067 | INFO | [DBServer] DB Initialized
+2025-12-15 11:01:43.067 | INFO | [DBWorker] Started
+2025-12-15 11:01:43.068 | INFO | [DBServer] Listening on port 3600
+2025-12-15 11:01:43.068 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 11:01:43.068 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 11:01:46.725 | INFO | [DBServer] MainServer connected
+2025-12-15 11:01:46.726 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 11:01:46.726 | INFO | [DB] PING_ACK sent seq=1 tick=6422767
+2025-12-15 11:04:35.584 | INFO | [DBServer] MainServer disconnected
+2025-12-15 11:04:45.378 | INFO | Logger init app=DBServer
+2025-12-15 11:04:45.420 | INFO | [System] DBServer process started
+2025-12-15 11:04:45.437 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-15 11:04:45.438 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 11:04:45.438 | INFO | [DBServer] DB Initialized
+2025-12-15 11:04:45.438 | INFO | [DBWorker] Started
+2025-12-15 11:04:45.438 | INFO | [DBServer] Listening on port 3600
+2025-12-15 11:04:45.438 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 11:04:45.438 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 11:04:48.442 | INFO | [DBServer] MainServer connected
+2025-12-15 11:04:48.442 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 11:04:48.442 | INFO | [DB] PING_ACK sent seq=1 tick=6604484
+2025-12-15 11:06:09.544 | INFO | [DBServer] MainServer disconnected
+2025-12-15 11:06:57.623 | INFO | Logger init app=DBServer
+2025-12-15 11:06:57.640 | INFO | [System] DBServer process started
+2025-12-15 11:06:57.658 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-15 11:06:57.658 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 11:06:57.658 | INFO | [DBServer] DB Initialized
+2025-12-15 11:06:57.658 | INFO | [DBWorker] Started
+2025-12-15 11:06:57.659 | INFO | [DBServer] Listening on port 3600
+2025-12-15 11:06:57.659 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 11:06:57.659 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 11:07:04.138 | INFO | [DBServer] MainServer connected
+2025-12-15 11:07:04.138 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 11:07:04.138 | INFO | [DB] PING_ACK sent seq=1 tick=6740179
+2025-12-15 11:15:52.768 | INFO | Logger init app=DBServer
+2025-12-15 11:15:52.810 | INFO | [System] DBServer process started
+2025-12-15 11:15:54.897 | ERROR | [DbConnection] mysql_real_connect failed: Can't connect to MySQL server on '100.77.71.68:3306' (10061)
+2025-12-15 11:15:54.897 | ERROR | [DBManager] Failed to connect DB. (100.77.71.68:3306, schema=game_db)
+2025-12-15 11:15:54.897 | WARN | [DBServer] DBManager.Initialize failed
+2025-12-15 11:15:54.897 | ERROR | [DB] Failed to start DBServer.
+2025-12-15 11:15:54.897 | INFO | DBServer shutting down
+2025-12-15 11:15:54.897 | INFO | Logger shutdown begin
+2025-12-15 11:15:57.091 | INFO | Logger init app=DBServer
+2025-12-15 11:15:57.129 | INFO | [System] DBServer process started
+2025-12-15 11:15:59.206 | ERROR | [DbConnection] mysql_real_connect failed: Can't connect to MySQL server on '100.77.71.68:3306' (10061)
+2025-12-15 11:15:59.206 | ERROR | [DBManager] Failed to connect DB. (100.77.71.68:3306, schema=game_db)
+2025-12-15 11:15:59.215 | WARN | [DBServer] DBManager.Initialize failed
+2025-12-15 11:15:59.215 | ERROR | [DB] Failed to start DBServer.
+2025-12-15 11:15:59.215 | INFO | DBServer shutting down
+2025-12-15 11:15:59.215 | INFO | Logger shutdown begin
+2025-12-15 11:16:17.400 | INFO | Logger init app=DBServer
+2025-12-15 11:16:17.440 | INFO | [System] DBServer process started
+2025-12-15 11:16:19.530 | ERROR | [DbConnection] mysql_real_connect failed: Can't connect to MySQL server on '100.77.71.68:3306' (10061)
+2025-12-15 11:16:19.530 | ERROR | [DBManager] Failed to connect DB. (100.77.71.68:3306, schema=game_db)
+2025-12-15 11:16:19.530 | WARN | [DBServer] DBManager.Initialize failed
+2025-12-15 11:16:19.531 | ERROR | [DB] Failed to start DBServer.
+2025-12-15 11:16:19.531 | INFO | DBServer shutting down
+2025-12-15 11:16:19.531 | INFO | Logger shutdown begin
+2025-12-15 11:17:00.263 | INFO | Logger init app=DBServer
+2025-12-15 11:17:00.302 | INFO | [System] DBServer process started
+2025-12-15 11:17:00.320 | INFO | [DbConnection] Connected to MySQL: 127.0.0.1:3306
+2025-12-15 11:17:00.320 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 11:17:00.320 | INFO | [DBServer] DB Initialized
+2025-12-15 11:17:00.320 | INFO | [DBWorker] Started
+2025-12-15 11:17:00.321 | INFO | [DBServer] Listening on port 3600
+2025-12-15 11:17:00.321 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 11:17:00.321 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 11:17:08.737 | INFO | [DBServer] MainServer connected
+2025-12-15 11:17:08.737 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 11:17:08.737 | INFO | [DB] PING_ACK sent seq=1 tick=7344779
+2025-12-15 11:18:04.057 | INFO | [DBServer] MainServer disconnected
+2025-12-15 11:18:08.084 | INFO | [DBServer] MainServer connected
+2025-12-15 11:18:08.084 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 11:18:08.084 | INFO | [DB] PING_ACK sent seq=1 tick=7404125
+2025-12-15 11:21:34.207 | INFO | Logger init app=DBServer
+2025-12-15 11:21:34.248 | INFO | [System] DBServer process started
+2025-12-15 11:21:34.266 | INFO | [DbConnection] Connected to MySQL: 127.0.0.1:3306
+2025-12-15 11:21:34.266 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 11:21:34.266 | INFO | [DBServer] DB Initialized
+2025-12-15 11:21:34.266 | INFO | [DBWorker] Started
+2025-12-15 11:21:34.267 | INFO | [DBServer] Listening on port 3600
+2025-12-15 11:21:34.267 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 11:21:34.267 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 11:21:37.179 | INFO | [DBServer] MainServer connected
+2025-12-15 11:21:37.179 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 11:21:37.179 | INFO | [DB] PING_ACK sent seq=1 tick=7613220
+2025-12-15 12:09:53.773 | INFO | Logger init app=DBServer
+2025-12-15 12:09:53.812 | INFO | [System] DBServer process started
+2025-12-15 12:09:53.829 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-15 12:09:53.829 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 12:09:53.830 | INFO | [DBServer] DB Initialized
+2025-12-15 12:09:53.830 | INFO | [DBWorker] Started
+2025-12-15 12:09:53.830 | INFO | [DBServer] Listening on port 3600
+2025-12-15 12:09:53.830 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 12:09:53.830 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 12:09:58.521 | INFO | [DBServer] MainServer connected
+2025-12-15 12:09:58.522 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 12:09:58.522 | INFO | [DB] PING_ACK sent seq=1 tick=10514563
+2025-12-15 12:10:21.219 | INFO | [DBServer] MainServer disconnected
+2025-12-15 12:10:51.362 | INFO | Logger init app=DBServer
+2025-12-15 12:10:51.403 | INFO | [System] DBServer process started
+2025-12-15 12:10:51.423 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-15 12:10:51.423 | INFO | [DBManager] DB initialized successfully.
+2025-12-15 12:10:51.423 | INFO | [DBServer] DB Initialized
+2025-12-15 12:10:51.423 | INFO | [DBWorker] Started
+2025-12-15 12:10:51.423 | INFO | [DBServer] Listening on port 3600
+2025-12-15 12:10:51.423 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-15 12:10:51.423 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-15 12:10:56.431 | INFO | [DBServer] MainServer connected
+2025-12-15 12:10:56.431 | INFO | [DB] PING_REQ received seq=1
+2025-12-15 12:10:56.431 | INFO | [DB] PING_ACK sent seq=1 tick=10572473
+2025-12-15 12:11:19.966 | INFO | [DBServer] MainServer disconnected
+2025-12-16 01:46:39.076 | INFO | Logger init app=DBServer
+2025-12-16 01:46:39.117 | INFO | [System] DBServer process started
+2025-12-16 01:46:39.177 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 01:46:39.177 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 01:46:39.177 | INFO | [DBServer] DB Initialized
+2025-12-16 01:46:39.177 | INFO | [DBWorker] Started
+2025-12-16 01:46:39.178 | INFO | [DBServer] Listening on port 3600
+2025-12-16 01:46:39.178 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 01:46:39.178 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 01:46:44.576 | INFO | [DBServer] MainServer connected
+2025-12-16 01:46:44.576 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 01:46:44.576 | INFO | [DB] PING_ACK sent seq=1 tick=22288724
+2025-12-16 01:47:20.754 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 01:47:20.754 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 01:47:20.776 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 01:47:20.782 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 01:47:42.828 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 01:47:42.828 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 01:47:42.829 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-16 01:47:52.699 | INFO | [DB] FindAccount loginId='t' (len=1)
+2025-12-16 01:47:52.700 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='t' LIMIT 1;
+2025-12-16 01:47:52.700 | INFO | [DB][SQL] no row for login_id='t'
+2025-12-16 01:47:52.700 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=4 exists=0
+2025-12-16 01:48:08.484 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 01:48:08.485 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 01:48:08.485 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=5 exists=1
+2025-12-16 01:48:08.502 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 01:48:14.478 | INFO | [DBServer] MainServer disconnected
+2025-12-16 02:11:45.587 | INFO | Logger init app=DBServer
+2025-12-16 02:11:45.625 | INFO | [System] DBServer process started
+2025-12-16 02:11:45.644 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 02:11:45.644 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 02:11:45.644 | INFO | [DBServer] DB Initialized
+2025-12-16 02:11:45.644 | INFO | [DBWorker] Started
+2025-12-16 02:11:45.645 | INFO | [DBServer] Listening on port 3600
+2025-12-16 02:11:45.645 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 02:11:45.645 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 02:11:49.894 | INFO | [DBServer] MainServer connected
+2025-12-16 02:11:49.894 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 02:11:49.894 | INFO | [DB] PING_ACK sent seq=1 tick=23794042
+2025-12-16 02:13:07.784 | INFO | [DBServer] MainServer disconnected
+2025-12-16 03:51:54.708 | INFO | Logger init app=DBServer
+2025-12-16 03:51:54.747 | INFO | [System] DBServer process started
+2025-12-16 03:51:54.765 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 03:51:54.765 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 03:51:54.765 | INFO | [DBServer] DB Initialized
+2025-12-16 03:51:54.765 | INFO | [DBWorker] Started
+2025-12-16 03:51:54.766 | INFO | [DBServer] Listening on port 3600
+2025-12-16 03:51:54.766 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 03:51:54.766 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 03:58:16.346 | INFO | Logger init app=DBServer
+2025-12-16 03:58:16.385 | INFO | [System] DBServer process started
+2025-12-16 03:58:16.404 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 03:58:16.404 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 03:58:16.404 | INFO | [DBServer] DB Initialized
+2025-12-16 03:58:16.405 | INFO | [DBWorker] Started
+2025-12-16 03:58:16.405 | INFO | [DBServer] Listening on port 3600
+2025-12-16 03:58:16.405 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 03:58:16.405 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 03:58:24.807 | INFO | [DBServer] MainServer connected
+2025-12-16 03:58:24.807 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 03:58:24.807 | INFO | [DB] PING_ACK sent seq=1 tick=30188955
+2025-12-16 03:58:36.035 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 03:58:36.035 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 03:58:36.036 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 03:58:36.052 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 03:58:41.503 | INFO | [DBServer] MainServer disconnected
+2025-12-16 05:08:37.199 | INFO | Logger init app=DBServer
+2025-12-16 05:08:37.239 | INFO | [System] DBServer process started
+2025-12-16 05:08:37.257 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 05:08:37.257 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 05:08:37.257 | INFO | [DBServer] DB Initialized
+2025-12-16 05:08:37.257 | INFO | [DBWorker] Started
+2025-12-16 05:08:37.257 | INFO | [DBServer] Listening on port 3600
+2025-12-16 05:08:37.257 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 05:08:37.257 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 05:09:15.661 | INFO | Logger init app=DBServer
+2025-12-16 05:09:15.701 | INFO | [System] DBServer process started
+2025-12-16 05:09:15.719 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 05:09:15.719 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 05:09:15.719 | INFO | [DBServer] DB Initialized
+2025-12-16 05:09:15.719 | INFO | [DBWorker] Started
+2025-12-16 05:09:15.720 | INFO | [DBServer] Listening on port 3600
+2025-12-16 05:09:15.720 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 05:09:15.720 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 05:09:19.455 | INFO | [DBServer] MainServer connected
+2025-12-16 05:09:19.455 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 05:09:19.455 | INFO | [DB] PING_ACK sent seq=1 tick=34443632
+2025-12-16 05:09:54.963 | WARN | [DBAuth] Unknown auth pktId=3104
+2025-12-16 05:20:57.741 | INFO | Logger init app=DBServer
+2025-12-16 05:20:57.780 | INFO | [System] DBServer process started
+2025-12-16 05:20:57.798 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 05:20:57.798 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 05:20:57.798 | INFO | [DBServer] DB Initialized
+2025-12-16 05:20:57.798 | INFO | [DBWorker] Started
+2025-12-16 05:20:57.799 | INFO | [DBServer] Listening on port 3600
+2025-12-16 05:20:57.799 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 05:20:57.799 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 05:21:03.346 | INFO | [DBServer] MainServer connected
+2025-12-16 05:21:03.347 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 05:21:03.347 | INFO | [DB] PING_ACK sent seq=1 tick=35147559
+2025-12-16 05:21:15.154 | INFO | [DB] DB_REGISTER_ACK sent seq=1
+2025-12-16 05:21:22.123 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 05:21:22.123 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 05:21:22.124 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 05:21:46.772 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 05:21:46.772 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 05:21:46.773 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=2 exists=1
+2025-12-16 05:21:53.499 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 05:21:53.499 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 05:21:53.500 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-16 05:22:02.291 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 05:22:02.291 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 05:22:02.292 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=4 exists=1
+2025-12-16 05:22:02.307 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 05:24:16.256 | INFO | [DBServer] MainServer disconnected
+2025-12-16 05:28:43.131 | INFO | Logger init app=DBServer
+2025-12-16 05:28:43.170 | INFO | [System] DBServer process started
+2025-12-16 05:28:43.188 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 05:28:43.188 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 05:28:43.188 | INFO | [DBServer] DB Initialized
+2025-12-16 05:28:43.188 | INFO | [DBWorker] Started
+2025-12-16 05:28:43.189 | INFO | [DBServer] Listening on port 3600
+2025-12-16 05:28:43.189 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 05:28:43.189 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 05:28:47.395 | INFO | [DBServer] MainServer connected
+2025-12-16 05:28:47.395 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 05:28:47.396 | INFO | [DB] PING_ACK sent seq=1 tick=35611626
+2025-12-16 05:28:55.898 | INFO | [DB] DB_REGISTER_ACK sent seq=1
+2025-12-16 05:29:02.443 | INFO | [DB] FindAccount loginId='test' (len=4)
+2025-12-16 05:29:02.444 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test' LIMIT 1;
+2025-12-16 05:29:02.444 | INFO | [DB][SQL] no row for login_id='test'
+2025-12-16 05:29:02.444 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=0
+2025-12-16 05:29:08.236 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 05:29:08.236 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 05:29:08.236 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=2 exists=1
+2025-12-16 05:29:08.252 | INFO | [DB] UpdateLastLogin success. accountId=7
+2025-12-16 05:29:36.425 | INFO | [DB] DB_REGISTER_ACK sent seq=2
+2025-12-16 05:29:42.779 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 05:29:42.779 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 05:29:42.780 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=4 exists=1
+2025-12-16 05:29:42.787 | INFO | [DB] UpdateLastLogin success. accountId=8
+2025-12-16 05:29:46.926 | INFO | [DBServer] MainServer disconnected
+2025-12-16 05:34:42.508 | INFO | Logger init app=DBServer
+2025-12-16 05:34:42.547 | INFO | [System] DBServer process started
+2025-12-16 05:34:42.565 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 05:34:42.565 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 05:34:42.565 | INFO | [DBServer] DB Initialized
+2025-12-16 05:34:42.565 | INFO | [DBWorker] Started
+2025-12-16 05:34:42.566 | INFO | [DBServer] Listening on port 3600
+2025-12-16 05:34:42.566 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 05:34:42.566 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 05:34:46.487 | INFO | [DBServer] MainServer connected
+2025-12-16 05:34:46.487 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 05:34:46.487 | INFO | [DB] PING_ACK sent seq=1 tick=35970732
+2025-12-16 05:34:59.884 | INFO | [DBServer] MainServer disconnected
+2025-12-16 05:51:03.969 | INFO | Logger init app=DBServer
+2025-12-16 05:51:04.009 | INFO | [System] DBServer process started
+2025-12-16 05:51:04.027 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 05:51:04.027 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 05:51:04.027 | INFO | [DBServer] DB Initialized
+2025-12-16 05:51:04.027 | INFO | [DBWorker] Started
+2025-12-16 05:51:04.028 | INFO | [DBServer] Listening on port 3600
+2025-12-16 05:51:04.028 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 05:51:04.028 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 05:51:07.855 | INFO | [DBServer] MainServer connected
+2025-12-16 05:51:07.855 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 05:51:07.856 | INFO | [DB] PING_ACK sent seq=1 tick=36952129
+2025-12-16 05:51:14.468 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 05:51:14.469 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 05:51:14.469 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 05:51:14.475 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 05:51:30.270 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 05:51:30.270 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 05:51:30.270 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-16 05:51:30.285 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 05:51:43.866 | INFO | [DBServer] MainServer disconnected
+2025-12-16 05:52:39.607 | INFO | Logger init app=DBServer
+2025-12-16 05:52:39.646 | INFO | [System] DBServer process started
+2025-12-16 05:52:39.664 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 05:52:39.664 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 05:52:39.664 | INFO | [DBServer] DB Initialized
+2025-12-16 05:52:39.664 | INFO | [DBWorker] Started
+2025-12-16 05:52:39.664 | INFO | [DBServer] Listening on port 3600
+2025-12-16 05:52:39.664 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 05:52:39.664 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 05:52:42.862 | INFO | [DBServer] MainServer connected
+2025-12-16 05:52:42.862 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 05:52:42.862 | INFO | [DB] PING_ACK sent seq=1 tick=37047138
+2025-12-16 05:52:47.902 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 05:52:47.902 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 05:52:47.903 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 05:52:47.917 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 05:54:24.221 | INFO | [DBServer] MainServer disconnected
+2025-12-16 06:25:39.583 | INFO | Logger init app=DBServer
+2025-12-16 06:25:39.615 | INFO | [System] DBServer process started
+2025-12-16 06:25:39.632 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 06:25:39.632 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 06:25:39.632 | INFO | [DBServer] DB Initialized
+2025-12-16 06:25:39.632 | INFO | [DBWorker] Started
+2025-12-16 06:25:39.633 | INFO | [DBServer] Listening on port 3600
+2025-12-16 06:25:39.633 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 06:25:39.633 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 06:25:43.265 | INFO | [DBServer] MainServer connected
+2025-12-16 06:25:43.265 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 06:25:43.265 | INFO | [DB] PING_ACK sent seq=1 tick=39027575
+2025-12-16 06:25:49.145 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:25:49.145 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:25:49.146 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 06:25:49.152 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 06:26:15.754 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:26:15.754 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:26:15.755 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-16 06:26:26.946 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:26:26.946 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:26:26.947 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=4 exists=1
+2025-12-16 06:26:38.074 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 06:26:38.075 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 06:26:38.075 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=5 exists=1
+2025-12-16 06:26:38.092 | INFO | [DB] UpdateLastLogin success. accountId=8
+2025-12-16 06:26:47.067 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 06:26:47.067 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 06:26:47.067 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=7 exists=1
+2025-12-16 06:26:57.131 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:26:57.131 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:26:57.132 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=8 exists=1
+2025-12-16 06:30:56.683 | INFO | Logger init app=DBServer
+2025-12-16 06:30:56.724 | INFO | [System] DBServer process started
+2025-12-16 06:30:56.743 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 06:30:56.743 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 06:30:56.743 | INFO | [DBServer] DB Initialized
+2025-12-16 06:30:56.743 | INFO | [DBWorker] Started
+2025-12-16 06:30:56.744 | INFO | [DBServer] Listening on port 3600
+2025-12-16 06:30:56.744 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 06:30:56.744 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 06:31:00.414 | INFO | [DBServer] MainServer connected
+2025-12-16 06:31:00.414 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 06:31:00.415 | INFO | [DB] PING_ACK sent seq=1 tick=39344728
+2025-12-16 06:31:08.234 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:31:08.234 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:31:08.234 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 06:31:08.249 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 06:31:23.171 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:31:23.171 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:31:23.171 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-16 06:31:29.011 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 06:31:29.011 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 06:31:29.011 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=4 exists=1
+2025-12-16 06:31:29.026 | INFO | [DB] UpdateLastLogin success. accountId=8
+2025-12-16 06:31:35.523 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 06:31:35.524 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 06:31:35.524 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=6 exists=1
+2025-12-16 06:31:49.379 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 06:31:49.379 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 06:31:49.380 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=7 exists=1
+2025-12-16 06:33:51.142 | INFO | Logger init app=DBServer
+2025-12-16 06:33:51.179 | INFO | [System] DBServer process started
+2025-12-16 06:33:51.196 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 06:33:51.196 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 06:33:51.196 | INFO | [DBServer] DB Initialized
+2025-12-16 06:33:51.196 | INFO | [DBWorker] Started
+2025-12-16 06:33:51.197 | INFO | [DBServer] Listening on port 3600
+2025-12-16 06:33:51.197 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 06:33:51.197 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 06:33:54.604 | INFO | [DBServer] MainServer connected
+2025-12-16 06:33:54.604 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 06:33:54.604 | INFO | [DB] PING_ACK sent seq=1 tick=39518919
+2025-12-16 06:33:59.943 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:33:59.943 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:33:59.943 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 06:33:59.958 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 06:34:08.991 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:34:08.992 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:34:08.992 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-16 06:34:12.435 | INFO | [DBServer] MainServer disconnected
+2025-12-16 06:40:37.731 | INFO | Logger init app=DBServer
+2025-12-16 06:40:37.770 | INFO | [System] DBServer process started
+2025-12-16 06:40:37.789 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 06:40:37.789 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 06:40:37.789 | INFO | [DBServer] DB Initialized
+2025-12-16 06:40:37.789 | INFO | [DBWorker] Started
+2025-12-16 06:40:37.790 | INFO | [DBServer] Listening on port 3600
+2025-12-16 06:40:37.790 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 06:40:37.790 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 06:40:41.706 | INFO | [DBServer] MainServer connected
+2025-12-16 06:40:41.707 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 06:40:41.707 | INFO | [DB] PING_ACK sent seq=1 tick=39926026
+2025-12-16 06:40:50.954 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:40:50.955 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:40:50.955 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 06:40:50.970 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 06:41:06.347 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:41:06.347 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:41:06.348 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-16 06:41:25.100 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:41:25.100 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:41:25.100 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=4 exists=1
+2025-12-16 06:41:43.944 | INFO | [DBServer] MainServer disconnected
+2025-12-16 06:43:44.290 | INFO | Logger init app=DBServer
+2025-12-16 06:43:44.330 | INFO | [System] DBServer process started
+2025-12-16 06:43:44.347 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 06:43:44.347 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 06:43:44.347 | INFO | [DBServer] DB Initialized
+2025-12-16 06:43:44.347 | INFO | [DBWorker] Started
+2025-12-16 06:43:44.348 | INFO | [DBServer] Listening on port 3600
+2025-12-16 06:43:44.348 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 06:43:44.348 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 06:43:51.061 | INFO | [DBServer] MainServer connected
+2025-12-16 06:43:51.062 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 06:43:51.062 | INFO | [DB] PING_ACK sent seq=1 tick=40115383
+2025-12-16 06:44:07.225 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:44:07.225 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:44:07.226 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 06:44:07.232 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 06:45:25.927 | INFO | [DBServer] MainServer disconnected
+2025-12-16 06:46:18.107 | INFO | Logger init app=DBServer
+2025-12-16 06:46:18.146 | INFO | [System] DBServer process started
+2025-12-16 06:46:18.164 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 06:46:18.164 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 06:46:18.164 | INFO | [DBServer] DB Initialized
+2025-12-16 06:46:18.164 | INFO | [DBWorker] Started
+2025-12-16 06:46:18.165 | INFO | [DBServer] Listening on port 3600
+2025-12-16 06:46:18.165 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 06:46:18.165 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 06:46:26.689 | INFO | [DBServer] MainServer connected
+2025-12-16 06:46:26.689 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 06:46:26.689 | INFO | [DB] PING_ACK sent seq=1 tick=40271011
+2025-12-16 06:46:43.573 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:46:43.574 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:46:43.574 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 06:46:43.580 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 06:47:00.822 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:47:00.823 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:47:00.823 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-16 06:47:03.843 | INFO | [DBServer] MainServer disconnected
+2025-12-16 06:49:57.418 | INFO | Logger init app=DBServer
+2025-12-16 06:49:57.457 | INFO | [System] DBServer process started
+2025-12-16 06:49:57.475 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 06:49:57.475 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 06:49:57.475 | INFO | [DBServer] DB Initialized
+2025-12-16 06:49:57.475 | INFO | [DBWorker] Started
+2025-12-16 06:49:57.475 | INFO | [DBServer] Listening on port 3600
+2025-12-16 06:49:57.475 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 06:49:57.475 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 06:50:01.025 | INFO | [DBServer] MainServer connected
+2025-12-16 06:50:01.026 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 06:50:01.026 | INFO | [DB] PING_ACK sent seq=1 tick=40485350
+2025-12-16 06:50:07.516 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:50:07.516 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:50:07.517 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 06:50:07.522 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 06:50:13.564 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:50:13.564 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:50:13.564 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-16 06:50:23.668 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:50:23.668 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:50:23.669 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=4 exists=1
+2025-12-16 06:50:40.602 | INFO | [DBServer] MainServer disconnected
+2025-12-16 06:51:01.178 | INFO | Logger init app=DBServer
+2025-12-16 06:51:01.216 | INFO | [System] DBServer process started
+2025-12-16 06:51:01.234 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 06:51:01.234 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 06:51:01.234 | INFO | [DBServer] DB Initialized
+2025-12-16 06:51:01.234 | INFO | [DBWorker] Started
+2025-12-16 06:51:01.234 | WARN | [DBServer] DB finalized
+2025-12-16 06:51:01.235 | INFO | [DBManager] DB connection finalized.
+2025-12-16 06:51:01.235 | INFO | [DBServer] DB finalized
+2025-12-16 06:51:01.235 | ERROR | [DB] Failed to start DBServer.
+2025-12-16 06:51:01.235 | INFO | DBServer shutting down
+2025-12-16 06:51:01.235 | INFO | Logger shutdown begin
+2025-12-16 06:51:22.142 | INFO | Logger init app=DBServer
+2025-12-16 06:51:22.181 | INFO | [System] DBServer process started
+2025-12-16 06:51:22.200 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 06:51:22.200 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 06:51:22.200 | INFO | [DBServer] DB Initialized
+2025-12-16 06:51:22.200 | INFO | [DBWorker] Started
+2025-12-16 06:51:22.200 | INFO | [DBServer] Listening on port 3600
+2025-12-16 06:51:22.201 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 06:51:22.201 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 06:51:27.468 | INFO | [DBServer] MainServer connected
+2025-12-16 06:51:27.468 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 06:51:27.469 | INFO | [DB] PING_ACK sent seq=1 tick=40571793
+2025-12-16 06:51:31.966 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:51:31.966 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:51:31.967 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 06:51:31.982 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 06:51:37.695 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:51:37.695 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:51:37.696 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-16 06:51:51.007 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:51:51.007 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:51:51.008 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=4 exists=1
+2025-12-16 06:52:16.054 | INFO | [DBServer] MainServer disconnected
+2025-12-16 06:52:43.661 | INFO | Logger init app=DBServer
+2025-12-16 06:52:43.700 | INFO | [System] DBServer process started
+2025-12-16 06:52:43.718 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 06:52:43.718 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 06:52:43.718 | INFO | [DBServer] DB Initialized
+2025-12-16 06:52:43.718 | INFO | [DBWorker] Started
+2025-12-16 06:52:43.719 | INFO | [DBServer] Listening on port 3600
+2025-12-16 06:52:43.719 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 06:52:43.719 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 06:52:47.239 | INFO | [DBServer] MainServer connected
+2025-12-16 06:52:47.240 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 06:52:47.240 | INFO | [DB] PING_ACK sent seq=1 tick=40651565
+2025-12-16 06:52:51.824 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:52:51.825 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:52:51.825 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-16 06:52:51.832 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 06:52:57.665 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:52:57.665 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:52:57.666 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-16 06:53:06.506 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:53:06.506 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:53:06.507 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=4 exists=1
+2025-12-16 06:53:06.519 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 06:53:13.810 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 06:53:13.810 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 06:53:13.810 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=6 exists=1
+2025-12-16 06:53:13.825 | INFO | [DB] UpdateLastLogin success. accountId=8
+2025-12-16 06:53:22.898 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-16 06:53:22.898 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-16 06:53:22.899 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=8 exists=1
+2025-12-16 06:53:52.763 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:53:52.764 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:53:52.764 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=9 exists=1
+2025-12-16 06:53:52.779 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-16 06:54:00.691 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-16 06:54:00.691 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-16 06:54:00.692 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=11 exists=1
+2025-12-16 23:12:45.111 | INFO | Logger init app=DBServer
+2025-12-16 23:12:45.150 | INFO | [System] DBServer process started
+2025-12-16 23:12:45.176 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 23:12:45.176 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 23:12:45.176 | INFO | [DBServer] DB Initialized
+2025-12-16 23:12:45.176 | INFO | [DBWorker] Started
+2025-12-16 23:12:45.177 | INFO | [DBServer] Listening on port 3600
+2025-12-16 23:12:45.177 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 23:12:45.177 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 23:13:22.994 | INFO | Logger init app=DBServer
+2025-12-16 23:13:23.006 | INFO | [System] DBServer process started
+2025-12-16 23:13:23.024 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 23:13:23.024 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 23:13:23.024 | INFO | [DBServer] DB Initialized
+2025-12-16 23:13:23.024 | INFO | [DBWorker] Started
+2025-12-16 23:13:23.025 | INFO | [DBServer] Listening on port 3600
+2025-12-16 23:13:23.025 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 23:13:23.025 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 23:13:28.795 | INFO | [DBServer] MainServer connected
+2025-12-16 23:13:28.795 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 23:13:28.795 | INFO | [DB] PING_ACK sent seq=1 tick=54955200
+2025-12-16 23:13:36.840 | INFO | [DBServer] MainServer disconnected
+2025-12-16 23:18:07.032 | INFO | Logger init app=DBServer
+2025-12-16 23:18:07.071 | INFO | [System] DBServer process started
+2025-12-16 23:18:07.089 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-16 23:18:07.089 | INFO | [DBManager] DB initialized successfully.
+2025-12-16 23:18:07.089 | INFO | [DBServer] DB Initialized
+2025-12-16 23:18:07.090 | INFO | [DBWorker] Started
+2025-12-16 23:18:07.090 | INFO | [DBServer] Listening on port 3600
+2025-12-16 23:18:07.090 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-16 23:18:07.090 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-16 23:18:11.095 | INFO | [DBServer] MainServer connected
+2025-12-16 23:18:11.095 | INFO | [DB] PING_REQ received seq=1
+2025-12-16 23:18:11.095 | INFO | [DB] PING_ACK sent seq=1 tick=55237522
+2025-12-17 00:19:02.560 | INFO | Logger init app=DBServer
+2025-12-17 00:19:02.600 | INFO | [System] DBServer process started
+2025-12-17 00:19:02.618 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-17 00:19:02.618 | INFO | [DBManager] DB initialized successfully.
+2025-12-17 00:19:02.618 | INFO | [DBServer] DB Initialized
+2025-12-17 00:19:02.618 | INFO | [DBWorker] Started
+2025-12-17 00:19:02.618 | INFO | [DBServer] Listening on port 3600
+2025-12-17 00:19:02.618 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-17 00:19:02.619 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-17 00:19:05.976 | INFO | [DBServer] MainServer connected
+2025-12-17 00:19:05.976 | INFO | [DB] PING_REQ received seq=1
+2025-12-17 00:19:05.976 | INFO | [DB] PING_ACK sent seq=1 tick=58892577
+2025-12-17 00:19:16.448 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-17 00:19:16.449 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-17 00:19:16.449 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-17 00:19:16.467 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-17 00:20:04.933 | INFO | [DBServer] MainServer disconnected
+2025-12-17 00:20:07.016 | INFO | [DB] Signal received (%d). Shutting down...
+2025-12-17 00:20:07.036 | INFO | [DB] Stopping...
+2025-12-17 00:20:07.037 | INFO | [DBWorker] Stopped
+2025-12-17 00:20:07.037 | INFO | [DBManager] DB connection finalized.
+2025-12-17 00:20:07.037 | INFO | [DBServer] DB finalized
+2025-12-17 00:20:07.037 | INFO | [DB] Stopped cleanly.
+2025-12-17 00:20:07.037 | INFO | DBServer shutting down
+2025-12-17 00:20:07.037 | INFO | Logger shutdown begin
+2025-12-17 00:44:58.091 | INFO | Logger init app=DBServer
+2025-12-17 00:44:58.129 | INFO | [System] DBServer process started
+2025-12-17 00:44:58.146 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-17 00:44:58.146 | INFO | [DBManager] DB initialized successfully.
+2025-12-17 00:44:58.146 | INFO | [DBServer] DB Initialized
+2025-12-17 00:44:58.147 | INFO | [DBWorker] Started
+2025-12-17 00:44:58.147 | INFO | [DBServer] Listening on port 3600
+2025-12-17 00:44:58.147 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-17 00:44:58.147 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-17 00:45:02.695 | INFO | [DBServer] MainServer connected
+2025-12-17 00:45:02.695 | INFO | [DB] PING_REQ received seq=1
+2025-12-17 00:45:02.695 | INFO | [DB] PING_ACK sent seq=1 tick=60449326
+2025-12-17 00:45:10.634 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-17 00:45:10.634 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-17 00:45:10.635 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-17 00:45:10.651 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-17 00:45:59.584 | INFO | [DBServer] MainServer disconnected
+2025-12-17 00:49:36.134 | INFO | Logger init app=DBServer
+2025-12-17 00:49:36.174 | INFO | [System] DBServer process started
+2025-12-17 00:49:36.194 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-17 00:49:36.194 | INFO | [DBManager] DB initialized successfully.
+2025-12-17 00:49:36.194 | INFO | [DBServer] DB Initialized
+2025-12-17 00:49:36.194 | INFO | [DBWorker] Started
+2025-12-17 00:49:36.194 | INFO | [DBServer] Listening on port 3600
+2025-12-17 00:49:36.194 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-17 00:49:36.194 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-17 00:49:40.243 | INFO | [DBServer] MainServer connected
+2025-12-17 00:49:40.244 | INFO | [DB] PING_REQ received seq=1
+2025-12-17 00:49:40.244 | INFO | [DB] PING_ACK sent seq=1 tick=60726878
+2025-12-17 00:49:47.152 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-17 00:49:47.152 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-17 00:49:47.152 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-17 00:49:47.169 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-17 00:49:55.598 | INFO | [DBServer] MainServer disconnected
+2025-12-17 01:06:32.439 | INFO | Logger init app=DBServer
+2025-12-17 01:06:32.479 | INFO | [System] DBServer process started
+2025-12-17 01:06:32.497 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-17 01:06:32.497 | INFO | [DBManager] DB initialized successfully.
+2025-12-17 01:06:32.497 | INFO | [DBServer] DB Initialized
+2025-12-17 01:06:32.497 | INFO | [DBWorker] Started
+2025-12-17 01:06:32.497 | INFO | [DBServer] Listening on port 3600
+2025-12-17 01:06:32.497 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-17 01:06:32.497 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-17 01:06:37.521 | INFO | [DBServer] MainServer connected
+2025-12-17 01:06:37.522 | INFO | [DB] PING_REQ received seq=1
+2025-12-17 01:06:37.522 | INFO | [DB] PING_ACK sent seq=1 tick=61744168
+2025-12-17 01:06:47.869 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-17 01:06:47.869 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-17 01:06:47.869 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-17 01:06:47.886 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-17 01:27:49.434 | INFO | Logger init app=DBServer
+2025-12-17 01:27:49.473 | INFO | [System] DBServer process started
+2025-12-17 01:27:49.491 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-17 01:27:49.491 | INFO | [DBManager] DB initialized successfully.
+2025-12-17 01:27:49.491 | INFO | [DBServer] DB Initialized
+2025-12-17 01:27:49.491 | INFO | [DBWorker] Started
+2025-12-17 01:27:49.492 | INFO | [DBServer] Listening on port 3600
+2025-12-17 01:27:49.492 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-17 01:27:49.492 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-17 01:27:54.693 | INFO | [DBServer] MainServer connected
+2025-12-17 01:27:54.693 | INFO | [DB] PING_REQ received seq=1
+2025-12-17 01:27:54.693 | INFO | [DB] PING_ACK sent seq=1 tick=63021350
+2025-12-17 01:28:01.166 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-17 01:28:01.166 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-17 01:28:01.166 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-17 01:28:01.184 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-17 01:28:39.851 | INFO | [DBServer] MainServer disconnected
+2025-12-17 02:10:50.603 | INFO | Logger init app=DBServer
+2025-12-17 02:10:50.644 | INFO | [System] DBServer process started
+2025-12-17 02:10:50.662 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-17 02:10:50.662 | INFO | [DBManager] DB initialized successfully.
+2025-12-17 02:10:50.662 | INFO | [DBServer] DB Initialized
+2025-12-17 02:10:50.662 | INFO | [DBWorker] Started
+2025-12-17 02:10:50.663 | INFO | [DBServer] Listening on port 3600
+2025-12-17 02:10:50.663 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-17 02:10:50.663 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-17 02:10:56.850 | INFO | [DBServer] MainServer connected
+2025-12-17 02:10:56.851 | INFO | [DB] PING_REQ received seq=1
+2025-12-17 02:10:56.851 | INFO | [DB] PING_ACK sent seq=1 tick=65603519
+2025-12-17 02:11:08.225 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-17 02:11:08.225 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-17 02:11:08.226 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-17 02:11:08.245 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-17 03:41:26.944 | INFO | Logger init app=DBServer
+2025-12-17 03:41:26.984 | INFO | [System] DBServer process started
+2025-12-17 03:41:27.002 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-17 03:41:27.002 | INFO | [DBManager] DB initialized successfully.
+2025-12-17 03:41:27.002 | INFO | [DBServer] DB Initialized
+2025-12-17 03:41:27.002 | INFO | [DBWorker] Started
+2025-12-17 03:41:27.002 | INFO | [DBServer] Listening on port 3600
+2025-12-17 03:41:27.003 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-17 03:41:27.003 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-17 03:41:30.271 | INFO | [DBServer] MainServer connected
+2025-12-17 03:41:30.271 | INFO | [DB] PING_REQ received seq=1
+2025-12-17 03:41:30.271 | INFO | [DB] PING_ACK sent seq=1 tick=71036946
+2025-12-17 03:41:38.051 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-17 03:41:38.051 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-17 03:41:38.052 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-17 03:41:38.068 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-17 03:42:05.083 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-17 03:42:05.084 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-17 03:42:05.084 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-17 03:42:05.099 | INFO | [DB] UpdateLastLogin success. accountId=8
+2025-12-17 03:42:35.797 | INFO | [DBServer] MainServer disconnected
+2025-12-17 03:56:50.028 | INFO | Logger init app=DBServer
+2025-12-17 03:56:50.030 | INFO | [System] DBServer process started
+2025-12-17 03:56:50.046 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-17 03:56:50.046 | INFO | [DBManager] DB initialized successfully.
+2025-12-17 03:56:50.046 | INFO | [DBServer] DB Initialized
+2025-12-17 03:56:50.046 | INFO | [DBWorker] Started
+2025-12-17 03:56:50.046 | INFO | [DBServer] Listening on port 3600
+2025-12-17 03:56:50.046 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-17 03:56:50.046 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-17 03:56:55.898 | INFO | [DBServer] MainServer connected
+2025-12-17 03:56:55.898 | INFO | [DB] PING_REQ received seq=1
+2025-12-17 03:56:55.898 | INFO | [DB] PING_ACK sent seq=1 tick=71962573
+2025-12-17 03:57:10.663 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-17 03:57:10.663 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-17 03:57:10.664 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-17 03:57:10.681 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-17 03:57:35.968 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-17 03:57:35.968 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-17 03:57:35.968 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-17 03:57:35.983 | INFO | [DB] UpdateLastLogin success. accountId=8
+2025-12-17 03:58:02.936 | INFO | [DB] DB_REGISTER_ACK sent seq=1
+2025-12-17 03:58:07.289 | INFO | [DB] FindAccount loginId='test3' (len=5)
+2025-12-17 03:58:07.289 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test3' LIMIT 1;
+2025-12-17 03:58:07.290 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=5 exists=1
+2025-12-17 03:58:07.305 | INFO | [DB] UpdateLastLogin success. accountId=9
+2025-12-17 03:58:26.085 | INFO | [DBServer] MainServer disconnected
+2025-12-17 04:32:36.076 | INFO | Logger init app=DBServer
+2025-12-17 04:32:36.114 | INFO | [System] DBServer process started
+2025-12-17 04:32:36.131 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-17 04:32:36.131 | INFO | [DBManager] DB initialized successfully.
+2025-12-17 04:32:36.131 | INFO | [DBServer] DB Initialized
+2025-12-17 04:32:36.132 | INFO | [DBWorker] Started
+2025-12-17 04:32:36.132 | INFO | [DBServer] Listening on port 3600
+2025-12-17 04:32:36.132 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-17 04:32:36.132 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-17 04:32:39.124 | INFO | [DBServer] MainServer connected
+2025-12-17 04:32:39.124 | INFO | [DB] PING_REQ received seq=1
+2025-12-17 04:32:39.125 | INFO | [DB] PING_ACK sent seq=1 tick=74105801
+2025-12-17 04:32:45.355 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-17 04:32:45.355 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-17 04:32:45.356 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-17 04:32:45.364 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-17 04:32:57.659 | INFO | [DB] FindAccount loginId='test2' (len=5)
+2025-12-17 04:32:57.660 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test2' LIMIT 1;
+2025-12-17 04:32:57.660 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=3 exists=1
+2025-12-17 04:32:57.677 | INFO | [DB] UpdateLastLogin success. accountId=8
+2025-12-17 04:33:34.133 | INFO | [DB] FindAccount loginId='test3' (len=5)
+2025-12-17 04:33:34.133 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test3' LIMIT 1;
+2025-12-17 04:33:34.134 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=5 exists=1
+2025-12-17 04:33:34.149 | INFO | [DB] UpdateLastLogin success. accountId=9
+2025-12-17 04:34:13.436 | INFO | [DBServer] MainServer disconnected
+2025-12-17 04:37:48.438 | INFO | Logger init app=DBServer
+2025-12-17 04:37:48.450 | INFO | [System] DBServer process started
+2025-12-17 04:37:48.497 | INFO | [DbConnection] Connected to MySQL: 100.77.71.68:3306
+2025-12-17 04:37:48.497 | INFO | [DBManager] DB initialized successfully.
+2025-12-17 04:37:48.497 | INFO | [DBServer] DB Initialized
+2025-12-17 04:37:48.497 | INFO | [DBWorker] Started
+2025-12-17 04:37:48.498 | INFO | [DBServer] Listening on port 3600
+2025-12-17 04:37:48.498 | INFO | [DB] DBServer started. Listening on port 3600.
+2025-12-17 04:37:48.498 | INFO | [DB] Press Ctrl+C to stop.
+2025-12-17 04:37:51.170 | INFO | [DBServer] MainServer connected
+2025-12-17 04:37:51.170 | INFO | [DB] PING_REQ received seq=1
+2025-12-17 04:37:51.170 | INFO | [DB] PING_ACK sent seq=1 tick=74417846
+2025-12-17 04:37:57.471 | INFO | [DB] FindAccount loginId='test1' (len=5)
+2025-12-17 04:37:57.472 | INFO | [DB][SQL] SELECT account_id, pw_hash, pw_salt, status FROM account WHERE login_id='test1' LIMIT 1;
+2025-12-17 04:37:57.472 | INFO | [DB] DB_FIND_ACCOUNT_ACK sent seq=1 exists=1
+2025-12-17 04:37:57.489 | INFO | [DB] UpdateLastLogin success. accountId=5
+2025-12-17 04:38:03.514 | INFO | [DBServer] MainServer disconnected

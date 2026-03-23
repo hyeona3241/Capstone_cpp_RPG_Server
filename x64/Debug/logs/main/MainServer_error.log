@@ -1,0 +1,11 @@
+2025-12-15 10:12:37.245 | ERROR | [MAIN] Failed to connect to LoginServer (3700)
+2025-12-15 10:12:43.171 | ERROR | [MAIN] Failed to connect to LoginServer (3700)
+2025-12-15 10:19:04.185 | ERROR | [MAIN] Failed to connect to LoginServer (3700)
+2025-12-16 06:25:52.729 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1104
+2025-12-16 06:25:57.633 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1100
+2025-12-16 06:31:10.442 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1104
+2025-12-16 06:31:14.114 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1100
+2025-12-16 06:41:15.004 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1104
+2025-12-16 06:41:39.627 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1100
+2025-12-16 06:44:11.656 | WARN | [Login] Invalid state for login packet. sessionId=3, state=4, pktId=1104
+2025-12-17 04:37:44.167 | ERROR | [MAIN] Failed to connect to DBServer (3600)

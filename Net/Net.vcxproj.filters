@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{ecc1c4c6-4df1-4a00-becd-b21eb3292c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Session">
+      <UniqueIdentifier>{1bf7028f-7c04-4223-9179-a4e854ba6ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App">
+      <UniqueIdentifier>{30a0dd2f-39a2-45b6-84d6-e9d31584cdec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{96abcb39-d8b5-4f10-979e-7cb9331f7315}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{b8495d0b-e284-44d6-8195-9111d4c951ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Util\헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Core\헤더 파일">
+      <UniqueIdentifier>{0c893123-99ca-44cd-bdea-466aa753015a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\소스 파일">
+      <UniqueIdentifier>{1632c44d-4051-4c7d-b48a-53ce2cec9518}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Session\소스 파일">
+      <UniqueIdentifier>{39d3bf90-507b-4164-9c10-6bbcb181e6bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Session\헤더 파일">
+      <UniqueIdentifier>{7be8755c-81a3-481f-b7b8-ac856ea37b4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\헤더 파일">
+      <UniqueIdentifier>{6efa8b2d-9659-43be-aff2-1af35d7a01d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="App\소스 파일">
+      <UniqueIdentifier>{50e787a9-3215-4da2-9dfb-918c54071bfa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Util\BufferHandle.h">
+      <Filter>Util\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\BufferPool.h">
+      <Filter>Util\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\RingBuffer.h">
+      <Filter>Util\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\NetConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\SocketUtils.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Session\Session.h">
+      <Filter>Session\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Session\SessionPool.h">
+      <Filter>Session\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Session\RecvRing.h">
+      <Filter>Session\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Session\SessionManager.h">
+      <Filter>Session\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IocpCommon.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IocpWorker.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\IocpServer.h">
+      <Filter>Core\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="App\INetListener.h">
+      <Filter>App\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="App\DefaultNetListener.h">
+      <Filter>App\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Pch.h">
+      <Filter>Util\헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Util\BufferPool.cpp">
+      <Filter>Util\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\RingBuffer.cpp">
+      <Filter>Util\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\SocketUtils.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Session\SessionPool.cpp">
+      <Filter>Session\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Session\RecvRing.cpp">
+      <Filter>Session\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Session\SessionManager.cpp">
+      <Filter>Session\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IocpCommon.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IocpWorker.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\IocpServer.cpp">
+      <Filter>Core\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Session\Session.cpp">
+      <Filter>Session\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="App\INetListener.cpp">
+      <Filter>App\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="App\DefaultNetListener.cpp">
+      <Filter>App\소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
