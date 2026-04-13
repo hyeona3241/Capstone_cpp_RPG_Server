@@ -18,6 +18,21 @@
     <Filter Include="Server\GatewayServer">
       <UniqueIdentifier>{6bec4cb3-bf9a-4e67-a75d-544138f4e426}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Server\GatewayServer\소스 파일">
+      <UniqueIdentifier>{841127cc-3ee3-458e-9b60-0016e2152f03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\GatewayServer\헤더 파일">
+      <UniqueIdentifier>{bc0d2286-9594-41e7-bb7a-12fd2e2becac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\GatewayServer\PacketHandler">
+      <UniqueIdentifier>{20adda6a-874c-470b-8ebd-b34ae47fb030}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\GatewayServer\PacketHandler\헤더 파일">
+      <UniqueIdentifier>{6c245302-c3bf-4d71-8744-039387c68461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Server\GatewayServer\PacketHandler\소스 파일">
+      <UniqueIdentifier>{3e471ae8-db72-4154-acd9-505ab7cce3fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Buffer.h">
@@ -51,7 +66,49 @@
       <Filter>Util</Filter>
     </ClInclude>
     <ClInclude Include="GatewayServer.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>Server\GatewayServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayClientSession.h">
+      <Filter>Server\GatewayServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="InterServerSession.h">
+      <Filter>Server\GatewayServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewaySessionManager.h">
+      <Filter>Server\GatewayServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayClientContext.h">
+      <Filter>Server\GatewayServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayClientManager.h">
+      <Filter>Server\GatewayServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerConnectionManager.h">
+      <Filter>Server\GatewayServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayStateValidator.h">
+      <Filter>Server\GatewayServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AuthTokenManager.h">
+      <Filter>Server\GatewayServer\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayAuthHandler.h">
+      <Filter>Server\GatewayServer\PacketHandler\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayChatHandler.h">
+      <Filter>Server\GatewayServer\PacketHandler\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayPacketDispatcher.h">
+      <Filter>Server\GatewayServer\PacketHandler\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewaySystemHandler.h">
+      <Filter>Server\GatewayServer\PacketHandler\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GatewayWorldHandler.h">
+      <Filter>Server\GatewayServer\PacketHandler\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="IDomainHandler.h">
+      <Filter>Server\GatewayServer\PacketHandler\헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -74,7 +131,49 @@
       <Filter>Util</Filter>
     </ClCompile>
     <ClCompile Include="GatewayServer.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>Server\GatewayServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayClientSession.cpp">
+      <Filter>Server\GatewayServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="InterServerSession.cpp">
+      <Filter>Server\GatewayServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewaySessionManager.cpp">
+      <Filter>Server\GatewayServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayClientContext.cpp">
+      <Filter>Server\GatewayServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayClientManager.cpp">
+      <Filter>Server\GatewayServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerConnectionManager.cpp">
+      <Filter>Server\GatewayServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayStateValidator.cpp">
+      <Filter>Server\GatewayServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AuthTokenManager.cpp">
+      <Filter>Server\GatewayServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayAuthHandler.cpp">
+      <Filter>Server\GatewayServer\PacketHandler\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayChatHandler.cpp">
+      <Filter>Server\GatewayServer\PacketHandler\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayPacketDispatcher.cpp">
+      <Filter>Server\GatewayServer\PacketHandler\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewaySystemHandler.cpp">
+      <Filter>Server\GatewayServer\PacketHandler\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewayWorldHandler.cpp">
+      <Filter>Server\GatewayServer\PacketHandler\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="IDomainHandler.cpp">
+      <Filter>Server\GatewayServer\PacketHandler\소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

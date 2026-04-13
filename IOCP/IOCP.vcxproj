@@ -136,24 +136,52 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AuthTokenManager.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="BufferPool.h" />
+    <ClInclude Include="GatewayAuthHandler.h" />
+    <ClInclude Include="GatewayChatHandler.h" />
+    <ClInclude Include="GatewayClientContext.h" />
+    <ClInclude Include="GatewayClientManager.h" />
+    <ClInclude Include="GatewayClientSession.h" />
+    <ClInclude Include="GatewayPacketDispatcher.h" />
     <ClInclude Include="GatewayServer.h" />
+    <ClInclude Include="GatewaySessionManager.h" />
+    <ClInclude Include="GatewayStateValidator.h" />
+    <ClInclude Include="GatewaySystemHandler.h" />
+    <ClInclude Include="GatewayWorldHandler.h" />
+    <ClInclude Include="IDomainHandler.h" />
+    <ClInclude Include="InterServerSession.h" />
     <ClInclude Include="IocpCommon.h" />
     <ClInclude Include="IocpServerBase.h" />
     <ClInclude Include="Pch.h" />
     <ClInclude Include="RecvRing.h" />
     <ClInclude Include="RingBuffer.h" />
+    <ClInclude Include="ServerConnectionManager.h" />
     <ClInclude Include="Session.h" />
     <ClInclude Include="SessionPool.h" />
     <ClInclude Include="SHA256.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AuthTokenManager.cpp" />
     <ClCompile Include="BufferPool.cpp" />
+    <ClCompile Include="GatewayAuthHandler.cpp" />
+    <ClCompile Include="GatewayChatHandler.cpp" />
+    <ClCompile Include="GatewayClientContext.cpp" />
+    <ClCompile Include="GatewayClientManager.cpp" />
+    <ClCompile Include="GatewayClientSession.cpp" />
+    <ClCompile Include="GatewayPacketDispatcher.cpp" />
     <ClCompile Include="GatewayServer.cpp" />
+    <ClCompile Include="GatewaySessionManager.cpp" />
+    <ClCompile Include="GatewayStateValidator.cpp" />
+    <ClCompile Include="GatewaySystemHandler.cpp" />
+    <ClCompile Include="GatewayWorldHandler.cpp" />
+    <ClCompile Include="IDomainHandler.cpp" />
+    <ClCompile Include="InterServerSession.cpp" />
     <ClCompile Include="IocpCommon.cpp" />
     <ClCompile Include="IocpServerBase.cpp" />
     <ClCompile Include="RecvRing.cpp" />
+    <ClCompile Include="ServerConnectionManager.cpp" />
     <ClCompile Include="Session.cpp" />
     <ClCompile Include="SHA256.cpp" />
   </ItemGroup>
