@@ -136,34 +136,11 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="AccountRepository.h" />
-    <ClInclude Include="AuthService.h" />
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="BufferPool.h" />
-    <ClInclude Include="ChannelManager.h" />
-    <ClInclude Include="ChatChannel.h" />
-    <ClInclude Include="ChatPacketHandler.h" />
-    <ClInclude Include="ChatServer.h" />
-    <ClInclude Include="ChatSession.h" />
-    <ClInclude Include="ChatSessionManager.h" />
-    <ClInclude Include="DBConnection.h" />
-    <ClInclude Include="DBJob.h" />
-    <ClInclude Include="DBJobQueue.h" />
-    <ClInclude Include="DBManager.h" />
-    <ClInclude Include="DBPacketHandler.h" />
-    <ClInclude Include="DBServer.h" />
-    <ClInclude Include="DBWorker.h" />
-    <ClInclude Include="IMSDomainHandler.h" />
+    <ClInclude Include="GatewayServer.h" />
     <ClInclude Include="IocpCommon.h" />
     <ClInclude Include="IocpServerBase.h" />
-    <ClInclude Include="LoginServer.h" />
-    <ClInclude Include="LSPacketHandler.h" />
-    <ClInclude Include="MainServer.h" />
-    <ClInclude Include="MSChatServerInternalHandler.h" />
-    <ClInclude Include="MSClientInternalHandler.h" />
-    <ClInclude Include="MSDbServerInternalHandler.h" />
-    <ClInclude Include="MSPacketHandler.h" />
-    <ClInclude Include="PasswordHasher.h" />
     <ClInclude Include="Pch.h" />
     <ClInclude Include="RecvRing.h" />
     <ClInclude Include="RingBuffer.h" />
@@ -172,45 +149,13 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClInclude Include="SHA256.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AccountRepository.cpp" />
-    <ClCompile Include="AuthService.cpp" />
     <ClCompile Include="BufferPool.cpp" />
-    <ClCompile Include="ChannelManager.cpp" />
-    <ClCompile Include="ChatChannel.cpp" />
-    <ClCompile Include="ChatPacketHandler.cpp" />
-    <ClCompile Include="ChatServer.cpp" />
-    <ClCompile Include="ChatSession.cpp" />
-    <ClCompile Include="ChatSessionManager.cpp" />
-    <ClCompile Include="CreatPasswardHash.cpp" />
-    <ClCompile Include="DBConnection.cpp" />
-    <ClCompile Include="DBJobQueue.cpp" />
-    <ClCompile Include="DBManager.cpp" />
-    <ClCompile Include="DBPacketHandler.cpp" />
-    <ClCompile Include="DBServer.cpp" />
-    <ClCompile Include="DBServerMain.cpp" />
-    <ClCompile Include="dbTest.cpp" />
-    <ClCompile Include="DBWorker.cpp" />
+    <ClCompile Include="GatewayServer.cpp" />
     <ClCompile Include="IocpCommon.cpp" />
     <ClCompile Include="IocpServerBase.cpp" />
-    <ClCompile Include="LoginServer.cpp" />
-    <ClCompile Include="LoginServerMain.cpp" />
-    <ClCompile Include="LSPacketHandler.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MainServer.cpp" />
-    <ClCompile Include="MainServerMain.cpp" />
-    <ClCompile Include="MSChatServerInternalHandler.cpp" />
-    <ClCompile Include="MSClientInternalHandler.cpp" />
-    <ClCompile Include="MSDbServerInternalHandler.cpp" />
-    <ClCompile Include="MSPacketHandler.cpp" />
-    <ClCompile Include="PasswordHasher.cpp" />
     <ClCompile Include="RecvRing.cpp" />
     <ClCompile Include="Session.cpp" />
     <ClCompile Include="SHA256.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Common\Common.vcxproj">
-      <Project>{175a3181-0fcf-4656-9e12-bd808900e105}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
