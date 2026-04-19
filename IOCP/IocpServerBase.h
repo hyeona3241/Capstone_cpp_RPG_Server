@@ -4,25 +4,23 @@
 #include <atomic>
 
 #include "IocpCommon.h"
-#include "SessionPool.h"
 #include "BufferPool.h"
+#include "IIocpServer.h"
 
 class Session;
 class Buffer;
 struct PacketHeader;
-
-class Packet;
+enum class SessionRole : uint8_t;
 
 struct IocpConfig
 {
-    std::size_t maxSessions = 0;    // 세션 풀 크기
-    std::size_t bufferCount = 0;    // 버퍼 풀 개수
-    std::size_t bufferSize = 0;     // 각 버퍼 크기
-    std::size_t recvRingCapacity = 0;   // 세션당 리시브 링 용량
+    std::size_t maxSessions = 0;
+    std::size_t bufferCount = 0;
+    std::size_t bufferSize = 0;
+    std::size_t recvRingCapacity = 0;
 };
 
-
-class IocpServerBase
+class IocpServerBase : public IIocpServer
 {
 public:
     explicit IocpServerBase(const IocpConfig& cfg);
@@ -31,48 +29,46 @@ public:
     bool Start(uint16_t port, int workerThreads);
     void Stop();
 
-    BufferPool* GetBufferPool() { return &bufferPool_; }
-    SessionPool* GetSessionPool() { return &sessionPool_; }
+    BufferPool* GetBufferPool() override { return &bufferPool_; }
     HANDLE GetIocpHandle() const { return iocpHandle_; }
 
+public:
+    // 외부 서버(예: Login/World/Chat)로 outbound 연결을 생성할 때
+    // 파생 서버가 적절한 세션 객체를 꺼내도록
+    Session* ConnectTo(const char* ip, uint16_t port, SessionRole role);
+
 protected:
-    // 클라나 서버 연결 됐을 때 호출
+    // Accept된 클라이언트 소켓에 대해 사용할 세션을 파생 서버가 제공
+    // 예: GatewayServer는 GatewayClientSession 풀에서 꺼냄
+    virtual Session* AcquireAcceptedSession(SOCKET s, SessionRole role) = 0;
+
+    // 서버가 다른 서버로 outbound connect 할 때 사용할 세션을 파생 서버가 제공
+    // 예: GatewayServer는 GatewayServerSession 풀에서 꺼냄
+    virtual Session* AcquireOutboundSession(SOCKET s, SessionRole role) = 0;
+
+    // 세션 반납 책임은 파생 서버가 가짐
+    // 예: GatewayServer는 세션 kind를 보고 client/server pool 중 하나로 반환
+    virtual void ReleaseSession(Session* session) = 0;
+
+protected:
     virtual void OnClientConnected(Session* session) {}
-
-    // 세션이 완전히 끊기기 직전에 호출
     virtual void OnClientDisconnected(Session* session) {}
-
-    // RecvRing이 완성한 패킷이 여기로 들어옴
     virtual void OnRawPacket(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length) = 0;
 
-    virtual Session* CreateSessionForAccept(SOCKET clientSock, SessionRole role)
-    {
-        // 기본은 기존대로 SessionPool에서 Session 생성
-        return sessionPool_.Acquire(clientSock, this, role);
-    }
-
-    // 세션 정리용 헬퍼
-    void ReleaseSession(Session* session);
-
-
 public:
-    void NotifySessionDisconnect(Session* s);
-
-    void DispatchRawPacket(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length)
+    void NotifySessionDisconnect(Session* s) override;
+    void DispatchRawPacket(Session* session, const PacketHeader& header, const std::byte* payload, std::size_t length) override
     {
         OnRawPacket(session, header, payload, length);
     }
 
-    Session* ConnectTo(const char* ip, uint16_t port, SessionRole role);
-
 private:
-
     bool CreateListenSocket(uint16_t port);
     bool CreateIocp();
     void CreateWorkerThreads(int workerThreads);
     void DestroyWorkerThreads();
 
-    void WorkerLoop(); // GetQueuedCompletionStatus 루프
+    void WorkerLoop();
 
     void PostInitialAccepts(int count);
     void PostAccept();
@@ -83,8 +79,6 @@ private:
 
 private:
     IocpConfig config_;
-
-    SessionPool sessionPool_;
     BufferPool bufferPool_;
 
     SOCKET listenSock_{ INVALID_SOCKET };
@@ -93,9 +87,7 @@ private:
     std::vector<std::thread> workers_;
     std::atomic<bool> running_{ false };
 
-    // Accept용 컨텍스트
     SOCKET acceptSock_{ INVALID_SOCKET };
     OverlappedEx acceptOvl_;
     Buffer* acceptBuffer_{ nullptr };
 };
-

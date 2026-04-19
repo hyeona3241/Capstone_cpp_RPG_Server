@@ -20,7 +20,7 @@ Session::~Session()
     Disconnect();
 }
 
-void Session::Init(SOCKET s, IocpServerBase* owner, SessionRole role, uint64_t id)
+void Session::Init(SOCKET s, IIocpServer* owner, SessionRole role, uint64_t id)
 {
     sock_ = s;
     owner_ = owner;
@@ -28,10 +28,12 @@ void Session::Init(SOCKET s, IocpServerBase* owner, SessionRole role, uint64_t i
     id_ = id;
 
     connected_ = true;
-    state_ = (role == SessionRole::Client) ? SessionState::Handshake
-        : SessionState::NoneClient;
+    sending_ = false;
+    closing_ = false;
 
     recvRing_.clear();
+
+    OnInit();
 }
 
 void Session::Disconnect()
@@ -42,8 +44,6 @@ void Session::Disconnect()
     closesocket(sock_);
     sock_ = INVALID_SOCKET;
 
-    state_ = SessionState::Disconnected;
-
     // 상위 서버에게 알리기
     if (owner_)
         owner_->NotifySessionDisconnect(this);
@@ -52,17 +52,27 @@ void Session::Disconnect()
 void Session::ResetForReuse()
 {
     sock_ = INVALID_SOCKET;
+    owner_ = nullptr;
 
     connected_ = false;
     sending_ = false;
     closing_ = false;
 
     role_ = SessionRole::Unknown;
-    state_ = SessionState::Disconnected;
-
     id_ = 0;
 
     recvRing_.clear();
+
+    {
+        std::lock_guard<std::mutex> lock(sendMutex_);
+        std::queue<SendJob> empty;
+        std::swap(sendQueue_, empty);
+    }
+
+    recvOvl_.ResetAll();
+    sendOvl_.ResetAll();
+
+    OnReset();
 
     {
         std::lock_guard<std::mutex> lock(sendMutex_);
