@@ -95,6 +95,9 @@
     <ClInclude Include="GatewayStateMonitor.h">
       <Filter>Server\GatewayServer\헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="GatewaySession.h">
+      <Filter>Server\GatewayServer\헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BufferPool.cpp">
@@ -152,6 +155,9 @@
       <Filter>Server\GatewayServer\소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="GatewayStateMonitor.cpp">
+      <Filter>Server\GatewayServer\소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GatewaySession.cpp">
       <Filter>Server\GatewayServer\소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

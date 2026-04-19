@@ -144,6 +144,7 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClInclude Include="GatewayPacketHandler.h" />
     <ClInclude Include="GatewayServer.h" />
     <ClInclude Include="GatewayServerSession.h" />
+    <ClInclude Include="GatewaySession.h" />
     <ClInclude Include="GatewaySessionManager.h" />
     <ClInclude Include="GatewayStateMonitor.h" />
     <ClInclude Include="GatewayStateValidator.h" />
@@ -168,6 +169,7 @@ if exist "$(SolutionDir)ThirdParty\mysql\libcrypto-3-x64.dll" copy /Y "$(Solutio
     <ClCompile Include="GatewayPacketHandler.cpp" />
     <ClCompile Include="GatewayServer.cpp" />
     <ClCompile Include="GatewayServerSession.cpp" />
+    <ClCompile Include="GatewaySession.cpp" />
     <ClCompile Include="GatewaySessionManager.cpp" />
     <ClCompile Include="GatewayStateMonitor.cpp" />
     <ClCompile Include="GatewayStateValidator.cpp" />
